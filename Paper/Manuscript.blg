@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Manuscript.aux
+The style file: apsrev4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: ManuscriptNotes.bib
+Database file #2: references.bib
+Warning--entry type for "LIGO_L1_data" isn't style-file defined
+--line 117 of file references.bib
+Warning--entry type for "LIGO_tutorial" isn't style-file defined
+--line 122 of file references.bib
+Warning--entry type for "LIGO2020" isn't style-file defined
+--line 128 of file references.bib
+Warning--entry type for "GW170817_Facts" isn't style-file defined
+--line 133 of file references.bib
+Warning--entry type for "KAGRA" isn't style-file defined
+--line 139 of file references.bib
+Repeated entry---line 353 of file references.bib
+ : @article{Sathyaprakash:2012jk
+ :                              ,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (72) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Warning--empty year in KAGRA
+Warning--missing journal in KAGRA2
+Warning--missing publisher in Colpi_Sesana
+Warning--missing journal in Phinney:2001di
+Warning--empty year in GW170817_Facts
+Warning--missing journal in 4PN_EoM_paper
+Warning--missing journal in Gabbard:2017lja
+Warning--missing journal in Zhu:2017znf
+Warning--missing journal in Hogg:1999ad
+Warning--missing journal in Mills:2017urp
+You've used 40 entries,
+            5847 wiz_defined-function locations,
+            1936 strings with 23837 characters,
+and the built_in function-call counts, 38055 in all, are:
+= -- 2491
+> -- 923
+< -- 229
++ -- 305
+- -- 220
+* -- 6107
+:= -- 3760
+add.period$ -- 45
+call.type$ -- 40
+change.case$ -- 167
+chr.to.int$ -- 37
+cite$ -- 60
+duplicate$ -- 3598
+empty$ -- 2862
+format.name$ -- 565
+if$ -- 7452
+int.to.chr$ -- 4
+int.to.str$ -- 48
+missing$ -- 424
+newline$ -- 202
+num.names$ -- 106
+pop$ -- 1458
+preamble$ -- 1
+purify$ -- 195
+quote$ -- 0
+skip$ -- 1322
+stack$ -- 0
+substring$ -- 871
+swap$ -- 3381
+text.length$ -- 103
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 550
+warning$ -- 10
+while$ -- 98
+width$ -- 0
+write$ -- 413
+(There was 1 error message)

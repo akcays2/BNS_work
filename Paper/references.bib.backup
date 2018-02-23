@@ -1,0 +1,639 @@
+@article{Sesana:2016ljz,
+      author         = "Sesana, Alberto",
+      title          = "{Prospects for Multiband Gravitational-Wave Astronomy
+                        after GW150914}",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "116",
+      year           = "2016",
+      number         = "23",
+      pages          = "231102",
+      doi            = "10.1103/PhysRevLett.116.231102",
+      eprint         = "1602.06951",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1602.06951;%%"
+}
+
+@article{Mills:2017urp,
+      author         = "Mills, Joseph and Tiwari, Vaibhav and Fairhurst, Stephen",
+      title          = "{Localization of binary mergers with gravitational-wave
+                        detectors of second and third generation}",
+      year           = "2017",
+      eprint         = "1708.00806",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1708.00806;%%"
+}
+
+@article{Marronetti:2003hx,
+      author         = "Marronetti, Pedro and Duez, Matthew D. and Shapiro,
+                        Stuart L. and Baumgarte, Thomas W.",
+      title          = "{Dynamical determination of the innermost stable circular
+                        orbit of binary neutron stars}",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "92",
+      year           = "2004",
+      pages          = "141101",
+      doi            = "10.1103/PhysRevLett.92.141101",
+      eprint         = "gr-qc/0312036",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = GR-QC/0312036;%%"
+}
+
+@article{Faber:2012rw,
+      author         = "Faber, Joshua A. and Rasio, Frederic A.",
+      title          = "{Binary Neutron Star Mergers}",
+      journal        = "Living Rev. Rel.",
+      volume         = "15",
+      year           = "2012",
+      pages          = "8",
+      doi            = "10.12942/lrr-2012-8",
+      eprint         = "1204.3858",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1204.3858;%%"
+}
+
+@article{Phinney:2001di,
+      author         = "Phinney, E. S.",
+      title          = "{A Practical theorem on gravitational wave backgrounds}",
+      year           = "2001",
+      eprint         = "astro-ph/0108028",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph",
+      SLACcitation   = "%%CITATION = ASTRO-PH/0108028;%%"
+}
+
+@article{Hogg:1999ad,
+      author         = "Hogg, David W.",
+      title          = "{Distance measures in cosmology}",
+      year           = "1999",
+      eprint         = "astro-ph/9905116",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph",
+      SLACcitation   = "%%CITATION = ASTRO-PH/9905116;%%"
+}
+
+@article{Planck2015,
+      author         = "Adam, R. and others",
+      title          = "{Planck 2015 results. I. Overview of products and
+                        scientific results}",
+      collaboration  = "Planck",
+      journal        = "Astron. Astrophys.",
+      volume         = "594",
+      year           = "2016",
+      pages          = "A1",
+      doi            = "10.1051/0004-6361/201527101",
+      eprint         = "1502.01582",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.CO",
+      SLACcitation   = "%%CITATION = ARXIV:1502.01582;%%"
+}
+
+
+@book{Maggiore,
+  title={Gravitational Waves: Volume 1: Theory and Experiments},
+  author={Maggiore, M.},
+  isbn={9780198570745},
+  lccn={2008270556},
+  series={Gravitational Waves},
+  url={https://books.google.ie/books?id=AqVpQgAACAAJ},
+  year={2008},
+  publisher={OUP Oxford}
+}
+
+@online{LIGO_L1_data,
+  title = "{Data release for GW170817}",
+  howpublished = {\url{https://losc.ligo.org/events/GW170817/}}
+}
+
+@online{LIGO_tutorial,
+  title = "{LIGO Open Science Center signal processing tutorial}",
+  howpublished = {\url{https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html}}
+}
+
+
+@online{LIGO2020,
+  title = "{Advanced LIGO anticipated sensitivity curves}",
+  howpublished = {\url{https://dcc.ligo.org/LIGO-T0900288/public}}
+} 
+
+@online{GW170817_Facts,
+  title = "{GW170817 Factsheet}",
+  howpublished = {\url{https://www.ligo.org/detections/GW170817/images-GW170817/GW170817_Factsheet.pdf}}
+}
+
+
+@online{KAGRA,
+  title = "{KAGRA website}",
+  howpublished = {\url{http://gwcenter.icrr.u-tokyo.ac.jp/en/}}
+}
+
+
+@article{PM1963,
+  title = {Gravitational Radiation from Point Masses in a Keplerian Orbit},
+  author = {Peters, P. C. and Mathews, J.},
+  journal = {Phys. Rev.},
+  volume = {131},
+  issue = {1},
+  pages = {435--440},
+  numpages = {0},
+  year = {1963},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.131.435},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.131.435}
+}
+
+
+@article{FastestNSspin,
+      author         = "Hessels, Jason W. T. and Ransom, Scott M. and Stairs,
+                        Ingrid H. and Freire, Paulo Cesar Carvalho and Kaspi,
+                        Victoria M. and Camilo, Fernando",
+      title          = "{A radio pulsar spinning at 716-hz}",
+      journal        = "Science",
+      volume         = "311",
+      year           = "2006",
+      pages          = "1901-1904",
+      doi            = "10.1126/science.1123430",
+      eprint         = "astro-ph/0601337",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph",
+      SLACcitation   = "%%CITATION = ASTRO-PH/0601337;%%"
+}
+
+@article{GW170817,
+      author         = "Abbott, B. P. and others",
+      title          = "{GW170817: Observation of Gravitational Waves from a
+                        Binary Neutron Star Inspiral}",
+      collaboration  = "Virgo, LIGO Scientific",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "119",
+      year           = "2017",
+      number         = "16",
+      pages          = "161101",
+      doi            = "10.1103/PhysRevLett.119.161101",
+      eprint         = "1710.05832",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      reportNumber   = "LIGO-P170817",
+      SLACcitation   = "%%CITATION = ARXIV:1710.05832;%%"
+}
+
+@article{Blanchet_LRR,
+      author         = "Blanchet, Luc",
+      title          = "{Gravitational Radiation from Post-Newtonian Sources and
+                        Inspiralling Compact Binaries}",
+      journal        = "Living Rev. Rel.",
+      volume         = "17",
+      year           = "2014",
+      pages          = "2",
+      doi            = "10.12942/lrr-2014-2",
+      eprint         = "1310.1528",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1310.1528;%%"
+}
+
+@incollection{Colpi_Sesana,
+      author         = "Colpi, Monica and Sesana, Alberto",
+      title          = "{Gravitational Wave Sources in the Era of Multi-Band
+                        Gravitational Wave Astronomy}",
+      editor         = "Auger, Gerard and Plagnol, Eric",
+      booktitle      = "An Overview of Gravitational Waves: Theory, Sources and
+                        Detection",
+      year           = "2017",
+      url            = "https://inspirehep.net/record/1492489/files/arXiv:1610.05309.pdf",
+      pages          = "43-140",
+      doi            = "10.1142/9789813141766_0002",
+      eprint         = "1610.05309",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      SLACcitation   = "%%CITATION = ARXIV:1610.05309;%%"
+}
+
+
+@article{4PN_EoM_paper,
+      author         = "Bernard, Laura and Blanchet, Luc and Faye, Guillaume and
+                        Marchand, Tanguy",
+      title          = "{Center-of-Mass Equations of Motion and Conserved
+                        Integrals of Compact Binary Systems at the Fourth
+                        Post-Newtonian Order}",
+      year           = "2017",
+      eprint         = "1711.00283",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1711.00283;%%"
+}
+
+@article{SchutzLRR,
+      author         = "Sathyaprakash, B. S. and Schutz, B. F.",
+      title          = "{Physics, Astrophysics and Cosmology with Gravitational
+                        Waves}",
+      journal        = "Living Rev. Rel.",
+      volume         = "12",
+      year           = "2009",
+      pages          = "2",
+      doi            = "10.12942/lrr-2009-2",
+      eprint         = "0903.0338",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:0903.0338;%%"
+}
+
+@article{Freire_et_al_2007,
+      author         = "Freire, Paulo Cesar Carvalho and Ransom, Scott M. and
+                        Begin, Steve and Stairs, Ingrid H. and Hessels, Jason W.
+                        T. and Frey, Lucille H. and Camilo, Fernando",
+      title          = "{Eight New Millisecond Pulsars in NGC 6440 and NGC 6441}",
+      journal        = "Astrophys. J.",
+      volume         = "675",
+      year           = "2008",
+      pages          = "670",
+      doi            = "10.1086/526338",
+      eprint         = "0711.0925",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph",
+      SLACcitation   = "%%CITATION = ARXIV:0711.0925;%%"
+}
+
+@article{Ozel_Freire,
+      author         = "Özel, Feryal and Freire, Paulo",
+      title          = "{Masses, Radii, and the Equation of State of Neutron
+                        Stars}",
+      journal        = "Ann. Rev. Astron. Astrophys.",
+      volume         = "54",
+      year           = "2016",
+      pages          = "401-440",
+      doi            = "10.1146/annurev-astro-081915-023322",
+      eprint         = "1603.02698",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      SLACcitation   = "%%CITATION = ARXIV:1603.02698;%%"
+}
+
+@article{Regimbau:2012ir,
+      author         = "Regimbau, Tania and others",
+      title          = "{A Mock Data Challenge for the Einstein
+                        Gravitational-Wave Telescope}",
+      journal        = "Phys. Rev.",
+      volume         = "D86",
+      year           = "2012",
+      pages          = "122001",
+      doi            = "10.1103/PhysRevD.86.122001",
+      eprint         = "1201.3563",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1201.3563;%%"
+}
+
+@article{Wen:2005ui,
+      author         = "Wen, Linqing and Schutz, Bernard F",
+      title          = "{Coherent network detection of gravitational waves: The
+                        Redundancy veto}",
+      booktitle      = "{Gravitational wave data analysis. Proceedings, 9th
+                        Workshop, GWDAW 2004, Annecy, France, December 15-18,
+                        2004}",
+      journal        = "Class. Quant. Grav.",
+      volume         = "22",
+      year           = "2005",
+      pages          = "S1321-S1336",
+      doi            = "10.1088/0264-9381/22/18/S46",
+      eprint         = "gr-qc/0508042",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = GR-QC/0508042;%%"
+}
+
+@article{Sathyaprakash:2012jk,
+      author         = "Sathyaprakash, B. and others",
+      title          = "{Scientific Objectives of Einstein Telescope}",
+      booktitle      = "{Gravitational waves. Numerical relativity - data
+                        analysis. Proceedings, 9th Edoardo Amaldi Conference,
+                        Amaldi 9, and meeting, NRDA 2011, Cardiff, UK, July 10-15,
+                        2011}",
+      journal        = "Class. Quant. Grav.",
+      volume         = "29",
+      year           = "2012",
+      pages          = "124013",
+      doi            = "10.1088/0264-9381/29/12/124013,
+                        10.1088/0264-9381/30/7/079501",
+      note           = "[Erratum: Class. Quant. Grav.30,079501(2013)]",
+      eprint         = "1206.0331",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1206.0331;%%"
+}
+
+@techreport{ET_doc,
+     title = {{Einstein gravitational wave Telescope Conceptual Design Study}},
+     author = {M Abernathy et al.},
+     group = {EU},
+     year = {2011},
+     institution = {European Commission},
+     month = {06},
+     Date-Added = {2011-06-28},
+     Date-Modified = {2011-06-28}
+}
+
+
+
+@article{Sathyaprakash:2012jk,
+      author         = "Sathyaprakash, B. and others",
+      title          = "{Scientific Objectives of Einstein Telescope}",
+      booktitle      = "{Gravitational waves. Numerical relativity - data
+                        analysis. Proceedings, 9th Edoardo Amaldi Conference,
+                        Amaldi 9, and meeting, NRDA 2011, Cardiff, UK, July 10-15,
+                        2011}",
+      journal        = "Class. Quant. Grav.",
+      volume         = "29",
+      year           = "2012",
+      pages          = "124013",
+      doi            = "10.1088/0264-9381/29/12/124013,
+                        10.1088/0264-9381/30/7/079501",
+      note           = "[Erratum: Class. Quant. Grav.30,079501(2013)]",
+      eprint         = "1206.0331",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1206.0331;%%"
+}
+
+
+
+@article{Patricelli:2016bkt,
+      author         = "Patricelli, Barbara and Razzano, Massimiliano and Cella,
+                        Giancarlo and Fidecaro, Francesco and Pian, Elena and
+                        Branchesi, Marica and Stamerra, Antonio",
+      title          = "{Prospects for joint observations of gravitational waves
+                        and gamma rays from merging neutron star binaries}",
+      journal        = "JCAP",
+      volume         = "1611",
+      year           = "2016",
+      number         = "11",
+      pages          = "056",
+      doi            = "10.1088/1475-7516/2016/11/056",
+      eprint         = "1606.06124",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      SLACcitation   = "%%CITATION = ARXIV:1606.06124;%%"
+}
+
+@article{Gabbard:2017lja,
+      author         = "Gabbard, Hunter and Williams, Michael and Hayes, Fergus
+                        and Messenger, Chris",
+      title          = "{Matching matched filtering with deep networks in
+                        gravitational-wave astronomy}",
+      year           = "2017",
+      eprint         = "1712.06041",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.IM",
+      SLACcitation   = "%%CITATION = ARXIV:1712.06041;%%"
+}
+
+@article{Cannon:2011vi,
+      author         = "Cannon, Kipp and others",
+      title          = "{Toward Early-Warning Detection of Gravitational Waves
+                        from Compact Binary Coalescence}",
+      journal        = "Astrophys. J.",
+      volume         = "748",
+      year           = "2012",
+      pages          = "136",
+      doi            = "10.1088/0004-637X/748/2/136",
+      eprint         = "1107.2665",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.IM",
+      reportNumber   = "LIGO-P0900004, LIGO-P0900004-V34",
+      SLACcitation   = "%%CITATION = ARXIV:1107.2665;%%"
+}
+
+@article{Zhu:2017znf,
+      author         = "Zhu, Xingjiang and Thrane, Eric and Oss, Stefan and
+                        Levin, Yuri and Lasky, Paul D.",
+      title          = "{Inferring the population properties of binary neutron
+                        stars with gravitational-wave measurements of spin}",
+      year           = "2017",
+      eprint         = "1711.09226",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      reportNumber   = "LIGO-P1700400",
+      SLACcitation   = "%%CITATION = ARXIV:1711.09226;%%"
+}
+
+@article{Cutler:1994ys,
+      author         = "Cutler, Curt and Flanagan, Eanna E.",
+      title          = "{Gravitational waves from merging compact binaries: How
+                        accurately can one extract the binary's parameters from
+                        the inspiral wave form?}",
+      journal        = "Phys. Rev.",
+      volume         = "D49",
+      year           = "1994",
+      pages          = "2658-2697",
+      doi            = "10.1103/PhysRevD.49.2658",
+      eprint         = "gr-qc/9402014",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      reportNumber   = "GRP-369",
+      SLACcitation   = "%%CITATION = GR-QC/9402014;%%"
+}
+
+@article{Rodriguez:2013oaa,
+      author         = "Rodriguez, Carl L. and Farr, Benjamin and Raymond, Vivien
+                        and Farr, Will M. and Littenberg, Tyson B. and Fazi, Diego
+                        and Kalogera, Vicky",
+      title          = "{Basic Parameter Estimation of Binary Neutron Star
+                        Systems by the Advanced LIGO/Virgo Network}",
+      journal        = "Astrophys. J.",
+      volume         = "784",
+      year           = "2014",
+      pages          = "119",
+      doi            = "10.1088/0004-637X/784/2/119",
+      eprint         = "1309.3273",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      SLACcitation   = "%%CITATION = ARXIV:1309.3273;%%"
+}
+
+@article{Farr:2015lna,
+      author         = "Farr, Ben and others",
+      title          = "{Parameter estimation on gravitational waves from
+                        neutron-star binaries with spinning components}",
+      journal        = "Astrophys. J.",
+      volume         = "825",
+      year           = "2016",
+      number         = "2",
+      pages          = "116",
+      doi            = "10.3847/0004-637X/825/2/116",
+      eprint         = "1508.05336",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      reportNumber   = "LIGO-P1500117",
+      SLACcitation   = "%%CITATION = ARXIV:1508.05336;%%"
+}
+
+@article{Read:2009yp,
+      author         = "Read, Jocelyn S. and Markakis, Charalampos and Shibata,
+                        Masaru and Uryu, Koji and Creighton, Jolien D. E. and
+                        Friedman, John L.",
+      title          = "{Measuring the neutron star equation of state with
+                        gravitational wave observations}",
+      journal        = "Phys. Rev.",
+      volume         = "D79",
+      year           = "2009",
+      pages          = "124033",
+      doi            = "10.1103/PhysRevD.79.124033",
+      eprint         = "0901.3258",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:0901.3258;%%"
+}
+
+@article{Andersson:2009yt,
+      author         = "Andersson, N. and Ferrari, V. and Jones, D. I. and
+                        Kokkotas, K. D. and Krishnan, B. and Read, J. S. and
+                        Rezzolla, L. and Zink, B.",
+      title          = "{Gravitational waves from neutron stars: Promises and
+                        challenges}",
+      journal        = "Gen. Rel. Grav.",
+      volume         = "43",
+      year           = "2011",
+      pages          = "409-436",
+      doi            = "10.1007/s10714-010-1059-4",
+      eprint         = "0912.0384",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.SR",
+      SLACcitation   = "%%CITATION = ARXIV:0912.0384;%%"
+}
+
+@article{PhysRevD.91.043002,
+  title = {Reconstructing the neutron-star equation of state with gravitational-wave detectors from a realistic population of inspiralling binary neutron stars},
+  author = {Lackey, Benjamin D. and Wade, Leslie},
+  journal = {Phys. Rev. D},
+  volume = {91},
+  issue = {4},
+  pages = {043002},
+  numpages = {20},
+  year = {2015},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.91.043002},
+  url = {https://link.aps.org/doi/10.1103/PhysRevD.91.043002}
+}
+
+
+@article{PhysRevD.89.103012,
+  title = {Systematic and statistical errors in a Bayesian approach to the estimation of the neutron-star equation of state using advanced gravitational wave detectors},
+  author = {Wade, Leslie and Creighton, Jolien D. E. and Ochsner, Evan and Lackey, Benjamin D. and Farr, Benjamin F. and Littenberg, Tyson B. and Raymond, Vivien},
+  journal = {Phys. Rev. D},
+  volume = {89},
+  issue = {10},
+  pages = {103012},
+  numpages = {14},
+  year = {2014},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.89.103012},
+  url = {https://link.aps.org/doi/10.1103/PhysRevD.89.103012}
+}
+
+
+
+@article{GBM:2017lvd,
+      author         = "Abbott, B. P. and others",
+      title          = "{Multi-messenger Observations of a Binary Neutron Star
+                        Merger}",
+      collaboration  = "GROND, SALT Group, OzGrav, DFN, INTEGRAL, Virgo,
+                        Insight-Hxmt, MAXI Team, Fermi-LAT, J-GEM, RATIR, IceCube,
+                        CAASTRO, LWA, ePESSTO, GRAWITA, RIMAS, SKA South
+                        Africa/MeerKAT, H.E.S.S., 1M2H Team, IKI-GW Follow-up,
+                        Fermi GBM, Pi of Sky, DWF (Deeper Wider Faster Program),
+                        Dark Energy Survey, MASTER, AstroSat Cadmium Zinc
+                        Telluride Imager Team, Swift, Pierre Auger, ASKAP,
+                        VINROUGE, JAGWAR, Chandra Team at McGill University,
+                        TTU-NRAO, GROWTH, AGILE Team, MWA, ATCA, AST3, TOROS,
+                        Pan-STARRS, NuSTAR, ATLAS Telescopes, BOOTES, CaltechNRAO,
+                        LIGO Scientific, High Time Resolution Universe Survey,
+                        Nordic Optical Telescope, Las Cumbres Observatory Group,
+                        TZAC Consortium, LOFAR, IPN, DLT40, Texas Tech University,
+                        HAWC, ANTARES, KU, Dark Energy Camera GW-EM, CALET, Euro
+                        VLBI Team, ALMA",
+      journal        = "Astrophys. J.",
+      volume         = "848",
+      year           = "2017",
+      number         = "2",
+      pages          = "L12",
+      doi            = "10.3847/2041-8213/aa91c9",
+      eprint         = "1710.05833",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      reportNumber   = "LIGO-P1700294, VIR-0802A-17, FERMILAB-PUB-17-478-A-AE-CD",
+      SLACcitation   = "%%CITATION = ARXIV:1710.05833;%%"
+}
+
+% For \cite{LSST}
+@ARTICLE{LSST,
+   author = {{LSST Science Collaboration} and {Abell}, P.~A. and {Allison}, J. and 
+	{Anderson}, S.~F. and {Andrew}, J.~R. and {Angel}, J.~R.~P. and 
+	{Armus}, L. and {Arnett}, D. and {Asztalos}, S.~J. and {Axelrod}, T.~S. and et al.},
+    title = "{LSST Science Book, Version 2.0}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {0912.0201},
+ primaryClass = "astro-ph.IM",
+ keywords = {Astrophysics - Instrumentation and Methods for Astrophysics, Astrophysics - Cosmology and Extragalactic Astrophysics, Astrophysics - Earth and Planetary Astrophysics, Astrophysics - Galaxy Astrophysics, Astrophysics - Solar and Stellar Astrophysics},
+     year = 2009,
+    month = dec,
+   adsurl = {http://adsabs.harvard.edu/abs/2009arXiv0912.0201L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+% For \cite{CE}
+@article{CE,
+      author         = "Abbott, Benjamin P. and others",
+      title          = "{Exploring the Sensitivity of Next Generation
+                        Gravitational Wave Detectors}",
+      collaboration  = "LIGO Scientific",
+      journal        = "Class. Quant. Grav.",
+      volume         = "34",
+      year           = "2017",
+      number         = "4",
+      pages          = "044001",
+      doi            = "10.1088/1361-6382/aa51f4",
+      eprint         = "1607.08697",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.IM",
+      reportNumber   = "LIGO-P1600143",
+      SLACcitation   = "%%CITATION = ARXIV:1607.08697;%%"
+}
+
+
+% For \cite{Kagra2}
+@article{KAGRA2,
+      author         = "Akutsu, T. and others",
+      title          = "{Construction of KAGRA: an Underground Gravitational Wave
+                        Observatory}",
+      collaboration  = "KAGRA",
+      year           = "2017",
+      eprint         = "1712.00148",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1712.00148;%%"
+}
+
+
+
+
+@article{Hild:2010id,
+      author         = "Hild, S. and others",
+      title          = "{Sensitivity Studies for Third-Generation Gravitational
+                        Wave Observatories}",
+      journal        = "Class. Quant. Grav.",
+      volume         = "28",
+      year           = "2011",
+      pages          = "094013",
+      doi            = "10.1088/0264-9381/28/9/094013",
+      eprint         = "1012.0908",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1012.0908;%%"
+}
