@@ -10,6 +10,7 @@
 \usepackage{color}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{float}
+\usepackage{enumerate}
 \usepackage[usestackEOL]{stackengine} % package used to write several lines in one box
 \allowdisplaybreaks[1]
 
@@ -441,21 +442,13 @@ Thus we have that
 \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_{\theta,\phi,\psi,\iota} = \f{4}{25}\label{eq:RMS_th_ph_ps_iota}.
 \ee
 %
-As we will also consider the case of $\psi=0,\iota=0$, we additionally introduce the following $\theta,\phi$-only averages
+As angles have zero averages in general, we can think of the RMS as the standard deviation ($\sigma =2/5$). 
+Therefore, $2\sigma= 4/5$ above the average (zero in this case) should statistically cover 95\% of the four-dimensional angle space. 
+%Finally, we add the case of an optimally-oriented, purely $+$-polarized source ($\psi=0,\iota=0$) that is directly overhead ($\theta=0$) simply resulting in 
 %
-\be
- \langle F_+^2\rangle_{\theta,\phi} = \frac{7}{30},\qquad \langle F_\times^2\rangle_{\theta,\phi} = \frac{1}{6}
-\ee
-yielding
-%
-\be
-\langle |Q(\theta,\phi,\psi=0,\iota=0)|^2 \rangle_{\theta,\phi} = \f{2}{5} \label{eq:RMS_th_phi}.
-\ee
-Finally, we add the case of an optimally-oriented, purely $+$-polarized source ($\psi=0,\iota=0$) that is directly overhead ($\theta=0$) simply resulting in 
-%
-\be
-\langle |Q(\theta=0,\phi=0,\psi=0,\iota=0)|^2 \rangle = 1.
-\ee
+%\be
+%\langle |Q(\theta=0,\phi=0,\psi=0,\iota=0)|^2 \rangle = 1.
+%\ee
 %
 %
 %
@@ -463,10 +456,9 @@ Finally, we add the case of an optimally-oriented, purely $+$-polarized source (
 %\tilde{H}(f)\equiv  A\,\left\langle\, |Q(\theta,\phi,\psi,\iota)|^2\,\right\rangle^{1/2}\, \f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6} f^{-7/6}\, . \label{eq:ang_av_strain_FD}
 %\ee
 %
-
 %%
 
-In a network of $N$ interferometers, we can define a total effective SNR as follows
+In a network of $N$ interferometers, the total SNR is defined as follows
 %%
 %
 \be
@@ -476,30 +468,43 @@ In a network of $N$ interferometers, we can define a total effective SNR as foll
 %%
 where Eq.~(\ref{eq:SNR_v2}) is employed to compute $\rho_i$ coming from individual interferometers each with a specific quality factor $Q_i$.
 Here, instead of working with specific quality factors of the LIGO and the Virgo interferometers, we consider
-an \emph{imaginary network} of three detectors ($N=3$), where one interferometer is optimally oriented/positioned, another one operates at the RMS average thus
-its sensitivity is relatively suppressed by a factor $2/5$ (Eq.~\ref{eq:RMS_th_ph_ps_iota}) due to suboptimal configuration.
-Our third detector has even lower sensitivity with a relative suppression factor of $4/5-\sqrt{2/5}\simeq 0.1675$ which is essentially a $\{\theta$-$\phi\}$-RMS away
-from the overall RMS averaged value of 2/5.
-This is our way of simulating a future detection in the Advanced-LIGO-Virgo network of 2020s where the three interferometers will yield varying SNRs
-due to their differing quality factors.
+an \emph{model network} of three detectors ($N=3$), where one interferometer is near-optimally oriented/positioned thus it is at $2\sigma$ above the average.
+The second IFO operates at the RMS average; thus its sensitivity is suppressed by a factor $2/5$ compared with $\langle|Q|^2\rangle =1$ case.
+It remains to assign a quality factor for the third IFO. We wish to make this operate below the RMS average, % in terms of its orientation and the sky location of the sources,
+but it would be pointless to simply set its $\langle|Q|^2\rangle$ equal to zero. We therefore somewhat arbitrarily set $\psi=0,\iota=0$
+and introduce the following $\theta,\phi$-only averages
 %
-Therefore, to represent our multi-interferometer network, we introduce the norm of the frequency-domain strain (\ref{eq:strain_FD}) for each interferometer
+\be
+ \langle F_+^2\rangle_{\theta,\phi} = \frac{7}{30},\qquad \langle F_\times^2\rangle_{\theta,\phi} = \frac{1}{6}\, 
+\ee
+yielding
+%
+\be
+\langle |Q(\theta,\phi,\psi=0,\iota=0)|^2 \rangle_{\theta,\phi} = \f{2}{5} \label{eq:RMS_th_phi}.
+\ee
+Using this value, we assign our below-average third IFO $\langle|Q|^2\rangle^{1/2}=4/5-\sqrt{2/5}\simeq 0.1675$.
+%which is essentially a $\{\theta$-$\phi\}$-RMS awayfrom the overall RMS averaged value of 2/5.
+This may seem somewhat ad hoc, but it is our way of modeling the Advanced-LIGO-Virgo network of 2020s in which 
+the three IFOs will accumulate varying SNRs due to their differing quality factors.
+%
+
+Therefore, to represent our multi-interferometer network, we introduce % the norm of the frequency-domain strain (\ref{eq:strain_FD}) 
 %%
 %
 \be
-\tilde{H}_i(f)\equiv \tilde{A}_i\, h_0\, f^{-7/6}, \label{eq:Hi_s}
+\tilde{H}_i(f)\equiv \tilde{A}_i\, h_0\, f^{-7/6} \label{eq:Hi_s}
 \ee
 %
 %%
-where
+for each interferometer, where
 %%
 %
 \begin{align}
 %\tilde{A}_i &\equiv A \langle |Q|^2\rangle^{1/2}_i=\f{1}{2}\sqrt{\f{5}{6}}\, \pi^{-2/3} \left\langle\, |Q_i(\theta,\phi,\psi,\iota)|^2\,\right\rangle^{1/2}\quad\text{and} \label{eq:A_tilde}\\
-h_0 &= \f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6} \label{eq:h0}
+h_0 &= \f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6} \label{eq:h0}\, .
 \end{align}
 %
-and the $\tilde{A}_i$ are given in Table~\ref{table:network_params}. %for $i=1,2,3$. %Clearly, the strain and thus the SNR at each of our imaginary interferometers scales as $\langle |Q|^2\rangle^{1/2}_i$, thus
+and the $\tilde{A}_i =A\langle|Q|^2\rangle^{1/2}_i $ are given in Table~\ref{table:network_params}. %for $i=1,2,3$. %Clearly, the strain and thus the SNR at each of our imaginary interferometers scales as $\langle |Q|^2\rangle^{1/2}_i$, thus
 %%
 The SNR for each interferometer can now be written as
 %%
@@ -514,10 +519,10 @@ We summarize our network in the following Table~\ref{table:network_params}.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{c||c|c|l}
- IFO ($i$) & configuration %& $\langle |Q_i|^2\rangle$ 
+\begin{tabular}{c|c|c|c}
+ IFO$_i$ & configuration %& $\langle |Q_i|^2\rangle$ 
  & $\tilde{A}_i$ & $\tilde{H}_i(f)$\\
- \hline
+ %\hline
  \hline
  1 & high ($h$) &  A & $A h_0\, f^{-7/6}$ \T\\
  2 & medium ($m$) & $\tfrac{2}{5}A$ & $ \tfrac{2}{5}A h_0 \, f^{-7/6}$\B\T \\
@@ -525,9 +530,11 @@ We summarize our network in the following Table~\ref{table:network_params}.
  \hline
 \end{tabular}
 \caption{%The averaged quality factors $\langle|Q|^2\rangle$ of 
-Our imaginary network of three L-shaped interferometers (IFOs). Column four lists the magnitude of the strain for each IFO via Eq.~(\ref{eq:Hi_s}).
-``Configuration'' describes how ideally oriented/positioned an IFO is with respect to a compact binary source. High means ideal configuration maximizing $Q_i$.
-Medium is the RMS-averaged response. Recall $A= \pi^{-2/3} \sqrt{5/24}$. 
+Our model for the Advanced-LIGO-Virgo network ca. 2020. %of three L-shaped interferometers (IFOs). 
+Column four lists the magnitude of the strain for each IFO via Eq.~(\ref{eq:Hi_s}).
+``Configuration'' describes how ideally oriented/positioned an IFO is with respect to a compact binary source. 
+High is $2\sigma$ above the average as explained above.
+Medium is the RMS-averaged (one $\sigma$) response. Recall $A= \pi^{-2/3} \sqrt{5/24}$. 
 %Note that for an interferometer where the angle between the arms is $\alpha$, $A$ rescales to $A\sin\alpha$.
 }\label{table:network_params}
 \end{table}
@@ -911,39 +918,42 @@ We use a $\verb|Mathematica|$ based code developed at UCD to do the same for GW1
 Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs to identically have this sensitivity,
 but because their orientations and response functions differ, their sensitivity to a localized source is reduced. We represent this reduction by lowering the
 amplitude of the incoming GWs by appropriate factors explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
-The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the solid ($i=h$), dashed ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
-$2\sqrt{f} \tilde{H}_i(f)$ as explained above.
+The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the dashed ($i=h$), solid ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
+$2\sqrt{f} \tilde{H}_i(f)$ as is standard. 
 Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulated by our network
 %%
 %
 \be
-\bar\rho_h = 35.8,\quad \bar\rho_m = 14.3,\quad \bar\rho_l = 6.00 \label{eq:GW170817_SNRs}.
+\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 \label{eq:GW170817_SNRs}.
 \ee
 %
 %%
 These are comparable to actual SNRs of L1, H1, and V1 for GW170817, which are, 26.4, 18.8, and 2.0, respectively\footnote{At the time of GW170817, Virgo's sensitivity had not reached the level of LIGO's. Hence it accumulated a much smaller SNR for GW170817. By 2020, Virgo should be operating at nearly the same sensitivity of LIGO.}.
-To accommodate more realistic orientations, we show two shaded regions in Fig.~\ref{fig:figGW170817}. The inspirals in the lighter region yield SNR$\ge 22.34$ as
-they sweep from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz whereas inspirals in the darker region accumulate $ \bar\rho_l \le \text{SNR} \le 22.34$.
-Given a network of three equally sensitive, randomly oriented IFOs we expect that a single BNS inspiral would produce two detector strains in the darker region 
-and one in the lighter region.
+%To accommodate more realistic orientations, we show two shaded regions in Fig.~\ref{fig:figGW170817}. The inspirals in the lighter region yield SNR$\ge 22.34$ as
+%they sweep from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz whereas inspirals in the darker region accumulate $ \bar\rho_l \le \text{SNR} \le 22.34$.
+The shaded region in Fig.~\ref{fig:figGW170817} covers strains between $\tilde{H}_l(f)$ and $\tilde{H}_h(f)$. %which we expect to represent mo
+Given a network of three equally sensitive, randomly oriented IFOs we expect that a single BNS inspiral would produce three distinct detector
+response strains in this shaded region.
 %
 %
 \begin{figure}[h!]
 \includegraphics[height=9cm]{../Figures/GW170817_strains.pdf}
-\caption{GW170817 as it sweeps from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz across our network with ASD (sensitivity) of LIGO Livingstone (L1) during the event (red curve).
-We also show the Hanford detector's sensitivity for comparison. The dashed, solid and dotted lines represent the strains 
-$2\sqrt{f} \tilde{H}_i(f)$ (see, e.g,. Eq.~(\ref{eq:Hi_s}) and Table~\ref{table:network_params}) due to the inspiral of
-a binary neutron star system with parameters given in Eq.~(\ref{eq:GW170817_params}). The change in strain amplitudes is the result of a
-given interferometer's orientation and the sky position of the source. In other words, the dashed line is how ``loud'' GW170817 
-is at an optimally oriented IFO with L1's sensitivity
+\caption{GW170817 as it sweeps from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz across our network with ASD (sensitivity) of 
+LIGO Livingstone (L1) during the event (the darker red curve).
+We also show the Hanford detector's sensitivity in light blue for comparison. The dashed, solid and dotted lines represent the 
+response of each interferometer's frequency-domain response ($2\sqrt{f} \tilde{H}_i(f)$ with $i=h,m,l$) to the inspiral of
+a binary neutron star system with parameters given in Eq.~(\ref{eq:GW170817_params}).
+The variation in strain amplitudes is the result of a given interferometer's orientation and the sky position of the source 
+as explained in Sec.~\ref{sec:LIGO_topo} and summarized in Table~\ref{table:network_params}.
+In other words, the dashed line is how ``loud'' GW170817 would appear in the data stream of a near optimally oriented IFO with L1's sensitivity
 %would be if L1was optimally positioned and oriented 
-(quality factor $Q=1$). Similarly, the solid line is the strain in a randomly oriented IFO with randomized source sky location, hence
-we use the RMS-averaged L1 sensitivity which effectively lowers the solid line by a factor of $2/5$. %, but with RMS-average over all angles 
+(quality factor $Q=4/5$). Similarly, the solid line represents the strain in %a randomly oriented IFO with randomized source sky location, hence
+the RMS-averaged IFO with L1's sensitivity ($Q=2/5$). %, but with RMS-average over all angles 
 %determining source orientation and position. 
 Finally, the dotted line represents a pessimistic IFO orientation and source location (sub-optimal configuration)
-resulting in a reduction of amplitude to $ 16.7\%$ of the optimal case. 
+resulting in a reduction of amplitude to $ 16.7\%$ of the $Q=1$ case. 
 The shading represents the region of likelihood for where the strain due to an inspiralling BNS would be. In the case of a three-IFO
-network, we expect all three strains to exist somewhere in the shaded region.
+network, we would expect all three strains to exist somewhere in the shaded region most of the time and two out of three every time.
 %The darker region marks $\text{RMS}\pm(\sqrt{2/5}-2/5)$ translating to an amplitude range of $ 16.7\% - 63.2\%$ of the maximum $\tilde{H}_h(f)$.
 %For a randomly located, oriented BNS inspiral, we expect its strain to sweep in the lighter region for one IFO and in the darker region for the other two IFOs.
 The dot-dashed (green) curve shows a more realistic strain constructed with data from numerical simulations of Ref.~\cite{Read:2009yp}.
@@ -960,7 +970,7 @@ We can now compute the total SNR of GW170817 as inferred by our network
 %%
 %
 \be
-\bar\rho_\text{tot}= \sqrt{\bar\rho^2_h+\bar\rho^2_m+\bar\rho^2_l}= 39.1 \, \label{eq:SNR_total_GW170817} .
+\bar\rho_\text{tot}= \sqrt{\bar\rho^2_h+\bar\rho^2_m+\bar\rho^2_l}= 32.6 \, \label{eq:SNR_total_GW170817} .
 \ee
 %
 %%
@@ -1070,14 +1080,13 @@ but as can be seen, the SNR hardly increases beyond $\sim 1000\,$Hz.
 The computation follows the procedure outlined in Fig.~\ref{fig:flow}. We use numerical root finding to determine $\bar{f}$ and $f_0^i$ for all three values of $D$. 
 The computation of SNRs and advance warning times is straightforward. 
 We summarize our results in Table \ref{table:LIGO2020} where we present both the 0PN and the 3.5PN results for the advance warning times
-$T_\text{AW}$. As can be seen from the values for $T_\text{AW}$ in the table, we can at best expect 100\,seconds of early warning time.
-This time increases to 2.5\,minutes in the case of another GW170817-like event with $D=40\,$Mpc.
+$T_\text{AW}$. As can be seen from the values for $T_\text{AW}$ in the table, we can at best expect 85\,seconds of early warning time.
+This time increases to 2\,minutes in the case of another GW170817-like event with $D=40\,$Mpc.
 The current best estimate for the event rate of BNS inspirals is $ 1540^{+3200}_{-1220}\,$Gpc$^{-3}$yr$^{-1}$, inferred from the O1 and O2 observing periods of Advanced LIGO \cite{GW170817}.
-This translates to $\approx 0.1$ event per (40-Mpc)$^3$ per year, or taking the upper limit $\approx 0.3$. So we can at best hope to detect
-one 40-Mpc inspiral per three years or longer.
+This translates to $\approx 0.1$ event per (40-Mpc)$^3$ per year with the upper limit $\approx 0.3$. So we can at best hope to detect
+one 40-Mpc inspiral per a three-year period.
 Therefore, we do not expect to be able forecast GRBs in the Advance LIGO-Virgo era given that we might at best have a couple of minutes of warning time. 
-However, given Moore's law and new search approaches based on deep learning (\cite{Gabbard:2017lja}) 
-we prefer to remain optimistic about the prospects of forecasting at least one GRB in the 2020s. %that this latency can be reduced to minutes.
+%we prefer to remain optimistic about the prospects of forecasting at least one GRB in the 2020s. %that this latency can be reduced to minutes.
 %if we dare to entertain peak CPU computation rates of $\sim 10^{13}\,$flops/sec for 2020 then $\sim 100$ computing cores would suffice to match-filter $10^5$ templates {\bf in how much time?} extrapolating on the results of Ref.~\cite{Cannon:2011vi}.
 %
 %Regardless of the future capabilities of search algorithms, 
@@ -1089,13 +1098,13 @@ we prefer to remain optimistic about the prospects of forecasting at least one G
 %
 \begin{table}[h]
 \centering
-\begin{tabular}{lcccc}
+\begin{tabular}{lcccccc}
 \hline
-$D\,$(Mpc) & $\bar{f}\,$(Hz) & $T^{0PN}_\text{AW}$(sec) & $T^{3.5PN}_\text{AW}$(sec)& $\bar{\rho}_F$\T\B\\
+$D\,$(Mpc) & $\bar{f}\,$(Hz) &{}& $T^{0PN}_\text{AW}$(sec) &\hspace{1mm} & $T^{3.5PN}_\text{AW}$(sec)& $\bar{\rho}_F$\T\B\\
 \hline
-50 & 22.8 &111.1 & 113.1 & 84.2 \T\\
-100 & 36.2 & 32.41 & 33.08 & 42.1 \\
-200 & 79.3 & 4.859 & 4.948 & 21.0 \\
+50 & 25.3 & & 84.25 & & 85.86 & 70.3 \T\\
+100 & 41.6 & & 22.39 & & 22.86 & 35.2 \\
+200 & 121.3 & & 1.291 &\quad & 1.300 & 17.6 \\
 \hline
 \end{tabular}
 \caption{The Advanced LIGO-Virgo (ALV) network's potential for providing advance warning times, $T_\text{AW}$, 
@@ -1105,16 +1114,19 @@ $\bar{\rho}_F$ is the total accumulated network SNR for each inspiral. We presen
 and the 3.5 post-Newtonian result for the advance warning times.}\label{table:LIGO2020}
 \end{table}
 %
-
-In addition to potentially alerting the E\,\&\,M community, the ALV network will accumulate impressive SNRs 
+%
+Be that as it may,
+%In addition to potentially alerting the E\,\&\,M community, 
+the ALV network will accumulate impressive SNRs 
 (see $\bar{\rho}_F$ in Table~\ref{table:LIGO2020}) for BNS inspirals out to 100\,Mpc.
-Monte-Carlo simulations of BNS systems indicate that the measurement errors for the system parameters are proportional to $\bar\rho^{-1}_F$ \cite{Cutler:1994ys}.
-Therefore, systems that yield high SNRs ($\bar\rho_F\gtrsim 40$) will enable (i) high precision measurements of 
+%Monte-Carlo simulations of BNS systems indicate that 
+As the measurement errors for the system parameters are proportional to $\bar\rho^{-1}_F$ \cite{Cutler:1994ys},
+systems that yield high SNRs ($\bar\rho_F\gtrsim 40$) will enable (i) high precision measurements of 
 $M_c, M$ \cite{Farr:2015lna}; (ii) sky localization to $\lesssim 5\,\text{Deg}^2$ \cite{Rodriguez:2013oaa};
 (iii) $ \lesssim 10\%$ precision in the inferred NS masses \cite{Rodriguez:2013oaa} and the effective spin parameter $\chi_\text{eff}$ \cite{Zhu:2017znf}; and
 (iv) restrictions on the equation of state and the tidal deformability
 parameters of neutron stars \cite{Read:2009yp, Andersson:2009yt, PhysRevD.89.103012, PhysRevD.91.043002}.
-We should caution the reader that such systems will make up $\lesssim 1\%$ of the population of BNSs detected by 
+We should caution the reader that such high-SNR systems will make up $\lesssim 1\%$ of the population of BNSs detected by 
 the ALV network \cite{Sathyaprakash:2012jk}.
 
 \subsubsection{Forecasting GRBs in the 2030s using the Einstein Telescope}\label{Sec:ETB}
@@ -1225,8 +1237,9 @@ This is best highlighted by the sixth colum of Table~\ref{table:ET},
 where we show that ET-C will provide up to five hours of early warning time for nearby ($D\lesssim 100\,$Mpc) neutron star mergers.
 Moreover, BNS inspirals as far as 200\,Mpc (the ALV network's horizon distance) will persist in the ET-C sensitivity band for a few hours after their initial detection.
 Current BNS merger rate, inferred from A-LIGO's O1-O2 periods, implies that $\sim 40$ to $\sim600$ sources within a volume of $(200\,\text{Mpc})^3$ will be detected yearly by ET.
-Speculating that the advances in the detection, localization and early-warning algorithms in the next decade will reduce the required early
-warning time to less than an hour, we set $T_\text{AW} = 1\,\text{hour}$ and obtain corresponding BNS horizon distances of $D_H=87,613\,$Mpc ($z\approx 0.02,0.127$) for ET-B and ET-C, respectively.
+Given Moore's law and new search approaches based on deep learning (\cite{Gabbard:2017lja}) we speculate
+that the advances in the detection, localization and early-warning algorithms in the next decade will reduce the required early
+warning time to less than an hour; thus we set $T_\text{AW} = 1\,\text{hour}$ and obtain corresponding BNS horizon distances of $D_H=87,613\,$Mpc ($z\approx 0.02,0.127$) for ET-B and ET-C, respectively.
 In other words, all inspiralling BNSs closer than $D_H$ will give us more than an hour's leeway before the GRB (assuming detection SNR of 15 as always).
 The volume set by $D=D_H$ translates to a BNS merger rate of $\mathcal{O}(1)$ for ET-B and
 $\approx 355^{+730}_{-280}\,\text{year}^{-1}$ for ET-C. Additionally, each source within $D_H$ will accumulate $\bar\rho_F \gtrsim 420, 58$ over its inspiral
@@ -1279,8 +1292,25 @@ We used $D=50,100,200\,$Mpc to obtain the ALV results (Sec.~\ref{Sec:ALIGO2020})
 \section{Binary black hole neutron star systems}
 In this section, we investigate the possibility of witnessing the tidal distruption of a neutron star as it falls into a black hole. 
 The treatment of the inspiral is the same as before, however the fate of the neutron star depends strongly on the system's intrinsic parameters
-such as the black hole mass and spin. The evolution of black hole-neutron star (BH-NS) binaries is a very active branch of numerical relativity
-(see Ref. \cite{Shibata:2011jka} for a comprehensive review).
+such as the black hole mass and spin, and the neutron star's equation of state (EOS) and compactness $C_\text{NS}\equiv G m_\text{NS}/(R_\text{NS}c^2)$. 
+The evolution of black hole-neutron star (BH-NS) binaries is a very active branch of numerical relativity
+(see Ref. \cite{Shibata:2011jka} for a comprehensive review) and is beyond the scope of this article, however the numerical simulaitions
+have verified certain qualitative principles that will guide us:{\bf fix this sentence}
+%
+\begin{enumerate}[(i)]
+ \item Small separations. The Newtonian tidal force due to the black hole (BH) is proportional to $M_\text{BH}/r^3$. Therefore, $r$ has to be
+ minimized to ensure maximum tide.
+ \item ISCO as a lower bound. However, for $r< r_\text{ISCO}$ the NS simply plunges into the BH; therefore the minium separation is given by the ISCO radius.
+ \item Small black hole masses. In the geodecis case, $r_\text{ISCO} \propto M_\text{BH}$, so the Newtonian tidal force roughly scales as $M_\text{BH}^{-2}$. 
+ \item High black hole spins. Moreover, $r_\text{ISCO}$ is much smaller in the case of a prograde NS orbit around a spinning Kerr black hole.
+ For instance, for the maximum spin value of $a=1$, $r_\text{ISCO}$ for prograde orbits is 1/6th of the Schwarzschild value whereas for
+ $a=1$ retrograde orbits, $r_\text{ISCO}$ is 3/2 of the Schwarzschild value.
+\end{enumerate}
+
+We will set $a=0.9$ cite, $M_\text{BH} =5 M_\odot$ cite(Morgan's email)
+
+The less massive BHs are also desirable as 
+ $\tau_\text{insp} \propto M_c^{-5/3} = (1+Q)^{1/3}/Q$ for $Q\equiv m_2/m_1 > 1$.
 
 Tidal disruption, minimum BH mass $5 M_\odot$. Tidal force $\sim M/r^3 \sim M^{-2}$ hence the smaller the BH the more TD there will be.
 Also need highly spinning BH to decreases the ISCO radius.

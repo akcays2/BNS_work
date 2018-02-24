@@ -333,17 +333,6 @@
   sensitivity curves}},}\ }\bibinfo {howpublished}
   {\url{https://dcc.ligo.org/LIGO-T0900288/public}}
   ({\natexlab{c}})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Gabbard}\ \emph {et~al.}(2017)\citenamefont
-  {Gabbard}, \citenamefont {Williams}, \citenamefont {Hayes},\ and\
-  \citenamefont {Messenger}}]{Gabbard:2017lja}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
-  {Gabbard}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Williams}},
-  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Hayes}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {C.}~\bibnamefont {Messenger}},\ }\href@noop {} {\
-  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1712.06041}
-  {arXiv:1712.06041 [astro-ph.IM]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1712.06041;%%
 \bibitem [{\citenamefont {Cutler}\ and\ \citenamefont
   {Flanagan}(1994)}]{Cutler:1994ys}%
   \BibitemOpen
@@ -462,6 +451,17 @@
   {2011})},\ \Eprint {http://arxiv.org/abs/1012.0908} {arXiv:1012.0908 [gr-qc]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1012.0908;%%
+\bibitem [{\citenamefont {Gabbard}\ \emph {et~al.}(2017)\citenamefont
+  {Gabbard}, \citenamefont {Williams}, \citenamefont {Hayes},\ and\
+  \citenamefont {Messenger}}]{Gabbard:2017lja}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Gabbard}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Williams}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Hayes}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Messenger}},\ }\href@noop {} {\
+  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1712.06041}
+  {arXiv:1712.06041 [astro-ph.IM]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1712.06041;%%
 \bibitem [{\citenamefont {Mills}\ \emph {et~al.}(2017)\citenamefont {Mills},
   \citenamefont {Tiwari},\ and\ \citenamefont {Fairhurst}}]{Mills:2017urp}%
   \BibitemOpen
