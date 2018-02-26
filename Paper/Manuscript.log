@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  26 FEB 2018 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  26 FEB 2018 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,7 +787,7 @@ l.1320  \item S
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1348 
+l.1350 
         <../Figures/Main_results.pdf>] (./Manuscript.bbl
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
@@ -807,10 +807,10 @@ W150914 _
  []
 
 [19]) [20]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1361.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1361.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1363.
  (./Manuscript.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1361.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1363.
 
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: E300DE7293075DEAA6E8B523C8290A26;1355.
@@ -821,12 +821,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  10815 strings out of 493033
- 150663 string characters out of 6136455
- 311403 words of memory out of 5000000
+ 150664 string characters out of 6136455
+ 310403 words of memory out of 5000000
  13955 multiletter control sequences out of 15000+600000
  34804 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,43p,2028b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,43p,2028b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{equation.4.5-footnote.2} has been referenced but 
 does not exist, replaced by a fixed one
 
@@ -859,7 +859,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on Manuscript.pdf (20 pages, 628224 bytes).
+Output written on Manuscript.pdf (20 pages, 628461 bytes).
 PDF statistics:
  773 PDF objects out of 1000 (max. 8388607)
  183 named destinations out of 1000 (max. 500000)
