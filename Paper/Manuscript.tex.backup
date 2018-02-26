@@ -1293,25 +1293,51 @@ We used $D=50,100,200\,$Mpc to obtain the ALV results (Sec.~\ref{Sec:ALIGO2020})
 In this section, we investigate the possibility of witnessing the tidal distruption of a neutron star as it falls into a black hole. 
 The treatment of the inspiral is the same as before, however the fate of the neutron star depends strongly on the system's intrinsic parameters
 such as the black hole mass and spin, and the neutron star's equation of state (EOS) and compactness $C_\text{NS}\equiv G m_\text{NS}/(R_\text{NS}c^2)$. 
-The evolution of black hole-neutron star (BH-NS) binaries is a very active branch of numerical relativity
-(see Ref. \cite{Shibata:2011jka} for a comprehensive review) and is beyond the scope of this article, however there are certain qualitative 
-principles that will guide us:
+The evolution of black hole-neutron star (BH-NS) binaries is a very active branch of numerical relativity and high-energy astrophysics
+(see Ref. \cite{Shibata:2011jka} for a comprehensive review) requiring fully general relativistic magnetohydrodynamic codes with neutrino transport
+running on large-scale clusters. As such, the details are beyond the scope of this article. %, however the numerical simulationshave verified 
+
+A necessary, but insufficient, condition for tidal disruption (TD) is that
+\be
+\f{2 G M_\text{BH} (c_R R_\text{NS})}{r^3} \gtrsim \f{G M_\text{NS}}{(c_R R_\text{NS})^2} \label{eq:TD_cond1},
+\ee
+where $r$ is the orbital separation, $R_\text{NS}$ is the mass of the NS and $M$ denotes masses. 
+$c_R R_\text{NS}$ is the semi-major axis of the elongated oblate spheroid that represents the tidally distorted shaped of the NS to first order with
+$c_R >1 $. Setting $m_2= M_\text{BH}, m_1 = M_\text{NS}$, and $r_1=r_\text{NS}$ , we can roughly take the above condition to be
+%
+\be
+\f{m_2}{m_1} \gtrsim \left(\f{r}{r_1}\right)^3 \label{eq:TD_cond2}.
+\ee
+
+We wish to maximize the chances of observing a TD event, therefore we impose certain desirable features on our BH-NS binaries, 
+some of which can be deduced from Eq.~(\ref{eq:TD_cond2}). These are
+
 %
 \begin{enumerate}[(i)]
- \item The Newtonian tidal force due to the black hole (BH) is proportional to $M_\text{BH}/r^3$; therefore to ensure maximum tide $r$ has to be
- minimized.
- \item However, for $r< r_\text{ISCO}$ the NS simply plunges into the BH; therefore the minium separation is given by the ISCO radius.
- \item As $r_\text{ISCO} \propto M_\text{BH}$, the Newtonian tidal force scales as $M_\text{BH}^{-2}$. 
- \item Moreover, $r_\text{ISCO}$ is much smaller in the case of a prograde NS orbit around a spinning Kerr black hole.
+ \item Small separations. As the Newtonian tidal force due to the black hole (BH) is proportional to $M_\text{BH}/r^3$, $r$ has to be
+ minimized to provide maximum tidal force. 
+ However, for $r< r_\text{ISCO}$ the NS simply plunges into the BH; therefore the minium separation is given by the ISCO radius.
+ \item Small black hole masses. In the geodecis case, $r_\text{ISCO} \propto M_\text{BH}$, so the Newtonian tidal force roughly scales as $M_\text{BH}^{-2}$. 
+ \item High black hole spins. Moreover, $r_\text{ISCO}$ is much smaller in the case of a prograde NS orbit around a spinning Kerr black hole.
+ For instance, for the maximum spin value of $a=1$, $r_\text{ISCO}$ for prograde orbits is 1/6th of the Schwarzschild value whereas for
+ $a=1$ retrograde orbits, $r_\text{ISCO}$ is 3/2 of the Schwarzschild value.
+ \item Less compact neutron stars.
 \end{enumerate}
+
+If we now naively insert the Schwarzschild value for theISCO we get $m_2 \approx 4.1 M_\odot$. 
 
 We will set $a=0.9$ cite, $M_\text{BH} =5 M_\odot$ cite(Morgan's email)
 
 The less massive BHs are also desirable as 
- $\tau_\text{insp} \propto M_c6{-5/3} = (1+Q)^{1/3}/Q$ for $Q\equiv m_2/m_1 > 1$.
+ $\tau_\text{insp} \propto M_c^{-5/3} = (1+Q)^{1/3}/Q\to Q^{-2/3}$ as $Q\to\infty$ for $Q\equiv m_2/m_1 > 1$.
+ As $\tilde{H}(f) \propto M_c^{5/6}$ SNR$\propto M_c^{5/3} \propto (1+Q)^{1/3}/Q$.
 
 Tidal disruption, minimum BH mass $5 M_\odot$. Tidal force $\sim M/r^3 \sim M^{-2}$ hence the smaller the BH the more TD there will be.
 Also need highly spinning BH to decreases the ISCO radius.
+
+Morgan: \\
+What I worry is whether the requirements of as low a mass as possible, and as high a spin as possible, can in fact be simultaneously satisfied. Assuming that the BH is spun up by accretion from the secondary in the binary (that will later on become a NS), it will have to gain mass. The question is then whether the mass gain is going to push up the value of Q so much that it kills any advance warning you might get.
+However, if the spin of the BH comes from the supernova explosion mechanism itself (as argued for G1915 in \cite{McClintock:2006xd} then this is not a problem.
  
  
 \bibliographystyle{apsrev4-1}

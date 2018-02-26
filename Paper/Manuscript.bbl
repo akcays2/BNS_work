@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{40}%
+\begin{thebibliography}{41}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -481,4 +481,20 @@
   {\bibinfo  {journal} {Living Rev. Rel.}\ }\textbf {\bibinfo {volume} {14}},\
   \bibinfo {pages} {6} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 %%CITATION = 00222,14,6;%%
+\bibitem [{\citenamefont {McClintock}\ \emph {et~al.}(2006)\citenamefont
+  {McClintock}, \citenamefont {Shafee}, \citenamefont {Narayan}, \citenamefont
+  {Remillard}, \citenamefont {Davis},\ and\ \citenamefont
+  {Li}}]{McClintock:2006xd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {McClintock}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Shafee}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Narayan}}, \bibinfo
+  {author} {\bibfnamefont {R.~A.}\ \bibnamefont {Remillard}}, \bibinfo {author}
+  {\bibfnamefont {S.~W.}\ \bibnamefont {Davis}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {L.-X.}\ \bibnamefont {Li}},\ }\href {\doibase 10.1086/508457}
+  {\bibfield  {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf
+  {\bibinfo {volume} {652}},\ \bibinfo {pages} {518} (\bibinfo {year}
+  {2006})},\ \Eprint {http://arxiv.org/abs/astro-ph/0606076}
+  {arXiv:astro-ph/0606076 [astro-ph]} \BibitemShut {NoStop}%
+%%CITATION = ASTRO-PH/0606076;%%
 \end{thebibliography}%
