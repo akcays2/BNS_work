@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{41}%
+\begin{thebibliography}{46}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -481,6 +481,59 @@
   {\bibinfo  {journal} {Living Rev. Rel.}\ }\textbf {\bibinfo {volume} {14}},\
   \bibinfo {pages} {6} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 %%CITATION = 00222,14,6;%%
+\bibitem [{\citenamefont {Farr}\ \emph {et~al.}(2011)\citenamefont {Farr},
+  \citenamefont {Sravan}, \citenamefont {Cantrell}, \citenamefont {Kreidberg},
+  \citenamefont {Bailyn}, \citenamefont {Mandel},\ and\ \citenamefont
+  {Kalogera}}]{Farr:2010tu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~M.}\ \bibnamefont
+  {Farr}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Sravan}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Cantrell}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Kreidberg}}, \bibinfo {author}
+  {\bibfnamefont {C.~D.}\ \bibnamefont {Bailyn}}, \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {Mandel}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {V.}~\bibnamefont {Kalogera}},\ }\href {\doibase
+  10.1088/0004-637X/741/2/103} {\bibfield  {journal} {\bibinfo  {journal}
+  {Astrophys. J.}\ }\textbf {\bibinfo {volume} {741}},\ \bibinfo {pages} {103}
+  (\bibinfo {year} {2011})},\ \Eprint {http://arxiv.org/abs/1011.1459}
+  {arXiv:1011.1459 [astro-ph.GA]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1011.1459;%%
+\bibitem [{\citenamefont {Raithel}\ \emph {et~al.}(2017)\citenamefont
+  {Raithel}, \citenamefont {Sukhbold},\ and\ \citenamefont
+  {Özel}}]{Raithel:2017nlc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~A.}\ \bibnamefont
+  {Raithel}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Sukhbold}}, \
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Özel}},\
+  }\href@noop {} {\  (\bibinfo {year} {2017})},\ \Eprint
+  {http://arxiv.org/abs/1712.00021} {arXiv:1712.00021 [astro-ph.HE]}
+  \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1712.00021;%%
+\bibitem [{\citenamefont {Ozel}\ \emph {et~al.}(2010)\citenamefont {Ozel},
+  \citenamefont {Psaltis}, \citenamefont {Narayan},\ and\ \citenamefont
+  {McClintock}}]{Ozel:2010su}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Ozel}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Psaltis}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Narayan}}, \ and\
+  \bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont {McClintock}},\ }\href
+  {\doibase 10.1088/0004-637X/725/2/1918} {\bibfield  {journal} {\bibinfo
+  {journal} {Astrophys. J.}\ }\textbf {\bibinfo {volume} {725}},\ \bibinfo
+  {pages} {1918} (\bibinfo {year} {2010})},\ \Eprint
+  {http://arxiv.org/abs/1006.2834} {arXiv:1006.2834 [astro-ph.GA]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1006.2834;%%
+\bibitem [{\citenamefont {Wiktorowicz}\ \emph {et~al.}(2013)\citenamefont
+  {Wiktorowicz}, \citenamefont {Belczynski},\ and\ \citenamefont
+  {Maccarone}}]{Wiktorowicz:2013dua}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Wiktorowicz}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Belczynski}}, \ and\ \bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont
+  {Maccarone}},\ }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1312.5924} {arXiv:1312.5924 [astro-ph.HE]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1312.5924;%%
 \bibitem [{\citenamefont {McClintock}\ \emph {et~al.}(2006)\citenamefont
   {McClintock}, \citenamefont {Shafee}, \citenamefont {Narayan}, \citenamefont
   {Remillard}, \citenamefont {Davis},\ and\ \citenamefont
@@ -497,4 +550,15 @@
   {2006})},\ \Eprint {http://arxiv.org/abs/astro-ph/0606076}
   {arXiv:astro-ph/0606076 [astro-ph]} \BibitemShut {NoStop}%
 %%CITATION = ASTRO-PH/0606076;%%
+\bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2016)\citenamefont {Abbott}
+  \emph {et~al.}}]{Abbott:2016ymx}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {Virgo, LIGO
+  Scientific}),\ }\href {\doibase 10.3847/2041-8205/832/2/L21} {\bibfield
+  {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf {\bibinfo {volume}
+  {832}},\ \bibinfo {pages} {L21} (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/1607.07456} {arXiv:1607.07456 [astro-ph.HE]}
+  \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1607.07456;%%
 \end{thebibliography}%
