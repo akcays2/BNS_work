@@ -1332,12 +1332,32 @@ some of which can be deduced from Eqs.~(\ref{eq:TD_cond1}, \ref{eq:TD_cond2}). T
 %
 We are thus led to set $M_\text{BH} =5 M_\odot$. There is additional motivation to choose low BH mass as 
  $\tau_\text{insp} \propto M_c^{-5/3} = (1+Q)^{1/3}/Q\to Q^{-2/3}$ as $Q\to\infty$ for $Q\equiv m_2/m_1 > 1$, i.e., heavier binaries inspiral faster.
-Choosing lower mass implies reduced SNR since $\rho \propto M_c^{5/3} \propto (1+Q)^{1/3}/Q$,
-but even with $m_2=5 M_\odot$, a BH-NS binary is ``louder'' than a BNS system at the same distance. 
-%and as we showed in Sec.~\ref{sec:results}, low SNR is not going to be a problem with ET sensitivities out to $D \sim 1\,$Gpc.
+ As we set $M_\text{NS}=1.4 M_\odot$, $c_\text{NS}$ is determined by the radius of the NS constrained in the $9.9 - 11.2\,$km range \cite{Ozel:2016oaf}
+ which translates to $0.13\lesssim c_\text{NS} \lesssim 0.15$. We also have $Q  \simeq 3.571$.
+%As we wish to avoid discussing the details of the strong-field evolution of the binary, we borrow certain results from the literature to
+%justify our choice for the chosen parameters above. 
+If we pick the more pessimistic $c_\text{NS} = 0.15$ bound then we must have $Q\lesssim 5$ and $a\gtrsim 0.5$ (prograde) for TD to occur \cite{Ferrari:2008nr}.
+and $Q< 3$ in the case of $a=0$ \cite{Kyutoku:2011vz}.
+Although the results from each numerical study may somewhat vary what is clear is that we must have high spin and low black hole mass.
+This raises an interesting astrophysical question as to whether it is possible to have such light-weight high-spin black holes assuming that
+they are spun up by accretion from their secondary (that will later on become a NS) in binary systems, it will have to gain mass.
+It is possible that the mass gain pushes $Q$ too high to either cause a direct plunge of the NS before TD or decrease $\tau_\text{insp}$ considerably
+to eliminate any chances of getting an advance warning.
+However, if the spin of the BH comes from the supernova explosion mechanism itself (as argued for G1915 in Ref.~\cite{McClintock:2006xd} then this is not a problem. 
 
-The mass bound we set above is only fully consistent with spinning black holes. This can be seen by substituting the naive Schwarzschild $r_\text{ISCO}$ value 
-into Eq~.(\ref{eq:TD_cond1}) along with $c_R=1.7$ {\bf CITE} which yield $M_\text{BH} \lesssim 4.1 M_\odot$ violating the above BH mass bound.
+So we will simply assume that such lightweight, high-spin BHs exist in BH-NS binaries and compute strains and SNRs accordingly.
+A quick calculation using the above scaling of $\tau_\text{insp}$ shows that even the largest value for $T_\text{AW}$ in Table \ref{table:LIGO2020}
+is now less than $ 40\,$ seconds which is too little. Therefore, we simply focus on the capabilities of ET-C.
+
+
+The LIGO O1 merger rate for these systems is $ R < 3600\,$Gpc$^{-3}$yr$^{-1}$ \cite{Abbott:2016ymx}.
+%and that no TD occurs for $a=0$. This is roughly consistent with Fig.5 of Ref.~\cite{Hanna:2008um}
+%Choosing lower mass implies reduced SNR since $\rho \propto M_c^{5/3} \propto (1+Q)^{1/3}/Q$,
+%but even with $m_2=5 M_\odot$, a BH-NS binary is ``louder'' than a BNS system at the same distance. 
+%and as we showed in Sec.~\ref{sec:results}, low SNR is not going to be a problem with ET sensitivities out to $D \sim 1\,$Gpc.
+%
+%It is straightforward to show that this mass bound is only consistent with spinning black holes by substituting the naive Schwarzschild $r_\text{ISCO}$ value 
+%into Eq~.(\ref{eq:TD_cond1}) along with $c_R=1.7$ {\bf CITE} which yield $M_\text{BH} \lesssim 4.1 M_\odot$ violating the above BH mass bound.
 
 
 ISCO location from NR 
@@ -1346,23 +1366,9 @@ ISCO location from NR
 \ee
 
 
-
-We will set $M_\text{BH} =5 M_\odot$ cite(Morgan's email) $a=0.9$ cite,, $R_\text{NS} = 12\,$km
-For inspiral timescales it doesn't actually matter where the ISCO is as the time difference between a plunge at 6M vs. one at M is (compute).
-What matter is mass of the black hole, we will simply make the assmpution that there exist black holes with high spins at that mass scale.
-
-
- 
-
-Tidal disruption, minimum BH mass $5 M_\odot$. Tidal force $\sim M/r^3 \sim M^{-2}$ hence the smaller the BH the more TD there will be.
-Also need highly spinning BH to decreases the ISCO radius.
-
-Morgan: \\
-What I worry is whether the requirements of as low a mass as possible, and as high a spin as possible, can in fact be simultaneously satisfied. Assuming that the BH is spun up by accretion from the secondary in the binary (that will later on become a NS), it will have to gain mass. The question is then whether the mass gain is going to push up the value of Q so much that it kills any advance warning you might get.
-However, if the spin of the BH comes from the supernova explosion mechanism itself (as argued for G1915 in \cite{McClintock:2006xd} then this is not a problem.
  
  
- LIGO O1 merger rate  $ R < 3600\,$Gpc$^{-3}$yr$^{-1}$ \cite{Abbott:2016ymx}
+ 
  
 \bibliographystyle{apsrev4-1}
 %\bibliographystyle{plain}
