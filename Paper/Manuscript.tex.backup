@@ -1343,8 +1343,40 @@ This raises an interesting astrophysical question as to whether it is possible t
 they are spun up by accretion from their secondary (that will later on become a NS) in binary systems, it will have to gain mass.
 It is possible that the mass gain pushes $Q$ too high to either cause a direct plunge of the NS before TD or decrease $\tau_\text{insp}$ considerably
 to eliminate any chances of getting an advance warning.
-However, if the spin of the BH comes from the supernova explosion mechanism itself (as argued for G1915 in Ref.~\cite{McClintock:2006xd} then this is not a problem. So we will simply assume that such lightweight, high-spin BHs exist in BH-NS binaries and compute strains and SNRs accordingly.
-The LIGO O1 merger rate for these systems is $ R < 3600\,$Gpc$^{-3}$yr$^{-1}$ \cite{Abbott:2016ymx}.
+However, if the spin of the BH comes from the supernova explosion mechanism itself (as argued for G1915 in Ref.~\cite{McClintock:2006xd} then this is not a problem. 
+
+So we will simply assume that such lightweight, high-spin BHs exist in BH-NS binaries and compute strains and SNRs accordingly.
+A quick calculation shows that these systems yield $T_\text{AW} \lesssim 30\,$seconds in the ALV network of 2020s. %in Table \ref{table:LIGO2020}is now less than $ 40\,$ seconds. 
+Therefore, we simply focus on the capabilities of ET which we summarize in Table~\ref{table:ET_BH_NS} below.
+%
+%
+%
+\begin{table}[h]
+\centering
+\begin{tabular}{l|ccccc}
+%toprule
+\hline
+$D\,$(Mpc) & \multicolumn{2}{c}{ET-B} &  & \multicolumn{2}{c}{ET-C}\T\B\\
+\hline
+{}&  \ \hspace{6mm}$T_\text{AW}$ \hspace{8mm} & $\bar{\rho}_{F}$ &{}  & \hspace{6mm}$T_\text{AW}$ \hspace{8mm} & $\bar{\rho}_{F}$\T\B\\
+%midrule
+
+100 &   28.2 minutes & 503 &{\qquad} &  2.15 hours & 601\T\\
+200 & 8.2 minutes & 251  &{\qquad} & 1.1 hours & 300 \\
+400 &  2 minutes & 124 &{\qquad} & 34 minutes & 148\\
+1000 & 14.3 seconds & 49 &{\qquad} & 14 minutes& 58.5\\
+\hline
+%bottomrule
+\end{tabular}
+\caption{Same as Table~\ref{table:ET}, but now for a $5 M_\odot- 1.4 M_\odot$ black hole-neutron star binary.
+The SNR is even higher than before, however the advance warning times have decreased significantly.}\label{table:ET_BH_NS}
+\end{table}
+%
+%
+From the table, we can see that the horizon distance of ET-C for these binaries with $T_\text{AW}$ is roughly 200\,Mpc.
+Given the LIGO O1 merger rate for these systems is $ R < 3600\,$Gpc$^{-3}$yr$^{-1}$ \cite{Abbott:2016ymx},
+within ET-C's horizon distance, there could be 28.8 such events per year. We must emphasize that this should be viewed
+as an upper limit as we picked a rather low BH mass of $5 M_\odot$.
 %and that no TD occurs for $a=0$. This is roughly consistent with Fig.5 of Ref.~\cite{Hanna:2008um}
 %Choosing lower mass implies reduced SNR since $\rho \propto M_c^{5/3} \propto (1+Q)^{1/3}/Q$,
 %but even with $m_2=5 M_\odot$, a BH-NS binary is ``louder'' than a BNS system at the same distance. 
@@ -1378,47 +1410,12 @@ ISCO location from NR
 \end{document}
 
 
- 
-\begin{thebibliography}{}
-\bibitem{Regimbau:2012ir}
-\bibitem{KAGRA} \url{http://gwcenter.icrr.u-tokyo.ac.jp/en/}
-\bibitem{KAGRA2} Akutsu et al. see bibtex
-\bibitem{Patricelli:2016bkt}
-\bibitem{CE} https://arxiv.org/pdf/1607.08697.pdf
-\bibitem{Ozel_Freire} 1603.02698 [astro-ph.HE]
-\bibitem{Freire_et_al_2007} The Astrophysical Journal, Volume 675, Issue 1, article id. 670-682, pp. (2008)., arXiv:0711.0925.  
-\bibitem{GW170817}
-\bibitem{PM1963}
-\bibitem{Colpi_Sesana} 1610.05309 [astro-h.HE]
-\bibitem{Maggiore}
-\bibitem{Blanchet_LRR}
-\bibitem{FastestNSspin} J. W. T. Hessels, S. M. Ransom, I. H. Stairs, P. C. C. Freire,
-V. M. Kaspi, and F. Camilo, Science 311, 1901 (2006).
-\bibitem{SchutzLRR} Schutz, Satyaprakash, LRR
-\bibitem{GW170817_Facts} GW170817 Factsheet \url{https://www.ligo.org/detections/GW170817/images-GW170817/GW170817_Factsheet.pdf}.
-\bibitem{4PN_EoM_paper} L. Bernard et al., [gr-qc:1711.00283]
-\bibitem{Reid} J. Reid, the NS inspiral figure tidal corrections
-\bibitem{LIGO_L1_data} Data release for GW170817 \url{https://losc.ligo.org/events/GW170817/}
-\bibitem{LIGO_tutorial} LIGO Open Science Center signal processing tutorial at \url{https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html}
-\bibitem{LIGO2020} Advanced LIGO anticipated sensitivity curves at \url{https://dcc.ligo.org/LIGO-T0900288/public}
-\bibitem{Hild:2010id} S. Hild et al. Class.Quant.Grav. 28 (2011) 094013  arXiv:1012.0908 [gr-qc]  (see bixtex below)
-\bibitem{LSST} LSST
-\bibitem{GBM:2017lvd} ApJ paper
-\bibitem{Cutler:1994ys}
-\bibitem{Farr:2015lna}
-\bibitem{Rodriguez:2013oaa}
-\bibitem{Read:2009yp}
-\bibitem{Andersson:2009yt}
-\bibitem{PhysRevD.89.103012}
-\bibitem{PhysRevD.91.043002}
-\bibitem{Zhu:2017znf}
-\bibitem{Cannon:2011vi}
-\bibitem{Gabbard:2017lja}
-\bibitem{Sathyaprakash:2012jk}
-\bibitem{ET_doc}
-\bibitem{Sathyaprakash:2012jk}
-\bibitem{Wen:2005ui}
-\end{thebibliography}
- 
- 
+Table 6
+{}&  \ $T_\text{AW}$(sec) \ & $\bar{\rho}_{F}$ &{}  & \ $T_\text{AW}$(sec)\ & $\bar{\rho}_{F}$\T\B\\
+%midrule
+
+100 &   1691 & 503 &{\qquad} &  7834 & 601\T\\
+200 & 493 & 251  &{\qquad} & 3975 & 300 \\
+400 &  118 & 124 &{\qquad} & 2051 & 148\\
+1000 & 14.3 & 49 &{\qquad} & 833& 58.5\\
  
