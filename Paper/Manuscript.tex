@@ -124,25 +124,48 @@ Our main conclusions are: (i) we expect ALV network to forecast 1 to 3 GRBs in t
 
 
 \section{Introduction}\label{Sec:Intro}
-The 6.9 gravitational-wave merger events detected by the ALV network have firmly established gravitational-wave astronomy
-as observational astronomy. Though the first event of 14 September 2015 will always be the ``poster-child'' of this field,
-the icing on the cake was the 17 August 2017 event involving the inspiral and merger of a binary neutron star system with a concordant gamma-ray burst detected 1.4 seconds after the coalescence.
+The 6.95\footnote{There have thus far been six detections with $5\sigma$ statistical significance and one additional event, LVT151012 \cite{TheLIGOScientific:2016pea}, with $2\sigma \approx 90\%$ significance hence 6.95 overall.} 
+gravitational-wave merger events detected by the Advanced Ligo-Virgo network have firmly established gravitational-wave astronomy
+as an observational science \cite{TheLIGOScientific:2016pea, Abbott:2017gyy, Abbott:2017oio, Abbott:2017vtc, GW170817}. 
+Though the first event of 14 September 2015 (GW150914 \cite{GW150914}) will always be the ``poster-child'' of this field,
+the icing on the cake was the 17 August 2017 (GW170817 \cite{GW170817}) event involving the inspiral and merger of a binary neutron star system with a prompt gamma-ray burst (GRB170817A) detected 1.7 seconds after the coalescence by the Fermi Gamma-ray Burst Monitor {\bf cite} and by the International Gamma-Ray Astrophysics Laboratory {\bf cite}. 
+The ALV network's initial source localization to within $\sim 31\,\text{degree}^2$ in the Southern skies
+enabled astronomers to locate the electromagnetic counterpart in the galaxy NGC 4993 less than 11 hours after the merger, 
+first picked up by the One-Meter, Two Hemisphere team {\bf cite}.
+This subsequently launched the largest-ever campaign of multi-messenger astronomy across the entire electromagnetic (EM) spectrum still ongoing
+more than half a year after the initial GRB \cite{GBM:2017lvd}. 
+
+GW170817 was initially identified by the LIGO-Hanford interferometer (H1) 
+using a template bank of gravitational waveforms computed within the framework of post-Newtonian theory \cite{Buonanno:2009zt, Blanchet_LRR}.
+The inspiral swept across the Advanced Ligo-Virgo (ALV) network's bandwidth from $\sim 30\,$Hz to $\sim 2\,$kHz in 57 seconds
+executing $\sim 3000$ GW cycles and accumulating a network signal-to-noise ratio of 32.4 with a false-alarm rate of one per $8.0\times 10^4$ years \cite{GW170817}. 
+The total mass of the system was inferred to be $2.74^{+0.04}_{-0.01} M_\odot$ with component masses in the range $1.17-1.60 M_\odot$ consistent
+with neutron stars.
+Moreover, both the GW and EM observations are consistent with a source luminosity distance of $\sim 40\,$Mpc
+and support the hypothesis that GW170817 resulted from the inspiral and merger of two neutron stars, 
+which was promptly followed by a short-hard gamma-ray burst (GRB170817A) in NGC4993. 
+
+One week after GW170817, the ALV network was taken offline for upgrades for the third observation run (O3) 
+scheduled to start in Autumn 2018 with roughly twice the sensitivity of O2.
+In addition, the Japanese cryogenic interferometer KAGRA (\cite{KAGRA, KAGRA2}) will start its test runs in 2018-2019 and reach design sensitivity circa 2021-2022 \cite{Akutsu:2017thy, Aasi:2013wya}. By 2025, LIGO-India detector will join the global IFO network hence improving both the overall sensitivity and the sky-localization capabilities \cite{Aasi:2013wya}.
+Around this time, the construction of the first third-generation ground-based IFO, Einstein Telescope, will begin in Europe \cite{ET_doc}. 
+The US is currently considering a mid-2020s update called LIGO-Voyager \cite{LIGO_Voy} and a more ambitious 40\,km long IFO dubbed The Cosmic Explorer \cite{CE}.
+All of these near-future improvements to the GW-detector network beg a simple question: can we detect the inspiral of a binary neutron star system
+early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using the GW detections?
 
 
-We reserve the symbol $f$ to denote the GW frequency of the dominant quadrupole mode, which is twice the orbital frequency $f_K$. 
-Relatedly, we define the following angular frequencies: $\omega = 2\pi f, \Omega=2\pi f_K$ with $\omega=2\Omega$.
-We employ the $\simeq$ symbol for quantities which we can compute exactly, but list finite digits and $\approx$ for quantities whose values we know approximately.
-Overdots denote time derivative with respect to detector time, e.g., $\dot{E} =dE/dt$.
-
-Mention {\bf KAGRA} \cite{KAGRA, KAGRA2}, starts 2018-2019, design at 2021-2022, 152Mpc range (K. Somiya, ET meeting at Birmingham, 2017)
-
-Cosmic Explorer \cite{CE}, LIGO India, Australia China(?)
+KAGRA 152Mpc range (K. Somiya, ET meeting at Birmingham, 2017)
 
 Cite the BNS Living review many times \cite{Faber:2012rw}.
 
 Ref.~\cite{Cannon:2011vi} already attemps some forecast, but they focus on the search algorithm side of things
 
 We also disreagrd the fact that GRBs are collimated and will most often not point toward the Earth. Ref.~\cite{Patricelli:2016bkt} looks at this? (CHECK)
+
+We reserve the symbol $f$ to denote the GW frequency of the dominant quadrupole mode, which is twice the orbital frequency $f_K$. 
+Relatedly, we define the following angular frequencies: $\omega = 2\pi f, \Omega=2\pi f_K$ with $\omega=2\Omega$.
+We employ the $\simeq$ symbol for quantities which we can compute exactly, but list finite digits and $\approx$ for quantities whose values we know approximately.
+Overdots denote time derivative with respect to detector time, e.g., $\dot{E} =dE/dt$.
 
 \section{Binary systems composed of neutron stars}\label{sec:BNS_inspiral}
 \subsection{Newtonian evolution of BNS}
@@ -1291,7 +1314,6 @@ obtained by rescaling the rate inferred from GW170817 \cite{GW170817}. $\bar\rho
 ca. 2030. The light coloured (gray) data shows $T_\text{AW}$ for the ALV network (dotted), ET-B (dashed), and ET-C (solid), respectively.
 The connecting light (gray) lines are drawn only for visualization purposes unlike the dark (brown) lines coming from the $D^{-2}$ powerlaw in the SNR [see Eq.~(\ref{eq:ET_SNRsq}] which is plotted on the right axis. 
 We used $D=50,100,200\,$Mpc to obtain the ALV results (Sec.~\ref{Sec:ALIGO2020}) and $D\ge 100\,$Mpc for the ET results.}\label{fig:summary}
-\label{fig:summary}
 \end{figure}
 
 

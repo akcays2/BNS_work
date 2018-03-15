@@ -11,17 +11,19 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: ManuscriptNotes.bib
 Database file #2: references.bib
+Warning--entry type for "LIGO_Voy" isn't style-file defined
+--line 1 of file references.bib
 Warning--entry type for "LIGO_L1_data" isn't style-file defined
---line 270 of file references.bib
+--line 432 of file references.bib
 Warning--entry type for "LIGO_tutorial" isn't style-file defined
---line 275 of file references.bib
+--line 437 of file references.bib
 Warning--entry type for "LIGO2020" isn't style-file defined
---line 281 of file references.bib
+--line 443 of file references.bib
 Warning--entry type for "GW170817_Facts" isn't style-file defined
---line 286 of file references.bib
+--line 448 of file references.bib
 Warning--entry type for "KAGRA" isn't style-file defined
---line 292 of file references.bib
-Repeated entry---line 506 of file references.bib
+--line 454 of file references.bib
+Repeated entry---line 668 of file references.bib
  : @article{Sathyaprakash:2012jk
  :                              ,
 I'm skipping whatever remains of this entry
@@ -36,6 +38,7 @@ Control: year (1) truncated
 Control: production of eprint (0) enabled
 Warning--empty year in KAGRA
 Warning--missing journal in KAGRA2
+Warning--missing journal in Aasi:2013wya
 Warning--missing publisher in Colpi_Sesana
 Warning--missing journal in Phinney:2001di
 Warning--empty year in GW170817_Facts
@@ -46,45 +49,45 @@ Warning--missing journal in Gabbard:2017lja
 Warning--missing journal in Mills:2017urp
 Warning--missing journal in Raithel:2017nlc
 Warning--missing journal in Wiktorowicz:2013dua
-You've used 49 entries,
+You've used 59 entries,
             5847 wiz_defined-function locations,
-            2006 strings with 25894 characters,
-and the built_in function-call counts, 47796 in all, are:
-= -- 3083
-> -- 1203
-< -- 289
-+ -- 392
-- -- 288
-* -- 7758
-:= -- 4684
-add.period$ -- 54
-call.type$ -- 49
-change.case$ -- 203
-chr.to.int$ -- 45
-cite$ -- 71
-duplicate$ -- 4510
-empty$ -- 3581
-format.name$ -- 731
-if$ -- 9367
-int.to.chr$ -- 5
-int.to.str$ -- 57
-missing$ -- 535
-newline$ -- 238
-num.names$ -- 133
-pop$ -- 1819
+            2082 strings with 28860 characters,
+and the built_in function-call counts, 56980 in all, are:
+= -- 3736
+> -- 1386
+< -- 336
++ -- 462
+- -- 330
+* -- 9226
+:= -- 5606
+add.period$ -- 65
+call.type$ -- 59
+change.case$ -- 245
+chr.to.int$ -- 47
+cite$ -- 84
+duplicate$ -- 5385
+empty$ -- 4294
+format.name$ -- 850
+if$ -- 11176
+int.to.chr$ -- 13
+int.to.str$ -- 67
+missing$ -- 639
+newline$ -- 277
+num.names$ -- 160
+pop$ -- 2139
 preamble$ -- 1
-purify$ -- 240
+purify$ -- 289
 quote$ -- 0
-skip$ -- 1637
+skip$ -- 1956
 stack$ -- 0
-substring$ -- 1079
-swap$ -- 4283
-text.length$ -- 136
+substring$ -- 1328
+swap$ -- 5098
+text.length$ -- 149
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 683
-warning$ -- 12
-while$ -- 123
+type$ -- 814
+warning$ -- 13
+while$ -- 148
 width$ -- 0
-write$ -- 499
+write$ -- 594
 (There was 1 error message)

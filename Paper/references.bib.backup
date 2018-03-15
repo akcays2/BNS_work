@@ -1,3 +1,73 @@
+@article{GW150914,
+      author         = "Abbott, B. P. and others",
+      title          = "{Observation of Gravitational Waves from a Binary Black
+                        Hole Merger}",
+      collaboration  = "Virgo, LIGO Scientific",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "116",
+      year           = "2016",
+      number         = "6",
+      pages          = "061102",
+      doi            = "10.1103/PhysRevLett.116.061102",
+      eprint         = "1602.03837",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      reportNumber   = "LIGO-P150914",
+      SLACcitation   = "%%CITATION = ARXIV:1602.03837;%%"
+}
+
+@article{Monitor:2017mdv,
+      author         = "Abbott, B. P. and others",
+      title          = "{Gravitational Waves and Gamma-rays from a Binary Neutron
+                        Star Merger: GW170817 and GRB 170817A}",
+      collaboration  = "Virgo, Fermi-GBM, INTEGRAL, LIGO Scientific",
+      journal        = "Astrophys. J.",
+      volume         = "848",
+      year           = "2017",
+      number         = "2",
+      pages          = "L13",
+      doi            = "10.3847/2041-8213/aa920c",
+      eprint         = "1710.05834",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      reportNumber   = "LIGO-P1700308",
+      SLACcitation   = "%%CITATION = ARXIV:1710.05834;%%"
+}
+
+@article{Kyutoku:2011vz,
+      author         = "Kyutoku, Koutarou and Okawa, Hirotada and Shibata, Masaru
+                        and Taniguchi, Keisuke",
+      title          = "{Gravitational waves from spinning black hole-neutron
+                        star binaries: dependence on black hole spins and on
+                        neutron star equations of state}",
+      journal        = "Phys. Rev.",
+      volume         = "D84",
+      year           = "2011",
+      pages          = "064018",
+      doi            = "10.1103/PhysRevD.84.064018",
+      eprint         = "1108.1189",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      SLACcitation   = "%%CITATION = ARXIV:1108.1189;%%"
+}
+
+@article{Hanna:2008um,
+      author         = "Hanna, Chad and Megevand, Miguel and Ochsner, Evan and
+                        Palenzuela, Carlos",
+      title          = "{A method for estimating time-frequency characteristics
+                        of compact binary mergers to improve searches for
+                        inspiral, merger and ring-down phases separately}",
+      journal        = "Class. Quant. Grav.",
+      volume         = "26",
+      year           = "2009",
+      pages          = "015009",
+      doi            = "10.1088/0264-9381/26/1/015009",
+      eprint         = "0801.4297",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:0801.4297;%%"
+}
+
 @article{Ferrari:2008nr,
       author         = "Ferrari, V. and Gualtieri, L. and Pannarale, F.",
       title          = "{A Semi-relativistic Model for Tidal Interactions in

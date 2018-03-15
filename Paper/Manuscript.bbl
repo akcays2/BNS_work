@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{49}%
+\begin{thebibliography}{59}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,27 +50,181 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont {Abbott}\ \emph
+  {et~al.}(2016{\natexlab{a}})\citenamefont {Abbott} \emph
+  {et~al.}}]{TheLIGOScientific:2016pea}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {Virgo, LIGO
+  Scientific}),\ }\href {\doibase 10.1103/PhysRevX.6.041015} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
+  {X6}},\ \bibinfo {pages} {041015} (\bibinfo {year} {2016}{\natexlab{a}})},\
+  \Eprint {http://arxiv.org/abs/1606.04856} {arXiv:1606.04856 [gr-qc]}
+  \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1606.04856;%%
+\bibitem [{\citenamefont {Abbott}\ \emph
+  {et~al.}(2017{\natexlab{a}})\citenamefont {Abbott} \emph
+  {et~al.}}]{Abbott:2017gyy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {Virgo, LIGO
+  Scientific}),\ }\href {\doibase 10.3847/2041-8213/aa9f0c} {\bibfield
+  {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf {\bibinfo {volume}
+  {851}},\ \bibinfo {pages} {L35} (\bibinfo {year} {2017}{\natexlab{a}})},\
+  \Eprint {http://arxiv.org/abs/1711.05578} {arXiv:1711.05578 [astro-ph.HE]}
+  \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1711.05578;%%
+\bibitem [{\citenamefont {Abbott}\ \emph
+  {et~al.}(2017{\natexlab{b}})\citenamefont {Abbott} \emph
+  {et~al.}}]{Abbott:2017oio}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {Virgo, LIGO
+  Scientific}),\ }\href {\doibase 10.1103/PhysRevLett.119.141101} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {119}},\ \bibinfo {pages} {141101} (\bibinfo {year}
+  {2017}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1709.09660}
+  {arXiv:1709.09660 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1709.09660;%%
+\bibitem [{\citenamefont {Abbott}\ \emph
+  {et~al.}(2017{\natexlab{c}})\citenamefont {Abbott} \emph
+  {et~al.}}]{Abbott:2017vtc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {VIRGO, LIGO
+  Scientific}),\ }\href {\doibase 10.1103/PhysRevLett.118.221101} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {118}},\ \bibinfo {pages} {221101} (\bibinfo {year}
+  {2017}{\natexlab{c}})},\ \Eprint {http://arxiv.org/abs/1706.01812}
+  {arXiv:1706.01812 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1706.01812;%%
+\bibitem [{\citenamefont {Abbott}\ \emph
+  {et~al.}(2017{\natexlab{d}})\citenamefont {Abbott} \emph
+  {et~al.}}]{GW170817}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {Virgo, LIGO
+  Scientific}),\ }\href {\doibase 10.1103/PhysRevLett.119.161101} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {119}},\ \bibinfo {pages} {161101} (\bibinfo {year}
+  {2017}{\natexlab{d}})},\ \Eprint {http://arxiv.org/abs/1710.05832}
+  {arXiv:1710.05832 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1710.05832;%%
+\bibitem [{\citenamefont {Abbott}\ \emph
+  {et~al.}(2016{\natexlab{b}})\citenamefont {Abbott} \emph
+  {et~al.}}]{GW150914}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {Virgo, LIGO
+  Scientific}),\ }\href {\doibase 10.1103/PhysRevLett.116.061102} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {116}},\ \bibinfo {pages} {061102} (\bibinfo {year}
+  {2016}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1602.03837}
+  {arXiv:1602.03837 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1602.03837;%%
+\bibitem [{\citenamefont {Abbott}\ \emph
+  {et~al.}(2017{\natexlab{e}})\citenamefont {Abbott} \emph
+  {et~al.}}]{GBM:2017lvd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {GROND, SALT Group,
+  OzGrav, DFN, INTEGRAL, Virgo, Insight-Hxmt, MAXI Team, Fermi-LAT, J-GEM,
+  RATIR, IceCube, CAASTRO, LWA, ePESSTO, GRAWITA, RIMAS, SKA South
+  Africa/MeerKAT, H.E.S.S., 1M2H Team, IKI-GW Follow-up, Fermi GBM, Pi of Sky,
+  DWF (Deeper Wider Faster Program), Dark Energy Survey, MASTER, AstroSat
+  Cadmium Zinc Telluride Imager Team, Swift, Pierre Auger, ASKAP, VINROUGE,
+  JAGWAR, Chandra Team at McGill University, TTU-NRAO, GROWTH, AGILE Team, MWA,
+  ATCA, AST3, TOROS, Pan-STARRS, NuSTAR, ATLAS Telescopes, BOOTES, CaltechNRAO,
+  LIGO Scientific, High Time Resolution Universe Survey, Nordic Optical
+  Telescope, Las Cumbres Observatory Group, TZAC Consortium, LOFAR, IPN, DLT40,
+  Texas Tech University, HAWC, ANTARES, KU, Dark Energy Camera GW-EM, CALET,
+  Euro VLBI Team, ALMA}),\ }\href {\doibase 10.3847/2041-8213/aa91c9}
+  {\bibfield  {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf
+  {\bibinfo {volume} {848}},\ \bibinfo {pages} {L12} (\bibinfo {year}
+  {2017}{\natexlab{e}})},\ \Eprint {http://arxiv.org/abs/1710.05833}
+  {arXiv:1710.05833 [astro-ph.HE]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1710.05833;%%
+\bibitem [{\citenamefont {Buonanno}\ \emph {et~al.}(2009)\citenamefont
+  {Buonanno}, \citenamefont {Iyer}, \citenamefont {Ochsner}, \citenamefont
+  {Pan},\ and\ \citenamefont {Sathyaprakash}}]{Buonanno:2009zt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Buonanno}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Iyer}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Ochsner}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Pan}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {B.~S.}\ \bibnamefont {Sathyaprakash}},\ }\href {\doibase
+  10.1103/PhysRevD.80.084043} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev.}\ }\textbf {\bibinfo {volume} {D80}},\ \bibinfo {pages} {084043}
+  (\bibinfo {year} {2009})},\ \Eprint {http://arxiv.org/abs/0907.0700}
+  {arXiv:0907.0700 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:0907.0700;%%
+\bibitem [{\citenamefont {Blanchet}(2014)}]{Blanchet_LRR}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Blanchet}},\ }\href {\doibase 10.12942/lrr-2014-2} {\bibfield  {journal}
+  {\bibinfo  {journal} {Living Rev. Rel.}\ }\textbf {\bibinfo {volume} {17}},\
+  \bibinfo {pages} {2} (\bibinfo {year} {2014})},\ \Eprint
+  {http://arxiv.org/abs/1310.1528} {arXiv:1310.1528 [gr-qc]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1310.1528;%%
 \bibitem [{KAG()}]{KAGRA}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{KAGRA website}},}\ }\bibinfo
   {howpublished} {\url{http://gwcenter.icrr.u-tokyo.ac.jp/en/}}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Akutsu}\ \emph {et~al.}(2017)\citenamefont {Akutsu}
-  \emph {et~al.}}]{KAGRA2}%
+\bibitem [{\citenamefont {Akutsu}\ \emph
+  {et~al.}(2017{\natexlab{a}})\citenamefont {Akutsu} \emph {et~al.}}]{KAGRA2}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
   {Akutsu}} \emph {et~al.} (\bibinfo {collaboration} {KAGRA}),\ }\href@noop {}
-  {\  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1712.00148}
-  {arXiv:1712.00148 [gr-qc]} \BibitemShut {NoStop}%
+  {\  (\bibinfo {year} {2017}{\natexlab{a}})},\ \Eprint
+  {http://arxiv.org/abs/1712.00148} {arXiv:1712.00148 [gr-qc]} \BibitemShut
+  {NoStop}%
 %%CITATION = ARXIV:1712.00148;%%
+\bibitem [{\citenamefont {Akutsu}\ \emph
+  {et~al.}(2017{\natexlab{b}})\citenamefont {Akutsu} \emph
+  {et~al.}}]{Akutsu:2017thy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Akutsu}} \emph {et~al.} (\bibinfo {collaboration} {KAGRA}),\ }in\ \href
+  {https://inspirehep.net/record/1630606/files/arXiv:1710.04823.pdf} {\emph
+  {\bibinfo {booktitle} {{15th International Conference on Topics in
+  Astroparticle and Underground Physics (TAUP 2017) Sudbury, Ontario, Canada,
+  July 24-28, 2017}}}}\ (\bibinfo {year} {2017})\ \Eprint
+  {http://arxiv.org/abs/1710.04823} {arXiv:1710.04823 [gr-qc]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1710.04823;%%
+\bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2013)\citenamefont {Abbott}
+  \emph {et~al.}}]{Aasi:2013wya}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {VIRGO, LIGO
+  Scientific}),\ }\href {\doibase 10.1007/lrr-2016-1} {\  (\bibinfo {year}
+  {2013}),\ 10.1007/lrr-2016-1},\ \bibinfo {note} {[Living Rev.
+  Rel.19,1(2016)]},\ \Eprint {http://arxiv.org/abs/1304.0670} {arXiv:1304.0670
+  [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1304.0670;%%
+\bibitem [{\citenamefont {et~al.}(2011)}]{ET_doc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {et~al.}},\ }\href@noop {} {\emph {\bibinfo {title} {{Einstein gravitational
+  wave Telescope Conceptual Design Study}}}},\ \bibinfo {type} {Tech. Rep.}\
+  (\bibinfo  {institution} {European Commission},\ \bibinfo {year}
+  {2011})\BibitemShut {NoStop}%
+\bibitem [{LIG({\natexlab{a}})}]{LIGO_Voy}%
+  \BibitemOpen
+  \href@noop {} {\enquote {\bibinfo {title} {{What Comes Next for LIGO? 2016
+  LIGO-DAWN Workshop II}},}\ }\bibinfo {howpublished}
+  {\url{https://wiki.ligo.org/pub/LSC/LIGOworkshop2016/WebHome/Dawn-II-Report-SecondDraft-v2.pdf}}
+  ({\natexlab{a}})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Abbott}\ \emph
-  {et~al.}(2017{\natexlab{a}})\citenamefont {Abbott} \emph {et~al.}}]{CE}%
+  {et~al.}(2017{\natexlab{f}})\citenamefont {Abbott} \emph {et~al.}}]{CE}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
   {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {LIGO Scientific}),\
   }\href {\doibase 10.1088/1361-6382/aa51f4} {\bibfield  {journal} {\bibinfo
   {journal} {Class. Quant. Grav.}\ }\textbf {\bibinfo {volume} {34}},\ \bibinfo
-  {pages} {044001} (\bibinfo {year} {2017}{\natexlab{a}})},\ \Eprint
+  {pages} {044001} (\bibinfo {year} {2017}{\natexlab{f}})},\ \Eprint
   {http://arxiv.org/abs/1607.08697} {arXiv:1607.08697 [astro-ph.IM]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1607.08697;%%
@@ -112,27 +266,6 @@
   (\bibinfo {year} {2016})},\ \Eprint {http://arxiv.org/abs/1606.06124}
   {arXiv:1606.06124 [astro-ph.HE]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1606.06124;%%
-\bibitem [{\citenamefont {Blanchet}(2014)}]{Blanchet_LRR}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Blanchet}},\ }\href {\doibase 10.12942/lrr-2014-2} {\bibfield  {journal}
-  {\bibinfo  {journal} {Living Rev. Rel.}\ }\textbf {\bibinfo {volume} {17}},\
-  \bibinfo {pages} {2} (\bibinfo {year} {2014})},\ \Eprint
-  {http://arxiv.org/abs/1310.1528} {arXiv:1310.1528 [gr-qc]} \BibitemShut
-  {NoStop}%
-%%CITATION = ARXIV:1310.1528;%%
-\bibitem [{\citenamefont {Abbott}\ \emph
-  {et~al.}(2017{\natexlab{b}})\citenamefont {Abbott} \emph
-  {et~al.}}]{GW170817}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
-  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {Virgo, LIGO
-  Scientific}),\ }\href {\doibase 10.1103/PhysRevLett.119.161101} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
-  {volume} {119}},\ \bibinfo {pages} {161101} (\bibinfo {year}
-  {2017}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1710.05832}
-  {arXiv:1710.05832 [gr-qc]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1710.05832;%%
 \bibitem [{\citenamefont {Sathyaprakash}\ and\ \citenamefont
   {Schutz}(2009)}]{SchutzLRR}%
   \BibitemOpen
@@ -151,13 +284,6 @@
   {\bibinfo {title} {Gravitational Waves: Volume 1: Theory and Experiments}}},\
   Gravitational Waves\ (\bibinfo  {publisher} {OUP Oxford},\ \bibinfo {year}
   {2008})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {et~al.}(2011)}]{ET_doc}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
-  {et~al.}},\ }\href@noop {} {\emph {\bibinfo {title} {{Einstein gravitational
-  wave Telescope Conceptual Design Study}}}},\ \bibinfo {type} {Tech. Rep.}\
-  (\bibinfo  {institution} {European Commission},\ \bibinfo {year}
-  {2011})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sathyaprakash}\ \emph {et~al.}(2012)\citenamefont
   {Sathyaprakash} \emph {et~al.}}]{Sathyaprakash:2012jk}%
   \BibitemOpen
@@ -301,17 +427,17 @@
   (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1711.00283}
   {arXiv:1711.00283 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1711.00283;%%
-\bibitem [{LIG({\natexlab{a}})}]{LIGO_L1_data}%
+\bibitem [{LIG({\natexlab{b}})}]{LIGO_L1_data}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{Data release for GW170817}},}\
   }\bibinfo {howpublished} {\url{https://losc.ligo.org/events/GW170817/}}
-  ({\natexlab{a}})\BibitemShut {NoStop}%
-\bibitem [{LIG({\natexlab{b}})}]{LIGO_tutorial}%
+  ({\natexlab{b}})\BibitemShut {NoStop}%
+\bibitem [{LIG({\natexlab{c}})}]{LIGO_tutorial}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{LIGO Open Science Center signal
   processing tutorial}},}\ }\bibinfo {howpublished}
   {\url{https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html}}
-  ({\natexlab{b}})\BibitemShut {NoStop}%
+  ({\natexlab{c}})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Read}\ \emph {et~al.}(2009)\citenamefont {Read},
   \citenamefont {Markakis}, \citenamefont {Shibata}, \citenamefont {Uryu},
   \citenamefont {Creighton},\ and\ \citenamefont {Friedman}}]{Read:2009yp}%
@@ -327,12 +453,12 @@
   (\bibinfo {year} {2009})},\ \Eprint {http://arxiv.org/abs/0901.3258}
   {arXiv:0901.3258 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:0901.3258;%%
-\bibitem [{LIG({\natexlab{c}})}]{LIGO2020}%
+\bibitem [{LIG({\natexlab{d}})}]{LIGO2020}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{Advanced LIGO anticipated
   sensitivity curves}},}\ }\bibinfo {howpublished}
   {\url{https://dcc.ligo.org/LIGO-T0900288/public}}
-  ({\natexlab{c}})\BibitemShut {NoStop}%
+  ({\natexlab{d}})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Cutler}\ and\ \citenamefont
   {Flanagan}(1994)}]{Cutler:1994ys}%
   \BibitemOpen
@@ -587,15 +713,16 @@
   {2006})},\ \Eprint {http://arxiv.org/abs/astro-ph/0606076}
   {arXiv:astro-ph/0606076 [astro-ph]} \BibitemShut {NoStop}%
 %%CITATION = ASTRO-PH/0606076;%%
-\bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2016)\citenamefont {Abbott}
-  \emph {et~al.}}]{Abbott:2016ymx}%
+\bibitem [{\citenamefont {Abbott}\ \emph
+  {et~al.}(2016{\natexlab{c}})\citenamefont {Abbott} \emph
+  {et~al.}}]{Abbott:2016ymx}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
   {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {Virgo, LIGO
   Scientific}),\ }\href {\doibase 10.3847/2041-8205/832/2/L21} {\bibfield
   {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf {\bibinfo {volume}
-  {832}},\ \bibinfo {pages} {L21} (\bibinfo {year} {2016})},\ \Eprint
-  {http://arxiv.org/abs/1607.07456} {arXiv:1607.07456 [astro-ph.HE]}
+  {832}},\ \bibinfo {pages} {L21} (\bibinfo {year} {2016}{\natexlab{c}})},\
+  \Eprint {http://arxiv.org/abs/1607.07456} {arXiv:1607.07456 [astro-ph.HE]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1607.07456;%%
 \end{thebibliography}%
