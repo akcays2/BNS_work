@@ -128,7 +128,7 @@ The 6.95\footnote{There have thus far been six detections with $5\sigma$ statist
 gravitational-wave merger events detected by the Advanced Ligo-Virgo network have firmly established gravitational-wave astronomy
 as an observational science \cite{TheLIGOScientific:2016pea, Abbott:2017gyy, Abbott:2017oio, Abbott:2017vtc, GW170817}. 
 Though the first event of 14 September 2015 (GW150914 \cite{GW150914}) will always be the ``poster-child'' of this field,
-the icing on the cake was the 17 August 2017 (GW170817 \cite{GW170817}) event involving the inspiral and merger of a binary neutron star system with a prompt gamma-ray burst (GRB170817A) detected 1.7 seconds after the coalescence by the Fermi Gamma-ray Burst Monitor {\bf cite} and by the International Gamma-Ray Astrophysics Laboratory {\bf cite}. 
+the icing on the cake was the 17 August 2017 (GW170817 \cite{GW170817}) event involving the inspiral and merger of a binary neutron star system with a prompt gamma-ray burst (GRB170817A) detected 1.7 seconds after the coalescence by the Fermi Gamma-ray Burst Monitor \cite{Fermi}{\bf FIX ME} and by the International Gamma-Ray Astrophysics Laboratory {\bf cite}. 
 The ALV network's initial source localization to within $\sim 31\,\text{degree}^2$ in the Southern skies
 enabled astronomers to locate the electromagnetic counterpart in the galaxy NGC 4993 less than 11 hours after the merger, 
 first picked up by the One-Meter, Two Hemisphere team {\bf cite}.
@@ -143,7 +143,7 @@ The total mass of the system was inferred to be $2.74^{+0.04}_{-0.01} M_\odot$ w
 with neutron stars.
 Moreover, both the GW and EM observations are consistent with a source luminosity distance of $\sim 40\,$Mpc
 and support the hypothesis that GW170817 resulted from the inspiral and merger of two neutron stars, 
-which was promptly followed by a short-hard gamma-ray burst (GRB170817A) in NGC4993. 
+which then caused the prompt short-hard gamma-ray burst (GRB170817A) in NGC4993 as first suggested by Ref.~\cite{Eichler:1989ve}. 
 
 One week after GW170817, the ALV network was taken offline for upgrades for the third observation run (O3) 
 scheduled to start in Autumn 2018 with roughly twice the sensitivity of O2.
@@ -151,16 +151,31 @@ In addition, the Japanese cryogenic interferometer KAGRA (\cite{KAGRA, KAGRA2}) 
 Around this time, the construction of the first third-generation ground-based IFO, Einstein Telescope, will begin in Europe \cite{ET_doc}. 
 The US is currently considering a mid-2020s update called LIGO-Voyager \cite{LIGO_Voy} and a more ambitious 40\,km long IFO dubbed The Cosmic Explorer \cite{CE}.
 All of these near-future improvements to the GW-detector network beg a simple question: can we detect the inspiral of a binary neutron star system
-early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using the GW detections?
+early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using GW detections?
+
+The short answer is in the affirmative. The long answer is still affirmative, but depends on many factors such as source distance and sky position, detector sensitivity and orientation. One also needs to account for the fact that GRBs are thought to be collimated emissions with narrow outburst angles \cite{Kumar:2014upa}.
+As such, most GRBs that occur in the universe are electromagnetically undetectable. Fortunately, this was not the case with GRB170817A, 
+but even for a reasonable GRB jet opening angle of $\sim 10^\circ$, we expect to observe $\sim 10\%$ of neutron star mergers as GRBs \cite{Patricelli:2016bkt}. 
+However, it is possible that some of the near-Earth pointing short hard GRBs may be observed as long-duration GRBs or X-ray flashes thus increasing this percentage \cite{Bucciantini:2011kx}.
+
+Given the sensitivities of IFOs to date, efforts have thus far mostly focused on reducing the latency of EM follow-ups, 
+i.e., the lag time between the merger and the alerting of the EM observatories. 
+LIGO-Virgo science runs in 2009-2010 yielded a latency of $\sim 30\,$minutes \cite{Abbott:2011ys} (no detections).
+In the case of GW170817, the latency was 40\,minutes and $36^{+1.7}\,$seconds \cite{GBM:2017lvd} 
+with an additional $\sim 10$ hours to locate the optical transient now designated as AT 2017gfo.
+
+Here, we turn this around and focus instead on how much advance warning times near-future ground-based GW detectors can provide us.
+Ref.~\cite{Cannon:2011vi} took up this challenge algorithmically and focused on developing inexpensive methods to detect inspiral
+signals in GW data to provide early-warning triggers \emph{before} the merger.
 
 
-KAGRA 152Mpc range (K. Somiya, ET meeting at Birmingham, 2017)
+%KAGRA 152Mpc range (K. Somiya, ET meeting at Birmingham, 2017)
 
 Cite the BNS Living review many times \cite{Faber:2012rw}.
 
-Ref.~\cite{Cannon:2011vi} already attemps some forecast, but they focus on the search algorithm side of things
+ already attemps some forecast, but they focus on the search algorithm side of things
 
-We also disreagrd the fact that GRBs are collimated and will most often not point toward the Earth. Ref.~\cite{Patricelli:2016bkt} looks at this? (CHECK)
+
 
 We reserve the symbol $f$ to denote the GW frequency of the dominant quadrupole mode, which is twice the orbital frequency $f_K$. 
 Relatedly, we define the following angular frequencies: $\omega = 2\pi f, \Omega=2\pi f_K$ with $\omega=2\Omega$.

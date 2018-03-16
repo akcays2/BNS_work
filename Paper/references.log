@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  15 MAR 2018 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  16 MAR 2018 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -14,7 +14,448 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.1 @
-     online{LIGO_Voy,
+     misc{Fermi,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--7
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 @
+     article{Eichler:1989ve,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--21
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 @
+      online{LIGO_Voy,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -32,18 +473,18 @@ Missing character: There is no O in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1 @online{LIGO_
-                 Voy,
+l.22 @online{LIGO_
+                  Voy,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 1.
+(Font)              <7> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1.
+(Font)              <5> on input line 22.
 ! Undefined control sequence.
-l.3   howpublished = {\url
-                          {https://wiki.ligo.org/pub/LSC/LIGOworkshop2016/We...
+l.24   howpublished = {\url
+                           {https://wiki.ligo.org/pub/LSC/LIGOworkshop2016/W...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -51,8 +492,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.4 }
-     
+l.25 }
+      
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -62,23 +503,23 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.5 
-    
+l.26 
+     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (70.55742pt too wide) in paragraph at lines 1--5
+Overfull \hbox (70.55742pt too wide) in paragraph at lines 22--26
 []$[]\OML/cmm/m/it/10 oy; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (365.20987pt too wide) in paragraph at lines 1--5
+Overfull \hbox (365.20987pt too wide) in paragraph at lines 22--26
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (501.41678pt too wide) in paragraph at lines 1--5
+Overfull \hbox (501.41678pt too wide) in paragraph at lines 22--26
 []$ 
  []
 
@@ -89,8 +530,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 @
-     article{Abbott:2017gyy,
+l.28 @
+      article{Abbott:2017gyy,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -483,7 +924,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 7--24
+Overfull \hbox (20.0pt too wide) in paragraph at lines 28--45
 []
  []
 
@@ -494,7 +935,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 @
+l.46 @
       article{Abbott:2017oio,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -876,7 +1317,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 25--41
+Overfull \hbox (20.0pt too wide) in paragraph at lines 46--62
 []
  []
 
@@ -887,7 +1328,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 @
+l.63 @
       article{Abbott:2017vtc,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1292,7 +1733,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 42--59
+Overfull \hbox (20.0pt too wide) in paragraph at lines 63--80
 []
  []
 
@@ -1303,7 +1744,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 @
+l.81 @
       article{TheLIGOScientific:2016pea,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1683,7 +2124,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 60--77
+Overfull \hbox (20.0pt too wide) in paragraph at lines 81--98
 []
  []
 
@@ -1694,7 +2135,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 @
+l.99 @
       inproceedings{Akutsu:2017thy,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2169,7 +2610,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 78--94
+Overfull \hbox (20.0pt too wide) in paragraph at lines 99--115
 []
  []
 
@@ -2180,8 +2621,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 @
-      article{Aasi:2013wya,
+l.116 @
+       article{Aasi:2013wya,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2578,7 +3019,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 95--110
+Overfull \hbox (20.0pt too wide) in paragraph at lines 116--131
 []
  []
 
@@ -2589,7 +3030,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 @
+l.132 @
        article{Buonanno:2009zt,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2978,7 +3419,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 111--126
+Overfull \hbox (20.0pt too wide) in paragraph at lines 132--147
 []
  []
 
@@ -2989,7 +3430,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 @
+l.148 @
        article{GW150914,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3363,7 +3804,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 127--144
+Overfull \hbox (20.0pt too wide) in paragraph at lines 148--165
 []
  []
 
@@ -3374,7 +3815,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.145 @
+l.166 @
        article{Monitor:2017mdv,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3794,7 +4235,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 145--162
+Overfull \hbox (20.0pt too wide) in paragraph at lines 166--183
 []
  []
 
@@ -3805,7 +4246,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 @
+l.184 @
        article{Kyutoku:2011vz,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4216,7 +4657,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 163--179
+Overfull \hbox (20.0pt too wide) in paragraph at lines 184--200
 []
  []
 
@@ -4227,7 +4668,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.180 @
+l.201 @
        article{Hanna:2008um,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4649,7 +5090,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 180--196
+Overfull \hbox (20.0pt too wide) in paragraph at lines 201--217
 []
  []
 
@@ -4660,7 +5101,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 @
+l.218 @
        article{Ferrari:2008nr,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4999,7 +5440,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 197--211
+Overfull \hbox (20.0pt too wide) in paragraph at lines 218--232
 []
  []
 
@@ -5010,7 +5451,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.212 @
+l.233 @
        article{Ozel:2016oaf,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5332,7 +5773,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 212--226
+Overfull \hbox (20.0pt too wide) in paragraph at lines 233--247
 []
  []
 
@@ -5343,7 +5784,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 @
+l.248 @
        article{Wiktorowicz:2013dua,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5597,7 +6038,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 227--237
+Overfull \hbox (20.0pt too wide) in paragraph at lines 248--258
 []
  []
 
@@ -5608,7 +6049,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.238 @
+l.259 @
        article{Ozel:2010su,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5946,7 +6387,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 238--252
+Overfull \hbox (20.0pt too wide) in paragraph at lines 259--273
 []
  []
 
@@ -5957,7 +6398,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.253 @
+l.274 @
        article{Raithel:2017nlc,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6232,7 +6673,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 253--264
+Overfull \hbox (20.0pt too wide) in paragraph at lines 274--285
 []
  []
 
@@ -6243,7 +6684,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.265 @
+l.286 @
        article{Abbott:2016ymx,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6652,7 +7093,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 265--282
+Overfull \hbox (20.0pt too wide) in paragraph at lines 286--303
 []
  []
 
@@ -6663,7 +7104,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.283 @
+l.304 @
        article{Farr:2010tu,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7042,7 +7483,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 283--298
+Overfull \hbox (20.0pt too wide) in paragraph at lines 304--319
 []
  []
 
@@ -7053,7 +7494,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.299 @
+l.320 @
        article{McClintock:2006xd,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7426,7 +7867,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 299--315
+Overfull \hbox (20.0pt too wide) in paragraph at lines 320--336
 []
  []
 
@@ -7437,7 +7878,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.316 @
+l.337 @
        article{Shibata:2011jka,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7661,7 +8102,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 316--326
+Overfull \hbox (20.0pt too wide) in paragraph at lines 337--347
 []
  []
 
@@ -7672,7 +8113,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.327 @
+l.348 @
        article{Sesana:2016ljz,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7986,7 +8427,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 327--342
+Overfull \hbox (20.0pt too wide) in paragraph at lines 348--363
 []
  []
 
@@ -7997,7 +8438,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.343 @
+l.364 @
        article{Mills:2017urp,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8266,7 +8707,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 343--353
+Overfull \hbox (20.0pt too wide) in paragraph at lines 364--374
 []
  []
 
@@ -8277,7 +8718,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.354 @
+l.375 @
        article{Marronetti:2003hx,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8656,7 +9097,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 354--369
+Overfull \hbox (20.0pt too wide) in paragraph at lines 375--390
 []
  []
 
@@ -8667,7 +9108,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.370 @
+l.391 @
        article{Faber:2012rw,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8931,7 +9372,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 370--383
+Overfull \hbox (20.0pt too wide) in paragraph at lines 391--404
 []
  []
 
@@ -8942,7 +9383,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.384 @
+l.405 @
        article{Phinney:2001di,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -9147,7 +9588,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 384--393
+Overfull \hbox (20.0pt too wide) in paragraph at lines 405--414
 []
  []
 
@@ -9158,7 +9599,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.394 @
+l.415 @
        article{Hogg:1999ad,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -9340,7 +9781,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 394--403
+Overfull \hbox (20.0pt too wide) in paragraph at lines 415--424
 []
  []
 
@@ -9351,7 +9792,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.404 @
+l.425 @
        article{Planck2015,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -9673,7 +10114,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 404--419
+Overfull \hbox (20.0pt too wide) in paragraph at lines 425--440
 []
  []
 
@@ -9684,7 +10125,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.421 @
+l.442 @
        book{Maggiore,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -9917,7 +10358,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no d in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 421--431
+Overfull \hbox (20.0pt too wide) in paragraph at lines 442--452
 []
  []
 
@@ -9928,7 +10369,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.432 @
+l.453 @
        online{LIGO_L1_data,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -9947,13 +10388,13 @@ Missing character: There is no O in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.432 @online{LIGO_
+l.453 @online{LIGO_
                    L1_data,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.434   howpublished = {\url
+l.455   howpublished = {\url
                             {https://losc.ligo.org/events/GW170817/}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9962,7 +10403,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.435 }
+l.456 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -9973,23 +10414,23 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.436 
+l.457 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (83.33604pt too wide) in paragraph at lines 432--436
+Overfull \hbox (83.33604pt too wide) in paragraph at lines 453--457
 []$[]\OT1/cmr/m/n/10 1[]\OML/cmm/m/it/10 ata; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (203.97716pt too wide) in paragraph at lines 432--436
+Overfull \hbox (203.97716pt too wide) in paragraph at lines 453--457
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (187.51616pt too wide) in paragraph at lines 432--436
+Overfull \hbox (187.51616pt too wide) in paragraph at lines 453--457
 []$ 
  []
 
@@ -10000,7 +10441,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.437 @
+l.458 @
        online{LIGO_tutorial,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -10019,13 +10460,13 @@ Missing character: There is no O in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.437 @online{LIGO_
+l.458 @online{LIGO_
                    tutorial,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.439   howpublished = {\url
+l.460   howpublished = {\url
                             {https://losc.ligo.org/s/events/GW150914/GW15091...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10034,7 +10475,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.440 }
+l.461 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -10045,23 +10486,23 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.441 
+l.462 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (87.90884pt too wide) in paragraph at lines 437--441
+Overfull \hbox (87.90884pt too wide) in paragraph at lines 458--462
 []$[]\OML/cmm/m/it/10 utorial; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (311.89879pt too wide) in paragraph at lines 437--441
+Overfull \hbox (311.89879pt too wide) in paragraph at lines 458--462
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (304.41551pt too wide) in paragraph at lines 437--441
+Overfull \hbox (304.41551pt too wide) in paragraph at lines 458--462
 []$ 
  []
 
@@ -10072,7 +10513,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.443 @
+l.464 @
        online{LIGO2020,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -10156,7 +10597,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no = in font nullfont!
 ! Undefined control sequence.
-l.445   howpublished = {\url
+l.466   howpublished = {\url
                             {https://dcc.ligo.org/LIGO-T0900288/public}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10206,7 +10647,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 443--447
+Overfull \hbox (20.0pt too wide) in paragraph at lines 464--468
 []
  []
 
@@ -10217,7 +10658,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.448 @
+l.469 @
        online{GW170817_Facts,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -10240,13 +10681,13 @@ Missing character: There is no 7 in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.448 @online{GW170817_
+l.469 @online{GW170817_
                        Facts,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.450   howpublished = {\url
+l.471   howpublished = {\url
                             {https://www.ligo.org/detections/GW170817/images...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10255,7 +10696,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.451 }
+l.472 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -10266,23 +10707,23 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.452 
+l.473 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (78.06413pt too wide) in paragraph at lines 448--452
+Overfull \hbox (78.06413pt too wide) in paragraph at lines 469--473
 []$[]\OML/cmm/m/it/10 acts; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (178.13309pt too wide) in paragraph at lines 448--452
+Overfull \hbox (178.13309pt too wide) in paragraph at lines 469--473
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (416.15005pt too wide) in paragraph at lines 448--452
+Overfull \hbox (416.15005pt too wide) in paragraph at lines 469--473
 []$ 
  []
 
@@ -10293,7 +10734,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.454 @
+l.475 @
        online{KAGRA,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -10346,7 +10787,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no = in font nullfont!
 ! Undefined control sequence.
-l.456   howpublished = {\url
+l.477   howpublished = {\url
                             {http://gwcenter.icrr.u-tokyo.ac.jp/en/}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10393,7 +10834,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no / in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 454--458
+Overfull \hbox (20.0pt too wide) in paragraph at lines 475--479
 []
  []
 
@@ -10404,7 +10845,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 @
+l.481 @
        article{PM1963,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -10715,7 +11156,7 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 460--474
+Overfull \hbox (20.0pt too wide) in paragraph at lines 481--495
 []
  []
 
@@ -10726,7 +11167,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.476 @
+l.497 @
        article{FastestNSspin,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -11095,7 +11536,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 476--491
+Overfull \hbox (20.0pt too wide) in paragraph at lines 497--512
 []
  []
 
@@ -11106,7 +11547,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.492 @
+l.513 @
        article{GW170817,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -11497,7 +11938,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 492--509
+Overfull \hbox (20.0pt too wide) in paragraph at lines 513--530
 []
  []
 
@@ -11508,7 +11949,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.510 @
+l.531 @
        article{Blanchet_LRR,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -11532,13 +11973,13 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.510 @article{Blanchet_
+l.531 @article{Blanchet_
                         LRR,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.523 }
+l.544 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -11549,89 +11990,89 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.524 
+l.545 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (86.34613pt too wide) in paragraph at lines 510--524
+Overfull \hbox (86.34613pt too wide) in paragraph at lines 531--545
 []$[]\OML/cmm/m/it/10 RR; author \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (105.71841pt too wide) in paragraph at lines 510--524
+Overfull \hbox (105.71841pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Blanchet; Luc\OT1/cmr/m/n/10 "\OML/cmm/m/it/1
 0 ; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (461.88304pt too wide) in paragraph at lines 510--524
+Overfull \hbox (461.88304pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (126.02238pt too wide) in paragraph at lines 510--524
+Overfull \hbox (126.02238pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 LivingRev:Rel:\OT1/cmr/m/n/10 "\OML/cmm/m/it/
 10 ; volume \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (54.9931pt too wide) in paragraph at lines 510--524
+Overfull \hbox (54.9931pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "17"\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (69.78938pt too wide) in paragraph at lines 510--524
+Overfull \hbox (69.78938pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "2014"\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (43.4972pt too wide) in paragraph at lines 510--524
+Overfull \hbox (43.4972pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "2"\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (68.31503pt too wide) in paragraph at lines 510--524
+Overfull \hbox (68.31503pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "10\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 12942\OML/cmm/m/it/10 =lrr
  \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (27.77786pt too wide) in paragraph at lines 510--524
+Overfull \hbox (27.77786pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 2014 \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (52.53543pt too wide) in paragraph at lines 510--524
+Overfull \hbox (52.53543pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 2"\OML/cmm/m/it/10 ; eprint \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (133.637pt too wide) in paragraph at lines 510--524
+Overfull \hbox (133.637pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "1310\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1528"\OML/cmm/m/it/10 ; 
 archivePrefix \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (115.88246pt too wide) in paragraph at lines 510--524
+Overfull \hbox (115.88246pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 arXiv\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; prim
 aryClass \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (22.69565pt too wide) in paragraph at lines 510--524
+Overfull \hbox (22.69565pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 gr \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (92.60231pt too wide) in paragraph at lines 510--524
+Overfull \hbox (92.60231pt too wide) in paragraph at lines 531--545
 \OML/cmm/m/it/10 qc\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; SLACcitation \OT1/cmr/m/
 n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 510--524
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 531--545
 \OT1/cmr/m/n/10 "$ 
  []
 
@@ -11642,7 +12083,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.525 @
+l.546 @
        incollection{Colpi_Sesana,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -11668,13 +12109,13 @@ Missing character: There is no i in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.525 @incollection{Colpi_
+l.546 @incollection{Colpi_
                           Sesana,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.540 }
+l.561 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -11685,108 +12126,108 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.541 
+l.562 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (96.73065pt too wide) in paragraph at lines 525--541
+Overfull \hbox (96.73065pt too wide) in paragraph at lines 546--562
 []$[]\OML/cmm/m/it/10 esana; author \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (193.45499pt too wide) in paragraph at lines 525--541
+Overfull \hbox (193.45499pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Colpi; MonicaandSesana; Alberto\OT1/cmr/m/n/1
 0 "\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (429.18523pt too wide) in paragraph at lines 525--541
+Overfull \hbox (429.18523pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; editor \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (204.1789pt too wide) in paragraph at lines 525--541
+Overfull \hbox (204.1789pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Auger; GerardandPlagnol; Eric\OT1/cmr/m/n/10 
 "\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (170.69739pt too wide) in paragraph at lines 525--541
+Overfull \hbox (170.69739pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 AnOverviewofGravitationalWaves \OT1/cmr/m/n/1
 0 :
  []
 
 
-Overfull \hbox (172.93405pt too wide) in paragraph at lines 525--541
+Overfull \hbox (172.93405pt too wide) in paragraph at lines 546--562
 \OML/cmm/m/it/10 Theory; SourcesandDetection\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ;
  year \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (58.69453pt too wide) in paragraph at lines 525--541
+Overfull \hbox (58.69453pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "2017"\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (33.25807pt too wide) in paragraph at lines 525--541
+Overfull \hbox (33.25807pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 https \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (213.4615pt too wide) in paragraph at lines 525--541
+Overfull \hbox (213.4615pt too wide) in paragraph at lines 546--562
 \OML/cmm/m/it/10 ==inspirehep:net=record=\OT1/cmr/m/n/10 1492489\OML/cmm/m/it/1
 0 =files=arXiv \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (109.88672pt too wide) in paragraph at lines 525--541
+Overfull \hbox (109.88672pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 1610\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05309\OML/cmm/m/it/10 :pd
 f\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (22.77785pt too wide) in paragraph at lines 525--541
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "43 \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (48.49721pt too wide) in paragraph at lines 525--541
+Overfull \hbox (48.49721pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 140"\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (174.7997pt too wide) in paragraph at lines 525--541
+Overfull \hbox (174.7997pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "10\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1142\OML/cmm/m/it/10 =\OT1
 /cmr/m/n/10 9789813141766[]002"\OML/cmm/m/it/10 ; eprint \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (138.63701pt too wide) in paragraph at lines 525--541
+Overfull \hbox (138.63701pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "1610\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05309"\OML/cmm/m/it/10 ;
  archivePrefix \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (115.88246pt too wide) in paragraph at lines 525--541
+Overfull \hbox (115.88246pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 arXiv\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; prim
 aryClass \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (35.99892pt too wide) in paragraph at lines 525--541
+Overfull \hbox (35.99892pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 astro \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (114.10574pt too wide) in paragraph at lines 525--541
+Overfull \hbox (114.10574pt too wide) in paragraph at lines 546--562
 \OML/cmm/m/it/10 ph:HE\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; SLACcitation \OT1/cmr
 /m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 525--541
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 546--562
 \OT1/cmr/m/n/10 "$ 
  []
 
@@ -11797,7 +12238,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.543 @
+l.564 @
        article{4PN_EoM_paper,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -11816,13 +12257,13 @@ Missing character: There is no N in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.543 @article{4PN_
+l.564 @article{4PN_
                    EoM_paper,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.554 }
+l.575 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -11833,58 +12274,58 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.555 
+l.576 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (110.15344pt too wide) in paragraph at lines 543--555
+Overfull \hbox (110.15344pt too wide) in paragraph at lines 564--576
 []$[]\OML/cmm/m/it/10 oM[]aper; author \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (388.18527pt too wide) in paragraph at lines 543--555
+Overfull \hbox (388.18527pt too wide) in paragraph at lines 564--576
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Bernard; LauraandBlanchet; LucandFaye; Guilla
 umeandMarchand; Tanguy\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10
  =
  []
 
 
-Overfull \hbox (623.19794pt too wide) in paragraph at lines 543--555
+Overfull \hbox (623.19794pt too wide) in paragraph at lines 564--576
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (72.53549pt too wide) in paragraph at lines 543--555
+Overfull \hbox (72.53549pt too wide) in paragraph at lines 564--576
 \OT1/cmr/m/n/10 "2017"\OML/cmm/m/it/10 ; eprint \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (138.63701pt too wide) in paragraph at lines 543--555
+Overfull \hbox (138.63701pt too wide) in paragraph at lines 564--576
 \OT1/cmr/m/n/10 "1711\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 00283"\OML/cmm/m/it/10 ;
  archivePrefix \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (115.88246pt too wide) in paragraph at lines 543--555
+Overfull \hbox (115.88246pt too wide) in paragraph at lines 564--576
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 arXiv\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; prim
 aryClass \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (22.69565pt too wide) in paragraph at lines 543--555
+Overfull \hbox (22.69565pt too wide) in paragraph at lines 564--576
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 gr \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (92.60231pt too wide) in paragraph at lines 543--555
+Overfull \hbox (92.60231pt too wide) in paragraph at lines 564--576
 \OML/cmm/m/it/10 qc\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; SLACcitation \OT1/cmr/m/
 n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 543--555
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 564--576
 \OT1/cmr/m/n/10 "$ 
  []
 
@@ -11895,7 +12336,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.556 @
+l.577 @
        article{SchutzLRR,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -12185,7 +12626,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 556--570
+Overfull \hbox (20.0pt too wide) in paragraph at lines 577--591
 []
  []
 
@@ -12196,7 +12637,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.571 @
+l.592 @
        article{Freire_et_al_2007,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -12218,13 +12659,13 @@ Missing character: There is no e in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.571 @article{Freire_
+l.592 @article{Freire_
                       et_al_2007,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.585 }
+l.606 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -12235,81 +12676,81 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.586 
+l.607 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (100.23253pt too wide) in paragraph at lines 571--586
+Overfull \hbox (100.23253pt too wide) in paragraph at lines 592--607
 []$[]\OML/cmm/m/it/10 t[]l[]\OT1/cmr/m/n/10 007\OML/cmm/m/it/10 ; author \OT1/c
 mr/m/n/10 =
  []
 
 
-Overfull \hbox (722.8652pt too wide) in paragraph at lines 571--586
+Overfull \hbox (722.8652pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Freire; PauloCesarCarvalhoandRansom; ScottM:a
 ndBegin; SteveandStairs; IngridH:andHessels; JasonW:T:andFrey; LucilleH:andCami
 lo; Fernando\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (312.20839pt too wide) in paragraph at lines 571--586
+Overfull \hbox (312.20839pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (114.52328pt too wide) in paragraph at lines 571--586
+Overfull \hbox (114.52328pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Astrophys:J:\OT1/cmr/m/n/10 "\OML/cmm/m/it/10
  ; volume \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (59.99312pt too wide) in paragraph at lines 571--586
+Overfull \hbox (59.99312pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "675"\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (69.78938pt too wide) in paragraph at lines 571--586
+Overfull \hbox (69.78938pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "2008"\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (53.49722pt too wide) in paragraph at lines 571--586
+Overfull \hbox (53.49722pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "670"\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (120.31342pt too wide) in paragraph at lines 571--586
+Overfull \hbox (120.31342pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "10\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1086\OML/cmm/m/it/10 =\OT1
 /cmr/m/n/10 526338"\OML/cmm/m/it/10 ; eprint \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (133.637pt too wide) in paragraph at lines 571--586
+Overfull \hbox (133.637pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "0711\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0925"\OML/cmm/m/it/10 ; 
 archivePrefix \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (115.88246pt too wide) in paragraph at lines 571--586
+Overfull \hbox (115.88246pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 arXiv\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; prim
 aryClass \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (35.99892pt too wide) in paragraph at lines 571--586
+Overfull \hbox (35.99892pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 astro \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (94.24467pt too wide) in paragraph at lines 571--586
+Overfull \hbox (94.24467pt too wide) in paragraph at lines 592--607
 \OML/cmm/m/it/10 ph\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; SLACcitation \OT1/cmr/m/
 n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 571--586
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 592--607
 \OT1/cmr/m/n/10 "$ 
  []
 
@@ -12320,7 +12761,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.587 @
+l.608 @
        article{Ozel_Freire,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -12340,13 +12781,13 @@ Missing character: There is no l in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.587 @article{Ozel_
+l.608 @article{Ozel_
                     Freire,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.600 }
+l.621 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -12357,7 +12798,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.601 
+l.622 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -12365,93 +12806,93 @@ you left one out. Proceed, with fingers crossed.
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no – in font cmr10!
 
-Overfull \hbox (94.00403pt too wide) in paragraph at lines 587--601
+Overfull \hbox (94.00403pt too wide) in paragraph at lines 608--622
 []$[]\OML/cmm/m/it/10 reire; author \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (169.80952pt too wide) in paragraph at lines 587--601
+Overfull \hbox (169.80952pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 zel; FeryalandFreire; Paulo\OT1/cmr/m/n/10 "\
 OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (309.82603pt too wide) in paragraph at lines 587--601
+Overfull \hbox (309.82603pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "[]"\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (183.15776pt too wide) in paragraph at lines 587--601
+Overfull \hbox (183.15776pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Ann:Rev:Astron:Astrophys:\OT1/cmr/m/n/10 "\OM
 L/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (54.9931pt too wide) in paragraph at lines 587--601
+Overfull \hbox (54.9931pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "54"\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (69.78938pt too wide) in paragraph at lines 587--601
+Overfull \hbox (69.78938pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "2016"\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (27.77786pt too wide) in paragraph at lines 587--601
+Overfull \hbox (27.77786pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "401 \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (48.49721pt too wide) in paragraph at lines 587--601
+Overfull \hbox (48.49721pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 440"\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (88.22252pt too wide) in paragraph at lines 587--601
+Overfull \hbox (88.22252pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "10\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1146\OML/cmm/m/it/10 =annu
 rev \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (30.9989pt too wide) in paragraph at lines 587--601
+Overfull \hbox (30.9989pt too wide) in paragraph at lines 608--622
 \OML/cmm/m/it/10 astro \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (37.7779pt too wide) in paragraph at lines 587--601
+Overfull \hbox (37.7779pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 081915 \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (77.5355pt too wide) in paragraph at lines 587--601
+Overfull \hbox (77.5355pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 023322"\OML/cmm/m/it/10 ; eprint \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (138.63701pt too wide) in paragraph at lines 587--601
+Overfull \hbox (138.63701pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "1603\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 02698"\OML/cmm/m/it/10 ;
  archivePrefix \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (115.88246pt too wide) in paragraph at lines 587--601
+Overfull \hbox (115.88246pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 arXiv\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; prim
 aryClass \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (35.99892pt too wide) in paragraph at lines 587--601
+Overfull \hbox (35.99892pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 astro \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (114.10574pt too wide) in paragraph at lines 587--601
+Overfull \hbox (114.10574pt too wide) in paragraph at lines 608--622
 \OML/cmm/m/it/10 ph:HE\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; SLACcitation \OT1/cmr
 /m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 587--601
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 608--622
 \OT1/cmr/m/n/10 "$ 
  []
 
@@ -12462,7 +12903,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.602 @
+l.623 @
        article{Regimbau:2012ir,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -12762,7 +13203,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 602--616
+Overfull \hbox (20.0pt too wide) in paragraph at lines 623--637
 []
  []
 
@@ -12773,7 +13214,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.617 @
+l.638 @
        article{Wen:2005ui,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -13203,7 +13644,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 617--634
+Overfull \hbox (20.0pt too wide) in paragraph at lines 638--655
 []
  []
 
@@ -13214,7 +13655,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.635 @
+l.656 @
        article{Sathyaprakash:2012jk,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -13749,7 +14190,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 635--654
+Overfull \hbox (20.0pt too wide) in paragraph at lines 656--675
 []
  []
 
@@ -13760,7 +14201,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.655 @
+l.676 @
        techreport{ET_doc,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -13781,13 +14222,13 @@ Missing character: There is no T in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.655 @techreport{ET_
+l.676 @techreport{ET_
                      doc,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.664 }
+l.685 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -13798,63 +14239,63 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.665 
+l.686 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (67.34178pt too wide) in paragraph at lines 655--665
+Overfull \hbox (67.34178pt too wide) in paragraph at lines 676--686
 []$[]\OML/cmm/m/it/10 oc; title \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (319.32037pt too wide) in paragraph at lines 655--665
+Overfull \hbox (319.32037pt too wide) in paragraph at lines 676--686
 []\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (117.98393pt too wide) in paragraph at lines 655--665
+Overfull \hbox (117.98393pt too wide) in paragraph at lines 676--686
 []\OML/cmm/m/it/10 ; group \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (50.86938pt too wide) in paragraph at lines 655--665
+Overfull \hbox (50.86938pt too wide) in paragraph at lines 676--686
 []\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (83.43272pt too wide) in paragraph at lines 655--665
+Overfull \hbox (83.43272pt too wide) in paragraph at lines 676--686
 []\OML/cmm/m/it/10 ; institution \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (145.6824pt too wide) in paragraph at lines 655--665
+Overfull \hbox (145.6824pt too wide) in paragraph at lines 676--686
 []\OML/cmm/m/it/10 ; month \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (44.33246pt too wide) in paragraph at lines 655--665
+Overfull \hbox (44.33246pt too wide) in paragraph at lines 676--686
 []\OML/cmm/m/it/10 ; Date \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (38.32639pt too wide) in paragraph at lines 655--665
+Overfull \hbox (38.32639pt too wide) in paragraph at lines 676--686
 \OML/cmm/m/it/10 Added \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (98.77682pt too wide) in paragraph at lines 655--665
+Overfull \hbox (98.77682pt too wide) in paragraph at lines 676--686
 []\OML/cmm/m/it/10 ; Date \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (54.12291pt too wide) in paragraph at lines 655--665
+Overfull \hbox (54.12291pt too wide) in paragraph at lines 676--686
 \OML/cmm/m/it/10 Modified \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (64.4444pt too wide) in paragraph at lines 655--665
+Overfull \hbox (64.4444pt too wide) in paragraph at lines 676--686
 []$ 
  []
 
@@ -13865,7 +14306,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.668 @
+l.689 @
        article{Sathyaprakash:2012jk,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -14400,7 +14841,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 668--687
+Overfull \hbox (20.0pt too wide) in paragraph at lines 689--708
 []
  []
 
@@ -14411,7 +14852,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.690 @
+l.711 @
        article{Patricelli:2016bkt,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -14869,7 +15310,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 690--707
+Overfull \hbox (20.0pt too wide) in paragraph at lines 711--728
 []
  []
 
@@ -14880,7 +15321,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.708 @
+l.729 @
        article{Gabbard:2017lja,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -15159,7 +15600,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 708--719
+Overfull \hbox (20.0pt too wide) in paragraph at lines 729--740
 []
  []
 
@@ -15170,7 +15611,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.720 @
+l.741 @
        article{Cannon:2011vi,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -15536,7 +15977,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 720--735
+Overfull \hbox (20.0pt too wide) in paragraph at lines 741--756
 []
  []
 
@@ -15547,7 +15988,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.736 @
+l.757 @
        article{Zhu:2017znf,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -15876,7 +16317,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 736--748
+Overfull \hbox (20.0pt too wide) in paragraph at lines 757--769
 []
  []
 
@@ -15887,7 +16328,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.749 @
+l.770 @
        article{Cutler:1994ys,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -16277,7 +16718,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 749--765
+Overfull \hbox (20.0pt too wide) in paragraph at lines 770--786
 []
  []
 
@@ -16288,7 +16729,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.766 @
+l.787 @
        article{Rodriguez:2013oaa,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -16709,7 +17150,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 766--782
+Overfull \hbox (20.0pt too wide) in paragraph at lines 787--803
 []
  []
 
@@ -16720,7 +17161,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.783 @
+l.804 @
        article{Farr:2015lna,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -17085,7 +17526,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 783--799
+Overfull \hbox (20.0pt too wide) in paragraph at lines 804--820
 []
  []
 
@@ -17096,7 +17537,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.800 @
+l.821 @
        article{Read:2009yp,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -17488,7 +17929,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 800--816
+Overfull \hbox (20.0pt too wide) in paragraph at lines 821--837
 []
  []
 
@@ -17499,7 +17940,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.817 @
+l.838 @
        article{Andersson:2009yt,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -17887,7 +18328,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 817--833
+Overfull \hbox (20.0pt too wide) in paragraph at lines 838--854
 []
  []
 
@@ -17898,7 +18339,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.834 @
+l.855 @
        article{PhysRevD.91.043002,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -18310,7 +18751,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 834--848
+Overfull \hbox (20.0pt too wide) in paragraph at lines 855--869
 []
  []
 
@@ -18321,7 +18762,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.850 @
+l.871 @
        article{PhysRevD.89.103012,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -18832,7 +19273,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 850--864
+Overfull \hbox (20.0pt too wide) in paragraph at lines 871--885
 []
  []
 
@@ -18843,7 +19284,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.867 @
+l.888 @
        article{GBM:2017lvd,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -19907,7 +20348,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 867--898
+Overfull \hbox (20.0pt too wide) in paragraph at lines 888--919
 []
  []
 
@@ -19918,7 +20359,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.900 @
+l.921 @
        ARTICLE{LSST,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -20583,7 +21024,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 900--915
+Overfull \hbox (20.0pt too wide) in paragraph at lines 921--936
 []
  []
 
@@ -20594,7 +21035,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.917 @
+l.938 @
        article{CE,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -20973,7 +21414,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 917--934
+Overfull \hbox (20.0pt too wide) in paragraph at lines 938--955
 []
  []
 
@@ -20984,7 +21425,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.937 @
+l.958 @
        article{KAGRA2,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -21214,7 +21655,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no " in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 937--948
+Overfull \hbox (20.0pt too wide) in paragraph at lines 958--969
 []
  []
 
@@ -21225,7 +21666,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.952 @
+l.973 @
        article{Hild:2010id,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
