@@ -129,7 +129,7 @@ gravitational-wave merger events detected by the Advanced Ligo-Virgo network hav
 as an observational science \cite{TheLIGOScientific:2016pea, Abbott:2017gyy, Abbott:2017oio, Abbott:2017vtc, GW170817}. 
 Though the first event of 14 September 2015 (GW150914 \cite{GW150914}) will always be the ``poster-child'' of this field,
 the icing on the cake was the 17 August 2017 (GW170817 \cite{GW170817}) event involving the inspiral and merger of a binary neutron star system with a prompt gamma-ray burst (GRB170817A) detected 1.7 seconds after the coalescence by the Fermi Gamma-ray Burst Monitor \cite{Fermi}{\bf FIX ME} and by the International Gamma-Ray Astrophysics Laboratory {\bf cite}. 
-The ALV network's initial source localization to within $\sim 31\,\text{degree}^2$ in the Southern skies
+The Advanced-LIGO-Virgo network's initial source localization to within $\sim 31\,\text{degree}^2$ in the Southern skies
 enabled astronomers to locate the electromagnetic counterpart in the galaxy NGC 4993 less than 11 hours after the merger, 
 first picked up by the One-Meter, Two Hemisphere team {\bf cite}.
 This subsequently launched the largest-ever campaign of multi-messenger astronomy across the entire electromagnetic (EM) spectrum still ongoing
@@ -147,9 +147,9 @@ which then caused the prompt short-hard gamma-ray burst (GRB170817A) in NGC4993 
 
 One week after GW170817, the ALV network was taken offline for upgrades for the third observation run (O3) 
 scheduled to start in Autumn 2018 with roughly twice the sensitivity of O2.
-In addition, the Japanese cryogenic interferometer KAGRA (\cite{KAGRA, KAGRA2}) will start its test runs in 2018-2019 and reach design sensitivity circa 2021-2022 \cite{Akutsu:2017thy, Aasi:2013wya}. By 2025, LIGO-India detector will join the global IFO network hence improving both the overall sensitivity and the sky-localization capabilities \cite{Aasi:2013wya}.
-Around this time, the construction of the first third-generation ground-based IFO, Einstein Telescope, will begin in Europe \cite{ET_doc}. 
-The US is currently considering a mid-2020s update called LIGO-Voyager \cite{LIGO_Voy} and a more ambitious 40\,km long IFO dubbed The Cosmic Explorer \cite{CE}.
+In addition, the Japanese cryogenic interferometer KAGRA (\cite{KAGRA, KAGRA2}) will start its test runs in 2018-2019 and reach design sensitivity circa 2021-2022 \cite{Akutsu:2017thy, Aasi:2013wya}. By 2025, LIGO-India detector will join the global interferometer network hence improving both the overall sensitivity and the sky-localization capabilities \cite{Aasi:2013wya}.
+Around this time, the construction of the first third-generation ground-based interferometer, Einstein Telescope, will begin in Europe \cite{ET_doc}. 
+The US is currently considering a mid-2020s update called LIGO-Voyager \cite{LIGO_Voy} and a more ambitious 40\,km long interferometer dubbed The Cosmic Explorer \cite{CE}.
 All of these near-future improvements to the GW-detector network beg a simple question: can we detect the inspiral of a binary neutron star system
 early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using GW detections?
 
@@ -158,24 +158,51 @@ As such, most GRBs that occur in the universe are electromagnetically undetectab
 but even for a reasonable GRB jet opening angle of $\sim 10^\circ$, we expect to observe $\sim 10\%$ of neutron star mergers as GRBs \cite{Patricelli:2016bkt}. 
 However, it is possible that some of the near-Earth pointing short hard GRBs may be observed as long-duration GRBs or X-ray flashes thus increasing this percentage \cite{Bucciantini:2011kx}.
 
-Given the sensitivities of IFOs to date, efforts have thus far mostly focused on reducing the latency of EM follow-ups, 
+Given the sensitivities of interferometers to date, efforts have thus far mostly focused on reducing the latency of EM follow-ups, 
 i.e., the lag time between the merger and the alerting of the EM observatories. 
-LIGO-Virgo science runs in 2009-2010 yielded a latency of $\sim 30\,$minutes \cite{Abbott:2011ys} (no detections).
+LIGO-Virgo science runs in 2009-2010 yielded a latency of $\sim 30$ to $60\,$minutes \cite{Abbott:2011ys} (no detections).
 In the case of GW170817, the latency was 40\,minutes and $36^{+1.7}\,$seconds \cite{GBM:2017lvd}.
 It then took an additional $\sim 10$ hours to locate the optical transient designated AT 2017gfo.
 
-Here, we turn this around and focus instead on how much advance warning times near-future ground-based GW detectors can provide us.
-Ref.~\cite{Cannon:2011vi} considered this by focussing on developing computationally inexpensive methods to detect inspiral
+Here, we are interested  in exploring the predictive power of near-future ground-based GW detectors and leave the task of reducing the latency to the experts.
+More specifically, we wish to find out how much early warning the GW detectors can provide us before the merger/GRB.
+Ref.~\cite{Cannon:2011vi} approached this from an algorithmic perspective by developing computationally inexpensive methods to detect inspiral
 signals in GW data to provide early-warning triggers \emph{before} the merger.
-We instead focus on the forecasting capabilities of the ground-based IFOs at their full design sensitivity.
+We instead focus on the forecasting capabilities of the ground-based interferometers at their \emph{full design} sensitivity by computing the time lag
+between the merger and the detection time defined in terms of a certain threshold SNR.
+To this end, we consider the $\sim 2020$ ALV network composed of three L-shaped interferometers operating at their design sensitivities
+and Einstein Telescope of 2030s.
+Ref.~\cite{Nissanke:2012dj} investigated the capabilities of three to five-interferometer detector networks of 2020s in terms of their horizon distance
+to inspiralling BNSs and their sky-localization of these sources. Our work here is somewhat complementary in the sense that we are mostly concerned with
+advance warning times.
 
+We compute the advance warning times via the following procedure: 
+(${i}$) We start with a GW source presumed to be an inspiralling BNS at a certain luminosity distance $D$.
+(${ii}$) We determine the frequency at which the source enters a given interferometer's bandwidth. 
+In order to more faithfully represent a network such as ALV --- consisting of three separate interferometers which have different
+orientations and positions --- we employ root-mean-square averages over sky-position and polarization angles,
+and assign the interferometers angle-averaged sensitivities.
+%which reduce an individual interferometer's sensitivity to a particular source. 
+(${iii}$) We determine the detection time by computing the frequency at which the network's accumulated SNR for the BNS inspiral equals 15.
+($iv$) We define the advance warning time to be the remaining inspiral time to the merger from the instant of detection.
+We repeat this procedure for BNSs at luminosity distances varying from 50\,Mpc to 1\,Gpc with the smaller values intended for the ALV network and 
+the larger ones for Einstein Telescope.
 %KAGRA 152Mpc range (K. Somiya, ET meeting at Birmingham, 2017)
 
-Cite the BNS Living review many times \cite{Faber:2012rw}.
+Our computation is based on the leading-order Newtonian evolution of the quadrupole moment of a binary system 
+composed of two point masses in a quasi-circular orbit.
+We supplement this with results from post-Newtonian theory up to 3.5 post-Newtonian order \cite{Blanchet_LRR}.
+The strong-field dynamics of BNS evolution is a very complex and complicated problem requiring fully relativistic, magnetohydrodynamic codes 
+with neutrino transport running on large-scale computing clusters and taking up millions of CPU hours 
+(see Ref.~\cite{Faber:2012rw} for a review, and \cite{Kyutoku:2017voj, Zappa:2017xba} for the latest developments).
 
  
 
 
+Sec.~ blah blah, Sec.~ does so and so, results are presented in Sec.~
+
+Let us emphasize that this article is intended as a pedagogical introduction to gravitational-wave astronomy written at a level accessible to
+Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the basics.
 
 We reserve the symbol $f$ to denote the GW frequency of the dominant quadrupole mode, which is twice the orbital frequency $f_K$. 
 Relatedly, we define the following angular frequencies: $\omega = 2\pi f, \Omega=2\pi f_K$ with $\omega=2\Omega$.
