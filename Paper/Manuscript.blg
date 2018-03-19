@@ -12,18 +12,18 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: ManuscriptNotes.bib
 Database file #2: references.bib
 Warning--entry type for "LIGO_Voy" isn't style-file defined
---line 173 of file references.bib
+--line 201 of file references.bib
 Warning--entry type for "LIGO_L1_data" isn't style-file defined
---line 604 of file references.bib
+--line 632 of file references.bib
 Warning--entry type for "LIGO_tutorial" isn't style-file defined
---line 609 of file references.bib
+--line 637 of file references.bib
 Warning--entry type for "LIGO2020" isn't style-file defined
---line 615 of file references.bib
+--line 643 of file references.bib
 Warning--entry type for "GW170817_Facts" isn't style-file defined
---line 620 of file references.bib
+--line 648 of file references.bib
 Warning--entry type for "KAGRA" isn't style-file defined
---line 626 of file references.bib
-Repeated entry---line 840 of file references.bib
+--line 654 of file references.bib
+Repeated entry---line 868 of file references.bib
  : @article{Sathyaprakash:2012jk
  :                              ,
 I'm skipping whatever remains of this entry
@@ -50,45 +50,45 @@ Warning--missing journal in Mills:2017urp
 Warning--missing journal in Audley:2017drz
 Warning--missing journal in Raithel:2017nlc
 Warning--missing journal in Wiktorowicz:2013dua
-You've used 71 entries,
+You've used 73 entries,
             5847 wiz_defined-function locations,
-            2184 strings with 31702 characters,
-and the built_in function-call counts, 68857 in all, are:
-= -- 4531
-> -- 1676
-< -- 406
-+ -- 554
-- -- 398
-* -- 11110
-:= -- 6781
-add.period$ -- 78
-call.type$ -- 71
-change.case$ -- 294
-chr.to.int$ -- 59
-cite$ -- 97
-duplicate$ -- 6502
-empty$ -- 5190
-format.name$ -- 1028
-if$ -- 13534
+            2199 strings with 32155 characters,
+and the built_in function-call counts, 70620 in all, are:
+= -- 4660
+> -- 1711
+< -- 415
++ -- 566
+- -- 406
+* -- 11381
+:= -- 6968
+add.period$ -- 80
+call.type$ -- 73
+change.case$ -- 302
+chr.to.int$ -- 61
+cite$ -- 99
+duplicate$ -- 6675
+empty$ -- 5326
+format.name$ -- 1052
+if$ -- 13879
 int.to.chr$ -- 13
-int.to.str$ -- 79
-missing$ -- 775
-newline$ -- 324
-num.names$ -- 196
-pop$ -- 2569
+int.to.str$ -- 81
+missing$ -- 795
+newline$ -- 332
+num.names$ -- 202
+pop$ -- 2637
 preamble$ -- 1
-purify$ -- 349
+purify$ -- 359
 quote$ -- 0
-skip$ -- 2379
+skip$ -- 2443
 stack$ -- 0
-substring$ -- 1638
-swap$ -- 6154
-text.length$ -- 180
+substring$ -- 1674
+swap$ -- 6305
+text.length$ -- 182
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 980
+type$ -- 1006
 warning$ -- 14
-while$ -- 183
+while$ -- 188
 width$ -- 0
-write$ -- 706
+write$ -- 726
 (There was 1 error message)
