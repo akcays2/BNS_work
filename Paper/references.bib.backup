@@ -1,3 +1,248 @@
+@article{Zappa:2017xba,
+      author         = "Zappa, Francesco and Bernuzzi, Sebastiano and Radice,
+                        David and Perego, Albino and Dietrich, Tim",
+      title          = "{Gravitational-wave luminosity of binary neutron stars
+                        mergers}",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "120",
+      year           = "2018",
+      pages          = "111101",
+      doi            = "10.1103/PhysRevLett.120.111101",
+      eprint         = "1712.04267",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1712.04267;%%"
+}
+
+@article{Kyutoku:2017voj,
+      author         = "Kyutoku, Koutarou and Kiuchi, Kenta and Sekiguchi,
+                        Yuichiro and Shibata, Masaru and Taniguchi, Keisuke",
+      title          = "{Neutrino transport in black hole-neutron star binaries:
+                        neutrino emission and dynamical mass ejection}",
+      journal        = "Phys. Rev.",
+      volume         = "D97",
+      year           = "2018",
+      number         = "2",
+      pages          = "023009",
+      doi            = "10.1103/PhysRevD.97.023009",
+      eprint         = "1710.00827",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      SLACcitation   = "%%CITATION = ARXIV:1710.00827;%%"
+}
+
+@article{Nissanke:2012dj,
+      author         = "Nissanke, Samaya and Kasliwal, Mansi and Georgieva,
+                        Alexandra",
+      title          = "{Identifying Elusive Electromagnetic Counterparts to
+                        Gravitational Wave Mergers: an end-to-end simulation}",
+      journal        = "Astrophys. J.",
+      volume         = "767",
+      year           = "2013",
+      pages          = "124",
+      doi            = "10.1088/0004-637X/767/2/124",
+      eprint         = "1210.6362",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      SLACcitation   = "%%CITATION = ARXIV:1210.6362;%%"
+}
+
+@article{Abbott:2011ys,
+      author         = "Abbott, B. P. and others",
+      title          = "{Implementation and testing of the first prompt search
+                        for gravitational wave transients with electromagnetic
+                        counterparts}",
+      collaboration  = "VIRGO, LIGO Scientific",
+      journal        = "Astron. Astrophys.",
+      volume         = "539",
+      year           = "2012",
+      pages          = "A124",
+      doi            = "10.1051/0004-6361/201118219",
+      eprint         = "1109.3498",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.IM",
+      reportNumber   = "LIGO-P1000061",
+      SLACcitation   = "%%CITATION = ARXIV:1109.3498;%%"
+}
+
+@article{Bucciantini:2011kx,
+      author         = "Bucciantini, N. and Metzger, B. D. and Thompson, T. A.
+                        and Quataert, E.",
+      title          = "{Short GRBs with Extended Emission from Magnetar Birth:
+                        Jet Formation and Collimation}",
+      journal        = "Mon. Not. Roy. Astron. Soc.",
+      volume         = "419",
+      year           = "2012",
+      pages          = "1537",
+      doi            = "10.1111/j.1365-2966.2011.19810.x",
+      eprint         = "1106.4668",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      reportNumber   = "NORDITA-2011-51",
+      SLACcitation   = "%%CITATION = ARXIV:1106.4668;%%"
+}
+
+@article{Kumar:2014upa,
+      author         = "Kumar, Pawan and Zhang, Bing",
+      title          = "{The physics of gamma-ray bursts \& relativistic jets}",
+      journal        = "Phys. Rept.",
+      volume         = "561",
+      year           = "2014",
+      pages          = "1-109",
+      doi            = "10.1016/j.physrep.2014.09.008",
+      eprint         = "1410.0679",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      SLACcitation   = "%%CITATION = ARXIV:1410.0679;%%"
+}
+
+@misc{Fermi,
+     title = {{Fermi-Gamma-Ray-Burst Monitor GCN, 524666471}},
+     author = {The Fermi Collaboration},
+     month = {08},
+     year = {2017}        
+}
+
+@article{Eichler:1989ve,
+      author         = "Eichler, David and Livio, Mario and Piran, Tsvi and
+                        Schramm, David N.",
+      title          = "{Nucleosynthesis, Neutrino Bursts and Gamma-Rays from
+                        Coalescing Neutron Stars}",
+      journal        = "Nature",
+      volume         = "340",
+      year           = "1989",
+      pages          = "126-128",
+      doi            = "10.1038/340126a0",
+      reportNumber   = "FERMILAB-PUB-89-102-A",
+      SLACcitation   = "%%CITATION = NATUA,340,126;%%"
+}
+
+@online{LIGO_Voy,
+  title = "{What Comes Next for LIGO? 2016 LIGO-DAWN Workshop II}",
+  howpublished = {\url{https://wiki.ligo.org/pub/LSC/LIGOworkshop2016/WebHome/Dawn-II-Report-SecondDraft-v2.pdf}}
+}
+
+
+@article{Abbott:2017gyy,
+      author         = "Abbott, B.. P.. and others",
+      title          = "{GW170608: Observation of a 19-solar-mass Binary Black
+                        Hole Coalescence}",
+      collaboration  = "Virgo, LIGO Scientific",
+      journal        = "Astrophys. J.",
+      volume         = "851",
+      year           = "2017",
+      number         = "2",
+      pages          = "L35",
+      doi            = "10.3847/2041-8213/aa9f0c",
+      eprint         = "1711.05578",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph.HE",
+      reportNumber   = "LIGO-DOCUMENT-P170608-V8",
+      SLACcitation   = "%%CITATION = ARXIV:1711.05578;%%"
+}
+
+@article{Abbott:2017oio,
+      author         = "Abbott, B. P. and others",
+      title          = "{GW170814: A Three-Detector Observation of Gravitational
+                        Waves from a Binary Black Hole Coalescence}",
+      collaboration  = "Virgo, LIGO Scientific",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "119",
+      year           = "2017",
+      number         = "14",
+      pages          = "141101",
+      doi            = "10.1103/PhysRevLett.119.141101",
+      eprint         = "1709.09660",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:1709.09660;%%"
+}
+
+@article{Abbott:2017vtc,
+      author         = "Abbott, Benjamin P. and others",
+      title          = "{GW170104: Observation of a 50-Solar-Mass Binary Black
+                        Hole Coalescence at Redshift 0.2}",
+      collaboration  = "VIRGO, LIGO Scientific",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "118",
+      year           = "2017",
+      number         = "22",
+      pages          = "221101",
+      doi            = "10.1103/PhysRevLett.118.221101",
+      eprint         = "1706.01812",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      reportNumber   = "LIGO-P170104",
+      SLACcitation   = "%%CITATION = ARXIV:1706.01812;%%"
+}
+
+@article{TheLIGOScientific:2016pea,
+      author         = "Abbott, B. P. and others",
+      title          = "{Binary Black Hole Mergers in the first Advanced LIGO
+                        Observing Run}",
+      collaboration  = "Virgo, LIGO Scientific",
+      journal        = "Phys. Rev.",
+      volume         = "X6",
+      year           = "2016",
+      number         = "4",
+      pages          = "041015",
+      doi            = "10.1103/PhysRevX.6.041015",
+      eprint         = "1606.04856",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      reportNumber   = "LIGO-P1600088",
+      SLACcitation   = "%%CITATION = ARXIV:1606.04856;%%"
+}
+
+@inproceedings{Akutsu:2017thy,
+      author         = "Akutsu, T. and others",
+      title          = "{The status of KAGRA underground cryogenic gravitational
+                        wave telescope}",
+      booktitle      = "{15th International Conference on Topics in Astroparticle
+                        and Underground Physics (TAUP 2017) Sudbury, Ontario,
+                        Canada, July 24-28, 2017}",
+      collaboration  = "KAGRA",
+      url            = "https://inspirehep.net/record/1630606/files/arXiv:1710.04823.pdf",
+      year           = "2017",
+      eprint         = "1710.04823",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      reportNumber   = "JGW-P1707191",
+      SLACcitation   = "%%CITATION = ARXIV:1710.04823;%%"
+}
+
+@article{Aasi:2013wya,
+      author         = "Abbott, Benjamin P. and others",
+      title          = "{Prospects for Observing and Localizing
+                        Gravitational-Wave Transients with Advanced LIGO, Advanced
+                        Virgo and KAGRA}",
+      collaboration  = "VIRGO, LIGO Scientific",
+      year           = "2013",
+      doi            = "10.1007/lrr-2016-1",
+      note           = "[Living Rev. Rel.19,1(2016)]",
+      eprint         = "1304.0670",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      reportNumber   = "LIGO-P1200087, VIR-0288A-12",
+      SLACcitation   = "%%CITATION = ARXIV:1304.0670;%%"
+}
+
+@article{Buonanno:2009zt,
+      author         = "Buonanno, Alessandra and Iyer, Bala and Ochsner, Evan and
+                        Pan, Yi and Sathyaprakash, B. S.",
+      title          = "{Comparison of post-Newtonian templates for compact
+                        binary inspiral signals in gravitational-wave detectors}",
+      journal        = "Phys. Rev.",
+      volume         = "D80",
+      year           = "2009",
+      pages          = "084043",
+      doi            = "10.1103/PhysRevD.80.084043",
+      eprint         = "0907.0700",
+      archivePrefix  = "arXiv",
+      primaryClass   = "gr-qc",
+      SLACcitation   = "%%CITATION = ARXIV:0907.0700;%%"
+}
+
 @article{GW150914,
       author         = "Abbott, B. P. and others",
       title          = "{Observation of Gravitational Waves from a Binary Black
