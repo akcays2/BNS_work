@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{73}%
+\begin{thebibliography}{77}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -122,12 +122,17 @@
   {2016}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1602.03837}
   {arXiv:1602.03837 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1602.03837;%%
-\bibitem [{\citenamefont {Collaboration}(2017)}]{Fermi}%
+\bibitem [{The Fermi Collaboration, Fermi-Gamma-Ray-Burst Monitor GCN,
+  524666471()}]{Fermi}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~F.}\ \bibnamefont
-  {Collaboration}},\ }\href@noop {} {\enquote {\bibinfo {title}
-  {{Fermi-Gamma-Ray-Burst Monitor GCN, 524666471}},}\ } (\bibinfo {year}
-  {2017})\BibitemShut {NoStop}%
+  The Fermi Collaboration, Fermi-Gamma-Ray-Burst Monitor GCN, 524666471,\
+  \href@noop {} {} (\bibinfo {year} {2017})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Svinkin}\ \emph {et~al.}(2017)\citenamefont {Svinkin}
+  \emph {et~al.}}]{Svinkin}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Svinkin}} \emph {et~al.},\ }\href@noop {} {}\bibinfo {howpublished}
+  {Fermi-INTEGRAL GCN, 21515} (\bibinfo {year} {2017})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Savchenko}\ \emph {et~al.}(2017)\citenamefont
   {Savchenko} \emph {et~al.}}]{Savchenko:2017ffs}%
   \BibitemOpen
@@ -138,13 +143,22 @@
   {2017})},\ \Eprint {http://arxiv.org/abs/1710.05449} {arXiv:1710.05449
   [astro-ph.HE]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1710.05449;%%
-\bibitem [{\citenamefont {Coulter}\ \emph {et~al.}(2017)\citenamefont {Coulter}
-  \emph {et~al.}}]{Coulter:2017wya}%
+\bibitem [{\citenamefont {Coulter}\ \emph
+  {et~al.}(2017{\natexlab{a}})\citenamefont {Coulter} \emph
+  {et~al.}}]{Coulter2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Coulter}} \emph {et~al.},\ }\href@noop {} {}\bibinfo {howpublished} {1M2H
+  GCN, 21529 and 21567} (\bibinfo {year} {2017}{\natexlab{a}})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Coulter}\ \emph
+  {et~al.}(2017{\natexlab{b}})\citenamefont {Coulter} \emph
+  {et~al.}}]{Coulter:2017wya}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
   {Coulter}} \emph {et~al.},\ }\href {\doibase 10.1126/science.aap9811}
   {\bibfield  {journal} {\bibinfo  {journal} {Science}\ } (\bibinfo {year}
-  {2017}),\ 10.1126/science.aap9811},\ \Eprint
+  {2017}{\natexlab{b}}),\ 10.1126/science.aap9811},\ \Eprint
   {http://arxiv.org/abs/1710.05452} {arXiv:1710.05452 [astro-ph.HE]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1710.05452;%%
@@ -329,6 +343,21 @@
   {2012})},\ \Eprint {http://arxiv.org/abs/1107.2665} {arXiv:1107.2665
   [astro-ph.IM]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1107.2665;%%
+\bibitem [{\citenamefont {Knowles}\ \emph {et~al.}(2018)\citenamefont
+  {Knowles}, \citenamefont {Devine}, \citenamefont {Buch}, \citenamefont
+  {Bilgili}, \citenamefont {Adams}, \citenamefont {Etienne},\ and\
+  \citenamefont {McWilliams}}]{Knowles:2018hqq}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
+  {Knowles}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Devine}},
+  \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont {Buch}}, \bibinfo
+  {author} {\bibfnamefont {S.~A.}\ \bibnamefont {Bilgili}}, \bibinfo {author}
+  {\bibfnamefont {T.~R.}\ \bibnamefont {Adams}}, \bibinfo {author}
+  {\bibfnamefont {Z.~B.}\ \bibnamefont {Etienne}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {S.~T.}\ \bibnamefont {McWilliams}},\ }\href@noop {} {\
+  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1803.06346}
+  {arXiv:1803.06346 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1803.06346;%%
 \bibitem [{\citenamefont {Nissanke}\ \emph {et~al.}(2013)\citenamefont
   {Nissanke}, \citenamefont {Kasliwal},\ and\ \citenamefont
   {Georgieva}}]{Nissanke:2012dj}%
@@ -784,6 +813,16 @@
   {http://arxiv.org/abs/1312.5924} {arXiv:1312.5924 [astro-ph.HE]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1312.5924;%%
+\bibitem [{\citenamefont {Christian}\ \emph {et~al.}(2018)\citenamefont
+  {Christian}, \citenamefont {Mocz},\ and\ \citenamefont
+  {Loeb}}]{Christian:2018mjv}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Christian}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Mocz}}, \
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Loeb}},\ }\href@noop
+  {} {\  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1803.07094}
+  {arXiv:1803.07094 [astro-ph.HE]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1803.07094;%%
 \bibitem [{\citenamefont {Özel}\ and\ \citenamefont
   {Freire}(2016{\natexlab{b}})}]{Ozel:2016oaf}%
   \BibitemOpen
