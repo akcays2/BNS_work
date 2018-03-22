@@ -205,39 +205,44 @@ The long-term dynamics is governed by radiation reaction of GW emission from the
 We nonetheless supplement our Newtonian (leading-order) time evolution with results from post-Newtonian theory up to 3.5 post-Newtonian order \cite{Blanchet_LRR}.
 The evolution of a BNS system in the strong-field regime, where speeds $\gtrsim 0.1c$, is a very complex and complicated problem requiring fully relativistic, magnetohydrodynamic codes 
 with neutrino transport running on large-scale computing clusters and taking up to millions of CPU hours 
-(see Ref.~\cite{Faber:2012rw} for a review, and Refs.~\cite{Kyutoku:2017voj, Zappa:2017xba} for the latest developments and references therein).
+(see Ref.~\cite{Faber:2012rw} for a review, and Refs.~\cite{Kyutoku:2017voj, Zappa:2017xba, Dietrich:2018upm} for the latest developments and references therein).
 Despite its simplicity, our leading-order treatment is more than sufficient to provide reliable estimations of advance warning times.
-We back this claim up with an extensive list of computations showing how much each of our approximations affects the inspiral time.
+We support this claim in Sec.~\ref{sec:idealizations} with an extensive list of computations showing how much each of our approximations affects the inspiral time.
+
 Let us emphasize that this article is intended as a pedagogical introduction to gravitational-wave astronomy written at a level accessible to
-Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the basics.
+Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the underlying physics.
 Be that as it may, even the experts might find our results motivating and exciting.
 
 This article is organized as follows. Sec.~\ref{sec:BNS_inspiral} introduces the formulation for the leading-order evolution of the binary inspiral.
 Sec.~\ref{sec:IFO_response} details the interferometer response to GWs based on topology.
 Sec.~\ref{sec:idealizations} lists the various idealizations we employ to simplify our treatment and supplies justification for each.
 Sec.~\ref{sec:GW170817} tests our model network and evolution using the parameters of GW170817 and the corresponding GW data.
-Sec.~\ref{sec:results} contains our main results presented as advance warning times in Tables~\ref{table:LIGO2020}, \ref{table:ET} 
-as well horizon distances and event rates in Table~\ref{table:horizon}.
+Sec.~\ref{sec:results} contains our main results presented as advance warning times in Tables~\ref{table:LIGO2020}, \ref{table:ET}; 
+and as horizon distances and event rates in Table~\ref{table:horizon}.
 In Sec.~\ref{sec:BH_NS}, we reapply the above procedure to black hole - neutron star inspirals to see whether or not 
 future detectors can forecast a tidal disruption event, for which we summarize our findings in Table~\ref{table:ET_BH_NS}.
 
-We reserve the symbol $f$ to denote the GW frequency of the dominant quadrupole mode, which is twice the orbital (Keplerian) frequency $f_K$. 
-Relatedly, we define the following angular frequencies: $\omega = 2\pi f, \Omega=2\pi f_K$ with $\omega=2\Omega$.
-We employ the $\simeq$ symbol for the numerical values of quantities with infinite decimal expansions which we usually truncate at four significant digits,
-e.g., $\pi \simeq 3.142$.
-The $\approx$ symbol is reserved for approximations, whereas $\sim$ denotes rather rough order-of-magnitude equalities, e.g., $\pi \sim \ord(1)$. %Kepler's third law: $f_K^2\sim r^{-3}$.
-Overdots denote time derivative with respect to detector-frame time, e.g., $\dot{E} =dE/dt$. Unless otherwise noted, we use standard SI units.
+Throughout the text, $f$ denotes the GW frequency of the dominant quadrupole mode, which is twice the orbital (Keplerian) frequency $f_K$. 
+%Relatedly, we define the following angular frequencies: $\omega = 2\pi f, \Omega=2\pi f_K$ with $\omega=2\Omega$.
+We employ the $\simeq$ symbol when displaying the numerical values of quantities %with infinite decimal expansions 
+which we usually truncate at four significant digits.
+The $\approx$ symbol is reserved for approximations whereas $\sim$ denotes rough, order-of-magnitude equalities,
+e.g., $\pi \simeq 3.142$, $\pi \approx 3$, $\pi \sim \ord(1)$. %Kepler's third law: $f_K^2\sim r^{-3}$.
+Overdots denote time derivative with respect to detector-frame time, e.g., $\dot{E} =dE/dt$, and $\propto$ denotes proportionalities. 
+Unless otherwise noted, we use standard SI units.
 
 \section{Binary systems composed of neutron stars}\label{sec:BNS_inspiral}
 \subsection{Newtonian evolution of BNS}
-For us, the starting point for the evolution of a binary under the emission of GWs is the expression for the power generated given by 
+For us, the starting point for the evolution of a binary under gravitational radiation reaction
+%the emission of GWs 
+is the expression for the power emitted in GWs given by 
 %for the generated by the time-variance of the mass quadrupole moment
 %
 \be
 \dot{E} = \f{G}{5c^5}\langle \dddot{Q}_{ij}\dddot{Q}_{ij} \rangle \label{eq:Edot_quadrupole}\, .
 \ee
 %
-This is the celebrated Einstein quadrupole formula. 
+This is the celebrated Einstein quadrupole formula \cite{1918SPAW}. 
 Here, $Q_{ij}$ is a trace-reversed mass quadrupole moment which
 is the dominant contribution to the power generated %in gravitational radiation
 by a system with changing mass moments. 
@@ -246,7 +251,7 @@ Here, we are specifically interested in the motion of two point masses in bound 
 Labelling the masses by $m_1 \le m_2$, we have, for a binary in a circular orbit with Keplerian angular frequency $\Omega$ and separation $2r$,
 %
 \be
-\dot{E} = \f{32}{5}\f{G\mu^2}{c^5}\, r^4 \Omega^6\label{eq:Edot}
+\dot{E} = \f{32}{5}\f{G\mu^2}{c^5}\, r^4 \Omega^6\label{eq:Edot},
 \ee
 %
 where $\mu= m_1 m_2/M$ is the reduced mass and $M=m_1+m_2$ is the total mass. 
@@ -268,22 +273,21 @@ which turns Eq.~(\ref{eq:Edot}) into
 where, recall $\omega=2\Omega$ is the angular frequency of the quadrupolar GWs. 
 The quantity in parantheses in Eq.~(\ref{eq:Edot2}) is ubiquitous in post-Newtonian theory and is
 referred to as the dimensionless inverse separation $x$.
-As $x\sim v^2/c^2$, it is used to keep track of post-Newtonian orders and we can from in Eq.~(\ref{eq:Edot2}) that $\dot{E}\sim x^5$. 
+As $x\sim v^2/c^2$, it is used to keep track of post-Newtonian orders and we can see from in Eq.~(\ref{eq:Edot2}) that $\dot{E}\sim x^5$. 
 %hence the common statement in the literature saying that gravitational radiation starts 
 
-The energy generated by the acceleration of the masses is radiated away in GWs,
-which makes the total energy of the binary more negative, i.e., the orbit becomes more bound. 
+The energy radiated away in GWs decreases the total energy of the binary thus making the orbit more bound. 
 Since the total energy is given by
 %
 \be
-E_b = -\frac{G m_1 m_2}{2r}\, . \label{eq:binding_energy1}
+E_b = -\frac{G m_1 m_2}{2r}\,  \label{eq:binding_energy1}
 \ee
 %
-$\dot{E}_b < 0$ implies the orbital radius must decrease in time. 
-Using Kepler's third law, $ \Omega^2 = G M r^{-3}$ and Eq.~(\ref{eq:chirp_mass}) we obtain
+we have $\dot{E}_b \propto \dot{r}/r$; hence $\dot{E}_b < 0$ implies $\dot{r}<0$.
+Using Kepler's third law, i.e., $ \Omega^2 = G M r^{-3}$ and Eq.~(\ref{eq:chirp_mass}) we obtain
 %
 \be
-E_b = -\left(\f{G^2 M_c^5 \omega^2}{32}\right)^{1/3}, \label{eq:binding_energy2}
+E_b = -\left(\f{G^2 M_c^5 \omega^2}{32}\right)^{1/3}\, . \label{eq:binding_energy2}
 \ee
 %
 Energy conservation dictates that $\dot{E}=-\dot{E}_b$. Using the chain rule to determine $\dot{E}_b$ from Eq.~(\ref{eq:binding_energy2})
@@ -310,16 +314,16 @@ We can now define an inspiral time at a given GW frequency
 which we can rewrite as follows
 %
 \be
-\tau_\text{insp}(f) \simeq 2.18\,\text{s} \, \left(\f{1.21 M_\odot}{M_c}\right)^{5/3}\,\left(\f{100\,\text{Hz}}{f}\right)^{8/3}, \label{eq:tau_insp2}
+\tau_\text{insp}(f) \simeq 16.72\,\text{minutes} \, \left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\,\left(\f{10\,\text{Hz}}{f}\right)^{8/3}, \label{eq:tau_insp2}
 \ee
 %
-where $1.21 M_\odot$ is the chirp mass corresponding to $m_1=m_2=1.4 M_\odot$.
+where $\simeq 1.219 M_\odot$ is the chirp mass corresponding to $m_1=m_2=1.4 M_\odot$.
 
-We can also compute the number of GW cycles over the course of an inspiral. Given that the orbital period $T(t)$ varies over a much larger time scale than T itself
+We can also compute the number of GW cycles over the course of an inspiral. Given that the orbital period $T_K(t)$ varies over a much larger time scale than $T_K$ itself
 we can write
 %
 \be
-\mathcal{N}_\text{cyc}(f) = \int_f^{f_\text{max}} \f{f}{\dot{f}}\, df =\f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\left[ f^{-5/3}-f_\text{max}^{-5/3}\right] \label{eq:Ncyc1}
+\mathcal{N}_\text{cyc}(f) = \int_f^{f_\text{max}} \f{f'}{\dot{f'}}\, df' =\f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\left[ f^{-5/3}-f_\text{max}^{-5/3}\right] \label{eq:Ncyc1}
 \ee
 %
 We now introduce a cut-off for the inspiral imposed by the frequency of the innermost stable circular (ISCO) orbit in Schwarzschild spacetime
@@ -328,17 +332,18 @@ We now introduce a cut-off for the inspiral imposed by the frequency of the inne
 \ee
 %
 %
-We will see in Sec.~\ref{sec:idealizations} that $f_\text{ISCO} \sim \mathcal{O}(1000)\,$Hz for a system with $M\approx 2 M_\odot$. Moreover, the frequencies of interest for our advance warning time estimations will be $\lesssim \mathcal{O}(10)\,$Hz
+We will see in Sec.~\ref{sec:idealizations} that $f_\text{ISCO} \sim 1000\,$Hz for a system with $M\approx 2 M_\odot$. 
+On the other hand, the frequencies of interest for our advance warning time estimations will be $\lesssim 10\,$Hz
 meaning that $f^{-5/3} \gg f_\text{ISCO}^{-5/3}$. Therefore, at the leading (Newtonian) order, the number of GW cycles can be approximated by
 %
 \be
-\mathcal{N}_\text{cyc}(f) \simeq \f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\, f^{-5/3} \, . \label{eq:Ncyc2}
+\mathcal{N}_\text{cyc}(f) \approx \f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\, f^{-5/3} \, . \label{eq:Ncyc2}
 \ee
 %
 Restoring some familiar numbers in this expression yields
 %
 \be
-\mathcal{N}_\text{cyc}(f)\simeq 1.6\times 10^4 \left(\f{10\,\text{Hz}}{f} \right)^{5/3}\,\left(\f{1.21 M_\odot}{M_c}\right)^{5/3}\label{eq:Ncyc3}\, .
+\mathcal{N}_\text{cyc}(f)\approx 1.605\times 10^4 \left(\f{10\,\text{Hz}}{f} \right)^{5/3}\,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\label{eq:Ncyc3}\, .
 \ee
 %
 This expression is quite telling: if a ground-based interferometer picks up an
@@ -357,12 +362,12 @@ is ``picked up'' by a detector. Solving $\tau(f_i)=\tau_i$ for $f_i=\Omega_i/\pi
 Kepler's third law gives us
 %
 \be
-\tau_i = \f{5}{256}\, \f{c^5 r_i^4}{G^3 M^2 \mu}\simeq 9.829\times 10^6\,\text{yrs}\, \left(\f{T}{1\,\text{hr}}\right)^{8/3} \left(\f{M_\odot}{M}\right)^{2/3}\,\left(\f{M_\odot}{\mu}\right) \label{eq:tau_of_r}.
+\tau_i = \f{5}{256}\, \f{c^5 r_i^4}{G^3 M^2 \mu}\simeq 20.37\,\text{hours}\, \left(\f{T_K}{1\,\text{s}}\right)^{8/3} \left(\f{2.8M_\odot}{M}\right)^{2/3}\,\left(\f{0.7M_\odot}{\mu}\right) \label{eq:tau_of_r}.
 \ee
 %
 
 Let us now turn our attention to the GWs generated by the inspiral.
-The GWs themselves actually are tensor distortions $h_{\mu\nu}$ of the flat Minkowski
+The GWs themselves actually are tensor distortions of flat (Minkowski)
 spacetime propagating at the speed of light.
 In more technical terms, they satisfy $\Box h_{\mu\nu} = 0$, i.e., the flat spacetime sourceless wave equation
 meaning that we are considering the solutions far from the GW source, in the so-called wave zone defined by the condition $ c/f \ll D$.

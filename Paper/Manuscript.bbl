@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{77}%
+\begin{thebibliography}{80}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -411,6 +411,33 @@
   {http://arxiv.org/abs/1712.04267} {arXiv:1712.04267 [gr-qc]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1712.04267;%%
+\bibitem [{\citenamefont {Dietrich}\ \emph {et~al.}(2018)\citenamefont
+  {Dietrich}, \citenamefont {Bernuzzi}, \citenamefont {Bruegmann},\ and\
+  \citenamefont {Tichy}}]{Dietrich:2018upm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Dietrich}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Bernuzzi}},
+  \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Bruegmann}}, \ and\
+  \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Tichy}}\ }(\bibinfo
+  {year} {2018})\ \Eprint {http://arxiv.org/abs/1803.07965} {arXiv:1803.07965
+  [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1803.07965;%%
+\bibitem [{\citenamefont {{Einstein}}(1918)}]{1918SPAW}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Einstein}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der
+  Wissenschaften (Berlin), Seite 154-167.}\ } (\bibinfo {year}
+  {1918})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Michelson}\ and\ \citenamefont
+  {Morley}(1887)}]{Michelson:1887zz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont
+  {Michelson}}\ and\ \bibinfo {author} {\bibfnamefont {E.~W.}\ \bibnamefont
+  {Morley}},\ }\href {\doibase 10.2475/ajs.s3-34.203.333} {\bibfield  {journal}
+  {\bibinfo  {journal} {Am. J. Sci.}\ }\textbf {\bibinfo {volume} {34}},\
+  \bibinfo {pages} {333} (\bibinfo {year} {1887})}\BibitemShut {NoStop}%
+%%CITATION = AJSCA,34,333;%%
 \bibitem [{\citenamefont {Sathyaprakash}\ and\ \citenamefont
   {Schutz}(2009)}]{SchutzLRR}%
   \BibitemOpen
