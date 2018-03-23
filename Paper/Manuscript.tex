@@ -583,7 +583,7 @@ This may seem somewhat ad hoc, but it is our way of modeling the Advanced-LIGO-V
 the three IFOs will accumulate varying SNRs due to their differing quality factors.
 %
 
-To represent our model three-IFO network, we introduce % the norm of the frequency-domain strain (\ref{eq:strain_FD}) 
+To represent our model three-IFO network, we introduce the norm of the frequency-domain strain (\ref{eq:strain_FD}) 
 %%
 %
 \be
@@ -635,7 +635,7 @@ Medium is the RMS-averaged (one $\sigma$) response. Recall $A= \pi^{-2/3} \sqrt{
 \end{table}
 %
 %
-We can now write the total SNR for our network
+We can now write the total SNR for our three L-IFO network
 %%
 %
 \begin{align}
@@ -657,22 +657,22 @@ with $\rho_h, \rho_m,\rho_l$ given by Eq.~(\ref{eq:SNR_i}) and Table~\ref{table:
 
 
 \subsection{Einstein Telescope configuration: triangular topology}\label{sec:ET_topo}
-Current design of Einstein Telescope is based on a [equilateral] triangular configuration with 10\,km armlengths \cite{ET_doc}.
+Current design of Einstein Telescope (ET) is based on a [equilateral] triangular configuration with 10\,km armlengths \cite{ET_doc}.
 Within this equilateral triangle, ET will consist of three V-shaped cryogenic interferometers housed underground to
 sigificantly reduce seismic and gravity-gradient noises \cite{ET_doc}.
 This closed topology will allow the detector to form a null stream completely devoid of a signal \cite{Sathyaprakash:2012jk},
 which can be used to rule out spurious events \cite{Wen:2005ui}.
 As we will show below, the response function and the quality factor of the triangular configuration are independent of the azimuthal angle $\phi$
 hence ET will have no blind spots \cite{Regimbau:2012ir}.
-However, the $60^\circ$ arm separation reduces the strain of a V-shaped interferometer by a factor of $\sin 60^\circ=\sqrt{3}/2$ compared
-to an L-shaped interferometer. So for a single V-IFO the antenna patterns of (\ref{eq:F_plus}, \ref{eq:F_cross}) become
+However, the $60^\circ$ arm separation reduces the strain sensitivity of a V-shaped interferometer by a factor of $\sin 60^\circ=\sqrt{3}/2$ compared
+to an L-shaped interferometer with the same armlength. So for a single V-IFO the antenna patterns of (\ref{eq:F_plus}, \ref{eq:F_cross}) become
 %
 \be
 F^1_+(\theta,\phi,\psi)= \f{\sqrt{3}}{2} F_+(\theta,\phi,\psi), \qquad F^1_\times(\theta,\phi,\psi)= \f{\sqrt{3}}{2} F_\times(\theta,\phi,\psi)\label{eq:F1plus_F1cross}\, ,
 \ee
 %
 where the superscript $1$ labels one of the three V's of the triangle.
-Since the other two V IFOs lie in the same plane as the first one, their antenna patterns can be obtained simply by rotating in the azimuthal
+Since the other two V-IFOs lie in the same plane as the first one, their antenna patterns can be obtained simply by rotating in the azimuthal
 direction by $120^\circ, 240^\circ$, respectively
 %
 \begin{align}
@@ -686,15 +686,15 @@ The invidual antenna responses combine to cancel the $\phi$ and $\psi$ dependenc
 F^2_\bigtriangleup \equiv \sum_{A=1}^3 \left(F^A_+\right)^2+\left(F^A_\times\right)^2 = \f{9}{32}\left(1+6\cos^2\theta + \cos^4\theta\right). \label{eq:ET_power_pattern}
 \ee
 %
-From this, we immediately have that the RMS average is given by $\langle F_\bigtriangleup\rangle =3/\sqrt{10}$ and the minium value is $F_\bigtriangleup(\pi/2)=3/\sqrt{32}$;
+From this, we immediately have that the RMS average is given by $\langle F^2_\bigtriangleup\rangle^{1/2} =3/\sqrt{10}$ and the minium value is $F_\bigtriangleup(\pi/2)=3/\sqrt{32}$;
 %As $F^2 > 0$ for all $\theta$ with its RMS average $\sqrt{2/5}\simeq 63.2\%$ of optimal $F$ and its
 thus a triangular detector made-up of three V-IFOs has all-sky coverage.
 
 For the total SNR accumulated in a triangular detector we have
 %
 \begin{align}
-\rho^2_{\text{tot},\bigtriangleup} & = \sum_{A=1}^3 \rho_A^2 \nn \\
- & =  \f{5}{6}\, \pi^{-4/3} \f{c^2}{D^2}\left(\f{G M_c}{c^3}\right)^{5/3}|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 \int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \, ,\label{eq:ET_SNRsq}
+\rho^2_{\text{tot},\bigtriangleup} & = \sum_{A=1}^3 \rho_A^2 \nn \\ % \f{c^2}{D^2}\left(\f{G M_c}{c^3}\right)^{5/3}
+ & =  \f{5}{6}\, \pi^{-4/3} h_0^2\,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 \int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \, ,\label{eq:ET_SNRsq}
 \end{align}
 where
 %
@@ -709,31 +709,34 @@ which is independent of $\phi$ \cite{Regimbau:2012ir}. We once again take the RM
 \bar{Q}^2_\bigtriangleup\equiv\langle |Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 \rangle_{\theta,\phi,\psi,\iota} = \f{9}{25}\label{eq:RMS_ET}
 \ee
 %
-which is $5/2$ times higher than a single L-shaped IFO's RMS average of 4/25 [cf. Eq.~(\ref{eq:RMS_th_ph_ps_iota})].
+which is larger than a single L-shaped IFO's RMS average of 4/25 given in Eq.~(\ref{eq:RMS_th_ph_ps_iota}).
 
-As we can not know the source sky position or orientation we will use the RMS-averaged SNR for our computations %(\ref{eq:ET_SNRsq})
+As we can not a priori know the source sky position or orientation we will model the response of ET using the RMS-averaged SNR %(\ref{eq:ET_SNRsq})
 %
 \be
-\rho_{\text{tot},\bigtriangleup} = \f{36}{25}A^2 h_0^2 \int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \label{eq:ET_SNR},
+\rho_{\text{tot},\bigtriangleup} = \f{6}{5}A\, h_0 \left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \label{eq:ET_SNR},
 \ee
 where $h_0$ is given by Eq.~(\ref{eq:h0}) and $A=\pi^{-2/3}\sqrt{5/24}$ as before. % from Sec.\ref{sec:LIGO_topo}. 
-Accordingly, we define an RMS-averaged frequency-domain
-strain
+Accordingly, we define an RMS-averaged frequency-domain strain
 %
 \begin{align}
-\tilde{H}_\bigtriangleup(f, D)&\equiv A\,  \bar{Q}_\bigtriangleup\, h_0 f^{-7/6} \nn \\
+\tilde{H}_\bigtriangleup(f)&\equiv A\,  \bar{Q}_\bigtriangleup\, h_0 f^{-7/6} \nn \\
    & = \f{1}{2}\sqrt{\f{3}{10}}\, \f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6} f^{-7/6}. \label{eq:H_delta}
 \end{align}
 %
-It is this strain that we will use as a typical ET source; thus in this sense,
-$\tilde{H}_\bigtriangleup(f,D)$ is like the $\tilde{H}_i(f)$ of Table~\ref{table:network_params}.
-But whereas in the case of a three L-IFO network we represented the detector response due to a single source in terms of three different
-values $\tilde{H}_i(f)$, for ET we will only consider $\tilde{H}_\bigtriangleup(f)$ as we have already angle-averaged over all three V-IFOs antenna patterns.
+This is ET's sky-averaged response to a BNS inspiral at luminosity distance $D$ and chirp mass $M_c$.
+%It is this strain that we use as a typical ET BNS source; 
+Thus, $\tilde{H}_\bigtriangleup(f)$ is like the $\tilde{H}_i(f)$ of Table~\ref{table:network_params},
+but different in that  $\tilde{H}_\bigtriangleup(f)$ represents the total response of the entire three V-IFO network whereas $\tilde{H}_i(f)$
+is the response of the $i^\text{th}$ L-IFO.
+%whereas in the case of a three L-IFO network we represented the detector response due to a single source in terms of three different
+%values $\tilde{H}_i(f)$, for ET we will only consider $\tilde{H}_\bigtriangleup(f)$ as we have already angle-averaged over all three V-IFOs antenna patterns.
 %$\tilde{H}_\bigtriangleup(f)$, as given by Eq.~(\ref{eq:H_delta}), depends only on the luminosity distance and the chirp mass.
-In Sec.~\ref{Sec:ETB} we will consider BNS systems inspiralling at varying luminosity distances as typical sources for ET.
-To compute the resulting SNRs, we will slightly modify Eq.~(\ref{eq:ET_SNR}) and use $\sqrt{S_n(f)}$ for the B and C configurations of ET.
 
-Before we present our results, we list the various idealizations/simplifications that we adopt to simplify our computations.
+In Sec.~\ref{sec:results} we will consider BNS systems inspiralling at varying luminosity distances as typical sources for the ALV and ET networks.
+To compute the resulting SNRs, we will slightly modify the integrals in Eqs.~(\ref{eq:SNR_i}, \ref{eq:ET_SNR}) and 
+use design sensitivities of A-LIGO and ET's B and C configurations for $\sqrt{S_n(f)}$.
+Before we present our results, we list the various idealizations that we have adopted to simplify our computations.
 For each idealization we present an estimated error. %that propa
 Our overall conclusion is that our simplifications do not significantly change our estimations of the advance warning times.% which we quantify below.
 %take full advantage of all the available analytical results.
