@@ -586,9 +586,14 @@ yielding
 Using this value, we assign our below-average third IFO %$\langle|Q|^2\rangle^{1/2}
 $|Q|=4/5-\sqrt{2/5}\simeq 0.1675$.
 %which is essentially a $\{\theta$-$\phi\}$-RMS awayfrom the overall RMS averaged value of 2/5.
-This may seem somewhat ad hoc, but it is our way of modeling the Advanced-LIGO-Virgo network of 2020s in which 
-the three IFOs will accumulate varying SNRs due to their differing quality factors so for our model network, we have chosen $|Q|= 4/5,2/5,$ and $4/5-\sqrt{2/5}$.
+This may seem somewhat ad hoc, 
+but it is our way of representing the response of a three-IFO network to a single source. In other words, we map the three different IFO responses due to a single source to a single IFO's response to three different sources differing in amplitudes 
+from the optimal case by quality factors $|Q_i|= 4/5,2/5,$ and $4/5-\sqrt{2/5}$.
+
+%as listed in Table~\ref{table:network_params}.
 %
+%but it is our way of modeling the Advanced-LIGO-Virgo network of 2020s in which 
+%the three IFOs will accumulate varying SNRs due to their %
 %
 To this, we introduce the norm of the frequency-domain strain (\ref{eq:strain_FD}) 
 %%
@@ -606,7 +611,7 @@ for each IFO labelled by $i$, where
 h_0 &= \f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6} \label{eq:h0}\, 
 \end{align}
 %
-and $\tilde{A}_i$ %=A |Q|_i$ %\langle|Q|^2\rangle^{1/2}_i $ 
+and $\tilde{A}_i\equiv A |Q_i|$ %\langle|Q|^2\rangle^{1/2}_i $ 
 are given in Table~\ref{table:network_params}. %for $i=1,2,3$. %Clearly, the strain and thus the SNR at each of our imaginary interferometers scales as $\langle |Q|^2\rangle^{1/2}_i$, thus
 %%
 The SNR for each interferometer can now be written as
@@ -1062,7 +1067,7 @@ We use a $\verb|Mathematica|$ based code developed at UCD to do the same for GW1
 
 Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs to identically have this sensitivity,
 but because their orientations and response functions differ, their sensitivity to a localized source is reduced. We represent this reduction by lowering the
-amplitude of the incoming GWs by appropriate factors explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
+amplitude of the GW strain by appropriate quality factors ($|Q_i|$) explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
 The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the dashed ($i=h$), solid ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
 $2\sqrt{f} \tilde{H}_i(f)$ as is standard. 
 Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulated by our network
@@ -1077,7 +1082,7 @@ These are comparable to actual SNRs of L1, H1, and V1 for GW170817, which are, 2
 %To accommodate more realistic orientations, we show two shaded regions in Fig.~\ref{fig:figGW170817}. The inspirals in the lighter region yield SNR$\ge 22.34$ as
 %they sweep from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz whereas inspirals in the darker region accumulate $ \bar\rho_l \le \text{SNR} \le 22.34$.
 The shaded region in Fig.~\ref{fig:figGW170817} covers strains between $\tilde{H}_l(f)$ and $\tilde{H}_h(f)$. %which we expect to represent mo
-Given a BNS inspiral at 40 Mpc, we would in general expect a randomly oriented IFO's response to lie in this shaded region.
+Given a randomly positioned/oriented BNS inspiral at 40 Mpc, we would in general expect a randomly oriented IFO's response to lie in this shaded region.
 %Given a network of three equally sensitive, randomly oriented IFOs we expect that a single 40-Mpc BNS inspiral would produce three distinct detector response strains that fall within this shaded region.
 %
 %
@@ -1091,19 +1096,25 @@ a binary neutron star system with parameters given in Eq.~(\ref{eq:GW170817_para
 %each interferometer's frequency-domain response
 The variation in strain amplitudes is the result of a given interferometer's orientation and the sky position of the source 
 as explained in Sec.~\ref{sec:LIGO_topo} and summarized in Table~\ref{table:network_params}.
-In other words, the dashed line is how ``loud'' GW170817 would appear in the data stream of a near optimally oriented IFO with L1's sensitivity
+More specifically, the dashed line is how ``loud'' GW170817 would appear in the data stream of an IFO with L1's sensitivity
+with near optimal orientation
 %would be if L1was optimally positioned and oriented 
-(quality factor $Q=80\%$). Similarly, the solid line represents the strain in %a randomly oriented IFO with randomized source sky location, hence
-the RMS-averaged IFO with L1's sensitivity ($Q=40\%$). %, but with RMS-average over all angles 
+(quality factor $|Q|=4/5=80\%$). Similarly, the solid line represents the strain in an identical inteferometer with 
+%a randomly oriented IFO with randomized source sky location, hence
+%the RMS-averaged IFO with L1's sensitivity 
+$|Q|=2/5=40\%$ (RMS-averaged response). %, but with RMS-average over all angles 
 %determining source orientation and position. 
 Finally, the dotted line represents a pessimistic IFO orientation and source location (sub-optimal configuration)
-resulting in a reduction of amplitude to $\simeq 16.7\%$ of the $Q=1$ case. 
-The shading represents the region of likelihood for where the strain due to an inspiralling BNS would be. In the case of a three-IFO
-network, we would expect all three strains to exist somewhere in the shaded region most of the time. %.and two out of three every time.
+resulting in a reduction of $|Q|$ to $\simeq 16.7\%$.
+%of the $Q=1$ case. 
+The shading represents the region of likelihood for the strain due to an inspiralling BNS. In the case of a three-IFO
+network, we would expect all three strains to exist somewhere in the shaded region most of the time for an inspiral with GW170817's intrinsic parameters. %.and two out of three every time.
 %The darker region marks $\text{RMS}\pm(\sqrt{2/5}-2/5)$ translating to an amplitude range of $ 16.7\% - 63.2\%$ of the maximum $\tilde{H}_h(f)$.
 %For a randomly located, oriented BNS inspiral, we expect its strain to sweep in the lighter region for one IFO and in the darker region for the other two IFOs.
-The dot-dashed (green) curve shows a more realistic strain constructed with data from numerical simulations of Ref.~\cite{Read:2009yp}.
-The breakdown of the leading-order $\sqrt{f}f^{-7/6}=f^{-2/3}$ behavior around $f\sim100\,$Hz due to tidal effects is clear.
+The dot-dashed (green) curve shows a more realistic strain constructed with data from numerical simulations of Ref.~\cite{Read:2009yp}
+and rescaled to match our solid line at $f=10\,$Hz.
+The breakdown of the $\sqrt{f}f^{-7/6}=f^{-2/3}$ behavior of
+the strain around $f\sim100\,$Hz due to tidal effects is clear.
 %Note that although we extend the $\sqrt{f}f^{-7/6}=f^{-2/3}$ power law behavior of the strains all the way to ISCO, in actuality, this  starts breaking down .
 }
 \label{fig:figGW170817}
@@ -1158,7 +1169,7 @@ the ASD from the August 2017 value to design sensitivity.
  With the masses fixed, the only remaining variable is the 
  luminosity distance $D$.
 For the ALV network, we consider $D=50,100,200\,$Mpc 
- as its horizon will be slightly over 200\,Mpc.
+ as A-LIGO horizon will be slightly over 200\,Mpc and A-Virgo's around 130\,Mpc.
  %and BNS systems at $D=200, 400, 1000\,$Mpc for the ET network. 
  For each value of $D$, we compute $\bar{f}$ from Eq.~(\ref{eq:SNR_bar}) with which we then compute $T_\text{AW}=\tau_\text{insp}(\bar{f})$.
  %which we set to values of our choosing. %as can be seen from Eq.~(\ref{eq:h0}).
@@ -1191,7 +1202,7 @@ We additionally calculate
 the total accumulated SNR from $f_0$ to $f_\text{ISCO}$ for each inspiral using%sweeping the A-LIGO and ET network bandwidths
  %
 \be
-\bar{\rho}_\text{F}\equiv\sqrt{\left[{\rho}_h(f_0^h,{f}_\text{ISCO})\right]^2+\left[{\rho}_m(f_0^m,{f}_\text{ISCO})\right]^2+\left[{\rho}_l(f_0^l,{f}_\text{ISCO})\right]^2} \label{eq:SNR_bar_FINAL} .
+\bar{\rho}_\text{F}\equiv\sqrt{\left[{\rho}_h(f_0^h,{f}_\text{ISCO})\right]^2+\left[{\rho}_m(f_0^m,{f}_\text{ISCO})\right]^2+\left[{\rho}_l(f_0^l,{f}_\text{ISCO})\right]^2} \label{eq:SNR_bar_FINAL}\, .
 \ee
 %
 %
@@ -1199,11 +1210,10 @@ We will introduce the corresponding expressions for ET in Sec.~\ref{Sec:ETB}.
 To compute the SNRs defined above for the ALV network we require IFO noise data for which
 we use the ASD for the BNS-optimized A-LIGO design sensitivity expected to be attained ca.~2020 from Ref.~\cite{LIGO2020},
 which is plotted as the thick solid (red) curve in Fig.~\ref{fig:LIGO2020}.
-Sweeping across the detector's frequency band are RMS-averaged GW strains ($\tilde{H}_m$) due to BNS inspirals at $D=50,100,200\,$Mpc plotted from top to bottom, respectively.
-Each RMS-averaged strain is accompanied by its shaded region ranging from a near-optimally oriented strain ($\tilde{H}_h$) to a sub-optimally oriented strain ($\tilde{H}_l$). These regions were explained in Sec.~\ref{sec:GW170817} and shown in Fig.~\ref{fig:figGW170817}.
-Recall that this is our way of representing the response of a three-IFO network to a single source, i.e., we map the three different IFO responses due to a single source to a single IFO's response to three different sources differing in amplitudes as listed in Table~\ref{table:network_params}.
+Sweeping across the detector's frequency band are RMS-averaged GW strains ($\tilde{H}_m$) due to BNS inspirals at $D=50,100,200\,$Mpc plotted from top to bottom, respectively (recall we plot $2\sqrt{f}\tilde{H}_i$ against detector noise).
+Each RMS-averaged strain is accompanied by its shaded region ranging from a near-optimally oriented strain ($\tilde{H}_h$) to a sub-optimally oriented strain ($\tilde{H}_l$) which were explained in Sec.~\ref{sec:GW170817} and first shown in Fig.~\ref{fig:figGW170817}.
 The height of a given strain above the detector sensitivity provides a good \emph{visual} estimation for the corresponding SNR,
-but the reader should keep in mind that the actual computation involves a ratio, not a difference, as shown, e.g., in Eq.~(\ref{eq:SNR}).
+but the reader should keep in mind that the actual computation involves the integral of a ratio, not a difference [cf. Eq.~(\ref{eq:SNR})].
 %
 %
 %
@@ -1497,7 +1507,18 @@ some of which can be deduced from Eqs.~(\ref{eq:TD_cond1}, \ref{eq:TD_cond2}). T
  on the right hand side. Smaller values for $c_\text{NS}$ mean that TD is more likely to occur for $r>r_\text{ISCO}$.
 \end{enumerate}
 %
-We are thus led to set $M_\text{BH} =5 M_\odot$. There is additional motivation to choose low BH mass as 
+
+Although the results from each numerical study may somewhat vary what is clear is that we must have high spin and low black hole mass. We are thus led to set $M_\text{BH} =5 M_\odot$. 
+This raises an interesting astrophysical question as to whether it is possible to have such light-weight high-spin black holes assuming that
+they are spun up by accretion from their secondary (that will later on become a NS) in binary systems, thus they will have to gain mass.
+It is possible that the mass gain pushes $M_\text{BH}$ too high to either cause a direct plunge of the NS before TD or decrease $\tau_\text{insp}$ considerably
+to eliminate any chances of getting an advance warning.
+However, if the spin of the BH comes from the supernova explosion mechanism itself as argued for G1915 in Ref.~\cite{McClintock:2006xd} then it is possible to have a 
+low-mass BH in a binary system\footnote{We thank Dr. Morgan Fraser
+for pointing this out}.
+
+
+There is additional motivation to choose low BH mass as 
  $\tau_\text{insp} \propto M_c^{-5/3} = (1+Q)^{1/3}/Q\to Q^{-2/3}$ as $Q\to\infty$ for $Q\equiv m_2/m_1 > 1$, i.e., heavier binaries inspiral faster.
  We once again set $M_\text{NS}=1.4 M_\odot$ thus $Q=5/1.4  \simeq 3.571$. $c_\text{NS}$ is determined by the radius of the NS constrained in the $9.9 - 11.2\,$km range \cite{Ozel:2016oaf}
  which results in $0.13\lesssim c_\text{NS} \lesssim 0.15$ 
@@ -1507,13 +1528,9 @@ We are thus led to set $M_\text{BH} =5 M_\odot$. There is additional motivation 
 If we pick the more pessimistic $c_\text{NS} = 0.15$ bound then we must have $Q\lesssim 5$ and $a\gtrsim 0.5$ (prograde) for TD to occur \cite{Ferrari:2008nr}
 and $Q< 3$ in the case of $a=0$ \cite{Kyutoku:2011vz}.
 
-Although the results from each numerical study may somewhat vary what is clear is that we must have high spin and low black hole mass.
-This raises an interesting astrophysical question as to whether it is possible to have such light-weight high-spin black holes assuming that
-they are spun up by accretion from their secondary (that will later on become a NS) in binary systems, thus they will have to gain mass.
-It is possible that the mass gain pushes $Q$ too high to either cause a direct plunge of the NS before TD or decrease $\tau_\text{insp}$ considerably
-to eliminate any chances of getting an advance warning.
-However, if the spin of the BH comes from the supernova explosion mechanism itself as argued for G1915 in Ref.~\cite{McClintock:2006xd} then it is possible to have a 
-low-mass BH in a binary system.
+
+
+
 
 Therefore, we simply assume that such lightweight, high-spin BHs exist in BH-NS binaries and compute strains and SNRs accordingly.
 A quick calculation shows that these systems yield $T_\text{AW} \lesssim 30\,$seconds in the ALV network of 2020s. %in Table \ref{table:LIGO2020}is now less than $ 40\,$ seconds. 

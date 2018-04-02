@@ -872,6 +872,22 @@
   {} {\  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1803.07094}
   {arXiv:1803.07094 [astro-ph.HE]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1803.07094;%%
+\bibitem [{\citenamefont {McClintock}\ \emph {et~al.}(2006)\citenamefont
+  {McClintock}, \citenamefont {Shafee}, \citenamefont {Narayan}, \citenamefont
+  {Remillard}, \citenamefont {Davis},\ and\ \citenamefont
+  {Li}}]{McClintock:2006xd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {McClintock}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Shafee}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Narayan}}, \bibinfo
+  {author} {\bibfnamefont {R.~A.}\ \bibnamefont {Remillard}}, \bibinfo {author}
+  {\bibfnamefont {S.~W.}\ \bibnamefont {Davis}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {L.-X.}\ \bibnamefont {Li}},\ }\href {\doibase 10.1086/508457}
+  {\bibfield  {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf
+  {\bibinfo {volume} {652}},\ \bibinfo {pages} {518} (\bibinfo {year}
+  {2006})},\ \Eprint {http://arxiv.org/abs/astro-ph/0606076}
+  {arXiv:astro-ph/0606076 [astro-ph]} \BibitemShut {NoStop}%
+%%CITATION = ASTRO-PH/0606076;%%
 \bibitem [{\citenamefont {Özel}\ and\ \citenamefont
   {Freire}(2016{\natexlab{b}})}]{Ozel:2016oaf}%
   \BibitemOpen
@@ -909,22 +925,6 @@
   {064018} (\bibinfo {year} {2011})},\ \Eprint {http://arxiv.org/abs/1108.1189}
   {arXiv:1108.1189 [astro-ph.HE]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1108.1189;%%
-\bibitem [{\citenamefont {McClintock}\ \emph {et~al.}(2006)\citenamefont
-  {McClintock}, \citenamefont {Shafee}, \citenamefont {Narayan}, \citenamefont
-  {Remillard}, \citenamefont {Davis},\ and\ \citenamefont
-  {Li}}]{McClintock:2006xd}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
-  {McClintock}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Shafee}},
-  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Narayan}}, \bibinfo
-  {author} {\bibfnamefont {R.~A.}\ \bibnamefont {Remillard}}, \bibinfo {author}
-  {\bibfnamefont {S.~W.}\ \bibnamefont {Davis}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {L.-X.}\ \bibnamefont {Li}},\ }\href {\doibase 10.1086/508457}
-  {\bibfield  {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf
-  {\bibinfo {volume} {652}},\ \bibinfo {pages} {518} (\bibinfo {year}
-  {2006})},\ \Eprint {http://arxiv.org/abs/astro-ph/0606076}
-  {arXiv:astro-ph/0606076 [astro-ph]} \BibitemShut {NoStop}%
-%%CITATION = ASTRO-PH/0606076;%%
 \bibitem [{\citenamefont {Abbott}\ \emph
   {et~al.}(2016{\natexlab{c}})\citenamefont {Abbott} \emph
   {et~al.}}]{Abbott:2016ymx}%
