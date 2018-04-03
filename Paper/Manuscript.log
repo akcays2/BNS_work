@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.8)  2 APR 2018 01:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.8)  3 APR 2018 01:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,74 +970,77 @@ Overfull \hbox (5.63596pt too wide) in paragraph at lines 136--147
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.714 \end{align}
-                 ] [9] [10pdfTeX warning (ext4): destination with the same iden
-tifier (name{table.2}) has been already used, duplicate ignored
+l.716 F
+       or the total SNR accumulated in a triangular detector we have] [9]
+[10pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.877 \ee
+l.882 \be
          ] [11] [12]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 1066
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 1073
 .
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) <../Figures/GW170817_strains.pdf, id=422, 1003.75pt x 625.33624pt>
+) <../Figures/GW170817_strains.pdf, id=424, 1003.75pt x 625.33624pt>
 File: ../Figures/GW170817_strains.pdf Graphic file (type pdf)
 
 <use ../Figures/GW170817_strains.pdf>
 Package pdftex.def Info: ../Figures/GW170817_strains.pdf used on input line 109
-0.
+7.
 (pdftex.def)             Requested size: 411.03474pt x 256.0748pt.
-
-Overfull \vbox (13.45091pt too high) has occurred while \output is active []
-
-
-[13] [14pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.1}) has been already used, duplicate ignored
+ [13] [14pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1188 
-        <../Figures/GW170817_strains.pdf>]
+l.1169  \ee
+            <../Figures/GW170817_strains.pdf>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1220.
+(hyperref)                than one, level fixed on input line 1227.
 
-<../Figures/ALigo_strains.pdf, id=492, 1003.75pt x 611.28375pt>
+<../Figures/ALigo_strains.pdf, id=496, 1003.75pt x 611.28375pt>
 File: ../Figures/ALigo_strains.pdf Graphic file (type pdf)
 
 <use ../Figures/ALigo_strains.pdf>
-Package pdftex.def Info: ../Figures/ALigo_strains.pdf used on input line 1229.
+Package pdftex.def Info: ../Figures/ALigo_strains.pdf used on input line 1236.
 (pdftex.def)             Requested size: 510.0pt x 310.59398pt.
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1309 
+l.1308 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1309 
+l.1308 
        ] [16pdfTeX warning (ext4): destination with the same identifier (name{f
 igure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1336 
-        <../Figures/ALigo_strains.pdf>]
-<../Figures/ET_strains_redshifted.pdf, id=555, 1003.75pt x 628.3475pt>
+l.1334 \ee
+           <../Figures/ALigo_strains.pdf>]
+<../Figures/ET_strains_redshifted.pdf, id=559, 1003.75pt x 628.3475pt>
 File: ../Figures/ET_strains_redshifted.pdf Graphic file (type pdf)
 
 <use ../Figures/ET_strains_redshifted.pdf>
 Package pdftex.def Info: ../Figures/ET_strains_redshifted.pdf used on input lin
-e 1338.
+e 1345.
 (pdftex.def)             Requested size: 510.0pt x 319.2641pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
+) has been already used, duplicate ignored
 
-Overfull \hbox (40.02946pt too wide) in paragraph at lines 1372--1377
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1377 \be
+           <../Figures/ET_strains_redshifted.pdf>]
+Overfull \hbox (40.02946pt too wide) in paragraph at lines 1379--1384
 \OT1/ptm/m/n/10 where $\OML/cmm/m/it/10 f[]$ \OT1/ptm/m/n/10 is now the red-shi
 fted ver-sion of Eq. ([][]4.1[][]), equalling $\OT1/cmr/m/n/10 1537\OML/cmm/m/i
 t/10 ; \OT1/cmr/m/n/10 1505\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1448\OML/cmm/m/it
@@ -1047,49 +1050,42 @@ t/10 ; \OT1/cmr/m/n/10 400\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1000 $\OT1/ptm/m/n
 /10 Mpc.
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1377 
-        <../Figures/ET_strains_redshifted.pdf>]
-<../Figures/Main_results.pdf, id=613, 722.7pt x 371.3875pt>
+<../Figures/Main_results.pdf, id=617, 722.7pt x 371.3875pt>
 File: ../Figures/Main_results.pdf Graphic file (type pdf)
 
 <use ../Figures/Main_results.pdf>
-Package pdftex.def Info: ../Figures/Main_results.pdf used on input line 1457.
+Package pdftex.def Info: ../Figures/Main_results.pdf used on input line 1464.
 (pdftex.def)             Requested size: 510.0pt x 262.08322pt.
 
-Overfull \vbox (5.60637pt too high) has occurred while \output is active []
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1478 
-       pdfTeX warning (ext4): destination with the same identifier (name{table.
-5}) has been already used, duplicate ignored
+l.1485 
+       ] [19pdfTeX warning (ext4): destination with the same identifier (name{t
+able.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1478 
-       ] [19pdfTeX warning (ext4): destination with the same identifier (name{f
-igure.5}) has been already used, duplicate ignored
+l.1503 \begin{enumerate}[(i)]
+                             pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1503  \item H
-               igh black hole spins. $r_\text{ISCO}$ is much smaller in the ...
- <../Figures/Main_results.pdf>] [20pdfTeX warning (ext4): destination with the 
-same identifier (name{table.6}) has been already used, duplicate ignored
+l.1503 \begin{enumerate}[(i)]
+                              <../Figures/Main_results.pdf>] [20pdfTeX warning 
+(ext4): destination with the same identifier (name{table.6}) has been already u
+sed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1594 
-       ] (./Manuscript.bbl
+l.1589 \section{Outlook}
+                        ] (./Manuscript.bbl
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
  [21]
@@ -1111,22 +1107,22 @@ Class revtex4-1 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
 [23]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1610.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1610.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1619.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1619.
  (./Manuscript.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1610.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1619.
 
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 7490A5BD0A0A4F7400C10EAA46D432D1;1404.
+(rerunfilecheck)             Checksum: 9DACA75500A2BC9F79277E5DD5F885C9;1404.
  ) 
 Here is how much of TeX's memory you used:
- 11327 strings out of 493029
- 157275 string characters out of 6136235
- 323162 words of memory out of 5000000
- 14403 multiletter control sequences out of 15000+600000
+ 11326 strings out of 493029
+ 157265 string characters out of 6136235
+ 323477 words of memory out of 5000000
+ 14402 multiletter control sequences out of 15000+600000
  34804 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,43p,2106b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,43p,2174b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Item.12-footnote.5} has been referenced but does 
 not exist, replaced by a fixed one
 
@@ -1168,10 +1164,10 @@ share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive
 fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript.pdf (23 pages, 565755 bytes).
+Output written on Manuscript.pdf (23 pages, 566109 bytes).
 PDF statistics:
- 990 PDF objects out of 1000 (max. 8388607)
- 887 compressed objects within 9 object streams
+ 995 PDF objects out of 1000 (max. 8388607)
+ 890 compressed objects within 9 object streams
  231 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
