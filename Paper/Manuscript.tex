@@ -109,8 +109,8 @@
 
 \author{Sarp Akcay}
 \affiliation{School of Mathematics \& Statistics, University College Dublin, Belfield, Dublin 4, Ireland.}
-
-\date{\today}
+\affiliation{Friedrich-Schiller-Universit{\"a}t Jena}
+%\date{\today}
 
 \begin{abstract}
 We explore the intriguing possibility of employing future ground-based gravitational-wave interferometers to detect the inspiral of binary neutron stars sufficiently
@@ -868,10 +868,15 @@ for a system with initial parameters $a_i, e_i$.
 Let us apply this to the Hulse-Taylor binary pulsar \cite{Hulse:1974eb,Weisberg:2010zz} to show that the BNS orbits circularize by the time they enter the interferometers' bandwidth.
 Letting $f = 1\,\text{Hz}=2f_K$, i.e., 
 $a \simeq 3352\,$km and using the currently observed values $a_i \approx 1.95\times 10^6\,$km and $e_i \approx 0.617$,
-we obtain $e\approx 6\times 10^{-5}$. Thus our setting $e=0$ is very reasonable.
-
-Let us briefly discuss the possibility of eccentric BNS systems {\bf FINISH}
-\cite{1975MNRAS.172P..15F,Grindlay:2005ym}
+we obtain $e\approx 6\times 10^{-5}$. Thus our setting $e=0$ is very reasonable\footnote{
+It is possible to have 
+high-eccentricity binary black hole mergers in the vicinity of galactic nuclei due close encounter captures \cite{OLeary:2008myb}.
+However, it is not clear how much this applies to BNS systems.}.
+%for binary systems
+%non-zero eccentricity binary mergers
+%for sytems that have formed by tidal capture mechanisms in globular clusters {\bf FINISH}
+%\cite{1975MNRAS172P15F,Grindlay:2005ym}
+%but these binaries are expected to be outnumbered significantly by the circularized ones.
 %
 %
 \item {\it Quasi-circularity.}
@@ -1021,10 +1026,10 @@ for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can b
 \section{GW170817 as a test of our model for the Advanced LIGO-Virgo network}\label{sec:GW170817}
 On 17 August 2017, at 12:41:04 UTC, GWs from the inspiral and merger of a binary neutron star system %were detected by the Advanced LIGO-Virgo network.
 %The event, first picked up by LIGO Hanford (H1), 
-swept the ALV network's frequency band from $\approx 30\,$Hz to $\approx 2000\,$Hz accumulating a total SNR of
+swept the ALV network's frequency band from $\approx 30\,$Hz to $\approx 2000\,$Hz, accumulating a total SNR of
 %18.8, 26.4 and 2.0 at H1, LIGO Livingstone (L1) and Virgo (V1), respectively, yielding 
-$\rho_\text{tot} = 32.4$ \cite{GW170817}
-The inferred duration of the event in the network bandwidth was $\approx 57\,$ seconds during which $\approx 3000$ cycles of GW were emitted \cite{GW170817_Facts}.
+$\rho_\text{tot} = 32.4$ \cite{GW170817}.
+The inferred duration of the event in the network bandwidth was $\approx 57\,$ seconds during which $\approx 3000$ cycles of GWs were emitted \cite{GW170817_Facts}.
 Assuming low-spin priors  ($\chi \le 0.05$, see point 7 of Sec.~\ref{sec:idealizations}), the following values were inferred for the total mass, the chirp mass,
 and the luminosity distance of the source with 90\% confidence:
 %
@@ -1078,7 +1083,7 @@ We first Fourier-transform the data to frequency space and apply several high an
 The LIGO Open Science Center has a detailed Python-based tutorial on how to do this using the data from the very first GW detection (GW150914) \cite{LIGO_tutorial}. 
 We use a $\verb|Mathematica|$ based code developed at UCD to do the same for GW170817.
 
-Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs to identically have this sensitivity,
+Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs have identical sensitivities,
 but because their orientations and response functions differ, their sensitivity to a localized source is reduced. We represent this reduction by lowering the
 amplitude of the GW strain by appropriate quality factors ($|Q_i|$) explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
 The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the dashed ($i=h$), solid ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
@@ -1182,7 +1187,7 @@ the ASD from the August 2017 value to design sensitivity.
  With the masses fixed, the only remaining variable is the 
  luminosity distance $D$.
 For the ALV network, we consider $D=50,100,200\,$Mpc 
- as A-LIGO horizon will be slightly over 200\,Mpc and A-Virgo's around 130\,Mpc.
+ as A-LIGO's horizon will be slightly over 200\,Mpc and A-Virgo's around 130\,Mpc.
  %and BNS systems at $D=200, 400, 1000\,$Mpc for the ET network. 
  For each value of $D$, we compute $\bar{f}$ from Eq.~(\ref{eq:SNR_bar}) with which we then compute $T_\text{AW}=\tau_\text{insp}(\bar{f})$.
  %which we set to values of our choosing. %as can be seen from Eq.~(\ref{eq:h0}).
@@ -1266,7 +1271,7 @@ using the current best estimate for the BNS inspiral rate
 inferred from the O1 and O2 observing periods of Advanced LIGO: $ R=1540^{+3200}_{-1220}\,$Gpc$^{-3}$yr$^{-1}$ \cite{GW170817}.
 This translates to $\approx 0.1$ event per (40-Mpc)$^3$ per year with the upper limit $\approx 0.3$. So we can at best hope to detect
 one 40-Mpc inspiral per a three-year period.
-Given that we might at best have a couple of minutes of warning time for a once-a-decade event, we do not expect to be able forecast GRBs in the Advanced LIGO-Virgo era. 
+Given that we might at best have a couple of minutes of warning time for a potentially once-a-decade event, we do not expect to be able forecast GRBs in the Advanced LIGO-Virgo era. 
 %we prefer to remain optimistic about the prospects of forecasting at least one GRB in the 2020s. %that this latency can be reduced to minutes.
 %if we dare to entertain peak CPU computation rates of $\sim 10^{13}\,$flops/sec for 2020 then $\sim 100$ computing cores would suffice to match-filter $10^5$ templates {\bf in how much time?} extrapolating on the results of Ref.~\cite{Cannon:2011vi}.
 %
@@ -1528,7 +1533,7 @@ they are spun up by accretion from their secondary (that will later on become a 
 It is possible that the mass gain pushes $M_\text{BH}$ too high to either cause a direct plunge of the NS before TD or decrease $\tau_\text{insp}$ considerably
 to eliminate any chances of getting an advance warning.
 However, if the spin of the BH comes from the supernova explosion mechanism itself as argued for G1915 in Ref.~\cite{McClintock:2006xd} then it is possible to have a 
-low-mass BH in a binary system\footnote{We thank Dr. Morgan Fraser
+low-mass BH in a binary system\footnote{We thank Dr. Morgan Fraser of UCD Astrophysics
 for pointing this out.}.
 
 There is additional motivation to choose low BH mass as 
@@ -1608,7 +1613,7 @@ With the gravitational-wave sky virtually covered from $10^{-4}$ to $10^3\,$Hz, 
 embarassment of the riches in the 2030s. In short, the future of gravitational and multi-messenger astronomy is bright.
 
 \acknowledgements 
-SA thanks Conor O'Toole for endless feedback and Niels Warburton for a careful reading of this article. 
+SA thanks Conor O'Toole and Niels Warburton for endless feedback and a thorough perusal of this article. 
  
  
 \bibliographystyle{apsrev4-1}
