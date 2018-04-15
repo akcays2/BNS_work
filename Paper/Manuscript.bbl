@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{82}%
+\begin{thebibliography}{84}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -429,6 +429,13 @@
   {Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der
   Wissenschaften (Berlin), Seite 154-167.}\ } (\bibinfo {year}
   {1918})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Maggiore}(2008)}]{Maggiore}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Maggiore}},\ }\href {https://books.google.ie/books?id=AqVpQgAACAAJ} {\emph
+  {\bibinfo {title} {Gravitational Waves: Volume 1: Theory and Experiments}}},\
+  Gravitational Waves\ (\bibinfo  {publisher} {OUP Oxford},\ \bibinfo {year}
+  {2008})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Michelson}\ and\ \citenamefont
   {Morley}(1887)}]{Michelson:1887zz}%
   \BibitemOpen
@@ -449,13 +456,6 @@
   {http://arxiv.org/abs/0903.0338} {arXiv:0903.0338 [gr-qc]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:0903.0338;%%
-\bibitem [{\citenamefont {Maggiore}(2008)}]{Maggiore}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Maggiore}},\ }\href {https://books.google.ie/books?id=AqVpQgAACAAJ} {\emph
-  {\bibinfo {title} {Gravitational Waves: Volume 1: Theory and Experiments}}},\
-  Gravitational Waves\ (\bibinfo  {publisher} {OUP Oxford},\ \bibinfo {year}
-  {2008})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sathyaprakash}\ \emph {et~al.}(2012)\citenamefont
   {Sathyaprakash} \emph {et~al.}}]{Sathyaprakash:2012jk}%
   \BibitemOpen
@@ -567,6 +567,29 @@
   {http://arxiv.org/abs/1011.0718} {arXiv:1011.0718 [astro-ph.GA]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1011.0718;%%
+\bibitem [{\citenamefont {{Fabian}}\ \emph {et~al.}(1975)\citenamefont
+  {{Fabian}}, \citenamefont {{Pringle}},\ and\ \citenamefont
+  {{Rees}}}]{1975MNRAS.172P..15F}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~C.}\ \bibnamefont
+  {{Fabian}}}, \bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {{Pringle}}}, \ and\ \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont
+  {{Rees}}},\ }\href {\doibase 10.1093/mnras/172.1.15P} {\bibfield  {journal}
+  {\bibinfo  {journal} {\mnras}\ }\textbf {\bibinfo {volume} {172}},\ \bibinfo
+  {pages} {15p} (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Grindlay}\ \emph {et~al.}(2006)\citenamefont
+  {Grindlay}, \citenamefont {Portegies~Zwart},\ and\ \citenamefont
+  {McMillan}}]{Grindlay:2005ym}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Grindlay}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Portegies~Zwart}}, \ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {McMillan}},\ }\href {\doibase 10.1038/nphys214} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nature Phys.}\ }\textbf {\bibinfo {volume} {2}},\
+  \bibinfo {pages} {116} (\bibinfo {year} {2006})},\ \Eprint
+  {http://arxiv.org/abs/astro-ph/0512654} {arXiv:astro-ph/0512654 [astro-ph]}
+  \BibitemShut {NoStop}%
+%%CITATION = ASTRO-PH/0512654;%%
 \bibitem [{\citenamefont {Colpi}\ and\ \citenamefont
   {Sesana}(2017)}]{Colpi_Sesana}%
   \BibitemOpen
