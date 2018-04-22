@@ -109,8 +109,8 @@
 
 \author{Sarp Akcay}
 \affiliation{School of Mathematics \& Statistics, University College Dublin, Belfield, Dublin 4, Ireland.}
-
-\date{\today}
+\affiliation{Friedrich-Schiller-Universit{\"a}t Jena}
+%\date{\today}
 
 \begin{abstract}
 We explore the intriguing possibility of employing future ground-based gravitational-wave interferometers to detect the inspiral of binary neutron stars sufficiently
@@ -127,8 +127,9 @@ distance of roughly 600 Mpc for the Einstein Telescope C configuration.
 Using current BNS event rates within this horizon distance, we show that this translates to forecasts of $\gtrsim \ord(10^2)$ GRBs in the 2030s. %with Einstein C. %with the C configuration of Einstein Telescope.
 We reapply our warning-time computation to binary black hole - neutron star inspirals and find that we expect 1 to 3 tidal disruption events 
 to be forecast by the same detector.
-%Our main conclusions are: (i) we expect ALV network to forecast 1 to 3 GRBs in the 2020s, (ii)
-
+This article is intended as a pedagogical introduction to gravitational-wave astronomy written at a level accessible to
+Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the underlying physics.
+Though many of our results may be known to the experts, they might nonetheless find this article motivating and exciting.
 \end{abstract}
 \maketitle
 
@@ -152,9 +153,10 @@ The inspiral swept across the Advanced Ligo-Virgo (ALV) network's bandwidth from
 executing nearly $ 3000$ gravitational wave cycles and accumulating a network signal-to-noise ratio of 32.4 with a false-alarm rate of one per $8.0\times 10^4$ years \cite{GW170817}. 
 The total mass of the system was inferred to be $2.74^{+0.04}_{-0.01} M_\odot$ with component masses in the range $1.17-1.60 M_\odot$, consistent
 with neutron stars (assuming low spin priors, see Sec.~\ref{sec:idealizations}).
-Moreover, both the gravitational wave (GW) and EM observations were consistent with a source luminosity distance of $\sim40\,$Mpc
+Moreover, both the gravitational wave (GW) and EM observations were consistent with a source location in the galaxy in NGC4993 
+at a luminosity distance of $\sim\!\! 40\,$Mpc,
 and supported the hypothesis that GW170817 resulted from the inspiral and merger of two neutron stars, 
-causing the prompt short-hard gamma-ray burst (GRB170817A) in NGC4993 as first suggested by Ref.~\cite{Eichler:1989ve}. 
+causing a prompt short-hard gamma-ray burst (GRB170817A) as first suggested by Ref.~\cite{Eichler:1989ve}. 
 
 A week after GW170817, the ALV network was taken offline for upgrades for the third observation run (O3) 
 scheduled to start in Autumn 2018 with roughly twice the sensitivity of O2.
@@ -164,14 +166,14 @@ Meanwhile, the US is currently considering a mid-2020s update to LIGO called Voy
 All of these near-future additions to the GW-detector network beg a simple question: can we detect the inspiral of a binary neutron star system
 early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using GW detections?
 
-The short answer is in the affirmative. The long answer is still affirmative, but depends on many factors such as source distance and sky position, detector sensitivity and orientation. One also needs to account for the fact that GRBs are thought to be collimated emissions with narrow outburst angles \cite{Kumar:2014upa}.
+The short answer is ``yes''. The long answer is still ``yes'', but depends on many factors such as source distance and sky position, detector sensitivity and orientation. One also needs to account for the fact that GRBs are thought to be collimated emissions with narrow outburst angles \cite{Kumar:2014upa}.
 As such, most GRBs that occur in the universe are electromagnetically undetectable. Fortunately, this was not the case with GRB170817A, 
 but even for a reasonable GRB jet opening angle of $\sim 10^\circ$, we expect to observe $\sim 10\%$ of neutron star mergers as GRBs \cite{Patricelli:2016bkt}. 
 However, it is possible that some of the near-Earth pointing short hard GRBs may be observed as long-duration GRBs or X-ray flashes thus increasing this percentage \cite{Bucciantini:2011kx}.
 
 Given the sensitivities of interferometers to date, efforts have thus far mostly focused on reducing the latency of EM follow-ups, 
 i.e., the lag time between the merger and the alerting of the EM observatories. 
-LIGO-Virgo science runs in 2009-2010 yielded a latency of $\sim 30$ to $60\,$minutes \cite{Abbott:2011ys} (no detections).
+LIGO-Virgo science runs in 2009-2010 yielded a latency of $\sim\!\! 30$ to $60\,$minutes \cite{Abbott:2011ys} (no detections).
 In the case of GW170817, the latency was 40\,minutes and $36^{+1.7}\,$seconds \cite{GBM:2017lvd}.
 It then took an additional $ 10$ hours to locate the optical transient. %designated AT 2017gfo.
 
@@ -212,15 +214,15 @@ However, even that fails to provide an accurate depiction of the binary
 evolution in the strong-field regime, where speeds $\gtrsim 0.1c$. This is a very complex and complicated problem requiring fully
 numerical treatment formulated in terms of general relativistic, magnetohydrodynamic codes 
 with neutrino transport running on large-scale computing clusters and taking up to millions of CPU hours 
-(see Ref.~\cite{Faber:2012rw} for a review, and Refs.~\cite{Kyutoku:2017voj, Zappa:2017xba, Dietrich:2018upm} for the latest developments and references therein).
-Despite its failures, our quadrupole radiation driven Newtonian
+(see Ref.~\cite{Faber:2012rw} for a review, and Refs.~\cite{Baiotti:2016qnr,Kyutoku:2017voj, Zappa:2017xba, Dietrich:2018upm} for the latest developments and references therein).
+Despite its simple formulation, our quadrupole radiation driven Newtonian
 evolution is more than sufficient to provide reliable estimations of advance warning times.
 We support this claim in Sec.~\ref{sec:idealizations} with an extensive list of computations showing how much each of our approximations affects the inspiral time.
 
-Let us emphasize that this article is intended as a pedagogical introduction to gravitational-wave astronomy written at a level accessible to
-Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the underlying physics.
-Be that as it may, even the experts might find our results motivating and exciting.
-
+%Let us emphasize that this article is intended as a pedagogical introduction to gravitational-wave astronomy written at a level accessible to
+%Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the underlying physics.
+%Be that as it may, even the experts might find our results motivating and exciting.
+%
 This article is organized as follows. Sec.~\ref{sec:BNS_inspiral} introduces the formulation for the leading-order evolution of the binary inspiral.
 Sec.~\ref{sec:IFO_response} details the interferometer response to GWs based on topology.
 Sec.~\ref{sec:idealizations} lists the various idealizations we employ to simplify our treatment and supplies justification for each.
@@ -230,7 +232,7 @@ and as horizon distances and event rates in Table~\ref{table:horizon}.
 In Sec.~\ref{sec:BH_NS}, we recompute the advance warning times in the case of black hole - neutron star inspirals to see whether or not 
 future detectors can forecast a tidal disruption event, for which we summarize our findings in Table~\ref{table:ET_BH_NS}.
 
-Throughout the text, $f$ denotes the GW frequency of the dominant quadrupole mode, which is twice the orbital (Keplerian) frequency $f_K$. 
+Throughout the text, $t$ denotes observer/detector time and $f$ denotes the GW frequency of the dominant quadrupole mode, which is twice the orbital (Keplerian) frequency $f_K$. 
 %Relatedly, we define the following angular frequencies: $\omega = 2\pi f, \Omega=2\pi f_K$ with $\omega=2\Omega$.
 We employ the $\simeq$ symbol when displaying the numerical values of quantities %with infinite decimal expansions 
 which we usually truncate at four significant digits.
@@ -251,7 +253,7 @@ the celebrated Einstein quadrupole formula \cite{1918SPAW}
 \dot{E} = \f{G}{5c^5}\langle \dddot{Q}_{ij}\dddot{Q}_{ij} \rangle \label{eq:Edot_quadrupole}\, .
 \ee
 %
-Here, $Q_{ij}$ is a trace-reversed {\bf MAYBE: explain this} mass quadrupole moment which
+Here, $Q_{ij}$ is a trace-reversed mass quadrupole moment which
 is the dominant contribution to the power emitted %in gravitational radiation
 by a system with changing mass moments. Details of how to obtain this expression can be found in Ref.~\cite{Maggiore}.
 
@@ -263,7 +265,7 @@ Labelling the masses by $m_1 \le m_2$, we have, for a binary in a circular orbit
 \ee
 %
 where $\mu= m_1 m_2/M$ is the reduced mass and $M=m_1+m_2$ is the total mass. 
-We justify our simplification of motion to circular orbits in Sec.~\ref{sec:idealizations}.
+We justify our simplification of the motion to circular orbits in Sec.~\ref{sec:idealizations}.
 %Our assumption of the circularity of the motion is well justified in 
 
 An important quantity in GW astronomy is the chirp mass of the binary given by
@@ -275,13 +277,10 @@ M_c = \mu^{3/5} M^{2/5} = \f{(m_1 m_2)^{3/5}}{(m_1+m_2)^{1/5}} \label{eq:chirp_m
 which turns Eq.~(\ref{eq:Edot}) into
 %
 \be
-\dot{E} = \f{32}{5}\f{c^5}{G} \left(\f{G M_c\, \omega}{2c^3}\right)^{10/3}, \label{eq:Edot2}
+\dot{E} = \f{32}{5}\f{c^5}{G} \left(\f{G M_c\, \omega}{2c^3}\right)^{10/3}= \f{32}{5}\f{c^5}{G}x^5, \label{eq:Edot2}
 \ee
 %
-where $\omega=2\Omega$ is the angular frequency of the quadrupolar GWs. 
-The quantity in parantheses in Eq.~(\ref{eq:Edot2}) equals $x^{3/2}$ where 
-$x \equiv ({G M_c\, \Omega}/{c^3})^{2/3} $
-is the dimensionless inverse separation parameter ubiquitous in post-Newtonian theory.
+where $x = ({G M_c\, \Omega}/{c^3})^{2/3} $ is the dimensionless inverse separation parameter ubiquitous in post- Newtonian theory and $\omega=2\Omega$ is the angular frequency of the quadrupolar GWs. 
 As $x\propto v^2/c^2$, it is used to keep track of post-Newtonian orders and we can see from Eq.~(\ref{eq:Edot2}) that $\dot{E}\propto x^5$. 
 %hence the common statement in the literature saying that gravitational radiation starts 
 
@@ -326,7 +325,8 @@ which we can rewrite as follows
 \tau_\text{insp}(f) \simeq 16.72\,\text{minutes} \, \left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\,\left(\f{10\,\text{Hz}}{f}\right)^{8/3}, \label{eq:tau_insp2}
 \ee
 %
-where $1.219 M_\odot$ is the chirp mass corresponding to $m_1=m_2=1.4 M_\odot$.
+where $1.219 M_\odot$ is the chirp mass corresponding to $m_1=m_2=1.4 M_\odot$. This is the canonical value for the 
+mass of a neutron star due to Chandrasekhar limit \cite{Chandra}.
 
 We can also compute the number of GW cycles over the course of an inspiral. Given that the orbital period $T_K(t)$ varies over a time scale much larger than $T_K$ itself
 we can write
@@ -341,8 +341,8 @@ We now introduce a cut-off for the inspiral imposed by the frequency of the inne
 \ee
 %
 %
-We will see in Sec.~\ref{sec:idealizations} that $f_\text{ISCO} \sim 1000\,$Hz for a system with $M\approx 2 M_\odot$. 
-On the other hand, the frequencies of interest for our advance warning time estimations will be $\lesssim 10\,$Hz
+We will see in Sec.~\ref{sec:idealizations} that $f_\text{ISCO} \sim \ord(10^3)\,$Hz for a system with $M =2.8 M_\odot$. 
+On the other hand, the frequencies of interest for our advance warning time estimations are $\lesssim 10\,$Hz
 meaning that $f^{-5/3} \gg f_\text{ISCO}^{-5/3}$. Therefore, at the leading (Newtonian) order, the number of GW cycles can be approximated by
 %
 \be
@@ -384,7 +384,7 @@ these tensor modes satisfy the flat spacetime sourceless wave equation. %$\Box\b
 %meaning that we are considering the solutions far from the GW source, 
 In a suitable gauge, such as the commonly used transverse-traceless gauge, 
 it can be shown that there exist only two physical degrees of freedom which manifest themselves as two independent polarization amplitudes $h_+$ and $h_\times$. %when interacting with masses away from the source.
-For a binary in a circular orbit, these states read
+For a binary in a circular orbit, these states read \cite{Maggiore}
 %
 \begin{align}
  h_+(t) &= h_c(t)\, \left(\f{1+\cos^2\iota}{2}\right)\, \cos[\Phi_\text{N}(t)],\label{eq:hplus_TD}\\
@@ -401,7 +401,7 @@ is the characteristic strain and
 $\iota=\cos^{-1}(\mathbf{\hat{n}}\cdot{\mathbf{\hat{L}}}) $ is the inclination angle between the line of sight unit vector $\mathbf{\hat{n}} $ and the orbital angular momentum unit vector $\mathbf{\hat{L}}$. 
 For an orbit seen edge on, $\iota = \pi/2$ giving $h_\times=0$, i.e,  a purely plus-polarized wave.
 When $\iota=0$ the orbit is seen face-on and we have a circularly-polarized wave: $\langle h_+ \rangle = \langle h_\times\rangle$ where $\langle \ldots \rangle$
-denote time-averages over one orbit. Note that as $f$ increases in time, so does $h(t)$ hence the characteristic ``chirping'' of GW signals.
+denote time-averages over one orbit. Note that as $f$ increases in time, so does $h(t)$, hence the characteristic ``chirping'' of GW signals.
 
 $\Phi_\text{N}(t)$ in Eqs.~(\ref{eq:hplus_TD}, \ref{eq:hcross_TD}) is the phase of the GWs given by
 %
@@ -411,7 +411,7 @@ $\Phi_\text{N}(t)$ in Eqs.~(\ref{eq:hplus_TD}, \ref{eq:hcross_TD}) is the phase 
 \end{align}
 %
 where $\Phi_0 \equiv \Phi(t=t_\text{coal})$ is an integration constant. The subscript N denotes the Newtonian (leading-order) contribution. 
-Higher-order contributions can be added in terms a post-Newtonian series, which make up to $\lesssim 2\%$ of the total phase.
+Higher-order contributions can be added in terms of a post-Newtonian series, which make up to $\lesssim 2\%$ of the total phase.
 Although we will include contributions up to and including 3.5PN to obtain the results of Sec.~\ref{sec:results}, 
 we will not show these expressions here, but they can be found in Ref.~\cite{Blanchet_LRR}.
 
@@ -520,7 +520,7 @@ Substituting Eq.~(\ref{eq:strain_FD}) into Eq.~(\ref{eq:SNR}) yields
 where we truncate the integral at the cut-off frequency of the inspiral $f_\text{ISCO}=\Omega_\text{ISCO}/\pi$.
 
 It remains to compute $|Q(\theta,\phi,\psi,\iota)|^2$. 
-Since we can not a priori know the direction of the source, it is appropriate to average over the angles $\theta,\phi,\psi,\iota$ which we compute
+Since we can not a priori know the direction of the source, it is appropriate to average over the angles $\theta,\phi,\psi$, and $\iota$ which we compute
 %For our computations, we will only work with one detector so we can set $\psi=0$ without loss of generality, which results in
 %%
 %
@@ -566,7 +566,7 @@ As angles have zero averages in general, we can think of the RMS as the standard
 %
 %%
 
-In a network of $N$ interferometers, the total SNR is defined as follows
+In a network of $N$ interferometers, the total SNR is defined as follows \cite{Finn:2000hj}
 %%
 %
 \be
@@ -579,8 +579,9 @@ Here, instead of working with specific quality factors of the LIGO and the Virgo
 a \emph{model network} of three IFOs ($N=3$), where one is near-optimally oriented/positioned with $|Q|=2\sigma=4/5$.
 The second IFO operates at the RMS average; thus it has $|Q|=2/5$. %compared with the optimal $|Q| =1$ case.
 It remains to assign a quality factor to the third IFO. We wish to make this operate below the RMS average, % in terms of its orientation and the sky location of the sources,
-but it would be pointless to simply set $Q=0$. We therefore somewhat arbitrarily set $\psi=0,\iota=0$
-and introduce the following $\theta,\phi$-only averages
+but it would be pointless to simply set $Q=0$. We therefore pick the values $\iota=0$ (i.e, $|h_+|=|h_\times|$)
+and $\psi=0$ for simplicity %(aligning the $x$-axis of the ``$+$'' with the of the IFO
+then introduce the following $\theta,\phi$-only averages
 %
 \be
  \langle F_+^2\rangle_{\theta,\phi} = \frac{7}{30},\qquad \langle F_\times^2\rangle_{\theta,\phi} = \frac{1}{6}\, 
@@ -594,7 +595,12 @@ Using this value, we assign our below-average third IFO %$\langle|Q|^2\rangle^{1
 $|Q|=4/5-\sqrt{2/5}\simeq 0.1675$.
 %which is essentially a $\{\theta$-$\phi\}$-RMS awayfrom the overall RMS averaged value of 2/5.
 This may seem somewhat ad hoc, 
-but it is our way of representing the response of a three-IFO network to a single source. In other words, we map the three different IFO responses due to a single source to a single IFO's response to three different sources differing in amplitudes 
+but it is our way of representing the sub-RMS-average response of the third IFO due to its sub-optimal configuration. 
+One may very well use another scheme to generate this below average response.
+
+To summarize, we introduced a model for a three-IFO network in which each IFO has identical sensitivity,
+but varying response to GWs due to IFO orientation and source polarization and sky position. This response is encoded in the quality factor $|Q_i|$.
+We simulate this network's response to a single source by mapping the three different IFO responses to a single IFO's response to three distinct sources differing in amplitudes 
 from the optimal case by quality factors $|Q_i|= 4/5,2/5,$ and $4/5-\sqrt{2/5}$.
 %
 %as listed in Table~\ref{table:network_params}.
@@ -769,7 +775,8 @@ Our overall conclusion is that our simplifications do not significantly change o
 %
 %
 %
-\section{Simplifications and idealizations used in evolving the inspiral}\label{sec:idealizations}
+\section{Simplifications and idealizations} %used in evolving the inspiral}
+\label{sec:idealizations}
 %In this section, we justify our simplifications with brief computations.
 %We list our simplifications and 
 \begin{enumerate}
@@ -805,12 +812,11 @@ inspirals throughout this work.
 %
 \item {\it Setting} $m_1=m_2=1.4 M_\odot$.
 Let us briefly explore what the cost of setting $m_1=m_2=1.4 M_\odot$ is for our calculations. 
-Including the error bars, the known range for neutron star masses runs from $\approx 0.5 M_\odot$ to $ \approx 3 M_\odot$ with the actual values restricted
-between $\approx 1 M_\odot$ and $\approx 2 M_\odot$ \cite{Ozel_Freire} (one exception being J1748-2021B with mass $2.74^{+0.21}_{-0.21} M_\odot $ \cite{Freire_et_al_2007}).
+Including the error bars, the known range for neutron star masses runs from $\approx 0.5 M_\odot$ to $ \approx 3 M_\odot$ with typical values between $\approx 1 M_\odot$ and $\approx 2 M_\odot$ \cite{Ozel_Freire} (one exception being J1748-2021B with mass $2.74^{+0.21}_{-0.21} M_\odot $ \cite{Freire_et_al_2007}).
 Of these measured masses, a subset comprised of double neutron stars, such as the famed Hulse-Taylor binary, have the smallest error bars with masses
 ranging from $\approx 1.2 M_\odot$ to $\approx 1.5 M_\odot$. 
 Additionally, the masses involved in GW170817 are inferred to be between $1.17 M_\odot$ and $1.60 M_\odot$ \cite{GW170817}.
-Therefore, let us restrict the masses to lie between $1.2 M_\odot$ and $1.6 M_\odot$ then focus on % ranges $R_{1,2} \in [1,2]/(1.4)$. 
+Therefore, let us restrict the masses to lie between $1.2 M_\odot$ and $1.6 M_\odot$, then focus on % ranges $R_{1,2} \in [1,2]/(1.4)$. 
 the quantities of interest for us, which are %the GW/orbital frequency ($f/f_K$), %the radiated power in GWs ($\dot{E}$), the rate of change of GW/orbital frequencies ($\dot{f}$), 
 the inspiral time ($\tau_\text{insp}$), the frequency domain strain ($\tilde{H}$), and
 the frequency of the innermost stable circular orbit ($f_\text{ISCO}$) given by Eq.~(\ref{eq:f_isco}) above.
@@ -848,7 +854,8 @@ The inspiral time seems to be more sensitive to our chosen mass values as indica
 in Table \ref{tbl:scalings}. %$\tau_\text{insp}^{1.4}$ as shown in Table \ref{tbl:scalings}.
 As our intent is to provide an estimation for advance warning times in terms of orders of magnitude, this variation is tolerable.
 Moreoever, it seems that this variation tends to lengthen $\tau_\text{insp}$ more than shorten it thus our setting
-$m_1=m_2=1.4 M_\odot$ is more likely to underestimate $T_\text{AW}$ than overestimate it which is something we can live with.
+$m_1=m_2=1.4 M_\odot$ is more likely to underestimate $T_\text{AW}$ than overestimate it. 
+%which is something we can live with.
 So we set $m_1=m_2=1.4 M_\odot$ henceforth.
 %
 \item {\it Neglecting eccentricity.}
@@ -867,7 +874,15 @@ for a system with initial parameters $a_i, e_i$.
 Let us apply this to the Hulse-Taylor binary pulsar \cite{Hulse:1974eb,Weisberg:2010zz} to show that the BNS orbits circularize by the time they enter the interferometers' bandwidth.
 Letting $f = 1\,\text{Hz}=2f_K$, i.e., 
 $a \simeq 3352\,$km and using the currently observed values $a_i \approx 1.95\times 10^6\,$km and $e_i \approx 0.617$,
-we obtain $e\approx 6\times 10^{-5}$. Thus our setting $e=0$ is very reasonable.
+we obtain $e\approx 6\times 10^{-5}$. Thus our setting $e=0$ is very reasonable\footnote{
+It is possible to have 
+high-eccentricity binary black hole mergers in the vicinity of galactic nuclei due close encounter captures \cite{OLeary:2008myb}.
+However, it is not clear how much this applies to BNS systems.}.
+%for binary systems
+%non-zero eccentricity binary mergers
+%for sytems that have formed by tidal capture mechanisms in globular clusters {\bf FINISH}
+%\cite{1975MNRAS172P15F,Grindlay:2005ym}
+%but these binaries are expected to be outnumbered significantly by the circularized ones.
 %
 %
 \item {\it Quasi-circularity.}
@@ -1017,10 +1032,10 @@ for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can b
 \section{GW170817 as a test of our model for the Advanced LIGO-Virgo network}\label{sec:GW170817}
 On 17 August 2017, at 12:41:04 UTC, GWs from the inspiral and merger of a binary neutron star system %were detected by the Advanced LIGO-Virgo network.
 %The event, first picked up by LIGO Hanford (H1), 
-swept the ALV network's frequency band from $\approx 30\,$Hz to $\approx 2000\,$Hz accumulating a total SNR of
+swept the ALV network's frequency band from $\approx 30\,$Hz to $\approx 2000\,$Hz, accumulating a total SNR of
 %18.8, 26.4 and 2.0 at H1, LIGO Livingstone (L1) and Virgo (V1), respectively, yielding 
-$\rho_\text{tot} = 32.4$ \cite{GW170817}
-The inferred duration of the event in the network bandwidth was $\approx 57\,$ seconds during which $\approx 3000$ cycles of GW were emitted \cite{GW170817_Facts}.
+$\rho_\text{tot} = 32.4$ \cite{GW170817}.
+The inferred duration of the event in the network bandwidth was $\approx 57\,$ seconds during which $\approx 3000$ cycles of GWs were emitted \cite{GW170817_Facts}.
 Assuming low-spin priors  ($\chi \le 0.05$, see point 7 of Sec.~\ref{sec:idealizations}), the following values were inferred for the total mass, the chirp mass,
 and the luminosity distance of the source with 90\% confidence:
 %
@@ -1074,7 +1089,7 @@ We first Fourier-transform the data to frequency space and apply several high an
 The LIGO Open Science Center has a detailed Python-based tutorial on how to do this using the data from the very first GW detection (GW150914) \cite{LIGO_tutorial}. 
 We use a $\verb|Mathematica|$ based code developed at UCD to do the same for GW170817.
 
-Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs to identically have this sensitivity,
+Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs have identical sensitivities,
 but because their orientations and response functions differ, their sensitivity to a localized source is reduced. We represent this reduction by lowering the
 amplitude of the GW strain by appropriate quality factors ($|Q_i|$) explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
 The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the dashed ($i=h$), solid ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
@@ -1178,7 +1193,7 @@ the ASD from the August 2017 value to design sensitivity.
  With the masses fixed, the only remaining variable is the 
  luminosity distance $D$.
 For the ALV network, we consider $D=50,100,200\,$Mpc 
- as A-LIGO horizon will be slightly over 200\,Mpc and A-Virgo's around 130\,Mpc.
+ as A-LIGO's horizon will be slightly over 200\,Mpc and A-Virgo's around 130\,Mpc.
  %and BNS systems at $D=200, 400, 1000\,$Mpc for the ET network. 
  For each value of $D$, we compute $\bar{f}$ from Eq.~(\ref{eq:SNR_bar}) with which we then compute $T_\text{AW}=\tau_\text{insp}(\bar{f})$.
  %which we set to values of our choosing. %as can be seen from Eq.~(\ref{eq:h0}).
@@ -1262,7 +1277,7 @@ using the current best estimate for the BNS inspiral rate
 inferred from the O1 and O2 observing periods of Advanced LIGO: $ R=1540^{+3200}_{-1220}\,$Gpc$^{-3}$yr$^{-1}$ \cite{GW170817}.
 This translates to $\approx 0.1$ event per (40-Mpc)$^3$ per year with the upper limit $\approx 0.3$. So we can at best hope to detect
 one 40-Mpc inspiral per a three-year period.
-Given that we might at best have a couple of minutes of warning time for a once-a-decade event, we do not expect to be able forecast GRBs in the Advanced LIGO-Virgo era. 
+Given that we might at best have a couple of minutes of warning time for a potentially once-a-decade event, we do not expect to be able forecast GRBs in the Advanced LIGO-Virgo era. 
 %we prefer to remain optimistic about the prospects of forecasting at least one GRB in the 2020s. %that this latency can be reduced to minutes.
 %if we dare to entertain peak CPU computation rates of $\sim 10^{13}\,$flops/sec for 2020 then $\sim 100$ computing cores would suffice to match-filter $10^5$ templates {\bf in how much time?} extrapolating on the results of Ref.~\cite{Cannon:2011vi}.
 %
@@ -1524,7 +1539,7 @@ they are spun up by accretion from their secondary (that will later on become a 
 It is possible that the mass gain pushes $M_\text{BH}$ too high to either cause a direct plunge of the NS before TD or decrease $\tau_\text{insp}$ considerably
 to eliminate any chances of getting an advance warning.
 However, if the spin of the BH comes from the supernova explosion mechanism itself as argued for G1915 in Ref.~\cite{McClintock:2006xd} then it is possible to have a 
-low-mass BH in a binary system\footnote{We thank Dr. Morgan Fraser
+low-mass BH in a binary system\footnote{We thank Dr. Morgan Fraser of UCD Astrophysics
 for pointing this out.}.
 
 There is additional motivation to choose low BH mass as 
@@ -1604,7 +1619,7 @@ With the gravitational-wave sky virtually covered from $10^{-4}$ to $10^3\,$Hz, 
 embarassment of the riches in the 2030s. In short, the future of gravitational and multi-messenger astronomy is bright.
 
 \acknowledgements 
-SA thanks Conor O'Toole for endless feedback and Niels Warburton for a careful reading of this article. 
+SA thanks Conor O'Toole and Niels Warburton for endless feedback and a thorough perusal of this article. 
  
  
 \bibliographystyle{apsrev4-1}
