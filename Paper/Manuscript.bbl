@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{86}%
+\begin{thebibliography}{87}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -473,6 +473,18 @@
   {http://arxiv.org/abs/0903.0338} {arXiv:0903.0338 [gr-qc]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:0903.0338;%%
+\bibitem [{\citenamefont {Moore}\ \emph {et~al.}(2015)\citenamefont {Moore},
+  \citenamefont {Cole},\ and\ \citenamefont {Berry}}]{Moore:2014lga}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont
+  {Moore}}, \bibinfo {author} {\bibfnamefont {R.~H.}\ \bibnamefont {Cole}}, \
+  and\ \bibinfo {author} {\bibfnamefont {C.~P.~L.}\ \bibnamefont {Berry}},\
+  }\href {\doibase 10.1088/0264-9381/32/1/015014} {\bibfield  {journal}
+  {\bibinfo  {journal} {Class. Quant. Grav.}\ }\textbf {\bibinfo {volume}
+  {32}},\ \bibinfo {pages} {015014} (\bibinfo {year} {2015})},\ \Eprint
+  {http://arxiv.org/abs/1408.0740} {arXiv:1408.0740 [gr-qc]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1408.0740;%%
 \bibitem [{\citenamefont {Finn}(2001)}]{Finn:2000hj}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~S.}\ \bibnamefont
