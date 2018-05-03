@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{87}%
+\begin{thebibliography}{88}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -447,10 +447,18 @@
   {\bibinfo {title} {Gravitational Waves: Volume 1: Theory and Experiments}}},\
   Gravitational Waves\ (\bibinfo  {publisher} {OUP Oxford},\ \bibinfo {year}
   {2008})\BibitemShut {NoStop}%
-\bibitem [{Cha(1983)}]{Chandra}%
+\bibitem [{\citenamefont {Miller}(2008)}]{Mono}%
   \BibitemOpen
-  \href@noop {} {\enquote {\bibinfo {title} {{Subrahmanyan Chandrasekhar Nobel
-  Prize Lecture}},}\ }\bibinfo {howpublished}
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Miller}},\ }\href@noop {} {\enquote {\bibinfo {title} {{Overview of
+  Gravitational Radiation}},}\ }\bibinfo {howpublished}
+  {\url{https://www.astro.umd.edu/~miller/teaching/astr498/lecture24.pdf}}
+  (\bibinfo {year} {2008})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chandrasekhar}(1983)}]{Chandra}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Chandrasekhar}},\ }\href@noop {} {\enquote {\bibinfo {title} {{Subrahmanyan
+  Chandrasekhar Nobel Prize Lecture}},}\ }\bibinfo {howpublished}
   {\url{https://www.nobelprize.org/nobel_prizes/physics/laureates/1983/chandrasekhar-lecture.pdf}}
   (\bibinfo {year} {1983})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Michelson}\ and\ \citenamefont

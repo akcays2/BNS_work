@@ -108,8 +108,8 @@
 \title{Forecasting Gamma-Ray Bursts using Gravitational Waves}
 
 \author{Sarp Akcay}
-\affiliation{School of Mathematics \& Statistics, University College Dublin, Belfield, Dublin 4, Ireland.}
-\affiliation{Friedrich-Schiller-Universit{\"a}t Jena}
+\affiliation{School of Mathematics \& Statistics, University College Dublin, Belfield, Dublin 4, Ireland}
+\affiliation{Theoretisch-Physikalisches Institut, Friedrich-Schiller-Universit{\"a}t Jena, 07743, Jena, Germany}
 %\date{\today}
 
 \begin{abstract}
@@ -119,12 +119,12 @@ We quantify the ability to predict a GRB by computing the time a binary neutron 
 For our computations, %of advance warning times, 
 we specifically consider BNS systems at luminosity distances of (i) $D\le200\,$Mpc in the three-interferometer Advanced-LIGO-Virgo network of 2020, and (ii) $D \le 1000\,$Mpc in the Einstein Telescope's B and C configurations. 
 In the case of Advanced LIGO-Virgo we find that we may at best get a few minutes of warning time, thus we expect no forecast of GRBs in the 2020s. 
-On the other hand, Einstein Telescope will provide us with advance warning times of up to five hours.  
-Taking one hour as a benchmark warning time, we obtain a corresponding horizon
+On the other hand, Einstein Telescope will provide us with advance warning times of more than five hours for $D \le 100\,$Mpc.
+Taking one hour as a benchmark advance warning time, we obtain a corresponding horizon
 distance of roughly 600 Mpc for the Einstein Telescope C configuration.
 %, more specifically, greater than an hour
 %for BNS inspirals closer than roughly 600\,Mpc. Taking this luminosity distance to be our horizon distance, 
-Using current BNS event rates within this horizon distance, we show that this translates to forecasts of $\gtrsim \ord(10^2)$ GRBs in the 2030s. %with Einstein C. %with the C configuration of Einstein Telescope.
+Using current BNS merger event rates within this volume, we show that Einstein C will forecast $\gtrsim \ord(10^2)$ GRBs in the 2030s. %with Einstein C. %with the C configuration of Einstein Telescope.
 We reapply our warning-time computation to binary black hole - neutron star inspirals and find that we expect 1 to 3 tidal disruption events 
 to be forecast by the same detector.
 This article is intended as a pedagogical introduction to gravitational-wave astronomy written at a level accessible to
@@ -144,7 +144,7 @@ promptly followed, 1.7 seconds later, by a gamma-ray burst (GRB170817A) detected
 The Advanced-LIGO-Virgo network's initial source localization to within $ 31\,\text{degree}^2$ in the Southern skies
 enabled astronomers to locate the electromagnetic counterpart in the galaxy NGC 4993, 
 first picked up by the One-Meter, Two Hemisphere team less than 11 hours after the merger \cite{Coulter2017, Coulter:2017wya}.
-This subsequently launched the largest-ever campaign of multi-messenger astronomy across the entire electromagnetic (EM) spectrum which is still ongoing
+This subsequently launched a massive campaign of multi-messenger astronomy across the entire electromagnetic (EM) spectrum which is still ongoing
 more than half a year after the initial GRB \cite{GBM:2017lvd}. 
 
 GW170817 was initially identified by the LIGO-Hanford interferometer (H1) 
@@ -184,7 +184,7 @@ Ref.~\cite{Cannon:2011vi} approached this from an algorithmic perspective by dev
 signals in GW data to provide early-warning triggers \emph{before} the merger (also see Ref.~\cite{Knowles:2018hqq} for a very recent improvement to what is currently being
 used in the ALV pipeline).
 We instead focus on the forecasting capabilities of the ground-based interferometers at their \emph{full design} sensitivity by computing the time interval
-between the merger and the instant of detection defined in terms of a certain threshold signal-to-noise ratio.
+between the merger and the instant of detection defined in terms of a certain detection criterion which we describe below.
 To this end, we consider the ALV network of 2020s composed of three L-shaped interferometers operating at their design sensitivities
 and Einstein Telescope of 2030s made up of V-shaped interferometers.
 Ref.~\cite{Nissanke:2012dj} investigated the capabilities of three to five-interferometer detector networks of 2020s in terms of their horizon distances
@@ -195,8 +195,8 @@ We compute the advance warning times via the following procedure:
 (${i}$) We start with a GW source presumed to be an inspiralling BNS at a certain luminosity distance. %$D$.
 (${ii}$) We determine the frequency at which the source enters a given interferometer's bandwidth. 
 %which reduce an individual interferometer's sensitivity to a particular source. 
-(${iii}$) We determine the detection time by computing the frequency at which the network's accumulated signal-to-noise ratio (SNR) for the BNS inspiral equals 15.
-($iv$) We define the advance warning time, $T_\text{AW}$, to be the remaining inspiral time to the merger from the instant of detection.
+(${iii}$) We determine the detection time by computing the frequency at which the network's accumulated signal-to-noise ratio for the BNS inspiral equals 15.
+($iv$) We define the advance warning time, $T_\text{AW}$, to be the time interval between the instant of detection and the merger.
 We repeat this procedure for BNSs at luminosity distances varying from 50\,Mpc to 1\,Gpc with the smaller values intended for the ALV network and 
 the larger ones for Einstein Telescope.
 In order to more faithfully represent an interferometer network such as ALV --- consisting of three separate interferometers which have different
@@ -212,7 +212,7 @@ inspiral time with better than $ 95\%$ accuracy,
 we nonetheless supplement it with post-Newtonian corrections up to 3.5 post-Newtonian order (3.5PN) \cite{Blanchet_LRR}.
 However, even that fails to provide an accurate depiction of the binary
 evolution in the strong-field regime, where speeds $\gtrsim 0.1c$. This is a very complex and complicated problem requiring fully
-numerical treatment formulated in terms of general relativistic, magnetohydrodynamic codes 
+numerical treatment in terms of general relativistic, magnetohydrodynamic codes 
 with neutrino transport running on large-scale computing clusters and taking up to millions of CPU hours 
 (see Ref.~\cite{Faber:2012rw} for a review, and Refs.~\cite{Baiotti:2016qnr,Kyutoku:2017voj, Zappa:2017xba, Dietrich:2018upm} for the latest developments and references therein).
 Despite its simple formulation, our quadrupole radiation driven Newtonian
@@ -229,10 +229,11 @@ Sec.~\ref{sec:idealizations} lists the various idealizations we employ to simpli
 Sec.~\ref{sec:GW170817} tests our model network and evolution using the parameters of GW170817 and the corresponding observations.
 Sec.~\ref{sec:results} contains our main results presented as advance warning times in Tables~\ref{table:LIGO2020} and \ref{table:ET}; 
 and as horizon distances and event rates in Table~\ref{table:horizon}.
-In Sec.~\ref{sec:BH_NS}, we recompute the advance warning times in the case of black hole - neutron star inspirals to see whether or not 
+In Sec.~\ref{sec:BH_NS}, we recompute the advance warning times in the case of binary black hole - neutron star inspirals to see whether or not 
 future detectors can forecast a tidal disruption event, for which we summarize our findings in Table~\ref{table:ET_BH_NS}.
 
-Throughout the text, $t$ denotes observer/detector time and $f$ denotes the GW frequency of the dominant quadrupole mode, which is twice the orbital (Keplerian) frequency $f_K$. 
+Throughout the text, $t$ denotes observer/detector time and $f$ denotes the GW frequency of the dominant quadrupole mode in observer/detector frame. 
+%$f$ is twice the orbital (Keplerian) frequency $f_K$. 
 %Relatedly, we define the following angular frequencies: $\omega = 2\pi f, \Omega=2\pi f_K$ with $\omega=2\Omega$.
 We employ the $\simeq$ symbol when displaying the numerical values of quantities %with infinite decimal expansions 
 which we usually truncate at four significant digits.
@@ -256,9 +257,11 @@ the celebrated Einstein quadrupole formula \cite{1918SPAW}
 Here, $Q_{ij}$ is a trace-reversed mass quadrupole moment which
 is the dominant contribution to the power emitted %in gravitational radiation
 by a system with changing mass moments. Details of how to obtain this expression can be found in Ref.~\cite{Maggiore}.
+There is no monopole radiation due to conservation of mass and no dipole radiation due to conservation of linear and angular momenta
+(cf. Ref.~\cite{Mono}).
 
 Here, we are specifically interested in the motion of two point masses in a circular orbit around a common center of mass.
-Labelling the masses by $m_1 \le m_2$, we have, for a binary in a circular orbit with Keplerian angular frequency $\Omega$ and separation $r$,
+For a binary in a circular orbit with Keplerian angular frequency $\Omega$, separation $r$, and masses $m_1 \le m_2$, we have \cite{Maggiore}
 %
 \be
 \dot{E} = \f{32}{5}\f{G\mu^2}{c^5}\, r^4 \Omega^6\label{eq:Edot},
@@ -281,7 +284,8 @@ which turns Eq.~(\ref{eq:Edot}) into
 \ee
 %
 where $x = ({G M_c\, \Omega}/{c^3})^{2/3} $ is the dimensionless inverse separation parameter ubiquitous in post- Newtonian theory and $\omega=2\Omega$ is the angular frequency of the quadrupolar GWs. 
-As $x\propto v^2/c^2$, it is used to keep track of post-Newtonian orders and we can see from Eq.~(\ref{eq:Edot2}) that $\dot{E}\propto x^5$. 
+As $x\propto v^2/c^2$, it is used to keep track of post-Newtonian orders and we can see from Eq.~(\ref{eq:Edot2}) that 
+at the leading order, power emitted in GWs scales as $x^5$.
 %hence the common statement in the literature saying that gravitational radiation starts 
 
 The emission of power in GWs decreases the total energy of the binary given by
@@ -308,7 +312,7 @@ Translating this expression using $\omega=2\pi f$ we arrive at the standard expr
 \ee
 %
 This can be integrated straightforwardly after defining a new time variable $\tau\equiv t_\text{coal}-t$ that equals zero when the neutron stars coalesce.
-Using $\tau$ we can now define an inspiral time at a given GW frequency
+Using $\tau$ we can now define the inspiral time, i.e, time left to coalesence at a given GW frequency $f$
 %
 \be
 \tau_\text{insp}(f) = \f{5}{256\pi}\f{c^5}{(\pi G M_c)^{5/3}} \,f^{-8/3}\label{eq:tau_insp}\, ,
@@ -326,7 +330,7 @@ which we can rewrite as follows
 \ee
 %
 where $1.219 M_\odot$ is the chirp mass corresponding to $m_1=m_2=1.4 M_\odot$. This is the canonical value for the 
-mass of a neutron star due to Chandrasekhar limit \cite{Chandra}.
+mass of a neutron star due to the Chandrasekhar limit \cite{Chandra}.
 
 We can also compute the number of GW cycles over the course of an inspiral. Given that the orbital period $T_K(t)$ varies over a time scale much larger than $T_K$ itself
 we can write
@@ -335,7 +339,7 @@ we can write
 \mathcal{N}_\text{cyc}(f) = \int_f^{f_\text{max}} \f{f'}{\dot{f'}}\, df' =\f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\left[ f^{-5/3}-f_\text{max}^{-5/3}\right] \label{eq:Ncyc1}
 \ee
 %
-We now introduce a cut-off for the inspiral imposed by the frequency of the innermost stable circular (ISCO) orbit in Schwarzschild spacetime
+We now introduce a cut-off for the inspiral imposed by the frequency of the innermost stable circular orbit (ISCO) in Schwarzschild spacetime
 \be
 \Omega_\text{ISCO} = \f{c^3}{6^{3/2} G M} \label{eq:Sch_f_isco}.
 \ee
@@ -383,7 +387,7 @@ In the so-called wave zone, defined by the condition $ \lambda= c/f \ll D$, wher
 these tensor modes satisfy the flat spacetime sourceless wave equation. %$\Box\bar{h}_{\mu\nu} = 0$.
 %meaning that we are considering the solutions far from the GW source, 
 In a suitable gauge, such as the commonly used transverse-traceless gauge, 
-it can be shown that there exist only two physical degrees of freedom which manifest themselves as two independent polarization amplitudes $h_+$ and $h_\times$. %when interacting with masses away from the source.
+it can be shown that there exist only two physical degrees of freedom which manifest themselves as two independent polarization amplitudes $h_+$ and $h_\times$ of the GWs. %when interacting with masses away from the source.
 For a binary in a circular orbit, these states read \cite{Maggiore}
 %
 \begin{align}
@@ -413,11 +417,11 @@ $\Phi_\text{N}(t)$ in Eqs.~(\ref{eq:hplus_TD}, \ref{eq:hcross_TD}) is the phase 
 where $\Phi_0 \equiv \Phi(t=t_\text{coal})$ is an integration constant. The subscript N denotes the Newtonian (leading-order) contribution. 
 Higher-order contributions can be added in terms of a post-Newtonian series, which make up to $\lesssim 2\%$ of the total phase.
 Although we will include contributions up to and including 3.5PN to obtain the results of Sec.~\ref{sec:results}, 
-we will not show these expressions here, but they can be found in Ref.~\cite{Blanchet_LRR}.
+we will not show these expressions here, but they can be found, e.g., in Ref.~\cite{Blanchet_LRR}.
 
 The nomenclature ``plus'' ($+$) and ``cross'' ($\times$) follows from the effects that passing GWs have on the plane transverse to their direction of propagation.
-If we were to conceive of a ``toy'' detector made up of a circular configuration of test-masses lying in the $x$-$y$ plane, a GW propagating along the $z$ direction would stretch/compress the circular arrangement in a $+$ and $\times$ pattern 
-with a $90^\circ$ phase difference.
+If we were to conceive of a ``toy'' detector made up of a circular configuration of test-masses lying in the $x$-$y$ plane, a GW propagating along the $z$ direction would stretch/compress this circular arrangement in a $+$ and $\times$ pattern 
+with a $90^\circ$ phase difference between the two states.
 This is the manifestation of the tidal strain of the GWs on the tranverse plane.
 %which is why $h_{+},h_{\times}$ are often called GW strains. 
 Next, let us briefly explore how an actual detector, i.e., an interferometer, responds to passing GWs.
@@ -444,10 +448,10 @@ where
 %%
 %$F_+, F_\times$ 
 are the antenna pattern functions of the detectors; $\theta,\phi$ are the sky coordinates; and $\psi$ is
-an additional angle coming from the respective rotations of detectors' frames to source frame. %(there is no need for $\psi$ in the case of a single detector).
+the angle of orientation of a detector's frame with respect to the source frame. %(there is no need for $\psi$ in the case of a single detector).
 %In principle, $\psi$ can be aligned with the polarization of the incoming GWs 
 %
-We can't apriori know $\theta, \phi,\psi$, however, we can extract their values with some limited precision over the course of an inspiral.
+We can not apriori know $\theta, \phi,\psi$, however, we can extract their values with some limited precision over the course of an inspiral.
 The longer the inspiral stays in the detector bandwidth, the better we can estimate these angles.
 %Thus, BNS inspirals which would sweep across the detection band over thousands of cycles are preferable. 
 In the the case of GW170817 which swept the ALV network over roughly 3000 GW cycles, 
@@ -467,7 +471,7 @@ The SNR is computed in the frequency domain so we Fourier-transform the time-dom
 %
 where $A= \pi^{-2/3} \sqrt{5/24}$.
 Explicit expressions for $\Psi_{+,\times}$ show that they are out of phase by $\pi/2$
-(the details of the Fourier transformation can be found in Sec.~4.5 of Ref.~\cite{Maggiore} or in \cite{Moore:2014lga}).
+(the details of the Fourier transformation can be found in Sec.~4.5 of Ref.~\cite{Maggiore} or in Ref.~\cite{Moore:2014lga}).
 Accordingly, the Fourier transform of the detector strain (\ref{eq:detector_strain}) is given by
 %%
 %
@@ -479,7 +483,7 @@ Accordingly, the Fourier transform of the detector strain (\ref{eq:detector_stra
 where 
 %
 \be
-Q(\theta,\phi,\psi,\iota) = F_+(\theta,\phi,\psi)\f{1+\cos^2\iota}{2}  + i F_\times(\theta,\phi,\psi) \cos\iota \label{eq:Q},
+Q(\theta,\phi,\psi,\iota) = F_+(\theta,\phi,\psi)\f{1+\cos^2\iota}{2}  + i F_\times(\theta,\phi,\psi) \cos\iota \label{eq:Q}
 \ee
 %
 is the quality factor.
@@ -491,7 +495,7 @@ $\Psi_\text{N}$ is the leading-order contribution to the frequency-domain phase
 \ee
 %
 %
-Higher-order contributions up to and including 3.5PN can be found in Ref.~\cite{SchutzLRR}.
+Higher-order contributions to $\Psi_{+,\times}$ up to and including 3.5PN can be found in Ref.~\cite{SchutzLRR}.
 
 The detection criterion we employ here is quantified in terms of the optimal SNR defined by
 %%
@@ -550,7 +554,7 @@ Thus we have that
 \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_{\theta,\phi,\psi,\iota} = \f{4}{25}\label{eq:RMS_th_ph_ps_iota}.
 \ee
 %
-As angles have zero averages in general, we can think of the RMS as the standard deviation ($\sigma =2/5$). 
+As angles have zero averages in general, we can think of the RMS average as the standard deviation ($\sigma =2/5$). 
 %Therefore, $2\sigma= 4/5$ above the average (zero in this case) should statistically cover 95\% of the four-dimensional angle space. 
 %Finally, we add the case of an optimally-oriented, purely $+$-polarized source ($\psi=0,\iota=0$) that is directly overhead ($\theta=0$) simply resulting in 
 %
@@ -581,7 +585,7 @@ The second IFO operates at the RMS average; thus it has $|Q|=2/5$. %compared wit
 It remains to assign a quality factor to the third IFO. We wish to make this operate below the RMS average, % in terms of its orientation and the sky location of the sources,
 but it would be pointless to simply set $Q=0$. We therefore pick the values $\iota=0$ (i.e, $|h_+|=|h_\times|$)
 and $\psi=0$ for simplicity %(aligning the $x$-axis of the ``$+$'' with the of the IFO
-then introduce the following $\theta,\phi$-only averages
+then introduce the following $\{\theta,\phi\}$-only averages
 %
 \be
  \langle F_+^2\rangle_{\theta,\phi} = \frac{7}{30},\qquad \langle F_\times^2\rangle_{\theta,\phi} = \frac{1}{6}\, 
@@ -596,10 +600,10 @@ $|Q|=4/5-\sqrt{2/5}\simeq 0.1675$.
 %which is essentially a $\{\theta$-$\phi\}$-RMS awayfrom the overall RMS averaged value of 2/5.
 This may seem somewhat ad hoc, 
 but it is our way of representing the sub-RMS-average response of the third IFO due to its sub-optimal configuration. 
-One may very well use another scheme to generate this below average response.
+One may very well use another scheme to generate this below-average response.
 
 To summarize, we introduced a model for a three-IFO network in which each IFO has identical sensitivity,
-but varying response to GWs due to IFO orientation and source polarization and sky position. This response is encoded in the quality factor $|Q_i|$.
+but varying response to GWs due to differing IFO orientations and source polarization and sky position. This response is encoded in the quality factor $|Q_i|$.
 We simulate this network's response to a single source by mapping the three different IFO responses to a single IFO's response to three distinct sources differing in amplitudes 
 from the optimal case by quality factors $|Q_i|= 4/5,2/5,$ and $4/5-\sqrt{2/5}$.
 %
@@ -656,11 +660,12 @@ Our model for the Advanced-LIGO-Virgo network ca. 2020. %of three L-shaped inter
 Column two shows the quality factor $Q_i$ for each IFO and column three the corresponding amplitude scalar $\tilde{A}_i$ introduced
 in Eq.~(\ref{eq:Hi_s}).
 Column four lists the magnitude of the frequency-domain strain at each IFO via Eq.~(\ref{eq:Hi_s}).
-The last column shows how loud the GW strain is at a given IFO due source sky position and IFO orientation. 
+The last column states each IFO's response, e.g., high means high strain, thus high SNR.
+%shows how loud the GW strain is at a given IFO due source sky position and IFO orientation. 
 %oriented/positioned an IFO is with respect to a compact binary source. 
 %High is $2\sigma$ above the average as explained above.
 %Medium is the RMS-averaged (one $\sigma$) response. 
-Recall $A= \pi^{-2/3} \sqrt{5/24}$. Maximum value for $|Q_i|$ is 1, and minimum is 0.
+Recall $A= \pi^{-2/3} \sqrt{5/24}$. Maximum value for $|Q_i|$ is 1 and minimum is 0.
 %Note that for an interferometer where the angle between the arms is $\alpha$, $A$ rescales to $A\sin\alpha$.
 }\label{table:network_params}
 \end{table}
@@ -696,7 +701,7 @@ which can be used to rule out spurious events \cite{Wen:2005ui}.
 Additionally, as we show below, the response function and the quality factor of the triangular configuration are independent of the azimuthal angle $\phi$
 hence ET will have no blind spots \cite{Regimbau:2012ir}.
 However, the $60^\circ$ arm separation reduces the strain sensitivity of a V-shaped interferometer by a factor of $\sin 60^\circ=\sqrt{3}/2$ compared
-to an L-shaped interferometer with the same armlength. So for a single V-IFO the antenna patterns of (\ref{eq:F_plus}, \ref{eq:F_cross}) become
+to an L-shaped interferometer with the same armlength. Thus, for a single V-IFO the antenna patterns of Eqs.~(\ref{eq:F_plus}, \ref{eq:F_cross}) become
 %
 \be
 F^1_+(\theta,\phi,\psi)= \f{\sqrt{3}}{2} F_+(\theta,\phi,\psi), \qquad F^1_\times(\theta,\phi,\psi)= \f{\sqrt{3}}{2} F_\times(\theta,\phi,\psi)\label{eq:F1plus_F1cross}\, ,
@@ -725,9 +730,9 @@ For the total SNR accumulated in a triangular detector we have
 %
 \begin{align}
 \rho^2_{\text{tot},\bigtriangleup} & = \sum_{A=1}^3 \rho_A^2 \nn \\ % \f{c^2}{D^2}\left(\f{G M_c}{c^3}\right)^{5/3}
- & =  \f{5}{6}\, \pi^{-4/3} h_0^2\,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 \int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \, ,\label{eq:ET_SNRsq}
+ & =  4 A^2 h_0^2\,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 \int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \, ,\label{eq:ET_SNRsq}
 \end{align}
-where
+where $h_0$ is given by Eq.~(\ref{eq:h0}) and $A=\pi^{-2/3}\sqrt{5/24}$ as before and
 %
 \be
 |Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 = \sum_{A=1}^3 \left(F^A_+\right)^2\f{1+\cos^2\iota}{2}  + \left(F^A_\times\right)^2 \cos\iota \label{eq:Q_sq_ET}
@@ -742,17 +747,17 @@ which is independent of $\phi$ \cite{Regimbau:2012ir}. We once again take the RM
 %
 which is larger than a single L-shaped IFO's RMS average of 4/25 given in Eq.~(\ref{eq:RMS_th_ph_ps_iota}).
 
-As we can not a priori know the source sky position or orientation we will model the response of ET using the RMS-averaged SNR %(\ref{eq:ET_SNRsq})
+As we can not a priori know the source sky position or polarization we model the response of ET using the RMS-averaged SNR %(\ref{eq:ET_SNRsq})
 %
 \be
 \rho_{\text{tot},\bigtriangleup} = \f{6}{5}A\, h_0 \left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \label{eq:ET_SNR},
 \ee
-where $h_0$ is given by Eq.~(\ref{eq:h0}) and $A=\pi^{-2/3}\sqrt{5/24}$ as before. % from Sec.\ref{sec:LIGO_topo}. 
+% from Sec.\ref{sec:LIGO_topo}. 
 Accordingly, we define an RMS-averaged frequency-domain strain
 %
 \begin{align}
 \tilde{H}_\bigtriangleup(f)&\equiv A\,  \bar{Q}_\bigtriangleup\, h_0 f^{-7/6} \nn \\
-   & = \f{1}{2}\sqrt{\f{3}{10}}\, \f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6} f^{-7/6}. \label{eq:H_delta}
+   & = \f{1}{2}\sqrt{\f{3}{10}}\,{\pi^{-2/3}}\, \f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6} f^{-7/6}. \label{eq:H_delta}
 \end{align}
 %
 This is ET's sky-averaged response to a BNS inspiral at luminosity distance $D$ and chirp mass $M_c$.
@@ -766,7 +771,7 @@ is the response of the $i^\text{th}$ L-IFO.
 
 In Sec.~\ref{sec:results} we will consider BNS systems inspiralling at varying luminosity distances as typical sources for the ALV and ET networks.
 To compute the resulting SNRs, we will slightly modify the integrals in Eqs.~(\ref{eq:SNR_i}, \ref{eq:ET_SNR}) and 
-use design sensitivities of A-LIGO and ET's B and C configurations for $\sqrt{S_n(f)}$.
+use design sensitivities of A-LIGO and ET for $\sqrt{S_n(f)}$.
 Before we present our results, we list the various idealizations that we have adopted to simplify our computations.
 For each idealization we present an estimated error. %that propa
 Our overall conclusion is that our simplifications do not significantly change our estimations of advance warning times.% which we quantify below.
