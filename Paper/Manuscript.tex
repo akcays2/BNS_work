@@ -771,7 +771,7 @@ is the response of the $i^\text{th}$ L-IFO.
 
 In Sec.~\ref{sec:results} we will consider BNS systems inspiralling at varying luminosity distances as typical sources for the ALV and ET networks.
 To compute the resulting SNRs, we will slightly modify the integrals in Eqs.~(\ref{eq:SNR_i}, \ref{eq:ET_SNR}) and 
-use design sensitivities of A-LIGO and ET for $\sqrt{S_n(f)}$.
+use design sensitivities of Advanced LIGO (A-LIGO) and ET for $\sqrt{S_n(f)}$.
 Before we present our results, we list the various idealizations that we have adopted to simplify our computations.
 For each idealization we present an estimated error. %that propa
 Our overall conclusion is that our simplifications do not significantly change our estimations of advance warning times.% which we quantify below.
@@ -789,21 +789,23 @@ Our overall conclusion is that our simplifications do not significantly change o
 As our aim here is to provide a good order-of-magnitude estimation for the advance warning times, we model the neutron stars as point masses %and carry out this treatment 
 all the way to the merger. The point-particle treatment is severely inadequate for the strong-field evolution of the binary, but these systems spend only the last few seconds of the inspiral in this regime, e.g., the inspiral time from $f=100\,$Hz to the merger is
 $\tau_\text{insp}(f=100\,\text{Hz})\simeq 2.161\,$seconds according to Eq.~(\ref{eq:tau_insp}).
-And even at $f=100\,$Hz, a $m_1=m_2=1.4M_\odot$ neutron-star binary has separation $r\approx 155\,$km, which translates to a dimensionless strength of gravity of $\approx 2.6\%$.
+Moreoever, at $f=100\,$Hz, a $m_1=m_2=1.4M_\odot$ neutron-star binary has separation $r\approx 155\,$km, which translates to a dimensionless strength of gravity of $\approx 2.6\%$.
 This percentage is mostly accounted for by the post-Newtonian
 corrections to our Newtonian (leading order) evolution. 
 Here, we will go up to 3.5pN for our
 advance warning time computations.
 Therefore, given that strong-field effects may at most change
 $T_\text{AW}$ by a second, we can neglect them for our purposes,
-but let us add that a faithful evaluation of BNS systems above $f\gtrsim 100\,$Hz is a very active and important branch of general relativity and gravitational-wave astronomy. %, but beyond the scope of this article.
+but let us add that a faithful evaluation of BNS systems above $f\gtrsim 100\,$Hz is a very active and important branch of general relativity and gravitational-wave astronomy. 
+See the green dot-dashed curve in Fig.~\ref{fig:figGW170817} for an illustration of these effects.
+%, but beyond the scope of this article.
 %negligence of the strong-field effects will not matter for timgescales lasting minutes to hours.
 %, next-to-next to leading order). 
 %Though it is now possible to go up to 4pN, we suffice with 2pN here as higher-order contributions make miniscule changes to our estimations for advance warning times. 
 %
 \item {\it Truncating the inspiral at the Schwarzschild ISCO.}
 We artificially end the inspirals at the Schwarzschild ISCO of the BNS with coordinate radius $r_\text{ISCO} = 6GM/c^2$ and angular frequency $\Omega_\text{ISCO}$ %= (M/r^3_\text{ISCO})^{1/2}$ in natural units, 
-given by Eq.~(\ref{eq:Sch_f_isco}) which translates to the following dominant-mode (quadrupole) GW frequency
+given by Eq.~(\ref{eq:Sch_f_isco}) which translates to the following dominant-mode (quadrupole) GW frequency at the ISCO
 \be
 f_\text{ISCO} = \f{c^3}{6^{3/2}\pi G M} \simeq 1571\,\text{Hz} \label{eq:f_isco}
 \ee
@@ -844,11 +846,11 @@ $\tilde{H}$ & $M_c^{5/6} $ & $(m_1 m_2)(m_1+m_2)^{3/2} $&\quad& $ 0.7834\le 0.89
 $f_\text{ISCO}$ & $M^{-1} $ & $(m_1+m_2)^{-1} $&\quad& $0.4375\le 0.5\le 0.583 $\B\\
 \hline
 \end{tabular}
-\caption{The scaling of the physical quantities of interest in this article in terms the binary masses $m_1, m_2$ restricted to lie between $1.2M_\odot$ and $1.6 M_\odot$. 
+\parbox{16cm}{\caption{The scaling of the physical quantities of interest in this article in terms the binary masses $m_1, m_2$ restricted to lie between $1.2M_\odot$ and $1.6 M_\odot$. 
 %We used Kepler's third law to obtain $f \sim f_K \sim M^{1/2}$.
-Value$_{1.4M_\odot}$ represents the value of the quantities in column three evaluated at $m_1=m_2=1\, \text{mass unit}$ corresponding to $1.4 M_\odot$.
+Value$_{1.4M_\odot}$ represents the value of the quantities in column three evaluated at $m_1=m_2=1.4 M_\odot$ then rescaled to unity.
 %Unlike the orbital frequency $f_K$, the ISCO frequency $f_\text{ISCO}$ scales as $M^{-1}$ as shown in Eq.~(\ref{eq:f_isco}).
-}
+}}
 \label{tbl:scalings}
 \end{table}
 \end{center}
@@ -861,9 +863,9 @@ The inspiral time seems to be more sensitive to our chosen mass values as indica
 in Table \ref{tbl:scalings}. %$\tau_\text{insp}^{1.4}$ as shown in Table \ref{tbl:scalings}.
 As our intent is to provide an estimation for advance warning times in terms of orders of magnitude, this variation is tolerable.
 Moreoever, it seems that this variation tends to lengthen $\tau_\text{insp}$ more than shorten it thus our setting
-$m_1=m_2=1.4 M_\odot$ is more likely to underestimate $T_\text{AW}$ than overestimate it. 
+$m_1=m_2=1.4 M_\odot$ is more likely to underestimate $T_\text{AW}$ than overestimate it thus erring on the side of caution.
 %which is something we can live with.
-So we set $m_1=m_2=1.4 M_\odot$ henceforth.
+%So we set $m_1=m_2=1.4 M_\odot$ henceforth.
 %
 \item {\it Neglecting eccentricity.}
 We further simplify our treatment by considering only quasi-circular inspirals meaning that at any given instant, 
@@ -937,7 +939,7 @@ At $f=100\,$Hz, the first two factors $\simeq 3.6\times 10^{-2}$ for $M=2.8 M_\o
 the next-to-leading order contribution is two orders of magnitude smaller.
 The ratio in Eq.~(\ref{eq:Oct_quad_ratio}) is further supressed by $(m_2-m_1)/M^2$ which, for our idealized equal-mass system, 
 yields zero, but if we consider $m_1=1.2 M_\odot, m_2=1.6 M_\odot$ then it gives $\approx 2\times 10^{-2}$ hence the ratio in Eq.~(\ref{eq:Oct_quad_ratio}) $\lesssim 10^{-3}$.
-Thus, we can neglect the current-quadrupole radiation completely. In a similar fashion, it can be shown that the power radiated by the mass octupole ($\ell=3$)
+Thus, we can neglect the current-quadrupole radiation completely. In a similar fashion, it can be shown that the power radiated by the mass octupole %($\ell=3$)
 scales the same way as in Eq.~(\ref{eq:Oct_quad_ratio}) with respect to the dominant mass quadrupole radiation, but is $\sim 50$ times smaller hence we can neglect it as well \cite{Maggiore}.
 %without worry for our work. 
 Higher moments are suppressed by higher factors of $v^2/c^2$ as can be shown using post-Newtonian theory. 
@@ -954,7 +956,7 @@ Restricting to the case of $m_1=m_2$ we obtain
 \f{\dot{E}_{\text{SO}}}{\dot{E}} \lesssim 4 \f{G\Omega m}{c^3}\chi + \ord\left(\f{v^5}{c^5}\right) \label{eq:spin_orbit}\, ,
 \ee
 %
-where we introduced the dimensionless Kerr spin parameter $\chi\equiv {S}/({G m^2})$ which, for a neutron star (NS) with spin $S$ and mass $m$, can be written as
+where we introduced the dimensionless Kerr spin parameter $\chi\equiv {J}/({G m^2})$ which, for a neutron star (NS) with spin $J$ and mass $m$, can be written as
 %
 \be
 \chi=\f{c}{G} \f{I}{m^2} \f{2\pi}{P},  \label{eq:NS_spin}
@@ -962,15 +964,15 @@ where we introduced the dimensionless Kerr spin parameter $\chi\equiv {S}/({G m^
 %
 where $P$ is the spin period, and $ I = (2/5) m R^2 \kappa$ is the moment of inertia of the NS with $R$ being the radius of the NS and $\kappa \sim \ord(1)$ an intrinsic constant (see, e.g., Sec.~6.2 of Ref.~\cite{Colpi_Sesana}). 
 A rather compact NS with $m=1.4 M_\odot, R=11\,\text{km}, P= 10\,\text{ms}$ has $\chi\lesssim 0.05$ whereas
-the fastest observed NS spin $\lesssim 0.04$ \cite{FastestNSspin}.
+the fastest observed NS spin is $\lesssim 0.04$ \cite{FastestNSspin}.
 Therefore, at $f= 100\,$Hz, the first term on the right-hand-side of Eq.~(\ref{eq:spin_orbit}) gives $\approx 4\times 10^{-4}$. 
-On the other hand, the spin-spin effects contribute at $\ord(v^4/c^4)\times\dot{E}$ hence $\lesssim \dot{E}_\text{SO}$.
+The other spin effect, the spin-spin coupling, contributes at $\ord(v^4/c^4)\times\dot{E}$ hence it is $\lesssim \dot{E}_\text{SO}$.
 Thus, NS spins can be neglected for our estimation of advance warning times. %$T_\text{AW}$.
 %we have justified our negligence of the effects of NS spins.
 %
 \item {\it Neglecting cosmological effects.}
 When we take into account the effects of the large-scale structure of the universe, many quantities of interest are scaled by $(1+z)^\alpha$ where $\alpha$
-is the appropriate power. The standard treatment adopts a Friedmann-Robertson-Walker cosmology with scale factor $a(t)$ and curvature $k=\pm 1, \text{ or } 0$.
+is the appropriate power. The standard treatment adopts a Friedmann-Le Ma\^{i}tre-Robertson-Walker cosmology with scale factor $a(t)$ and curvature $k=\pm 1, \text{ or } 0$ \cite{cosm_book}.
 Introducing the subscript $s$ to denote quantities evaluated at the source frame, we have the following cosmological corrections
 %%
 %
@@ -994,7 +996,8 @@ and the GW strain change according to % in the detector frame
 h(t) & \sim (1+z)^{5/3} h(t).
 \end{align}
 %
-Looking at Eqs.~(\ref{eq:fdot}, \ref{eq:tau_insp}, \ref{eq:h_c}) we spot a common factor of $M_c^{5/3}$ in all of them.
+We see that all three equations are rescaled by $(1+z)^{\pm5/3}$. 
+Now, looking at Eqs.~(\ref{eq:fdot}, \ref{eq:tau_insp}, \ref{eq:h_c}) we spot a common factor of $M_c^{\pm5/3}$ in all of them.
 Therefore, we can accommodate the cosmological effects by introducing the redshifted chirp mass $\mathcal{M}_c\equiv (1+z) M_c$
 which changes Eqs.~(\ref{eq:fdot}, \ref{eq:tau_insp}, \ref{eq:h_c}) to
 %The effect of the cosmological redshift on our estimations of advance warning times manifests itself by modifying 
@@ -1006,7 +1009,7 @@ h_c(t) & = \f{4}{D}\left(\f{G \mathcal{M}_c}{c^2}\right)^{5/3}\left(\frac{\pi f}
 \end{align}
 %
 where $f$ is the usual frequency in the observer/detector frame.
-So we see that the effects of the cosmological redshifting can be accounted for by the transformation $M_c\rightarrow \mathcal{M}_c$.
+In short, the effects of the cosmological redshifting can be accounted for by the transformation $M_c\rightarrow \mathcal{M}_c$.
 This is because both $\dot{f}$ and the GW amplitude are governed by the time scale $G M_c/c^3$.
 Therefore, the inspiral evolves faster in the lab frame %because $\dot{f}$ has increased and the cut-off frequency has decreased.
 and we must now terminate it at a redshifted GW ISCO frequency which is less than $f_\text{ISCO}$ of Eq.~(\ref{eq:f_isco}).
@@ -1020,10 +1023,10 @@ indicating that the frequency-domain strain in the detector frame decreases by a
 For the Advanced-LIGO-Virgo network,
 we consider a maximum value of 200\,Mpc for $D$,
 which corresponds to $z \approx 0.02$ which redshifts $f_\text{ISCO}$ by $\approx 2\%$ and reduces $\tau_\text{insp}$ by $\approx 7\%$.
-Therefore, we will neglect the effects of cosmological redshift 
+Therefore, we neglect the effects of cosmological redshift 
 when considering sources for the ALV network.
-On the other hand, for Einstein Telescope, we will go out to $D=1\,\text{Gpc}\implies z\approx 0.2$
-which reduces $\tau_\text{insp}$ by $\sim 25\%$, thus we shall include the redshift effects in our computations of advance warning times and SNRs
+On the other hand, for Einstein Telescope, we go out to $D=1\,\text{Gpc}\implies z\approx 0.2$
+which reduces $\tau_\text{insp}$ by $\approx 25\%$, thus we shall include the redshift effects in our computations of advance warning times and SNRs
 for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can be found in, e.g., Ref.~\cite{Phinney:2001di}). 
 
 %
@@ -1039,7 +1042,7 @@ for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can b
 \section{GW170817 as a test of our model for the Advanced LIGO-Virgo network}\label{sec:GW170817}
 On 17 August 2017, at 12:41:04 UTC, GWs from the inspiral and merger of a binary neutron star system %were detected by the Advanced LIGO-Virgo network.
 %The event, first picked up by LIGO Hanford (H1), 
-swept the ALV network's frequency band from $\approx 30\,$Hz to $\approx 2000\,$Hz, accumulating a total SNR of
+swept the ALV network's frequency band from $\approx 30\,$Hz to $\approx 2000\,$Hz, accumulating a total network SNR of
 %18.8, 26.4 and 2.0 at H1, LIGO Livingstone (L1) and Virgo (V1), respectively, yielding 
 $\rho_\text{tot} = 32.4$ \cite{GW170817}.
 The inferred duration of the event in the network bandwidth was $\approx 57\,$ seconds during which $\approx 3000$ cycles of GWs were emitted \cite{GW170817_Facts}.
@@ -1089,7 +1092,7 @@ by computing the SNRs accumulated by each individual IFO and by the entire netwo
 where $f_0 =30\,\text{Hz}, f_f= f_\text{ISCO}$ for GW170817 and $\tilde{A}_i$ given in Table~\ref{table:network_params}.
 For this computation, we have neglected the cosmological corrections as 40\,Mpc is in our ``local'' neighbourhood.
 
-For $S_\text{n}(f)$ we use actual [noise-subtracted] LIGO-Livingstone (L1) data for GW170817 from LIGO's website \cite{LIGO_L1_data}.
+For $S_\text{n}(f)$ we use actual [noise-subtracted] LIGO-Livingstone (L1) data for GW170817 available at LIGO's website \cite{LIGO_L1_data}.
 The data, sampled at 4096\,Hz, is given as a discrete time series $h(t_i)$ for a duration of 2048\,seconds in time steps of $\Delta t=1/4096\simeq 2.44\times 10^{-4}\,$seconds.
 %with the amplitude peaking at $1842.43\pm0.03\,$seconds.
 We first Fourier-transform the data to frequency space and apply several high and low-frequency filters to isolate a window of $f\in [10, f_\text{ISCO}]$.
@@ -1109,7 +1112,7 @@ Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulat
 \ee
 %
 %%
-These are comparable to actual SNRs of L1, H1, and V1 for GW170817, which are, 26.4, 18.8, and 2.0, respectively\footnote{At the time of GW170817, Virgo's sensitivity had not reached the level of LIGO's. Hence it accumulated a much smaller SNR for GW170817. By 2020, Virgo should be operating at nearly the same sensitivity of LIGO.}.
+These are comparable to actual SNRs of L1, H1, and V1 for GW170817, which are, 26.4, 18.8, and 2.0, respectively\footnote{At the time of GW170817, Virgo's sensitivity had not reached the level of LIGO's. Hence it accumulated a much smaller SNR for GW170817. By 2020, Virgo should be operating at nearly the same sensitivity as LIGO.}.
 %To accommodate more realistic orientations, we show two shaded regions in Fig.~\ref{fig:figGW170817}. The inspirals in the lighter region yield SNR$\ge 22.34$ as
 %they sweep from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz whereas inspirals in the darker region accumulate $ \bar\rho_l \le \text{SNR} \le 22.34$.
 The shaded region in Fig.~\ref{fig:figGW170817} covers strains between $\tilde{H}_l(f)$ and $\tilde{H}_h(f)$. %which we expect to represent mo
@@ -1144,8 +1147,8 @@ network, we would expect all three strains to exist somewhere in the shaded regi
 %For a randomly located, oriented BNS inspiral, we expect its strain to sweep in the lighter region for one IFO and in the darker region for the other two IFOs.
 The dot-dashed (green) curve shows a more realistic strain constructed with data from numerical simulations of Ref.~\cite{Read:2009yp}
 and rescaled to match our solid line at $f=10\,$Hz.
-The breakdown of the $\sqrt{f}f^{-7/6}=f^{-2/3}$ behavior of
-the strain around $f\sim100\,$Hz due to tidal effects is clear.
+The breakdown of the leading-order $\sqrt{f}f^{-7/6}=f^{-2/3}$ behavior of
+the inspiral around $f\sim100\,$Hz due to tidal effects is clear.
 %Note that although we extend the $\sqrt{f}f^{-7/6}=f^{-2/3}$ power law behavior of the strains all the way to ISCO, in actuality, this  starts breaking down .
 }
 \label{fig:figGW170817}
@@ -1176,8 +1179,8 @@ the ASD from the August 2017 value to design sensitivity.
  Our aim is to forecast GRBs using our model networks for the ALV era in the 2020s
  and the Einstein Telescope era in the 2030s.
  Our predictive capabilities depend on how much advance warning the future networks will give us prior to the merger/GRB.
- Our definition of advance warning is the inspiral time to the merger from a certain threshold instant $\bar{t}$ at which point the network ``agrees'' that there is a GW transient
- statistically significant enough to issue warnings to electromagnetic telescopes.
+ Our definition of advance warning is the inspiral time to the merger from a certain threshold instant $\bar{t}$ at which point the network ``agrees'' that there is
+ an event statistically significant enough to issue warnings to electromagnetic telescopes.
  We define this threshold instant to be given at a frequency $\bar{f}$ when the total SNR equals 15. 
  More specifically, in the case of the ALV network, our statement is that there exists a frequency $\bar{f} < f_\text{ISCO}$ such that
  %
@@ -1332,8 +1335,7 @@ the ALV network \cite{Sathyaprakash:2012jk}.
 
 \subsubsection{Forecasting GRBs in the 2030s using the Einstein Telescope}\label{Sec:ETB}
 We now wish to quantify the forecasting capabilities of Einstein Telescope. To this end, we consider the inspiral of BNS systems
-at luminosity distances of $100,200,400,1000\,$Mpc entering the ET band. 
-These correspond to cosmological redshifts of $z\approx 0.0222,0.0437, 0.085, 0.198$, respectively.
+at luminosity distances of $100,200,400,1000\,$Mpc corresponding to cosmological redshifts of $z\approx 0.0222,0.0437, 0.085, 0.198$, respectively.
 To compute these, we used a flat $\Lambda$CDM model ($\Omega_k=0$) with the latest Planck satellite parameters: 
 $\Omega_\Lambda = 0.6911, \Omega_m = 0.3089, H_0 = 67.74\,$km\,s$^{-1}\,$Mpc$^{-1}$ \cite{Planck2015}. % with negligible ra yielding and $\Omega_r \lesssim 10^{-4}$.
 It is then straightforward to translate $D$ to $z$ (cf. Ref.~\cite{Hogg:1999ad}).
@@ -1359,7 +1361,7 @@ with $\tilde{H}_\text{ET}(f)$ given by the redshifted version of Eq.~(\ref{eq:H_
 %
 where recall $\mathcal{M}_c = (1+z)M_c$.
 For the detector noise $\sqrt{S^\text{ET}_n(f)}$, we adopt the ASD for the B and C configurations known as ET-B and ET-C, respectively \cite{Hild:2010id}, which we plot as the solid dark (red) and light (brown) curves in Fig.~\ref{fig:ETB2030}.
-Sweeping across these are four BNS inspirals at $D=100,200,400,1000\,$Mpc represented by solid (black), dotted (blue), dashed (green),
+Sweeping across these are the RMS-averaged strains of four BNS inspirals at $D=100,200,400,1000\,$Mpc represented by solid (black), dotted (blue), dashed (green),
 and dot-dashed lines (gray), respectively. These strains sit much higher than the detector noise
 compared with those in Fig.~\ref{fig:LIGO2020} which foretells us that the SNRs accumulated in the ET band will be much higher, 
 thus yielding much longer advance warning times as we show in Table~\ref{table:ET}.
@@ -1369,11 +1371,10 @@ thus yielding much longer advance warning times as we show in Table~\ref{table:E
 \includegraphics[width=\linewidth]{../Figures/ET_strains_redshifted.pdf}
 \caption{Typical GW sources that may be harbingers of GRBs in the 2030s: $1.4 M_\odot-1.4 M_\odot$ inspiralling BNS systems sweeping across 
 the Einstein Telescope's sensitivity band for both B and C configurations.
-The solid (black), dotted (blue), dashed (green), and dot-dashed lines (gray) lines are the redshift-corrected
+The solid (black), dotted (blue), dashed (green), and dot-dashed (gray) lines are the redshift-corrected
 RMS-averaged strains, $2\sqrt{f}\tilde{H}_\text{ET}$, at luminosity distances of $D=100, 200, 400, 1000\,$Mpc, respectively. 
 The vertical lines with correspondingly identical patterns (colors) mark the redshifted ISCO frequencies $(1+z)^{-1} f_\text{ISCO}$ at which point we terminate each inspiral.
-As the true ISCO frequency is likely larger than $f_\text{ISCO}$ \cite{Marronetti:2003hx}, the inspirals would continue to nearly 2\,kHz indicated by the 
-faded lines in the plot (drawn to 5\,kHz for aesthetic reasons).
+In actuality, the inspirals continue beyond the test-mass $f_\text{ISCO}$, which we illustrate using the faded lines in the plot (drawn to 5\,kHz for aesthetic reasons). The plunge to merger is expected to occur at $f\approx 2\,$ kHz \cite{Marronetti:2003hx}.
 %However, numerical simulations indicate that the actual ISCO is smaller than the Schwarzschild value $6GM/c^2$ hence the true ISCO
 %frequency is greater than $f_\text{ISCO}$ used here.
 %As shown, Einstein Telescope is sensitive enough to accumulate more SNR in this $f>f_\text{ISCO}$ regime.
@@ -1402,8 +1403,8 @@ The final accumulated SNRs are given by
 \bar\rho_{F}\equiv \bar\rho_\text{ET}(f_0,f_\text{ISCO})  .\label{eq:rhoF_ET}
 \ee
 %
-where $f_\text{ISCO}$ is now the redshifted version of Eq.~(\ref{eq:f_isco}), equalling $1537, 1505, 1448, 1311\,$Hz, respectively for $D=100,200,400, 1000\,$Mpc.
-Table~\ref{table:ET} summarizes our results for both ET-B and ET-C where we chose to only display the 3.5PN-accurate inspiral time as $T_\text{AW}$,
+where $f_\text{ISCO}$ is now the redshifted version of Eq.~(\ref{eq:f_isco}), equalling $1537, 1505, 1448, 1311\,$Hz, respectively for $D=100$ ,200,400, 1000\,Mpc.
+Table~\ref{table:ET} summarizes our results for both ET-B and ET-C where we chose to only display the 3.5PN-accurate inspiral time for $T_\text{AW}$,
 but we computed this quantity also using both 0PN and 2PN expressions as a consistency check.
 
 
@@ -1498,9 +1499,10 @@ We used $D=50,100,200\,$Mpc to obtain the ALV results (Sec.~\ref{Sec:ALIGO2020})
 %
 %
 \section{Binary black hole neutron star systems}\label{sec:BH_NS}
-In this section, we investigate the possibility of witnessing the tidal distruption of a neutron star by a black hole before the merger.
+We now investigate the possibility of witnessing the tidal distruption of a neutron star by a black hole before the merger.
 The treatment of the inspiral is the same as before, however the fate of the neutron star depends strongly on the system's intrinsic parameters
-such as the black hole mass and spin, and the neutron star's equation of state (EOS) and compactness $c_\text{NS}\equiv G M_\text{NS}/(R_\text{NS}c^2)$. 
+such as the black hole mass and spin, and the neutron star's equation of state (EOS) and compactness $c_\text{NS}\equiv G M_\text{NS}/(R_\text{NS}c^2)$,
+where $R_\text{NS}$ is the radius of the NS and $M$ denotes mass. 
 The evolution of black hole-neutron star (BH-NS) binaries is a very active field of research at the interface of numerical relativity and high-energy astrophysics
 (see Ref. \cite{Shibata:2011jka} for a comprehensive review) requiring fully general relativistic magnetohydrodynamic treatment including neutrino transport equations.
 The complexity of evolving the dynamics of these systems require large computational resources and long runtimes.
@@ -1511,15 +1513,16 @@ A necessary, but insufficient, condition for tidal disruption (TD) is that
 \be
 \f{2 G M_\text{BH} (c_R R_\text{NS})}{r^3} \gtrsim \f{G M_\text{NS}}{(c_R R_\text{NS})^2} \label{eq:TD_cond1},
 \ee
-where $r$ is the orbital radius, $R_\text{NS}$ is the radius of the NS and $M$ denotes masses. 
+where $r$ is the orbital separation.
 $c_R R_\text{NS}$ is the semi-major axis of the elongated oblate spheroid that represents the tidally distorted shaped of the NS to leading order with
 $c_R >1 $. %Setting $m_2= M_\text{BH}, m_1 = M_\text{NS}$, and $r_1=r_\text{NS}$, 
-The above conditions roughly implies
+The above condition roughly implies
 %
 \be
 \f{M_\text{BH}}{M_\text{NS}} \gtrsim \left(\f{r}{R_\text{NS}}\right)^3 \label{eq:TD_cond2}.
 \ee
 %
+
 We wish to maximize the chances of observing a TD event, therefore we ingrain the BH-NS binary with certain desirable features
 some of which can be deduced from Eqs.~(\ref{eq:TD_cond1}, \ref{eq:TD_cond2}). These are
 %
@@ -1528,24 +1531,26 @@ some of which can be deduced from Eqs.~(\ref{eq:TD_cond1}, \ref{eq:TD_cond2}). T
  \item Small separation. As the Newtonian tidal force due to the black hole is proportional to $M_\text{BH}/r^3$, $r$ has to be
  minimized to provide maximum tidal force. 
  However, for $r< r_\text{ISCO}$ the NS simply plunges into the BH; therefore the minium separation is given by the ISCO radius.
- \item Low black hole mass. In the test-mass case, $r_\text{ISCO} \propto M_\text{BH}$, so the Newtonian tidal force roughly scales as $M_\text{BH}/r_\text{ISCO}^3\propto M_\text{BH}^{-2}$. 
+ \item Low black hole mass. In the test-mass case, $r_\text{ISCO} \propto M_\text{BH}$, so the Newtonian tidal force at the ISCO scales as $M_\text{BH}/r_\text{ISCO}^3\propto M_\text{BH}^{-2}$. 
  Hence, $M_\text{BH}$ must also be minimized. 
  As is the case with $r$, there is also a lower bound to $M_\text{BH}$ set from astrophysical observations and stellar evolution models, which currently yield $M_\text{BH} \gtrsim 5 M_\odot$ \cite{Farr:2010tu, Raithel:2017nlc, Ozel:2010su, Wiktorowicz:2013dua, Christian:2018mjv}.
- \item High black hole spins. $r_\text{ISCO}$ is much smaller in the case of a prograde NS orbit around a spinning Kerr black hole.
- For instance, for the maximum dimensionless BH spin value of $a\equiv c J_\text{BH}/(G M^2_\text{BH})=1$, $r_\text{ISCO}$ for prograde orbits is 1/6th of the Schwarzschild value $6GM_\text{BH}/c^2$ whereas for $a=1$ retrograde orbits, $r_\text{ISCO}$ is 3/2 of the Schwarzschild value.
+ \item High black hole spins. $r_\text{ISCO}$ is much smaller in the case of a prograde NS orbit around a spinning Kerr black 
+ hole\footnote{Prograde orbits have $\hat{\mathbf{L}}\cdot\mathbf{J}=|\mathbf{J}|$ whereas for retrograde orbits $\hat{\mathbf{L}}\cdot\mathbf{J}=-|\mathbf{J}|$,
+ where $\mathbf{J}$ is the spin vector of the Kerr black hole.}.
+ For instance, for the maximum dimensionless BH spin value of $\chi\equiv c J_\text{BH}/(G M^2_\text{BH})=1$, $r_\text{ISCO}$ for prograde orbits is 1/6th of the Schwarzschild value $6GM_\text{BH}/c^2$ whereas for $\chi=1$ retrograde orbits, $r_\text{ISCO}$ is 3/2 of the Schwarzschild value.
  With smaller ISCO separation, there is much more tidal force exerted on the NS before it plunges in.
  \item Less compact neutron stars. Eq.~(\ref{eq:TD_cond1}) can be rearranged to isolate $c_\text{NS}$
  on the right hand side. Smaller values for $c_\text{NS}$ mean that TD is more likely to occur for $r>r_\text{ISCO}$.
 \end{enumerate}
 %
 
-Although the results from each numerical study of BH-NS mergers may somewhat vary what is clear is that we must have high spin and low mass for the black hole for tidal disruption to happen. 
+Although the results from each numerical study of BH-NS mergers may somewhat vary, it is clear is that the BH-NS binary must have a high-spin, low-mass black hole for tidal disruption to happen. 
 We are thus led to set $M_\text{BH} =5 M_\odot$. 
 This raises an interesting astrophysical question as to whether it is possible to have such light-weight high-spin black holes assuming that
-they are spun up by accretion from their secondary (that will later on become a NS) in binary systems, thus they will have to gain mass.
+they are spun up by accretion from their secondary (that will later become a NS) in binary systems, thus inevitably gaining mass.
 It is possible that the mass gain pushes $M_\text{BH}$ too high to either cause a direct plunge of the NS before TD or decrease $\tau_\text{insp}$ considerably
 to eliminate any chances of getting an advance warning.
-However, if the spin of the BH comes from the supernova explosion mechanism itself as argued for G1915 in Ref.~\cite{McClintock:2006xd} then it is possible to have a 
+However, if the spin of the BH comes from the supernova explosion mechanism as argued for G1915 in Ref.~\cite{McClintock:2006xd} then it is possible to have a 
 low-mass BH in a binary system\footnote{We thank Dr. Morgan Fraser of UCD Astrophysics
 for pointing this out.}.
 
@@ -1557,8 +1562,8 @@ There is additional motivation to choose low BH mass as
  for our chosen NS mass.
 %As we wish to avoid discussing the details of the strong-field evolution of the binary, we borrow certain results from the literature to
 %justify our choice for the chosen parameters above. 
-If we pick the more pessimistic $c_\text{NS} = 0.15$ bound then we must have $Q\lesssim 5$ and $a\gtrsim 0.5$ (prograde) for TD to occur \cite{Ferrari:2008nr}
-and $Q< 3$ in the case of $a=0$ \cite{Kyutoku:2011vz}.
+If we pick the more pessimistic $c_\text{NS} = 0.15$ bound then we must have $Q\lesssim 5$ and $\chi\gtrsim 0.5$ (prograde) for TD to occur \cite{Ferrari:2008nr}
+and $Q< 3$ in the case of $\chi=0$ \cite{Kyutoku:2011vz}.
 
 So, we simply assume that such lightweight, high-spin BHs exist in BH-NS binaries and compute strains and SNRs accordingly.
 A quick calculation shows that these systems yield $T_\text{AW} \lesssim 30\,$seconds in the ALV network of 2020s. %in Table \ref{table:LIGO2020}is now less than $ 40\,$ seconds. 
@@ -1590,8 +1595,8 @@ The SNRs are even higher than before, however the advance warning times have dec
 %
 
 From the table, we can see that the horizon distance of ET-C for these binaries with $T_\text{AW} \approx 1\,$hour is roughly 200\,Mpc.
-Given that the LIGO O1 merger rate for these systems is $ R < 3600\,$Gpc$^{-3}$yr$^{-1}$ \cite{Abbott:2016ymx},
-there could be $\approx 30$ such mergers per year within ET-C's horizon distance of $\approx 200\,$Mpc. %corresponding roughly to $T_\text{AW}\approx1\,$hour.
+Given that the A-LIGO O1 merger rate for these systems is $ R < 3600\,$Gpc$^{-3}$yr$^{-1}$ \cite{Abbott:2016ymx},
+there could be $\approx 30$ advance warnings of such mergers per year. %within ET-C's horizon distance of $\approx 200\,$Mpc. %corresponding roughly to $T_\text{AW}\approx1\,$hour.
 We must emphasize that this should be viewed
 as an upper limit as low-mass, high-spin black holes such as ours above are expected to be rare.
 Theoretical studies indicate that $\lesssim 10\%$ stellar-mass BHs have masses $\lesssim 5 M_\odot$ \cite{Fryer:1999ht}.
@@ -1627,7 +1632,7 @@ embarassment of the riches in the 2030s. In short, the future of gravitational a
 
 
 \acknowledgements 
-SA thanks Conor O'Toole and Niels Warburton for endless feedback and a thorough perusal of this article. 
+SA thanks Conor O'Toole for endless feedback, and Niels Warburton and L\'{a}na Salmon for a thorough perusal of this article. 
  
  
 \bibliographystyle{apsrev4-1}
