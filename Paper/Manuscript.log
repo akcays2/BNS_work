@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.8)  7 MAY 2018 02:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  12 MAY 2018 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./Manuscript.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texmf/tex/latex/tex/latex/revtex/revtex4-1.cls
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
 Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
 ex4/ for documentation)
  Copyright (c) 2009 The American Physical Society.
@@ -66,7 +66,7 @@ Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \widetext@top=\box39
 \widetext@bot=\box40
 Class revtex4-1 Info: Selecting society aps on input line 7542.
-(/usr/share/texmf/tex/latex/tex/latex/revtex/aps4-1.rtx
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-1.rtx
 File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
 mentation)
 Class revtex4-1 Info: RevTeX society APS selected on input line 31.
@@ -74,7 +74,7 @@ Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 Class revtex4-1 Info: Selecting journal prd on input line 7544.
 Class revtex4-1 Info: APS journal PRD selected on input line 7545.
 
-(/usr/share/texmf/tex/latex/tex/latex/revtex/aps10pt4-1.rtx
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
 File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
 documentation)
 Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
@@ -166,7 +166,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
 
-(/usr/share/texmf/tex/latex/tex/latex/revtex/revsymb4-1.sty
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/revsymb4-1.sty
 Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
 or documentation)
 LaTeX Info: Redefining \frak on input line 95.
@@ -664,7 +664,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -693,7 +693,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 )
-(/usr/share/texmf/tex/latex/xcolor/svgnam.def
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
@@ -970,79 +970,89 @@ Overfull \hbox (5.63596pt too wide) in paragraph at lines 138--149
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.717 \end{align}
+l.718 \end{align}
                  ] [9] [10pdfTeX warning (ext4): destination with the same iden
 tifier (name{table.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.877 \be
+l.876 \be
          ] [11] [12]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 1100
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 1098
 .
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [13] <../Figures/GW170817_strains.pdf, id=455, 1003.75pt x 625.33624pt>
+) [13]
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/GW170817_strains.pdf): PDF i
+nclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../Figures/GW170817_strains.pdf, id=447, 1003.75pt x 625.33624pt>
 File: ../Figures/GW170817_strains.pdf Graphic file (type pdf)
 
 <use ../Figures/GW170817_strains.pdf>
 Package pdftex.def Info: ../Figures/GW170817_strains.pdf used on input line 112
-4.
+2.
 (pdftex.def)             Requested size: 411.03474pt x 256.0748pt.
  [14pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1164 \ee
+l.1162 \ee
            <../Figures/GW170817_strains.pdf>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1254.
+(hyperref)                than one, level fixed on input line 1252.
 
-<../Figures/ALigo_strains.pdf, id=511, 1003.75pt x 611.28375pt>
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/ALigo_strains.pdf): PDF incl
+usion: found PDF version <1.5>, but at most version <1.4> allowed
+<../Figures/ALigo_strains.pdf, id=504, 1003.75pt x 611.28375pt>
 File: ../Figures/ALigo_strains.pdf Graphic file (type pdf)
 
 <use ../Figures/ALigo_strains.pdf>
-Package pdftex.def Info: ../Figures/ALigo_strains.pdf used on input line 1263.
+Package pdftex.def Info: ../Figures/ALigo_strains.pdf used on input line 1261.
 (pdftex.def)             Requested size: 510.0pt x 310.59398pt.
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1335 
+l.1333 
        ] [16pdfTeX warning (ext4): destination with the same identifier (name{f
 igure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1335 
+l.1333 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1335 
+l.1333 
         <../Figures/ALigo_strains.pdf>]
-Overfull \hbox (19.57463pt too wide) in paragraph at lines 1337--1342
-\OT1/ptm/m/n/10 tems at lu-mi-nos-ity dis-tances of $\OT1/cmr/m/n/10 100\OML/cm
-m/m/it/10 ; \OT1/cmr/m/n/10 200\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 400\OML/cmm/m
-/it/10 ; \OT1/cmr/m/n/10 1000 $\OT1/ptm/m/n/10 Mpc cor-re-spond-ing to cos-mo-l
-og-i-cal red-shifts of $\OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 ^^Y \OT1/cmr/m/n/10
- 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0222\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OM
-L/cmm/m/it/10 :\OT1/cmr/m/n/10 0437\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm
-/m/it/10 :\OT1/cmr/m/n/10 085\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/
-10 :\OT1/cmr/m/n/10 198$\OT1/ptm/m/n/10 ,
- []
 
-<../Figures/ET_strains_redshifted.pdf, id=570, 1003.75pt x 628.3475pt>
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/ET_strains_redshifted.pdf): 
+PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../Figures/ET_strains_redshifted.pdf, id=563, 1003.75pt x 628.3475pt>
 File: ../Figures/ET_strains_redshifted.pdf Graphic file (type pdf)
 
 <use ../Figures/ET_strains_redshifted.pdf>
 Package pdftex.def Info: ../Figures/ET_strains_redshifted.pdf used on input lin
-e 1371.
+e 1370.
 (pdftex.def)             Requested size: 510.0pt x 319.2641pt.
+
+Overfull \hbox (40.02946pt too wide) in paragraph at lines 1404--1409
+\OT1/ptm/m/n/10 where $\OML/cmm/m/it/10 f[]$ \OT1/ptm/m/n/10 is now the red-shi
+fted ver-sion of Eq. ([][]4.1[][]), equalling $\OT1/cmr/m/n/10 1537\OML/cmm/m/i
+t/10 ; \OT1/cmr/m/n/10 1505\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1448\OML/cmm/m/it
+/10 ; \OT1/cmr/m/n/10 1311 $\OT1/ptm/m/n/10 Hz, re-spec-tively for $\OML/cmm/m/
+it/10 D \OT1/cmr/m/n/10 = 100\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 200\OML/cmm/m/i
+t/10 ; \OT1/cmr/m/n/10 400\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1000 $\OT1/ptm/m/n
+/10 Mpc.
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1060,24 +1070,31 @@ l.1456
                                                   \fi \fi 
 l.1456 
         <../Figures/ET_strains_redshifted.pdf>]
-<../Figures/Main_results.pdf, id=640, 722.7pt x 408.52625pt>
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Main_results.pdf): PDF inclu
+sion: found PDF version <1.5>, but at most version <1.4> allowed
+<../Figures/Main_results.pdf, id=632, 722.7pt x 407.5225pt>
 File: ../Figures/Main_results.pdf Graphic file (type pdf)
 
 <use ../Figures/Main_results.pdf>
 Package pdftex.def Info: ../Figures/Main_results.pdf used on input line 1489.
-(pdftex.def)             Requested size: 510.0pt x 288.29155pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{table.5})
- has been already used, duplicate ignored
+(pdftex.def)             Requested size: 510.0pt x 287.58322pt.
+
+Overfull \vbox (0.24966pt too high) has occurred while \output is active []
+
+
+[19pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1511 
+l.1510 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1511 
+l.1510 
         <../Figures/Main_results.pdf>] [20] (./Manuscript.bbl
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
@@ -1086,8 +1103,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.167   {et~al.}}]{GBM:2017lvd}
-                               %]
+l.156   {et~al.}}]{Coulter:2017wya}
+                                   %]
 Underfull \hbox (badness 8000) in paragraph at lines 453--457
 []\OT1/ptm/m/n/9 C. Miller, ``Overview of Grav-i-ta-tional Ra-di-a-tion,'' [][]
 $\OT1/pcr/m/n/9 https : / / www . astro . umd . edu / []miller / teaching / ast
@@ -1095,13 +1112,13 @@ r498 /
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 676--682
+Underfull \hbox (badness 10000) in paragraph at lines 668--674
 []\OT1/ptm/m/n/9 ``GW170817 Fact-sheet,'' [][]$\OT1/pcr/m/n/9 https : / / www .
  ligo . org / detections / GW170817 / images-[]GW170817 / GW170817 _
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 699--704
+Underfull \hbox (badness 1275) in paragraph at lines 691--696
 []\OT1/ptm/m/n/9 ``LIGO Open Sci-ence Cen-ter sig-nal pro-cess-ing tu-to-rial,'
 ' [][]$\OT1/pcr/m/n/9 https : / / losc . ligo . org / s / events / GW150914 / G
 W150914 _
@@ -1113,27 +1130,24 @@ Class revtex4-1 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
 [24]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1649.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1649.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1645.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1645.
  (./Manuscript.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1649.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1645.
 
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 0DC19DF9D630AD51623960BCE6D7FC3D;1374.
  ) 
 Here is how much of TeX's memory you used:
- 11367 strings out of 493029
- 157955 string characters out of 6136235
- 321882 words of memory out of 5000000
- 14433 multiletter control sequences out of 15000+600000
+ 11359 strings out of 493033
+ 157931 string characters out of 6136455
+ 322577 words of memory out of 5000000
+ 14427 multiletter control sequences out of 15000+600000
  34804 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,43p,2190b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Item.12-footnote.7} has been referenced but does 
+ 41i,13n,43p,2174b,775s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Item.12-footnote.6} has been referenced but does 
 not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Item.11-footnote.6} has been referenced but does no
-t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.4-footnote.5} has been referenced but does no
 t exist, replaced by a fixed one
@@ -1152,35 +1166,33 @@ not exist, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript.pdf (24 pages, 737824 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Manuscript.pdf (24 pages, 699785 bytes).
 PDF statistics:
- 1041 PDF objects out of 1200 (max. 8388607)
- 934 compressed objects within 10 object streams
- 241 named destinations out of 1000 (max. 500000)
+ 1016 PDF objects out of 1200 (max. 8388607)
+ 239 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
