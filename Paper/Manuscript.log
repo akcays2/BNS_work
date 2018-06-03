@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  12 MAY 2018 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.8)  3 JUN 2018 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./Manuscript.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
+(/usr/share/texmf/tex/latex/tex/latex/revtex/revtex4-1.cls
 Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
 ex4/ for documentation)
  Copyright (c) 2009 The American Physical Society.
@@ -66,7 +66,7 @@ Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \widetext@top=\box39
 \widetext@bot=\box40
 Class revtex4-1 Info: Selecting society aps on input line 7542.
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-1.rtx
+(/usr/share/texmf/tex/latex/tex/latex/revtex/aps4-1.rtx
 File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
 mentation)
 Class revtex4-1 Info: RevTeX society APS selected on input line 31.
@@ -74,7 +74,7 @@ Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 Class revtex4-1 Info: Selecting journal prd on input line 7544.
 Class revtex4-1 Info: APS journal PRD selected on input line 7545.
 
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+(/usr/share/texmf/tex/latex/tex/latex/revtex/aps10pt4-1.rtx
 File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
 documentation)
 Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
@@ -166,7 +166,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
 
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+(/usr/share/texmf/tex/latex/tex/latex/revtex/revsymb4-1.sty
 Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
 or documentation)
 LaTeX Info: Redefining \frak on input line 95.
@@ -664,7 +664,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -693,7 +693,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+(/usr/share/texmf/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
@@ -982,11 +982,7 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 1098
 .
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [13]
-
-pdfTeX warning: /usr/bin/pdflatex (file ../Figures/GW170817_strains.pdf): PDF i
-nclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../Figures/GW170817_strains.pdf, id=447, 1003.75pt x 625.33624pt>
+) [13] <../Figures/GW170817_strains.pdf, id=451, 1003.75pt x 625.33624pt>
 File: ../Figures/GW170817_strains.pdf Graphic file (type pdf)
 
 <use ../Figures/GW170817_strains.pdf>
@@ -1004,11 +1000,7 @@ l.1162 \ee
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 1252.
 
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ../Figures/ALigo_strains.pdf): PDF incl
-usion: found PDF version <1.5>, but at most version <1.4> allowed
-<../Figures/ALigo_strains.pdf, id=504, 1003.75pt x 611.28375pt>
+<../Figures/ALigo_strains.pdf, id=508, 1003.75pt x 611.28375pt>
 File: ../Figures/ALigo_strains.pdf Graphic file (type pdf)
 
 <use ../Figures/ALigo_strains.pdf>
@@ -1033,10 +1025,7 @@ l.1333
                                                   \fi \fi 
 l.1333 
         <../Figures/ALigo_strains.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ../Figures/ET_strains_redshifted.pdf): 
-PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../Figures/ET_strains_redshifted.pdf, id=563, 1003.75pt x 628.3475pt>
+<../Figures/ET_strains_redshifted.pdf, id=567, 1003.75pt x 628.3475pt>
 File: ../Figures/ET_strains_redshifted.pdf Graphic file (type pdf)
 
 <use ../Figures/ET_strains_redshifted.pdf>
@@ -1070,10 +1059,7 @@ l.1456
                                                   \fi \fi 
 l.1456 
         <../Figures/ET_strains_redshifted.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Main_results.pdf): PDF inclu
-sion: found PDF version <1.5>, but at most version <1.4> allowed
-<../Figures/Main_results.pdf, id=632, 722.7pt x 407.5225pt>
+<../Figures/Main_results.pdf, id=637, 722.7pt x 407.5225pt>
 File: ../Figures/Main_results.pdf Graphic file (type pdf)
 
 <use ../Figures/Main_results.pdf>
@@ -1112,13 +1098,13 @@ r498 /
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 668--674
+Underfull \hbox (badness 10000) in paragraph at lines 660--666
 []\OT1/ptm/m/n/9 ``GW170817 Fact-sheet,'' [][]$\OT1/pcr/m/n/9 https : / / www .
  ligo . org / detections / GW170817 / images-[]GW170817 / GW170817 _
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 691--696
+Underfull \hbox (badness 1275) in paragraph at lines 683--688
 []\OT1/ptm/m/n/9 ``LIGO Open Sci-ence Cen-ter sig-nal pro-cess-ing tu-to-rial,'
 ' [][]$\OT1/pcr/m/n/9 https : / / losc . ligo . org / s / events / GW150914 / G
 W150914 _
@@ -1139,9 +1125,9 @@ Package rerunfilecheck Info: File `Manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 0DC19DF9D630AD51623960BCE6D7FC3D;1374.
  ) 
 Here is how much of TeX's memory you used:
- 11359 strings out of 493033
- 157931 string characters out of 6136455
- 322577 words of memory out of 5000000
+ 11359 strings out of 493029
+ 157879 string characters out of 6136235
+ 321523 words of memory out of 5000000
  14427 multiletter control sequences out of 15000+600000
  34804 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1190,9 +1176,10 @@ share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive
 fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript.pdf (24 pages, 699785 bytes).
+Output written on Manuscript.pdf (24 pages, 570564 bytes).
 PDF statistics:
- 1016 PDF objects out of 1200 (max. 8388607)
+ 1025 PDF objects out of 1200 (max. 8388607)
+ 918 compressed objects within 10 object streams
  239 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

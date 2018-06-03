@@ -639,23 +639,15 @@
   {pages} {43--140},\ \Eprint {http://arxiv.org/abs/1610.05309}
   {arXiv:1610.05309 [astro-ph.HE]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1610.05309;%%
-\bibitem [{\citenamefont {Hessels}\ \emph {et~al.}(2006)\citenamefont
-  {Hessels}, \citenamefont {Ransom}, \citenamefont {Stairs}, \citenamefont
-  {Freire}, \citenamefont {Kaspi},\ and\ \citenamefont
-  {Camilo}}]{FastestNSspin}%
+\bibitem [{\citenamefont {Kramer}\ and\ \citenamefont
+  {Wex}(2009)}]{0264-9381-26-7-073001}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~W.~T.}\
-  \bibnamefont {Hessels}}, \bibinfo {author} {\bibfnamefont {S.~M.}\
-  \bibnamefont {Ransom}}, \bibinfo {author} {\bibfnamefont {I.~H.}\
-  \bibnamefont {Stairs}}, \bibinfo {author} {\bibfnamefont {P.~C.~C.}\
-  \bibnamefont {Freire}}, \bibinfo {author} {\bibfnamefont {V.~M.}\
-  \bibnamefont {Kaspi}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {F.}~\bibnamefont {Camilo}},\ }\href {\doibase 10.1126/science.1123430}
-  {\bibfield  {journal} {\bibinfo  {journal} {Science}\ }\textbf {\bibinfo
-  {volume} {311}},\ \bibinfo {pages} {1901} (\bibinfo {year} {2006})},\ \Eprint
-  {http://arxiv.org/abs/astro-ph/0601337} {arXiv:astro-ph/0601337 [astro-ph]}
-  \BibitemShut {NoStop}%
-%%CITATION = ASTRO-PH/0601337;%%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Kramer}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Wex}},\
+  }\href {http://stacks.iop.org/0264-9381/26/i=7/a=073001} {\bibfield
+  {journal} {\bibinfo  {journal} {Classical and Quantum Gravity}\ }\textbf
+  {\bibinfo {volume} {26}},\ \bibinfo {pages} {073001} (\bibinfo {year}
+  {2009})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Phinney}(2001)}]{Phinney:2001di}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~S.}\ \bibnamefont
