@@ -1456,8 +1456,8 @@ Given Moore's law and new search approaches (e.g., see Ref.~\cite{Gabbard:2017lj
 we speculate that the advances in the detection, localization and early-warning algorithms in the next decade will reduce the required advance
 warning time to less than an hour; thus we set $T_\text{AW} = 1\,\text{hour}$ and obtain corresponding BNS horizon distances of $D_H=87$ and $613\,$Mpc ($z\approx 0.02,0.127$) for ET-B and ET-C, respectively.
 In other words, all inspiralling BNSs closer than $D_H$ will give us more than an hour's leeway before the GRB (employing the detection criterion $\text{SNR} =15$ as before).
-The volume set by $D=D_H$ translates to a BNS merger rate of $\sim\mathcal{O}(1)$ for ET-B and
-$\approx 355^{+730}_{-280}\,\text{year}^{-1}$ for ET-C. Additionally, each source within $D_H$ will accumulate $\bar\rho_F \gtrsim 420, 58$ over its inspiral
+The volume set by $D=D_H$ translates to a BNS merger rate of $\sim\mathcal{O}(1)\,\text{yr}^{-1}$ for ET-B and
+$\approx 355^{+730}_{-280}\,\text{yr}^{-1}$ for ET-C. Additionally, each source within $D_H$ will accumulate $\bar\rho_F \gtrsim 420, 58$ over its inspiral
 in the ET-B, ET-C bands, respectively. These results are summarized in Table~\ref{table:horizon}.
 
 Both Tables~\ref{table:ET} and \ref{table:horizon} clearly show that ET will yield superb SNRs for sources out to 1\,Gpc. 
@@ -1507,7 +1507,7 @@ We used $D=50,100,200\,$Mpc to obtain the ALV results (Sec.~\ref{Sec:ALIGO2020})
 \section{Binary black hole neutron star systems}\label{sec:BH_NS}
 In this section, we investigate the possibility of witnessing the tidal distruption of a neutron star by a black hole before the merger.
 The treatment of the inspiral is the same as before, however the fate of the neutron star depends strongly on the system's intrinsic parameters
-such as the black hole mass and spin, and the neutron star's equation of state (EOS) and compactness $c_\text{NS}\equiv G M_\text{NS}/(R_\text{NS}c^2)$. 
+such as the black hole mass and spin, and the neutron star's equation of state (EOS) and compactness $\mathcal{C}_\text{NS}\equiv G M_\text{NS}/(R_\text{NS}c^2)$. 
 The evolution of black hole-neutron star (BH-NS) binaries is a very active field of research at the interface of numerical relativity and high-energy astrophysics
 (see Ref. \cite{Shibata:2011jka} for a comprehensive review) requiring fully general relativistic magnetohydrodynamic treatment including neutrino transport equations.
 The complexity of evolving the dynamics of these systems require large computational resources and long runtimes.
@@ -1541,8 +1541,8 @@ some of which can be deduced from Eqs.~(\ref{eq:TD_cond1}, \ref{eq:TD_cond2}). T
  \item High black hole spins. $r_\text{ISCO}$ is much smaller in the case of a prograde NS orbit around a spinning Kerr black hole.
  For instance, for the maximum dimensionless BH spin value of $a\equiv c J_\text{BH}/(G M^2_\text{BH})=1$, $r_\text{ISCO}$ for prograde orbits is 1/6th of the Schwarzschild value $6GM_\text{BH}/c^2$ whereas for $a=1$ retrograde orbits, $r_\text{ISCO}$ is 3/2 of the Schwarzschild value.
  With smaller ISCO separation, there is much more tidal force exerted on the NS before it plunges in.
- \item Less compact neutron stars. Eq.~(\ref{eq:TD_cond1}) can be rearranged to isolate $c_\text{NS}$
- on the right hand side. Smaller values for $c_\text{NS}$ mean that TD is more likely to occur for $r>r_\text{ISCO}$.
+ \item Less compact neutron stars. Eq.~(\ref{eq:TD_cond1}) can be rearranged to isolate $\mathcal{C}_\text{NS}$
+ on the right hand side. Smaller values for $\mathcal{C}_\text{NS}$ mean that TD is more likely to occur for $r>r_\text{ISCO}$.
 \end{enumerate}
 %
 
@@ -1559,12 +1559,12 @@ for pointing this out.}.
 There is additional motivation to choose low BH mass as 
  $\tau_\text{insp} \propto M_c^{-5/3} = (1+Q)^{1/3}/Q$ for $Q\equiv M_\text{BH}/M_\text{NS} > 1$, which scales as $Q^{-2/3}$ as $Q\to\infty$ , i.e., heavier binaries inspiral faster
  so it is desirable to minimize $Q$.
- Setting $M_\text{NS}=1.4 M_\odot$ as before gives $Q=5/1.4  \simeq 3.571$. $c_\text{NS}$ is determined by the radius of the NS constrained to be in the $9.9 - 11.2\,$km range \footnote{Recent work by the ALV collaboration \cite{GW170817_radii}) give bounds of $R_\text{NS}=9.1 -11.8\,$km, more or less consistent with astrophysical results.}\cite{Ozel:2016oaf}
- which results in $0.13\lesssim c_\text{NS} \lesssim 0.15$ 
+ Setting $M_\text{NS}=1.4 M_\odot$ as before gives $Q=5/1.4  \simeq 3.571$. $\mathcal{C}_\text{NS}$ is determined by the radius of the NS constrained to be in the $9.9 - 11.2\,$km range \footnote{Recent work by the ALV collaboration \cite{GW170817_radii}) give bounds of $R_\text{NS}=9.1 -11.8\,$km, more or less consistent with astrophysical results.}\cite{Ozel:2016oaf}
+ which results in $0.13\lesssim \mathcal{C}_\text{NS} \lesssim 0.15$ 
  for our chosen NS mass. 
 %As we wish to avoid discussing the details of the strong-field evolution of the binary, we borrow certain results from the literature to
 %justify our choice for the chosen parameters above. 
-If we pick the more pessimistic $c_\text{NS} = 0.15$ bound then we must have $Q\lesssim 5$ and $a\gtrsim 0.5$ (prograde) for TD to occur \cite{Ferrari:2008nr}
+If we pick the more pessimistic $\mathcal{C}_\text{NS} = 0.15$ bound then we must have $Q\lesssim 5$ and $a\gtrsim 0.5$ (prograde) for TD to occur \cite{Ferrari:2008nr}
 and $Q< 3$ in the case of $a=0$ \cite{Kyutoku:2011vz}.
 
 So, we simply assume that such lightweight, high-spin BHs exist in BH-NS binaries and compute strains and SNRs accordingly.
