@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.19)  10 AUG 2018 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.19)  10 AUG 2018 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1105,20 +1105,20 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
                                                   \fi \fi 
 l.131   \emph {et~al.}}]{Svinkin}
                                  %]
-Underfull \hbox (badness 8000) in paragraph at lines 480--484
+Underfull \hbox (badness 8000) in paragraph at lines 482--486
 []\OT1/ptm/m/n/9 C. Miller, ``Overview of Grav-i-ta-tional Ra-di-a-tion,'' [][]
 $\OT1/pcr/m/n/9 https : / / www . astro . umd . edu / []miller / teaching / ast
 r498 /
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 701--707
+Underfull \hbox (badness 10000) in paragraph at lines 703--709
 []\OT1/ptm/m/n/9 ``GW170817 Fact-sheet,'' [][]$\OT1/pcr/m/n/9 https : / / www .
  ligo . org / detections / GW170817 / images-[]GW170817 / GW170817 _
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 734--739
+Underfull \hbox (badness 1275) in paragraph at lines 738--743
 []\OT1/ptm/m/n/9 ``LIGO Open Sci-ence Cen-ter sig-nal pro-cess-ing tu-to-rial,'
 ' [][]$\OT1/pcr/m/n/9 https : / / losc . ligo . org / s / events / GW150914 / G
 W150914 _
@@ -1141,7 +1141,7 @@ Package rerunfilecheck Info: File `Manuscript.out' has not changed.
 Here is how much of TeX's memory you used:
  11387 strings out of 493033
  158554 string characters out of 6136455
- 322017 words of memory out of 5000000
+ 323018 words of memory out of 5000000
  14449 multiletter control sequences out of 15000+600000
  34804 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1193,9 +1193,9 @@ share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive
 fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript.pdf (24 pages, 705408 bytes).
+Output written on Manuscript.pdf (24 pages, 707375 bytes).
 PDF statistics:
- 1030 PDF objects out of 1200 (max. 8388607)
+ 1038 PDF objects out of 1200 (max. 8388607)
  245 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -224,18 +224,18 @@
   \href@noop {} {\enquote {\bibinfo {title} {{KAGRA website}},}\ }\bibinfo
   {howpublished} {\url{http://gwcenter.icrr.u-tokyo.ac.jp/en/}}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Akutsu}\ \emph
-  {et~al.}(2017{\natexlab{a}})\citenamefont {Akutsu} \emph {et~al.}}]{KAGRA2}%
+\bibitem [{\citenamefont {Akutsu}\ \emph {et~al.}(2018)\citenamefont {Akutsu}
+  \emph {et~al.}}]{KAGRA2}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Akutsu}} \emph {et~al.} (\bibinfo {collaboration} {KAGRA}),\ }\href@noop {}
-  {\  (\bibinfo {year} {2017}{\natexlab{a}})},\ \Eprint
-  {http://arxiv.org/abs/1712.00148} {arXiv:1712.00148 [gr-qc]} \BibitemShut
-  {NoStop}%
+  {Akutsu}} \emph {et~al.} (\bibinfo {collaboration} {KAGRA}),\ }\href
+  {\doibase 10.1093/ptep/ptx180} {\bibfield  {journal} {\bibinfo  {journal}
+  {PTEP}\ }\textbf {\bibinfo {volume} {2018}},\ \bibinfo {pages} {013F01}
+  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1712.00148}
+  {arXiv:1712.00148 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1712.00148;%%
-\bibitem [{\citenamefont {Akutsu}\ \emph
-  {et~al.}(2017{\natexlab{b}})\citenamefont {Akutsu} \emph
-  {et~al.}}]{Akutsu:2017thy}%
+\bibitem [{\citenamefont {Akutsu}\ \emph {et~al.}(2017)\citenamefont {Akutsu}
+  \emph {et~al.}}]{Akutsu:2017thy}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
   {Akutsu}} \emph {et~al.} (\bibinfo {collaboration} {KAGRA}),\ }in\ \href
@@ -346,7 +346,7 @@
 \bibitem [{\citenamefont {Knowles}\ \emph {et~al.}(2018)\citenamefont
   {Knowles}, \citenamefont {Devine}, \citenamefont {Buch}, \citenamefont
   {Bilgili}, \citenamefont {Adams}, \citenamefont {Etienne},\ and\
-  \citenamefont {McWilliams}}]{Knowles:2018hqq}%
+  \citenamefont {Mcwilliams}}]{Knowles:2018hqq}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
   {Knowles}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Devine}},
@@ -354,7 +354,9 @@
   {author} {\bibfnamefont {S.~A.}\ \bibnamefont {Bilgili}}, \bibinfo {author}
   {\bibfnamefont {T.~R.}\ \bibnamefont {Adams}}, \bibinfo {author}
   {\bibfnamefont {Z.~B.}\ \bibnamefont {Etienne}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {S.~T.}\ \bibnamefont {McWilliams}},\ }\href@noop {} {\
+  {\bibfnamefont {S.~T.}\ \bibnamefont {Mcwilliams}},\ }\href {\doibase
+  10.1088/1361-6382/aacb8c} {\bibfield  {journal} {\bibinfo  {journal} {Class.
+  Quant. Grav.}\ }\textbf {\bibinfo {volume} {35}},\ \bibinfo {pages} {155003}
   (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1803.06346}
   {arXiv:1803.06346 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1803.06346;%%
@@ -712,15 +714,17 @@
   \Eprint {http://arxiv.org/abs/1805.11579} {arXiv:1805.11579 [gr-qc]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1805.11579;%%
-\bibitem [{\citenamefont {Bernard}\ \emph {et~al.}(2017)\citenamefont
+\bibitem [{\citenamefont {Bernard}\ \emph {et~al.}(2018)\citenamefont
   {Bernard}, \citenamefont {Blanchet}, \citenamefont {Faye},\ and\
   \citenamefont {Marchand}}]{4PN_EoM_paper}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
   {Bernard}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Blanchet}},
   \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Faye}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {T.}~\bibnamefont {Marchand}},\ }\href@noop {} {\
-  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1711.00283}
+  {author} {\bibfnamefont {T.}~\bibnamefont {Marchand}},\ }\href {\doibase
+  10.1103/PhysRevD.97.044037} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev.}\ }\textbf {\bibinfo {volume} {D97}},\ \bibinfo {pages} {044037}
+  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1711.00283}
   {arXiv:1711.00283 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1711.00283;%%
 \bibitem [{LIG({\natexlab{b}})}]{LIGO_L1_data}%
@@ -793,17 +797,19 @@
   (\bibinfo {year} {2014})},\ \Eprint {http://arxiv.org/abs/1309.3273}
   {arXiv:1309.3273 [astro-ph.HE]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1309.3273;%%
-\bibitem [{\citenamefont {Zhu}\ \emph {et~al.}(2017)\citenamefont {Zhu},
-  \citenamefont {Thrane}, \citenamefont {Oss}, \citenamefont {Levin},\ and\
-  \citenamefont {Lasky}}]{Zhu:2017znf}%
+\bibitem [{\citenamefont {Zhu}\ \emph {et~al.}(2018)\citenamefont {Zhu},
+  \citenamefont {Thrane}, \citenamefont {Oslowski}, \citenamefont {Levin},\
+  and\ \citenamefont {Lasky}}]{Zhu:2017znf}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
   {Zhu}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Thrane}},
-  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Oss}}, \bibinfo {author}
-  {\bibfnamefont {Y.}~\bibnamefont {Levin}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {P.~D.}\ \bibnamefont {Lasky}},\ }\href@noop {} {\  (\bibinfo
-  {year} {2017})},\ \Eprint {http://arxiv.org/abs/1711.09226} {arXiv:1711.09226
-  [astro-ph.HE]} \BibitemShut {NoStop}%
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Oslowski}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Levin}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {P.~D.}\ \bibnamefont {Lasky}},\ }\href {\doibase
+  10.1103/PhysRevD.98.043002} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev.}\ }\textbf {\bibinfo {volume} {D98}},\ \bibinfo {pages} {043002}
+  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1711.09226}
+  {arXiv:1711.09226 [astro-ph.HE]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1711.09226;%%
 \bibitem [{\citenamefont {Andersson}\ \emph {et~al.}(2011)\citenamefont
   {Andersson}, \citenamefont {Ferrari}, \citenamefont {Jones}, \citenamefont
@@ -873,24 +879,29 @@
   {2011})},\ \Eprint {http://arxiv.org/abs/1012.0908} {arXiv:1012.0908 [gr-qc]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1012.0908;%%
-\bibitem [{\citenamefont {Gabbard}\ \emph {et~al.}(2017)\citenamefont
+\bibitem [{\citenamefont {Gabbard}\ \emph {et~al.}(2018)\citenamefont
   {Gabbard}, \citenamefont {Williams}, \citenamefont {Hayes},\ and\
   \citenamefont {Messenger}}]{Gabbard:2017lja}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
   {Gabbard}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Williams}},
   \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Hayes}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {C.}~\bibnamefont {Messenger}},\ }\href@noop {} {\
-  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1712.06041}
-  {arXiv:1712.06041 [astro-ph.IM]} \BibitemShut {NoStop}%
+  {author} {\bibfnamefont {C.}~\bibnamefont {Messenger}},\ }\href {\doibase
+  10.1103/PhysRevLett.120.141103} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {120}},\ \bibinfo {pages}
+  {141103} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/1712.06041} {arXiv:1712.06041 [astro-ph.IM]}
+  \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1712.06041;%%
-\bibitem [{\citenamefont {Mills}\ \emph {et~al.}(2017)\citenamefont {Mills},
+\bibitem [{\citenamefont {Mills}\ \emph {et~al.}(2018)\citenamefont {Mills},
   \citenamefont {Tiwari},\ and\ \citenamefont {Fairhurst}}]{Mills:2017urp}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
   {Mills}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Tiwari}}, \
-  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Fairhurst}},\
-  }\href@noop {} {\  (\bibinfo {year} {2017})},\ \Eprint
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Fairhurst}},\ }\href
+  {\doibase 10.1103/PhysRevD.97.104064} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D97}},\ \bibinfo {pages}
+  {104064} (\bibinfo {year} {2018})},\ \Eprint
   {http://arxiv.org/abs/1708.00806} {arXiv:1708.00806 [gr-qc]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:1708.00806;%%
@@ -928,14 +939,16 @@
   (\bibinfo {year} {2011})},\ \Eprint {http://arxiv.org/abs/1011.1459}
   {arXiv:1011.1459 [astro-ph.GA]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1011.1459;%%
-\bibitem [{\citenamefont {Raithel}\ \emph {et~al.}(2017)\citenamefont
+\bibitem [{\citenamefont {Raithel}\ \emph {et~al.}(2018)\citenamefont
   {Raithel}, \citenamefont {Sukhbold},\ and\ \citenamefont
   {Özel}}]{Raithel:2017nlc}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~A.}\ \bibnamefont
   {Raithel}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Sukhbold}}, \
-  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Özel}},\
-  }\href@noop {} {\  (\bibinfo {year} {2017})},\ \Eprint
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Özel}},\ }\href
+  {\doibase 10.3847/1538-4357/aab09b} {\bibfield  {journal} {\bibinfo
+  {journal} {Astrophys. J.}\ }\textbf {\bibinfo {volume} {856}},\ \bibinfo
+  {pages} {35} (\bibinfo {year} {2018})},\ \Eprint
   {http://arxiv.org/abs/1712.00021} {arXiv:1712.00021 [astro-ph.HE]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1712.00021;%%
@@ -970,9 +983,12 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
   {Christian}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Mocz}}, \
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Loeb}},\ }\href@noop
-  {} {\  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1803.07094}
-  {arXiv:1803.07094 [astro-ph.HE]} \BibitemShut {NoStop}%
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Loeb}},\ }\href
+  {\doibase 10.3847/2041-8213/aabf88} {\bibfield  {journal} {\bibinfo
+  {journal} {Astrophys. J.}\ }\textbf {\bibinfo {volume} {858}},\ \bibinfo
+  {pages} {L8} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/1803.07094} {arXiv:1803.07094 [astro-ph.HE]}
+  \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1803.07094;%%
 \bibitem [{\citenamefont {McClintock}\ \emph {et~al.}(2006)\citenamefont
   {McClintock}, \citenamefont {Shafee}, \citenamefont {Narayan}, \citenamefont
