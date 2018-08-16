@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{93}%
+\begin{thebibliography}{94}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -490,6 +490,17 @@
   Chandrasekhar Nobel Prize Lecture}},}\ }\bibinfo {howpublished}
   {\url{https://www.nobelprize.org/nobel_prizes/physics/laureates/1983/chandrasekhar-lecture.pdf}}
   (\bibinfo {year} {1983})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Flanagan}\ and\ \citenamefont
+  {Hughes}(2005)}]{Flanagan:2005yc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~E.}\ \bibnamefont
+  {Flanagan}}\ and\ \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
+  {Hughes}},\ }\href {\doibase 10.1088/1367-2630/7/1/204} {\bibfield  {journal}
+  {\bibinfo  {journal} {New J. Phys.}\ }\textbf {\bibinfo {volume} {7}},\
+  \bibinfo {pages} {204} (\bibinfo {year} {2005})},\ \Eprint
+  {http://arxiv.org/abs/gr-qc/0501041} {arXiv:gr-qc/0501041 [gr-qc]}
+  \BibitemShut {NoStop}%
+%%CITATION = GR-QC/0501041;%%
 \bibitem [{\citenamefont {Michelson}\ and\ \citenamefont
   {Morley}(1887)}]{Michelson:1887zz}%
   \BibitemOpen
