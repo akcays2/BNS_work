@@ -391,8 +391,9 @@ In the so-called wave zone, defined by the condition $ \lambda= c/f \ll D$, wher
 these tensor modes satisfy the flat spacetime sourceless wave equation. %$\Box\bar{h}_{\mu\nu} = 0$.
 %meaning that we are considering the solutions far from the GW source, 
 %
-It can further be shown that there exist only two radiative degrees of freedom which physically manifest themselves as two independent polarization amplitudes $h_+$ and $h_\times$ of the GWs 
-This fact is most easily demonstrated in the so-called transverse-traceless gauge (cf. Sec.~2.1 of Ref.~\cite{Flanagan:2005yc}). %when interacting with masses away from the source.
+It can further be shown that there exist only two radiative degrees of freedom (cf. Sec.~1.2 of Ref.~\cite{Maggiore}) which physically manifest themselves as two independent polarization amplitudes $h_+$ and $h_\times$ of the GWs 
+This fact is most easily demonstrated in the so-called transverse-traceless gauge (cf. Sec.~2.1 of Ref.~\cite{Flanagan:2005yc}),
+ but is a gauge-invariant consequence of linearized vacuum solutions. %when interacting with masses away from the source.
 
 %In a suitable gauge, such as the commonly used transverse-traceless gauge, 
 %In the ``lab'' frame, usually taken to be the transverse-traceless gauge, 
@@ -653,15 +654,17 @@ We summarize our network in the following table.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{c|c|c|c|c}
+\begin{tabular}{ccccc}
+\hline\hline
  IFO$_i$  %& $\langle |Q_i|^2\rangle$ 
- & $|Q_i|$ & $\tilde{A}_i$ & $\tilde{H}_i(f)$ & IFO response \\
+ & $|Q_i|$ & $\tilde{A}_i$ & $\tilde{H}_i(f)$ & IFO response\T\B \\
  %\hline
  \hline
  1 &  $\tfrac{4}{5} $&  $\tfrac{4}{5}A$ & $\tfrac{4}{5}A h_0\, f^{-7/6}$ & high ($h$) \T\\
  2 &  $\tfrac{2}{5} $ & $\tfrac{2}{5}A$ & $ \tfrac{2}{5}A h_0 \, f^{-7/6}$ & medium ($m$)\B\T \\
- 3 &  $\tfrac{4}{5}-\sqrt{\tfrac{2}{5}} $ & $\left(\tfrac{4}{5}-\sqrt{\tfrac{2}{5}}\right)A$ & $ \left(\tfrac{4}{5}-\sqrt{\tfrac{2}{5}}\right)A h_0 \, f^{-7/6}$& low ($l$) \B \\
- \hline
+ 3 &  $\quad \tfrac{4}{5}-\sqrt{\tfrac{2}{5}} \quad $
+ & $\quad\left(\tfrac{4}{5}-\sqrt{\tfrac{2}{5}}\right)A \quad$ & $\quad \left(\tfrac{4}{5}-\sqrt{\tfrac{2}{5}}\right)A h_0 \, f^{-7/6}\quad$& low ($l$) \B \\
+ \hline\hline
 \end{tabular}
 \caption{%The averaged quality factors $\langle|Q|^2\rangle$ of 
 Our model for the Advanced-LIGO-Virgo network ca. 2020. %of three L-shaped interferometers (IFOs). 
@@ -841,9 +844,9 @@ We summarize how these scale in terms $M_c, M$, thus $m_1, m_2$, in Table \ref{t
 %
 \begin{center}
 \begin{table}[ht]
-\begin{tabular}{|l|cccc|}
-\hline
- Quantity & Standard Scaling & \hspace{3mm}Scaling in terms of $m_1,m_2$ & &\hspace{0.5cm} Min $\le$ Value$_{1.4M_\odot} \le$ Max\T\B\\
+\begin{tabular}{lcccc}
+\hline\hline
+ Quantity\hspace{5mm} & Standard Scaling & \hspace{3mm}Scaling in terms of $m_1,m_2$ & &\hspace{0.5cm} Min $\le$ Value$_{1.4M_\odot} \le$ Max\T\B\\
 \hline
 %$\dot{E}$ & $ \mu^2 M^3 $ & $ m_1^2 m_2^2(m_1+m_2) $& $ 0.871\le2.83\le 9.86 $ \\
 %$\dot{f}$ & $ M_c^{5/3} f^{11/3} $ & $m_1 m_2 (m_1+m_2)^{3/2} $&$ 0.372\le 2 \le 11.9 $ \\
@@ -851,7 +854,7 @@ We summarize how these scale in terms $M_c, M$, thus $m_1, m_2$, in Table \ref{t
 $\tau_\text{insp}$ & $M_c^{-5/3} $ & $(m_1 m_2)^{-1}(m_1+m_2)^{-1} $&\quad& $0.335\le 0.5\le 0.794 $\T \\
 $\tilde{H}$ & $M_c^{5/6} $ & $(m_1 m_2)(m_1+m_2)^{3/2} $&\quad& $ 0.7834\le 0.891 \le 0.996 $ \T\B\\
 $f_\text{ISCO}$ & $M^{-1} $ & $(m_1+m_2)^{-1} $&\quad& $0.4375\le 0.5\le 0.583 $\B\\
-\hline
+\hline\hline
 \end{tabular}
 \caption{The scaling of the physical quantities of interest in this article in terms the binary masses $m_1, m_2$ restricted to lie between $1.2M_\odot$ and $1.6 M_\odot$. 
 %We used Kepler's third law to obtain $f \sim f_K \sim M^{1/2}$.
@@ -1312,13 +1315,13 @@ Given that we might at best have a couple of minutes of warning time for a poten
 \begin{table}[h]
 \centering
 \begin{tabular}{lcccccc}
-\hline
+\hline\hline
 $D\,$(Mpc) & $\bar{f}\,$(Hz) &{}& $T^{0PN}_\text{AW}$(sec) &\hspace{1mm} & $T^{3.5PN}_\text{AW}\text{ (sec)}\hspace{2mm}$& $\bar{\rho}_F$\T\B\\
 \hline
 50 & $\approx\,$25.3 & & 84.25 & & 85.86 & 70.3 \T\\
 100 & $\approx\,$41.6 & & 22.39 & & 22.86 & 35.2 \\
 200 & $\approx\,$121 & & 1.291 &\quad & 1.300 & 17.6 \\
-\hline
+\hline\hline
 \end{tabular}
 \caption{The ALV network's potential for providing advance warning times, $T_\text{AW}$, 
 to electromagnetic observatories for the case of $m_1=m_2=1.4 M_\odot$ BNS inspirals at luminosity distances of $D=50,100,200\,$Mpc. 
@@ -1423,9 +1426,9 @@ but we computed this quantity also using both 0PN and 2PN expressions as a consi
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|ccccccc}
+\begin{tabular}{lccccccc}
 %toprule
-\hline
+\hline\hline
 $D\,$(Mpc) & \multicolumn{3}{c}{ET-B} &  & \multicolumn{3}{c}{ET-C}\T\B\\
 \hline
 {}& $\bar{f}_\text{ET}\,$(Hz) & \ \hspace{7mm} $T_\text{AW}$ \ \hspace{7mm} & $\bar{\rho}_{F}$ &{} & $\bar{f}_\text{ET}\,$(Hz) & \ \hspace{5mm} $T_\text{AW}\hspace{12mm}$& $\bar{\rho}_{F}$\T\B\\
@@ -1439,7 +1442,7 @@ $D\,$(Mpc) & \multicolumn{3}{c}{ET-B} &  & \multicolumn{3}{c}{ET-C}\T\B\\
 %200 & 11.2104 & 698.6 & 152.4 &{\qquad} & 4.1028 & 10138 & 182.1 \\
 %400 & 18.2234 & 179.8 & 75.74 &{\qquad} & 5.0607 & 5437 & 90.48\\
 %1000 & 41.3537 &17.2 & 29.79& \qquad & 6.7553 & 2138 & 35.60  \\
-\hline
+\hline\hline
 %bottomrule
 \end{tabular}
 \caption{Forecasting capabilities of Einstein Telescope. 
@@ -1482,15 +1485,15 @@ We summarize our main findings for both the ALV network and ET-B/C in Fig.~\ref{
 %
 \begin{table}[h]
 \centering
-\begin{tabular}{l|ccc}
+\begin{tabular}{lccc}
 %toprule
-\hline
+\hline\hline
  & ET-B & & ET-C\T\B\\
 \hline
   $D_H $& 87\,Mpc& &{613\,Mpc}\T\\
   $R(D_H) $& $1^{+2}_{-1}\,\text{yr}^{-1}$&\hspace{5mm} &{$355^{+730}_{-280}\,\text{yr}^{-1}$}\T\\
   $\bar\rho_F(D_H)$ & 420 &&{58}\T\B\\
-\hline
+\hline\hline
 \end{tabular}
 \caption{Horizon distances of ET-B and ET-C assuming $T_\text{AW} =1\,$hour. $R(D_H)$ is the BNS merger rate within a volume of $D_H^3$
 obtained by rescaling the rate inferred from Advanced LIGO's O1, O2 observing periods \cite{GW170817}. $\bar\rho_F(D_H)$ is the total SNR accumulated due to a BNS inspiralling at $D_H$ [see Eq.~(\ref{eq:rhoF_ET})].}\label{table:horizon}
@@ -1582,9 +1585,9 @@ Therefore, we simply focus on the capabilities of ET which we summarize in Table
 %
 \begin{table}[h]
 \centering
-\begin{tabular}{l|ccccc}
+\begin{tabular}{lccccc}
 %toprule
-\hline
+\hline\hline
 $D\,$(Mpc) & \multicolumn{2}{c}{ET-B} &  & \multicolumn{2}{c}{ET-C}\T\B\\
 \hline
 {}&  \ \hspace{6mm}$T_\text{AW}$ \hspace{8mm} & $\bar{\rho}_{F}$ &{}  & $\hspace{6mm}T_\text{AW} \hspace{10mm}$ & $\bar{\rho}_{F}$\T\B\\
@@ -1594,7 +1597,7 @@ $D\,$(Mpc) & \multicolumn{2}{c}{ET-B} &  & \multicolumn{2}{c}{ET-C}\T\B\\
 200 & 8.21\,minutes & 251  &{\qquad} & 1.10\,hours & 300 \\
 400 &  2.00\,minutes & 124 &{\qquad} & 34.2\,minutes & 148\\
 1000 & 14.3\,seconds & 49 &{\qquad} & 13.9\,minutes& 58.5\\
-\hline
+\hline\hline
 %bottomrule
 \end{tabular}
 \caption{Same as Table~\ref{table:ET}, but now for a $5 M_\odot- 1.4 M_\odot$ black hole-neutron star binary.
