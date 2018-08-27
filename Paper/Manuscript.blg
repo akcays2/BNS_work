@@ -12,22 +12,22 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: ManuscriptNotes.bib
 Database file #2: references.bib
 Warning--entry type for "Chandra" isn't style-file defined
---line 134 of file references.bib
+--line 148 of file references.bib
 Warning--entry type for "Mono" isn't style-file defined
---line 142 of file references.bib
+--line 156 of file references.bib
 Warning--entry type for "LIGO_Voy" isn't style-file defined
---line 516 of file references.bib
+--line 530 of file references.bib
 Warning--entry type for "LIGO_L1_data" isn't style-file defined
---line 958 of file references.bib
+--line 972 of file references.bib
 Warning--entry type for "LIGO_tutorial" isn't style-file defined
---line 963 of file references.bib
+--line 977 of file references.bib
 Warning--entry type for "LIGO2020" isn't style-file defined
---line 969 of file references.bib
+--line 983 of file references.bib
 Warning--entry type for "GW170817_Facts" isn't style-file defined
---line 974 of file references.bib
+--line 988 of file references.bib
 Warning--entry type for "KAGRA" isn't style-file defined
---line 980 of file references.bib
-Repeated entry---line 1199 of file references.bib
+--line 994 of file references.bib
+Repeated entry---line 1213 of file references.bib
  : @article{Sathyaprakash:2012jk
  :                              ,
 I'm skipping whatever remains of this entry
@@ -52,45 +52,45 @@ Warning--missing journal in Hogg:1999ad
 Warning--missing journal in Audley:2017drz
 Warning--missing journal in Wiktorowicz:2013dua
 Warning--missing journal in GW170817_radii
-You've used 94 entries,
+You've used 95 entries,
             5847 wiz_defined-function locations,
-            2360 strings with 36474 characters,
-and the built_in function-call counts, 90309 in all, are:
-= -- 6014
-> -- 2181
-< -- 532
-+ -- 722
-- -- 516
-* -- 14494
-:= -- 8936
-add.period$ -- 102
-call.type$ -- 94
-change.case$ -- 387
-chr.to.int$ -- 80
-cite$ -- 118
-duplicate$ -- 8504
-empty$ -- 6801
-format.name$ -- 1338
-if$ -- 17786
+            2371 strings with 36693 characters,
+and the built_in function-call counts, 91110 in all, are:
+= -- 6076
+> -- 2191
+< -- 537
++ -- 726
+- -- 518
+* -- 14610
+:= -- 9023
+add.period$ -- 103
+call.type$ -- 95
+change.case$ -- 391
+chr.to.int$ -- 81
+cite$ -- 119
+duplicate$ -- 8582
+empty$ -- 6864
+format.name$ -- 1343
+if$ -- 17942
 int.to.chr$ -- 15
-int.to.str$ -- 102
-missing$ -- 1014
-newline$ -- 409
-num.names$ -- 262
-pop$ -- 3339
+int.to.str$ -- 103
+missing$ -- 1024
+newline$ -- 413
+num.names$ -- 265
+pop$ -- 3371
 preamble$ -- 1
-purify$ -- 463
+purify$ -- 468
 quote$ -- 0
-skip$ -- 3159
+skip$ -- 3190
 stack$ -- 0
-substring$ -- 2196
-swap$ -- 8040
-text.length$ -- 233
+substring$ -- 2219
+swap$ -- 8110
+text.length$ -- 234
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 1291
+type$ -- 1303
 warning$ -- 12
-while$ -- 244
+while$ -- 247
 width$ -- 0
-write$ -- 916
+write$ -- 926
 (There was 1 error message)

@@ -120,8 +120,7 @@ For our computations, %of advance warning times,
 we specifically consider BNS systems at luminosity distances of (i) $D\le200\,$Mpc for the three-interferometer Advanced-LIGO-Virgo network of 2020, and (ii) $D \le 1000\,$Mpc for Einstein Telescope's B and C configurations. 
 In the case of Advanced LIGO-Virgo we find that we may at best get a few minutes of warning time, thus we expect no forecast of GRBs in the 2020s. 
 On the other hand, Einstein Telescope will provide us with advance warning times of more than five hours for $D \le 100\,$Mpc.
-Taking one hour as a benchmark advance warning time, we obtain a corresponding horizon
-distance of roughly 600 Mpc for the Einstein Telescope C configuration.
+Taking one hour as a benchmark advance warning time, we obtain a corresponding range of roughly 600 Mpc for the Einstein Telescope C configuration.
 %, more specifically, greater than an hour
 %for BNS inspirals closer than roughly 600\,Mpc. Taking this luminosity distance to be our horizon distance, 
 Using current BNS merger event rates within this volume, we show that Einstein C will forecast $\gtrsim \ord(10^2)$ GRBs in the 2030s. %with Einstein C. %with the C configuration of Einstein Telescope.
@@ -188,7 +187,7 @@ We instead focus on the forecasting capabilities of the ground-based interferome
 between the merger and the instant of detection defined in terms of a certain detection criterion which we describe below.
 To this end, we consider the ALV network of 2020s composed of three L-shaped interferometers operating at their design sensitivities
 and Einstein Telescope of 2030s made up of V-shaped interferometers.
-Ref.~\cite{Nissanke:2012dj} investigated the capabilities of three to five-interferometer detector networks of 2020s in terms of their horizon distances
+Ref.~\cite{Nissanke:2012dj} investigated the capabilities of three to five-interferometer detector networks of 2020s in terms of their ranges
 to inspiralling BNSs and their sky-localization of these sources. Our work here is somewhat complementary in the sense that we are mostly concerned with
 how early the GW networks can detect the inspiral before the merger.
 
@@ -231,7 +230,7 @@ Sec.~\ref{sec:IFO_response} details the interferometer response to GWs based on 
 Sec.~\ref{sec:idealizations} lists the various idealizations we employ to simplify our treatment and supplies justification for each.
 Sec.~\ref{sec:GW170817} tests our model network and evolution using the parameters of GW170817 and the corresponding observations.
 Sec.~\ref{sec:results} contains our main results presented as advance warning times in Tables~\ref{table:LIGO2020} and \ref{table:ET}; 
-and as horizon distances and event rates in Table~\ref{table:horizon}.
+and as ranges and event rates in Table~\ref{table:horizon}.
 In Sec.~\ref{sec:BH_NS}, we recompute the advance warning times in the case of binary black hole - neutron star inspirals to see whether or not 
 future detectors can forecast tidal disruption events, for which we summarize our findings in Table~\ref{table:ET_BH_NS}.
 
@@ -380,7 +379,9 @@ is ``picked up'' by a detector. Solving $\tau(f_i)=\tau_i$ for $f_i=\Omega_i/\pi
 Kepler's third law gives us
 %
 \be
-\tau_i = \f{5}{256}\, \f{c^5 r_i^4}{G^3 M^2 \mu}\simeq 20.37\,\text{hours}\, \left(\f{T_K}{1\,\text{s}}\right)^{8/3} \left(\f{2.8M_\odot}{M}\right)^{2/3}\,\left(\f{0.7M_\odot}{\mu}\right) \label{eq:tau_of_r},
+\tau_i = \f{5}{256}\, \f{c^5 r_i^4}{G^3 M^2 \mu}\simeq 1.024\,\text{hr} \left(\f{r_i}{1000\,\text{km}}\right)^4 \left(\f{2.8M_\odot}{M}\right)^2\,\left(\f{0.7M_\odot}{\mu}\right)
+%\simeq 20.37\,\text{hours}\, \left(\f{T_K}{1\,\text{s}}\right)^{8/3} \left(\f{2.8M_\odot}{M}\right)^{2/3}\,\left(\f{0.7M_\odot}{\mu}\right)
+\label{eq:tau_of_r},
 \ee
 %
 where the seemingly arbitrary $0.7M_\odot$ is the value of $\mu$ for $m_1=m_2=1.4M_\odot$.
@@ -464,7 +465,7 @@ We can not apriori know $\theta, \phi,\psi$, however, we can extract their value
 The longer the inspiral stays in the detector bandwidth, the better we can estimate these angles.
 %Thus, BNS inspirals which would sweep across the detection band over thousands of cycles are preferable. 
 In the the case of GW170817 which swept the ALV network over roughly 3000 GW cycles, 
-the initial source sky localization was 31\,deg$^2$ (later reduced to 28\,deg$^2$) using data from three IFOs \cite{GW170817}. 
+the initial rapid source sky localization was 31\,deg$^2$ (later reduced to 28\,deg$^2$) using data from three IFOs \cite{GW170817}. 
 For our estimations, we employ suitable averages of these angles as explained below.
 For details on how to obtain Eqs.~(\ref{eq:F_plus}, \ref{eq:F_cross}) see, e.g., Sec.~4.2.1 of Ref.~\cite{SchutzLRR}.
 
@@ -831,7 +832,7 @@ inspirals throughout this work.
 %
 \item {\it Setting} $m_1=m_2=1.4 M_\odot$.
 Let us briefly explore what the cost of setting $m_1=m_2=1.4 M_\odot$ is for our calculations. 
-Including the error bars, the known range for neutron star masses runs from $\approx 0.5 M_\odot$ to $ \approx 3 M_\odot$ with typical values between $\approx 1 M_\odot$ and $\approx 2 M_\odot$ \cite{Ozel_Freire} (one exception being J1748-2021B with mass $2.74^{+0.21}_{-0.21} M_\odot $ \cite{Freire_et_al_2007}).
+Including the error bars, the known range for neutron star masses runs from $\approx 0.5 M_\odot$ to $ \approx 3 M_\odot$ with typical values between $\approx 1 M_\odot$ and $\approx 2 M_\odot$ \cite{Ozel_Freire} (one exception being J1748-2021B with mass $2.74^{+0.21}_{-0.21} M_\odot $ \cite{Freire_et_al_2007}, but this measurement is not secure \cite{Lattimer:2012nd}\footnote{We thank Dr. Alberto Sesana of University of Birmingham for pointing this out.}).
 Of these measured masses, a subset comprised of double neutron stars, such as the famed Hulse-Taylor binary, have the smallest error bars with masses
 ranging from $\approx 1.2 M_\odot$ to $\approx 1.5 M_\odot$. 
 On the other hand, the masses involved in GW170817 are inferred to be between $1.17 M_\odot$ and $1.60 M_\odot$ \cite{GW170817}.
@@ -1216,7 +1217,7 @@ the ASD from the August 2017 value to design sensitivity.
  With the masses fixed, the only remaining variable is the 
  luminosity distance $D$.
 For the ALV network, we consider $D=50,100,200\,$Mpc 
- as A-LIGO's horizon will be slightly over 200\,Mpc and A-Virgo's around 130\,Mpc.
+ as A-LIGO's range will be slightly over 200\,Mpc and A-Virgo's around 130\,Mpc.
  %and BNS systems at $D=200, 400, 1000\,$Mpc for the ET network. 
  For each value of $D$, we compute $\bar{f}$ from Eq.~(\ref{eq:SNR_bar}) with which we then compute $T_\text{AW}=\tau_\text{insp}(\bar{f})$.
  %which we set to values of our choosing. %as can be seen from Eq.~(\ref{eq:h0}).
@@ -1371,7 +1372,7 @@ where $f_0$ is the GW frequency at which the emitted GWs enter ET's detection ba
 with $\tilde{H}_\text{ET}(f)$ given by the redshifted version of Eq.~(\ref{eq:H_delta})
 %
 \be
-\tilde{H}_\text{ET}(f) = \f{1}{2}\sqrt{\f{3}{10}}\, \f{c}{D}\f{1}{(1+z)}\left(\f{G \mathcal{M}_c}{c^3}\right)^{5/6} f^{-7/6}\, , \label{eq:H_delta_redshifted}
+\tilde{H}_\text{ET}(f) = \f{1}{2}\sqrt{\f{3}{10}}\,\pi^{-2/3} \f{c}{D}\f{1}{(1+z)}\left(\f{G \mathcal{M}_c}{c^3}\right)^{5/6} f^{-7/6}\, , \label{eq:H_delta_redshifted}
 \ee
 %
 where recall $\mathcal{M}_c = (1+z)M_c$.
@@ -1459,21 +1460,22 @@ Instead of speculating whether or not this is enough to forecast GRBs, we turn o
 As can be seen from Fig.~\ref{fig:ETB2030}, ET-C's increased sensitivity in the $1\,\text{Hz}\lesssim f\lesssim 30\,$Hz regime will significantly lengthen the advance warning times.
 This is best highlighted by the sixth colum of Table~\ref{table:ET}, 
 where we show that ET-C will provide up to \emph{five hours} of early warning time for nearby ($D\lesssim 100\,$Mpc) neutron star mergers.
-Moreover, BNS inspirals as far as 200\,Mpc (the ALV network's horizon distance) will persist in the ET-C sensitivity band for a few hours after their initial detection ($T_\text{AW} > 2\,$ hours).
+Moreover, BNS inspirals as far as 200\,Mpc (the ALV network's range) will persist in the ET-C sensitivity band for a few hours after their initial detection ($T_\text{AW} > 2\,$ hours).
 Current BNS merger rate, inferred from A-LIGO's O1-O2 periods, implies that $\sim 40$ to $\sim600$ sources within a volume of $(200\,\text{Mpc})^3$ will be detected yearly by ET-C.
 
 Given Moore's law and new search approaches (e.g., see Ref.~\cite{Gabbard:2017lja} for one based on deep learning) 
 we speculate that the advances in the detection, localization and early-warning algorithms in the next decade will reduce the required advance
-warning time to less than an hour; thus we set $T_\text{AW} = 1\,\text{hour}$ and obtain corresponding BNS horizon distances of $D_H=87$ and $613\,$Mpc ($z\approx 0.02,0.127$) for ET-B and ET-C, respectively.
-In other words, all inspiralling BNSs closer than $D_H$ will give us more than an hour's leeway before the GRB (employing the detection criterion $\text{SNR} =15$ as before).
-The volume set by $D=D_H$ translates to a BNS merger rate of $\sim\mathcal{O}(1)\,\text{yr}^{-1}$ for ET-B and
-$\approx 355^{+730}_{-280}\,\text{yr}^{-1}$ for ET-C. Additionally, each source within $D_H$ will accumulate $\bar\rho_F \gtrsim 420, 58$ over its inspiral
+warning time to less than an hour; thus we set $T_\text{AW} = 1\,\text{hour}$ and obtain corresponding BNS ranges of $D_\text{BNS}=87$ and $613\,$Mpc ($z\approx 0.02,0.127$) for ET-B and ET-C, respectively.
+In other words, all inspiralling BNSs closer than $D_\text{BNS}$ will give us more than an hour's leeway before the GRB (employing the detection criterion $\text{SNR} =15$ as before).
+The volume set by $D_\text{BNS}$ translates to a BNS merger rate of $\sim\mathcal{O}(1)\,\text{yr}^{-1}$ for ET-B and
+$\approx 355^{+730}_{-280}\,\text{yr}^{-1}$ for ET-C. Additionally, each source within $D_\text{BNS}$ will accumulate $\bar\rho_F \gtrsim 420, 58$ over its inspiral
 in the ET-B, ET-C bands, respectively. These results are summarized in Table~\ref{table:horizon}.
 
 Both Tables~\ref{table:ET} and \ref{table:horizon} clearly show that ET will yield superb SNRs for sources out to 1\,Gpc. 
-With such high SNRs we expect that a future network consisting of ET and LIGO Voyager will be able to localize half the sources 
-at $D\approx 1000\,$Mpc to within $ 10\,\text{deg}^2$ and more than half the sources at $D\lesssim 400\,$Mpc to $\approx 1\,\text{deg}^2$ \cite{Mills:2017urp}.
-Therefore, we optimistically conclude that 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts
+With such high SNRs we expect that a future network consisting of ET \emph{and} LIGO Voyager will be able to localize half the sources 
+inside a radius of $D\approx 1000\,$Mpc to within $ 10\,\text{deg}^2$ and more than half the sources within $D\lesssim 400\,$Mpc to $\approx 1\,\text{deg}^2$ \cite{Mills:2017urp}.
+Let us reemphasize that such good localization requires at least a second detector with comparable sensitivity to ET as ET alone has rather poor localization.
+Erring on the side of optimism, we conclude that the 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts
 \footnote{As the ET construction/commissioning timeline is currently uncertain, we can only speculate that ET-C will be operational after 2030,
 which is roughly in line with the milli-Hertz space interferometer LISA's timeline \cite{Audley:2017drz}.}.
 %It is also reasonable to speculate that by that time the detection, localization and early-warning algorithms will have become sufficiently sophisticated
@@ -1490,13 +1492,13 @@ We summarize our main findings for both the ALV network and ET-B/C in Fig.~\ref{
 \hline\hline
  & ET-B & & ET-C\T\B\\
 \hline
-  $D_H $& 87\,Mpc& &{613\,Mpc}\T\\
-  $R(D_H) $& $1^{+2}_{-1}\,\text{yr}^{-1}$&\hspace{5mm} &{$355^{+730}_{-280}\,\text{yr}^{-1}$}\T\\
-  $\bar\rho_F(D_H)$ & 420 &&{58}\T\B\\
+  $D_\text{BNS} $& 87\,Mpc& &{613\,Mpc}\T\\
+  $R(D_\text{BNS}) $& $1^{+2}_{-1}\,\text{yr}^{-1}$&\hspace{5mm} &{$355^{+730}_{-280}\,\text{yr}^{-1}$}\T\\
+  $\bar\rho_F(D_\text{BNS})$ & 420 &&{58}\T\B\\
 \hline\hline
 \end{tabular}
-\caption{Horizon distances of ET-B and ET-C assuming $T_\text{AW} =1\,$hour. $R(D_H)$ is the BNS merger rate within a volume of $D_H^3$
-obtained by rescaling the rate inferred from Advanced LIGO's O1, O2 observing periods \cite{GW170817}. $\bar\rho_F(D_H)$ is the total SNR accumulated due to a BNS inspiralling at $D_H$ [see Eq.~(\ref{eq:rhoF_ET})].}\label{table:horizon}
+\caption{Horizon distances of ET-B and ET-C assuming $T_\text{AW} =1\,$hour. $R(D_\text{BNS})$ is the BNS merger rate within a volume of $D_\text{BNS}^3$
+obtained by rescaling the rate inferred from Advanced LIGO's O1, O2 observing periods \cite{GW170817}. $\bar\rho_F(D_\text{BNS})$ is the total SNR accumulated due to a BNS inspiralling at $D_\text{BNS}$ [see Eq.~(\ref{eq:rhoF_ET})].}\label{table:horizon}
 \end{table}
 %
 %
@@ -1606,9 +1608,9 @@ The SNRs are even higher than before, however the advance warning times have dec
 %
 %
 
-From the table, we can see that the horizon distance of ET-C for these binaries with $T_\text{AW} \approx 1\,$hour is roughly 200\,Mpc.
+From the table, we can see that the range of ET-C for these binaries with $T_\text{AW} \approx 1\,$hour is roughly 200\,Mpc.
 Given that the LIGO O1 merger rate for these systems is $ R < 3600\,$Gpc$^{-3}$yr$^{-1}$ \cite{Abbott:2016ymx},
-there could be $\approx 30$ such mergers per year within ET-C's horizon distance of $\approx 200\,$Mpc. %corresponding roughly to $T_\text{AW}\approx1\,$hour.
+there could be $\approx 30$ such mergers per year within ET-C's range of $\approx 200\,$Mpc. %corresponding roughly to $T_\text{AW}\approx1\,$hour.
 We must emphasize that this should be viewed
 as an upper limit as low-mass, high-spin black holes such as ours above are expected to be rare.
 Theoretical studies indicate that $\lesssim 10\%$ stellar-mass BHs have masses $\lesssim 5 M_\odot$ \cite{Fryer:1999ht}.

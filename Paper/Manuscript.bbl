@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{94}%
+\begin{thebibliography}{95}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -623,6 +623,15 @@
   (\bibinfo {year} {2008})},\ \Eprint {http://arxiv.org/abs/0711.0925}
   {arXiv:0711.0925 [astro-ph]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:0711.0925;%%
+\bibitem [{\citenamefont {Lattimer}(2012)}]{Lattimer:2012nd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Lattimer}},\ }\href {\doibase 10.1146/annurev-nucl-102711-095018} {\bibfield
+   {journal} {\bibinfo  {journal} {Ann. Rev. Nucl. Part. Sci.}\ }\textbf
+  {\bibinfo {volume} {62}},\ \bibinfo {pages} {485} (\bibinfo {year} {2012})},\
+  \Eprint {http://arxiv.org/abs/1305.3510} {arXiv:1305.3510 [nucl-th]}
+  \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1305.3510;%%
 \bibitem [{\citenamefont {Peters}\ and\ \citenamefont
   {Mathews}(1963)}]{PM1963}%
   \BibitemOpen
