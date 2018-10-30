@@ -1,0 +1,285 @@
+\documentclass[xcolor=dvipsnames,handout,t]{beamer}
+% use handout in document class to stop transitions
+
+\mode<presentation>
+{
+  \usetheme{Madrid}%{Madrid}
+  % or ..AnnArbor, Boadilla, CambridgeUS, Copenhagen, default, Frankfurt, Goettingen, Hannover
+  %       Montpellier, PaloAlto, Rochester, Szeged,
+
+  \setbeamercovered{invisible}
+  % or whatever (possibly just delete it)
+}
+\usepackage{color,empheq}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[english]{babel}
+\usepackage{xmpmulti,animate}
+\usecolortheme{seahorse} %this makes the colors less strong.
+
+\usepackage{times}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+\usepackage{graphicx}
+%\usepackage{tcolorbox}
+\usepackage{tikz,lipsum,lmodern}
+\usepackage[most]{tcolorbox}
+\usepackage{amsfonts,amssymb,amsmath,mathtools}
+      % use Times fonts if available on your TeX system
+\usepackage{epsfig}
+\usepackage{hyperref}
+\usepackage{changepage}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{animate,movie15,media9}
+%\usepackage{multimedia}
+
+\newcommand{\todo}[1]{\textcolor{orange}{\texttt{TODO: #1}}} 
+\newcommand{\red}[1]{\textcolor{red}{#1}} 
+\newcommand{\bl}[1]{\textcolor{blue}{#1}} 
+
+
+\usetikzlibrary{shapes}
+
+\title[] % (optional, use only with long paper titles)
+
+
+%\subtitle
+%{Presentation Subtitle} % (optional)
+
+\title[Forecasting GRBs w/ GWs] % (optional, use only with long paper titles)
+{Forecasting Gamma-ray Bursts with Gravitational Waves}
+
+%\subtitle
+%{Presentation Subtitle} % (optional)
+
+\author[Sarp Akcay]{Sarp Akcay\inst{1}\inst{2} }
+\institute[FSU Jena - UCD] % (optional, but mostly needed)
+{
+  \inst{1}%
+  FSU Jena %and University College Dublin
+  \inst{2}%
+  University College Dublin
+  }
+
+
+%\vspace{-3cm}
+%\titlegraphic{
+%  \vspace{1.75cm}  \includegraphics[width=1.0cm]{figs/ucd.png}%\hspace*{1cm}~\includegraphics[height=1cm]{figs/missing_inch.jpg} \hspace*{1cm}  \includegraphics[width=1.0cm]{figs/ucd.png}
+%}
+\date[Sabanci University]{14 November 2018}
+
+\subject{Talks}
+
+\usefonttheme[onlymath]{serif}
+\setbeamerfont{frametitle}{size=\huge}
+\setbeamercolor{frametitle}{fg=Black,bg=White}
+
+\newcommand{\Mag}{\textcolor{magenta}}
+\newcommand{\Red}{\textcolor{red}}
+\newcommand{\Blue}{\textcolor{blue}}
+\renewcommand{\c}{\cos}
+\renewcommand{\t}{\theta}
+\renewcommand{\b}{\bar}
+\newcommand{\f}{\frac}
+\newcommand{\bt}{\beta}
+%\newcommand{\s}{\sin}
+\newcommand{\ph}{\phi}
+\newcommand{\g}{\gamma}
+\newcommand{\nn}{\nonumber}
+\newcommand{\la}{\lambda}
+\newcommand{\al}{\alpha}
+\newcommand{\La}{\Lambda}
+\newcommand{\el}{\ell}
+\newcommand{\h}{\hat}
+\newcommand{\mrm}{\mathrm}
+\newcommand{\ord}{\mathcal{O}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bef}{\begin{frame}}
+\newcommand{\ef}{\end{frame}}
+%\newcommand{\h}{\bar{h}}
+\newcommand{\bs}{\begin{small}}
+\newcommand{\es}{\end{small}}
+\newcommand{\parallelsum}{\mathbin{\!/\mkern-5mu/\!}}
+\newcommand{\Lim}[1]{\raisebox{0.5ex}{\scalebox{0.8}{$\displaystyle \lim_{#1}\;$}}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%------------------ for coloured boxes in math modes --------------------
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
+%%-------------------------------------------------------------------------
+
+% tikz boxes
+\newcommand\TBox[3][]{%
+  \tikz\node[draw,ultra thick,red,text width=#2,align=left,#1] {#3};}
+
+\setbeamertemplate{frametitle}[default][center]
+
+
+
+\begin{document}
+%{
+%\usebackgroundtemplate{\includegraphics[width=1\paperwidth,height=\paperheight]{../Figures/ET_strains_redshifted_v2.pdf}}
+\begin{frame}
+ \titlepage
+\end{frame}
+%}
+
+
+
+\begin{frame}{Motivation: Multi-messenger Astronomy}
+\begin{itemize}
+ \item \emph{Multi}: two fundamentally different waves from common events.
+ \item[]\quad Gravitational waves (GWs): ``hearing''  the universe.
+ \item[]\quad Electromagnetic waves (EWs): ``seeing'' the universe.
+ \item GW170817-GRB170817A-AT2017gfo: the ``event'' \\
+ \quad inspiral + merger of two neutron stars (GWs) \\
+ \ \ = short-hard gamma-ray burst + kilonova (EWs)
+ \item[] Broad-band in gravitational waves: 10Hz - 2000Hz
+ \item[] Ultra broad-band in electromagnetic waves: gamma rays to radio.
+ \item A personal motivation, a simple question \\
+{\small ``What can we offer to the astronomy community with future GW detections?''}
+ \end{itemize}
+
+
+ \end{frame}
+
+ 
+\begin{frame}{Gravitational waves: Einstein 1916}
+  \begin{center}
+\begin{tikzpicture}
+            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[height=3.5cm]{figs/Einstein1916.png}};
+            %\draw<1>[red,ultra thick,rounded corners] (1.6,1) rectangle (\textheight-1cm,5);
+           \uncover<3->{\draw<3->[red,thick] (1.7,0.04) rectangle (3.1,0.27);}
+        \end{tikzpicture}
+        \\
+         \uncover<2->{Perturbations of spacetime with speed $=c$, sourced by accelerating masses.}
+         \end{center}
+          \begin{itemize}
+ \item  \uncover<3->{Spacetime metric $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$, \quad with $| h_{\mu\nu} | \ll 1$.}
+ \item  \uncover<4->{Insert into $G_{\mu\nu} = 0$. Keep only $\mathcal{O}(h)$. Pick a gauge.} %(e.g. Lorenz).}
+  \uncover<5->{\[ \Rightarrow\quad \Box \bar{h}_{\mu\nu}= 0, \quad \text{wave equation!} \]}
+  \item \uncover<6->{\alert{Plane-waves:} $ \bar{h}_{\mu\nu} = \Re\left[A_{\mu\nu}\, \text{e}^{i k_\mu x^\mu}\right] =\Re\left[A_{\mu\nu}\, \text{e}^{-i\omega (t-z/c )}\right]$.}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Gravitational waves: d.o.f.'s}
+$A_{\mu\nu} $ is the polarization tensor.
+\begin{itemize}
+ \uncover<2->{\item $\{ \bar{h}_{\mu\nu}, A_{\mu\nu} \}$: $4\times4$, symmetric \uncover<3->{$\hspace{1.5cm}\Rightarrow \f{4\times 5}{2}\ \ \ = 10$ d.o.f.}}
+ \uncover<4->{\item Gauge condition: $\nabla_\mu \bar{h}^{\mu\nu} =  A_{\mu\nu} k^\nu= 0$ \uncover<5->{$\Rightarrow10-4 = \, 6$ d.o.f.}}
+ \uncover<6->{\item Residual gauge freedom \hspace{2.25cm} \uncover<7->{$\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
+ %\uncover<7->{\vspace{2mm}\begin{center}$ \bar{h}'_{\mu\nu} = \bar{h}_{\mu\nu} - \xi_{\mu,\nu} - \xi_{\nu,\mu} + \eta_{\mu\nu} \nabla_\alpha \xi^\alpha . $ \end{center}\vspace{2mm}}
+\end{itemize}
+\uncover<7->{\quad \ Consistent with $\pm 2$ helicities of a \alert{massless} spin 2 boson.\\}
+\uncover<8->{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): \uncover<10->{$\begin{array}{l}A_{xx}=-A_{yy} = h_\oplus  \\ A_{xy}=\ \ A_{yx} = h_\otimes  \\ \end{array}$}}
+
+{\begin{center} \includegraphics[height=2.79875cm]{figs/white_box.png}\end{center}}
+\end{frame}
+ 
+ 
+
+\begin{frame}{Gravitational waves: d.o.f.'s}
+%\begin{center}
+%\animategraphics[loop,controls,width=3cm]{12}{GWs_frame-}{0}{29} 
+%\end{center}
+$A_{\mu\nu} $ is the polarization tensor.
+\begin{itemize}
+{\item $\{ \bar{h}_{\mu\nu}, A_{\mu\nu} \}$: $4\times4$, symmetric {$\hspace{1.5cm}\Rightarrow \f{4\times 5}{2}\ \ \ = 10$ d.o.f.}}
+ {\item Gauge condition: $\nabla_\mu \bar{h}^{\mu\nu} =  A_{\mu\nu} k^\nu= 0${ $\Rightarrow10-4 = \,6$ d.o.f.}}
+ {\item Residual gauge freedom \hspace{2.25cm}{ $\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
+ %{\vspace{2mm}\begin{center}$ \bar{h}'_{\mu\nu} = \bar{h}_{\mu\nu} - \xi_{\mu,\nu} - \xi_{\nu,\mu} + \eta_{\mu\nu} \nabla_\alpha \xi^\alpha . $ \end{center}\vspace{2mm}}
+\end{itemize}
+{\quad \ Consistent with $\pm 2$ helicities of a \alert{massless} spin 2 boson.\\}
+{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): {$\begin{array}{l}A_{xx}=-A_{yy} = h_\oplus  \\ A_{xy}=\ \ A_{yx} = h_\otimes  \\ \end{array}$}}
+{\begin{center} \animategraphics[loop,controls,height=2.4cm]{12}{GWs_plus-}{0}{20} \hspace{1cm} \animategraphics[loop,controls,height=2.4cm]{12}{GWs_cross-}{0}{20}\end{center}}
+\end{frame}
+
+\begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
+ \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\% (BICEP 2).\\
+ \uncover<2->{Gravitational-wave luminosity: \uncover<3->{\alert{quadrupole} radiation}}
+ \uncover<3->{\begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\\vspace{2mm}}
+ \uncover<4->{\begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}}
+ \uncover<5->{{\bf Binary systems:} 2 points masses in circular orbit. }
+ 
+\end{frame}
+
+\begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
+ \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
+ Gravitational-wave luminosity: \alert{quadrupole} radiation
+ \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\ \vspace{2mm}
+ \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
+ {\bf Binary systems:} 2 points masses in circular orbit. \todo{Make $\dot{E}$s consistent}
+ \begin{tikzpicture}[overlay,remember picture]
+\onslide<5->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.4cm]{12}{Circ_Orb-}{0}{20}};
+\onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-1.3cm)}]current page.center) {$M=m_1+m_2,\ x(t) = R \cos\Omega t, \ y(t) = R \sin\Omega t .$};
+\onslide<3->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-2.2cm)}]current page.center) {$ Q^{ij} =  2 M\, x^i x^j, \quad \boxed{\dot{E} = \f{128}{5}\f{G}{c^5} \Omega^6 M^2 R^4}$.};
+\onslide<4->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to \red{$e$} (Peters \& Mathews).};
+\onslide<5->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-4cm)}]current page.center) {$ \dot{E} = \textcolor{red}{\f{\left(1 + \f{73}{24}e^2+ \f{37}{96} e^4 \right)}{(1-e^2)^{7/2}}} \f{32}{5}\f{G}{c^5}\f{M m_1^2 m_2^2}{a^5}.$};
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+
+
+
+
+ \begin{frame}{Binary Neutron Star Inspirals}
+  
+ \end{frame}
+
+
+
+
+
+ \begin{frame}{GW Detectors: Interferometers}
+  Geodesic deviation
+ \end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
