@@ -51,8 +51,7 @@
 \title[Forecasting GRBs w/ GWs] % (optional, use only with long paper titles)
 {Forecasting Gamma-ray Bursts with Gravitational Waves}
 
-%\subtitle
-%{Presentation Subtitle} % (optional)
+\subtitle{\todo{Add background image}} % (optional)
 
 \author[Sarp Akcay]{Sarp Akcay\inst{1}\inst{2} }
 \institute[FSU Jena - UCD] % (optional, but mostly needed)
@@ -147,6 +146,18 @@
 \end{frame}
 %}
 
+\begin{frame}{Outline}
+\begin{itemize}
+ \item Motivation
+ \item Gravitational waves
+ \item Binary neutron star inspirals
+ \item Gravitational-wave detectors
+ \item Event rates 
+\end{itemize}
+\todo{finish this slide remove later if short on time}
+
+ 
+\end{frame}
 
 
 \begin{frame}{Motivation: Multi-messenger Astronomy}
@@ -154,12 +165,12 @@
  \item \emph{Multi}: two fundamentally different waves from common events.
  \item[]\quad Gravitational waves (GWs): ``hearing''  the universe.
  \item[]\quad Electromagnetic waves (EWs): ``seeing'' the universe.
- \item GW170817-GRB170817A-AT2017gfo: the ``event'' \\
+ \item \red{GW170817}-\bl{GRB170817A}-\textcolor{brown}{AT2017gfo}: the ``event'' \\
  \quad inspiral + merger of two neutron stars (GWs) \\
  \ \ = short-hard gamma-ray burst + kilonova (EWs)
  \item[] Broad-band in gravitational waves: 10Hz - 2000Hz
  \item[] Ultra broad-band in electromagnetic waves: gamma rays to radio.
- \item A personal motivation, a simple question \\
+ \item A simple question \\
 {\small ``What can we offer to the astronomy community with future GW detections?''}
  \end{itemize}
 
@@ -195,7 +206,8 @@ $A_{\mu\nu} $ is the polarization tensor.
 \end{itemize}
 \uncover<7->{\quad \ Consistent with $\pm 2$ helicities of a \alert{massless} spin 2 boson.\\}
 \uncover<8->{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): \uncover<10->{$\begin{array}{l}A_{xx}=-A_{yy} = h_\oplus  \\ A_{xy}=\ \ A_{yx} = h_\otimes  \\ \end{array}$}}
-
+\\
+\todo{Replace with Maggiore's discussion?}
 {\begin{center} \includegraphics[height=2.79875cm]{figs/white_box.png}\end{center}}
 \end{frame}
  
@@ -214,12 +226,14 @@ $A_{\mu\nu} $ is the polarization tensor.
 \end{itemize}
 {\quad \ Consistent with $\pm 2$ helicities of a \alert{massless} spin 2 boson.\\}
 {$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): {$\begin{array}{l}A_{xx}=-A_{yy} = h_\oplus  \\ A_{xy}=\ \ A_{yx} = h_\otimes  \\ \end{array}$}}
+\\
+\todo{Replace with Maggiore's discussion?}
 {\begin{center} \animategraphics[loop,controls,height=2.4cm]{12}{GWs_plus-}{0}{20} \hspace{1cm} \animategraphics[loop,controls,height=2.4cm]{12}{GWs_cross-}{0}{20}\end{center}}
 \end{frame}
 
 \begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
  \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\% (BICEP 2).\\
- \uncover<2->{Gravitational-wave luminosity: \uncover<3->{\alert{quadrupole} radiation}}
+ \uncover<2->{Gravitational-wave luminosity: \uncover<3->{\alert{quadrupole} radiation}  (leading-order)}
  \uncover<3->{\begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\\vspace{2mm}}
  \uncover<4->{\begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}}
  \uncover<5->{{\bf Binary systems:} 2 points masses in circular orbit. }
@@ -228,16 +242,16 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 \begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
  \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
- Gravitational-wave luminosity: \alert{quadrupole} radiation
+ Gravitational-wave luminosity: \alert{quadrupole} radiation (leading-order)
  \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\ \vspace{2mm}
  \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
- {\bf Binary systems:} 2 points masses in circular orbit. \todo{Make $\dot{E}$s consistent}
+ {\bf Binary systems:} 2 points masses in circular orbit.\todo{$R\to r$ in vid}
  \begin{tikzpicture}[overlay,remember picture]
 \onslide<5->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.4cm]{12}{Circ_Orb-}{0}{20}};
-\onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-1.3cm)}]current page.center) {$M=m_1+m_2,\ x(t) = R \cos\Omega t, \ y(t) = R \sin\Omega t .$};
-\onslide<3->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-2.2cm)}]current page.center) {$ Q^{ij} =  2 M\, x^i x^j, \quad \boxed{\dot{E} = \f{128}{5}\f{G}{c^5} \Omega^6 M^2 R^4}$.};
-\onslide<4->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to \red{$e$} (Peters \& Mathews).};
-\onslide<5->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-4cm)}]current page.center) {$ \dot{E} = \textcolor{red}{\f{\left(1 + \f{73}{24}e^2+ \f{37}{96} e^4 \right)}{(1-e^2)^{7/2}}} \f{32}{5}\f{G}{c^5}\f{M m_1^2 m_2^2}{a^5}.$};
+\onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-1.3cm)}]current page.center) {$\mu=m_1 m_2/M^2,\ x(t) = r \cos\Omega t, \ y(t) = r \sin\Omega t $};
+\onslide<3->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(2.25cm,-2.2cm)}]current page.center) {$ Q^{ij} =  2 M\, x^i x^j, \qquad \boxed{\dot{E} = \f{32}{5}\f{G\mu^2}{c^5}r^4 \Omega^6}$};
+\onslide<4->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to \bl{$e$} (Peters \& Mathews).};
+\onslide<5->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-4cm)}]current page.center) {$ \bl{\f{\left(1 + \f{73}{24}e^2+ \f{37}{96} e^4 \right)}{(1-e^2)^{7/2}}}$};
 \end{tikzpicture}
 \end{frame}
 
@@ -249,12 +263,84 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 
  \begin{frame}{Binary Neutron Star Inspirals}
-  
+ Notation:
+ \begin{itemize}
+  \item $\red{f} $: GW frequency.
+  \item $\omega\equiv2\pi f = 2\Omega$: GW angular frequency.
+  \item $t$: observer/detector time \quad$ \Longrightarrow\quad\dot{Y}= dY/dt$.
+ \end{itemize}
+
+  Assumptions:
+  \begin{itemize}
+   \item Quasi-circular orbits: $e \ll 1$ and $\tfrac{|\dot{r}|}{r\Omega} <10^{-3} $ at $f=100\,$Hz.
+   \item Point masses: tidal effects for $f \gtrsim 100\,$Hz
+   \item Set $m_1 =m_2 = 1.4 M_\odot$, constraints: $1.2 M_\odot \lesssim m_\text{NS}\lesssim 1.6M_\odot$.
+   \item Use Newtonian/post-Newtonian theory ($\le$3.5{\bf PN}).
+   \item Terminate inspiral at Schwarzschild ISCO \todo{add ISCO curve?}
+   \begin{footnotesize}
+   \[f_\text{ISCO} = \f{c^3}{6^{3/2}\pi G M} \simeq 1571 \left(\f{2.8M_\odot}{M}\right)\text{Hz}\] 
+   \end{footnotesize}
+   \item Quadrupolar GWs only: higher modes suppressed by $\tfrac{m_1-m_2}{M}\tfrac{v^2}{c^2}$
+   \item \todo{what about the 21 mode?}
+   \item Neglect spins: spin-orbit $\tfrac{\dot{E}_\text{SO}}{\dot{E}} \sim \tfrac{v_s}{c}\tfrac{v}{c}\tfrac{R_\text{NS}}{r}$, spin-spin $\sim \tfrac{v^4}{c^4}$
+  \end{itemize}
+
  \end{frame}
 
 
+\begin{frame}{Binary Neutron Star Inspirals}{Newtonian evolution}
+ Define \bl{chirp mass} \hspace{1.cm} $\red{M_c} \equiv \mu^{3/5} M^{2/5} = \tfrac{(m_1 m_2)^{3/5}}{(m_1+m_2)^{1/5}}$ \\
+ %and symmetric mass ratio\qquad $\nu \equiv \tfrac{\mu}{M} =\tfrac{m_1 m_2}{M^2}$\\
+ \vspace{1mm}
+ which gives, using Kepler's \bl{third law}: $\Omega^2 = G M r^{-3}=\omega^2/4$   
+ \begin{footnotesize}
+  $$ \boxed{\dot{E} = \f{32}{5}\f{c^5}{G} \left(\f{G M_c\, \omega}{2c^3}\right)^{10/3}}$$
+ \end{footnotesize}\\
+%
+{\bf Key idea:} \red{energy balance} between $\dot{E}$ and \\
+$\tfrac{d}{dt}$ of gravitational binding energy
+$ E_b= -\tfrac{G m_1 m_2}{2r} = -\left(\tfrac{G^2 M_c^5 \omega^2}{32}\right)^{1/3} $
+%
+\[ 
+ \dot{E}(f) = -\dot{E}_b(f) \Longrightarrow \boxed{\red{\dot{f}} = \f{96}{5}\pi^{8/3} \f{(G M_c)}{c^5}^{5/3}\, \red{f^{11/3}} }
+ \]
+\[
+ \red{ \dot{f} \propto f^{11/3}\quad(1)}
+\]
+
+\begin{tikzpicture}[overlay,remember picture]
+\node[draw, red,thick,minimum width=3cm,minimum height=0.75cm] (b) at (5.9,0.85){};
+\end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}{Binary Neutron Star Inspirals}{Inspiral time}
+Integrate $\dot{f} \sim f^{11/3} \quad \Longrightarrow \quad \int dt \sim \int f^{-11/3}df \quad\Rightarrow\quad t \sim \red{f^{-8/3}}$
+\\
+\vspace{1mm}
+Fix integration constant $\tau = t_\text{coal} - t >0$. \\
+\vspace{2mm}
+Introduce \red{inspiral time}, i.e, time to BNS \bl{coal}escence
+%
+\begin{align}
+ \red{\tau_\text{insp}(f)} &= \f{5}{256\pi}\f{c^5}{(\pi G M_c)^{5/3}} \,{f^{-8/3}}\nn\\
+ &\simeq \red{16.72\,\text{minutes}} \, \left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\,\red{\left(\f{10\,\text{Hz}}{f}\right)^{8/3}\quad(2)}\nn
+\end{align}
+Number of GW cycles to coalescence: $\int \tfrac{f}{\dot{f}}df\sim f^{-5/3}$ %$\int df {f}/\dot{f}$
+\begin{align}
+ \red{\mathcal{N}_\text{cyc}(f)} %&=\f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\left[ f^{-5/3}-f_\text{max}^{-5/3}\right]\nn \\
+ &\approx 1.605\times \red{10^4 \left(\f{10\,\text{Hz}}{f} \right)^{5/3}}\,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\quad \red{(3)}\nn
+\end{align}
 
 
+
+
+\begin{tikzpicture}[overlay,remember picture]
+\node[draw, red,thick,minimum width=8.2cm,minimum height=1.3cm] (b) at (7.,3.35){};
+\node[draw, red,thick,minimum width=10cm,minimum height=1.3cm] (b) at (6.2,1){};
+\end{tikzpicture}
+
+\end{frame}
 
  \begin{frame}{GW Detectors: Interferometers}
   Geodesic deviation
