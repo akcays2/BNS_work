@@ -1045,7 +1045,7 @@ for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can b
 \end{enumerate}
 %
 %
-
+%
 \section{GW170817 as a test of our model for the Advanced LIGO-Virgo network}\label{sec:GW170817}
 On 17 August 2017, at 12:41:04 UTC, GWs from the inspiral and merger of a binary neutron star system %were detected by the Advanced LIGO-Virgo network.
 %The event, first picked up by LIGO Hanford (H1), 
@@ -1109,27 +1109,6 @@ The data, sampled at 4096\,Hz, is given as a discrete time series $h(t_i)$ for a
 We first Fourier-transform the data to frequency space and apply several high and low-frequency filters to isolate a window of $f\in [10, f_\text{ISCO}]$.
 The LIGO Open Science Center has a detailed Python-based tutorial on how to do this using the data from the very first GW detection (GW150914) \cite{LIGO_tutorial}. 
 We use a $\verb|Mathematica|$ based code developed at UCD to do the same for GW170817.
-
-Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs have identical sensitivities,
-but because their orientations and response functions differ, their sensitivity to a localized source is reduced. We represent this reduction by lowering the
-amplitude of the GW strain by appropriate quality factors ($|Q_i|$) explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
-The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the dashed ($i=h$), solid ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
-$2\sqrt{f} \tilde{H}_i(f)$ as is standard. 
-Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulated by our network
-%%
-%
-\be
-\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 \label{eq:GW170817_SNRs}.
-\ee
-%
-%%
-These are comparable to actual SNRs of L1, H1, and V1 for GW170817, which are, 26.4, 18.8, and 2.0, respectively\footnote{At the time of GW170817, Virgo's sensitivity had not reached the level of LIGO's. Hence it accumulated a much smaller SNR for GW170817. By 2020, Virgo should be operating at nearly the same sensitivity of LIGO.}.
-%To accommodate more realistic orientations, we show two shaded regions in Fig.~\ref{fig:figGW170817}. The inspirals in the lighter region yield SNR$\ge 22.34$ as
-%they sweep from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz whereas inspirals in the darker region accumulate $ \bar\rho_l \le \text{SNR} \le 22.34$.
-The shaded region in Fig.~\ref{fig:figGW170817} covers strains between $\tilde{H}_l(f)$ and $\tilde{H}_h(f)$. %which we expect to represent mo
-Given a randomly positioned/oriented BNS inspiral at 40 Mpc, we would in general expect a randomly oriented IFO's response to lie in this shaded region.
-%Given a network of three equally sensitive, randomly oriented IFOs we expect that a single 40-Mpc BNS inspiral would produce three distinct detector response strains that fall within this shaded region.
-%
 %
 \begin{figure}[ht!]
 \includegraphics[height=9cm]{../Figures/GW170817_strains.pdf}
@@ -1163,7 +1142,30 @@ the strain around $f\sim100\,$Hz due to tidal effects is clear.
 %Note that although we extend the $\sqrt{f}f^{-7/6}=f^{-2/3}$ power law behavior of the strains all the way to ISCO, in actuality, this  starts breaking down .
 }
 \label{fig:figGW170817}
-\end{figure}
+\end{figure}\\
+%
+%
+Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs have identical sensitivities,
+but because their orientations and response functions differ, their sensitivity to a localized source is reduced. We represent this reduction by lowering the
+amplitude of the GW strain by appropriate quality factors ($|Q_i|$) explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
+The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the dashed ($i=h$), solid ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
+$2\sqrt{f} \tilde{H}_i(f)$ as is standard. 
+Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulated by our network
+%%
+%
+\be
+\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 \label{eq:GW170817_SNRs}.
+\ee
+%
+%%
+These are comparable to actual SNRs of L1, H1, and V1 for GW170817, which are, 26.4, 18.8, and 2.0, respectively\footnote{At the time of GW170817, Virgo's sensitivity had not reached the level of LIGO's. Hence it accumulated a much smaller SNR for GW170817. By 2020, Virgo should be operating at nearly the same sensitivity of LIGO.}.
+%To accommodate more realistic orientations, we show two shaded regions in Fig.~\ref{fig:figGW170817}. The inspirals in the lighter region yield SNR$\ge 22.34$ as
+%they sweep from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz whereas inspirals in the darker region accumulate $ \bar\rho_l \le \text{SNR} \le 22.34$.
+The shaded region in Fig.~\ref{fig:figGW170817} covers strains between $\tilde{H}_l(f)$ and $\tilde{H}_h(f)$. %which we expect to represent mo
+Given a randomly positioned/oriented BNS inspiral at 40 Mpc, we would in general expect a randomly oriented IFO's response to lie in this shaded region.
+%Given a network of three equally sensitive, randomly oriented IFOs we expect that a single 40-Mpc BNS inspiral would produce three distinct detector response strains that fall within this shaded region.
+%
+
 %
 %
 

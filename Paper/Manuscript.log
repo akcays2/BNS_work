@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.19)  29 AUG 2018 20:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  29 AUG 2018 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./Manuscript.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
+(/usr/share/texmf/tex/latex/tex/latex/revtex/revtex4-1.cls
 Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
 ex4/ for documentation)
  Copyright (c) 2009 The American Physical Society.
@@ -66,7 +66,7 @@ Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \widetext@top=\box39
 \widetext@bot=\box40
 Class revtex4-1 Info: Selecting society aps on input line 7542.
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-1.rtx
+(/usr/share/texmf/tex/latex/tex/latex/revtex/aps4-1.rtx
 File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
 mentation)
 Class revtex4-1 Info: RevTeX society APS selected on input line 31.
@@ -74,7 +74,7 @@ Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 Class revtex4-1 Info: Selecting journal prd on input line 7544.
 Class revtex4-1 Info: APS journal PRD selected on input line 7545.
 
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+(/usr/share/texmf/tex/latex/tex/latex/revtex/aps10pt4-1.rtx
 File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
 documentation)
 Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
@@ -166,7 +166,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
 
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+(/usr/share/texmf/tex/latex/tex/latex/revtex/revsymb4-1.sty
 Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
 or documentation)
 LaTeX Info: Redefining \frak on input line 95.
@@ -664,7 +664,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -693,7 +693,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+(/usr/share/texmf/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
@@ -983,129 +983,121 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 1111
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [13]
-
-pdfTeX warning: /usr/bin/pdflatex (file ../Figures/GW170817_strains.pdf): PDF i
-nclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../Figures/GW170817_strains.pdf, id=459, 1003.75pt x 621.32124pt>
+)
+<../Figures/GW170817_strains.pdf, id=441, 1003.75pt x 621.32124pt>
 File: ../Figures/GW170817_strains.pdf Graphic file (type pdf)
 
 <use ../Figures/GW170817_strains.pdf>
-Package pdftex.def Info: ../Figures/GW170817_strains.pdf used on input line 113
-5.
+Package pdftex.def Info: ../Figures/GW170817_strains.pdf used on input line 111
+4.
 (pdftex.def)             Requested size: 413.6844pt x 256.0748pt.
- [14] [15pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1207  \ee
-            <../Figures/GW170817_strains.pdf>]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1266.
+ [13]
+Overfull \vbox (3.56194pt too high) has occurred while \output is active []
 
 
-
-pdfTeX warning: /usr/bin/pdflatex (file ../Figures/ALigo_strains.pdf): PDF incl
-usion: found PDF version <1.5>, but at most version <1.4> allowed
-<../Figures/ALigo_strains.pdf, id=524, 1003.75pt x 611.28375pt>
-File: ../Figures/ALigo_strains.pdf Graphic file (type pdf)
-
-<use ../Figures/ALigo_strains.pdf>
-Package pdftex.def Info: ../Figures/ALigo_strains.pdf used on input line 1275.
-(pdftex.def)             Requested size: 510.0pt x 310.59398pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1355 
-       ] [17pdfTeX warning (ext4): destination with the same identifier (name{f
-igure.3}) has been already used, duplicate ignored
+l.1168 
+        <../Figures/GW170817_strains.pdf>]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1367  \ee
-           pdfTeX warning (ext4): destination with the same identifier (name{ta
-ble.3}) has been already used, duplicate ignored
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1268.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1367  \ee
-            <../Figures/ALigo_strains.pdf>]
+<../Figures/ALigo_strains.pdf, id=522, 1003.75pt x 611.28375pt>
+File: ../Figures/ALigo_strains.pdf Graphic file (type pdf)
 
-pdfTeX warning: /usr/bin/pdflatex (file ../Figures/ET_strains_redshifted.pdf): 
-PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../Figures/ET_strains_redshifted.pdf, id=590, 1003.75pt x 628.3475pt>
-File: ../Figures/ET_strains_redshifted.pdf Graphic file (type pdf)
-
-<use ../Figures/ET_strains_redshifted.pdf>
-Package pdftex.def Info: ../Figures/ET_strains_redshifted.pdf used on input lin
-e 1384.
-(pdftex.def)             Requested size: 510.0pt x 319.2641pt.
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
+<use ../Figures/ALigo_strains.pdf>
+Package pdftex.def Info: ../Figures/ALigo_strains.pdf used on input line 1277.
+(pdftex.def)             Requested size: 510.0pt x 310.59398pt.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1406 \ee
-           <../Figures/ET_strains_redshifted.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Main_results.pdf): PDF inclu
-sion: found PDF version <1.5>, but at most version <1.4> allowed
-<../Figures/Main_results.pdf, id=646, 722.7pt x 407.5225pt>
-File: ../Figures/Main_results.pdf Graphic file (type pdf)
-
-<use ../Figures/Main_results.pdf>
-Package pdftex.def Info: ../Figures/Main_results.pdf used on input line 1504.
-(pdftex.def)             Requested size: 510.0pt x 287.58322pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{table.4})
- has been already used, duplicate ignored
+l.1349 
+       ] [16pdfTeX warning (ext4): destination with the same identifier (name{f
+igure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1516 ...{Binary black hole neutron star systems}
-                                                  \label{sec:BH_NS}] [20pdfTeX 
-warning (ext4): destination with the same identifier (name{table.5}) has been a
-lready used, duplicate ignored
+l.1349 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1526 A
-         necessary, but insufficient, condition for tidal disruption (TD) is...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
-s been already used, duplicate ignored
+l.1349 
+        <../Figures/ALigo_strains.pdf>]
+<../Figures/ET_strains_redshifted.pdf, id=581, 1003.75pt x 628.3475pt>
+File: ../Figures/ET_strains_redshifted.pdf Graphic file (type pdf)
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1526 A
-         necessary, but insufficient, condition for tidal disruption (TD) is...
- <../Figures/Main_results.pdf>]
+<use ../Figures/ET_strains_redshifted.pdf>
+Package pdftex.def Info: ../Figures/ET_strains_redshifted.pdf used on input lin
+e 1386.
+(pdftex.def)             Requested size: 510.0pt x 319.2641pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21] (./Manuscript.bbl
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
- [22pdfTeX warning (ext4): destination with the same identifier (name{table.6})
+[17] [18pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1465 G
+        iven Moore's law and new search approaches (e.g., see Ref.~\cite{Gab...
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1465 G
+        iven Moore's law and new search approaches (e.g., see Ref.~\cite{Gab...
+ <../Figures/ET_strains_redshifted.pdf>]
+<../Figures/Main_results.pdf, id=654, 722.7pt x 407.5225pt>
+File: ../Figures/Main_results.pdf Graphic file (type pdf)
+
+<use ../Figures/Main_results.pdf>
+Package pdftex.def Info: ../Figures/Main_results.pdf used on input line 1506.
+(pdftex.def)             Requested size: 510.0pt x 287.58322pt.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{table.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.189 ...mefont {Sathyaprakash}}]{Buonanno:2009zt}
-                                                  %]
+l.1549  \item L
+               ow black hole mass. In the test-mass case, $r_\text{ISCO} \pr...
+] [20pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1570 T
+        here is additional motivation to choose low BH mass as <../Figures/Main
+_results.pdf>] (./Manuscript.bbl
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+
+Overfull \vbox (3.49353pt too high) has occurred while \output is active []
+
+
+[21pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.79   {et~al.}}]{Abbott:2017oio}
+                                 %]
 Underfull \hbox (badness 8000) in paragraph at lines 482--486
 []\OT1/ptm/m/n/9 C. Miller, ``Overview of Grav-i-ta-tional Ra-di-a-tion,'' [][]
 $\OT1/pcr/m/n/9 https : / / www . astro . umd . edu / []miller / teaching / ast
 r498 /
  []
 
-[23]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 723--729
 []\OT1/ptm/m/n/9 ``GW170817 Fact-sheet,'' [][]$\OT1/pcr/m/n/9 https : / / www .
  ligo . org / detections / GW170817 / images-[]GW170817 / GW170817 _
@@ -1118,28 +1110,28 @@ Underfull \hbox (badness 1275) in paragraph at lines 758--763
 W150914 _
  []
 
-[24])
+[23])
 
 Class revtex4-1 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-[25]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1662.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1662.
+[24]
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1664.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1664.
  (./Manuscript.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1662.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1664.
 
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 0DC19DF9D630AD51623960BCE6D7FC3D;1374.
  ) 
 Here is how much of TeX's memory you used:
- 11397 strings out of 493033
- 158794 string characters out of 6136455
- 324504 words of memory out of 5000000
+ 11396 strings out of 493029
+ 158695 string characters out of 6136234
+ 326693 words of memory out of 5000000
  14455 multiletter control sequences out of 15000+600000
  34804 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,43p,2175b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,43p,2175b,756s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Item.12-footnote.8} has been referenced but does 
 not exist, replaced by a fixed one
 
@@ -1190,9 +1182,10 @@ share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive
 fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript.pdf (25 pages, 749070 bytes).
+Output written on Manuscript.pdf (24 pages, 617177 bytes).
 PDF statistics:
- 1062 PDF objects out of 1200 (max. 8388607)
- 249 named destinations out of 1000 (max. 500000)
+ 1068 PDF objects out of 1200 (max. 8388607)
+ 958 compressed objects within 10 object streams
+ 248 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
