@@ -204,8 +204,8 @@ $A_{\mu\nu} $ is the polarization tensor.
  \uncover<6->{\item Residual gauge freedom \hspace{2.25cm} \uncover<7->{$\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
  %\uncover<7->{\vspace{2mm}\begin{center}$ \bar{h}'_{\mu\nu} = \bar{h}_{\mu\nu} - \xi_{\mu,\nu} - \xi_{\nu,\mu} + \eta_{\mu\nu} \nabla_\alpha \xi^\alpha . $ \end{center}\vspace{2mm}}
 \end{itemize}
-\uncover<7->{\quad \ Consistent with $\pm 2$ helicities of a \alert{massless} spin 2 boson.\\}
-\uncover<8->{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): \uncover<10->{$\begin{array}{l}A_{xx}=-A_{yy} = h_\oplus  \\ A_{xy}=\ \ A_{yx} = h_\otimes  \\ \end{array}$}}
+\uncover<7->{\quad \ Consistent with $\pm 2$ helicities of a \bl{massless} spin 2 boson.\\}
+\uncover<8->{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): \uncover<10->{$\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$}}
 \\
 \todo{Replace with Maggiore's discussion?}
 {\begin{center} \includegraphics[height=2.79875cm]{figs/white_box.png}\end{center}}
@@ -224,8 +224,8 @@ $A_{\mu\nu} $ is the polarization tensor.
  {\item Residual gauge freedom \hspace{2.25cm}{ $\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
  %{\vspace{2mm}\begin{center}$ \bar{h}'_{\mu\nu} = \bar{h}_{\mu\nu} - \xi_{\mu,\nu} - \xi_{\nu,\mu} + \eta_{\mu\nu} \nabla_\alpha \xi^\alpha . $ \end{center}\vspace{2mm}}
 \end{itemize}
-{\quad \ Consistent with $\pm 2$ helicities of a \alert{massless} spin 2 boson.\\}
-{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): {$\begin{array}{l}A_{xx}=-A_{yy} = h_\oplus  \\ A_{xy}=\ \ A_{yx} = h_\otimes  \\ \end{array}$}}
+{\quad \ Consistent with $\pm 2$ helicities of a \bl{massless} spin 2 boson.\\}
+{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): {$\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$}}
 \\
 \todo{Replace with Maggiore's discussion?}
 {\begin{center} \animategraphics[loop,controls,height=2.4cm]{12}{GWs_plus-}{0}{20} \hspace{1cm} \animategraphics[loop,controls,height=2.4cm]{12}{GWs_cross-}{0}{20}\end{center}}
@@ -281,7 +281,6 @@ $A_{\mu\nu} $ is the polarization tensor.
    \[f_\text{ISCO} = \f{c^3}{6^{3/2}\pi G M} \simeq 1571 \left(\f{2.8M_\odot}{M}\right)\text{Hz}\] 
    \end{footnotesize}
    \item Quadrupolar GWs only: higher modes suppressed by $\tfrac{m_1-m_2}{M}\tfrac{v^2}{c^2}$
-   \item \todo{what about the 21 mode?}
    \item Neglect spins: spin-orbit $\tfrac{\dot{E}_\text{SO}}{\dot{E}} \sim \tfrac{v_s}{c}\tfrac{v}{c}\tfrac{R_\text{NS}}{r}$, spin-spin $\sim \tfrac{v^4}{c^4}$
   \end{itemize}
 
@@ -331,16 +330,40 @@ Number of GW cycles to coalescence: $\int \tfrac{f}{\dot{f}}df\sim f^{-5/3}$ %$\
  \red{\mathcal{N}_\text{cyc}(f)} %&=\f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\left[ f^{-5/3}-f_\text{max}^{-5/3}\right]\nn \\
  &\approx 1.605\times \red{10^4 \left(\f{10\,\text{Hz}}{f} \right)^{5/3}}\,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\quad \red{(3)}\nn
 \end{align}
-
-
-
-
+%
 \begin{tikzpicture}[overlay,remember picture]
 \node[draw, red,thick,minimum width=8.2cm,minimum height=1.3cm] (b) at (7.,3.35){};
 \node[draw, red,thick,minimum width=10cm,minimum height=1.3cm] (b) at (6.2,1){};
 \end{tikzpicture}
+%
+\end{frame}
+
+\begin{frame}{Gravitational waves from BNS}
+TT gauge, multipole, slow-velocity expansions give \todo{add suppl. slide}
+\[
+ h_{ij}^\text{TT} = \tfrac{1}{D}\tfrac{2G}{c^4} \ddot{Q}_{il}^\text{TT}(t-z/c)
+\]
+%
+ \begin{align}
+ h_+(t) &= h_c(t)\, \left(\f{1+\cos^2\iota}{2}\right)\, \cos[\Phi(t)],\label{eq:hplus_TD}\\
+ h_\times(t) & =h_c(t)\,\cos\iota \sin[\Phi(t)]\label{eq:hcross_TD},
+\end{align}
+%
+%
+where
+%
+\begin{align}
+h_c(t) &=\f{4}{D}\left(\f{G M_c}{c^2}\right)^{5/3}\, \left(\f{\pi f(t)}{c}\right)^{2/3} \nn\\
+\Phi(t) &=\int_{t_i}^t dt' \omega(t') + \text{PN corrections}
+\end{align}
+
+
+Frequecny increases as $f^{11/3}$\\
+Amplitude increases as $f^{2/3} \Longrightarrow$ \red{Chirp!} 
 
 \end{frame}
+
+
 
  \begin{frame}{GW Detectors: Interferometers}
   Geodesic deviation
@@ -355,6 +378,14 @@ Number of GW cycles to coalescence: $\int \tfrac{f}{\dot{f}}df\sim f^{-5/3}$ %$\
 
 
 
+\begin{frame}{Supplement 1: mode suppression}
+\begin{itemize}
+ \item For $q=1$ due to symmetry only (2,2), (3,2), (4,2), (4,4) are nonzero 
+ \item For $q\ne 1$ all $\ell \ge 2$ modes exist, but are much smaller than $(2,2)$
+\end{itemize}
+
+ 
+\end{frame}
 
 
 
