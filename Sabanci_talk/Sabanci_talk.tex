@@ -296,9 +296,9 @@ $A_{\mu\nu} $ is the polarization tensor.
   $$ \boxed{\dot{E} = \f{32}{5}\f{c^5}{G} \left(\f{G M_c\, \omega}{2c^3}\right)^{10/3}}$$
  \end{footnotesize}\\
 %
-{\bf Key idea:} \red{energy balance} between $\dot{E}$ and \\
-$\tfrac{d}{dt}$ of gravitational binding energy
-$ E_b= -\tfrac{G m_1 m_2}{2r} = -\left(\tfrac{G^2 M_c^5 \omega^2}{32}\right)^{1/3} $
+{\bf Key idea:} \red{energy balance} between $\dot{E}$ and $\dot{E}_b$\\
+ %of gravitational binding energy
+\quad where $ E_b= -\tfrac{G m_1 m_2}{2r} = -\left(\tfrac{G^2 M_c^5 \omega^2}{32}\right)^{1/3} $
 %
 \[ 
  \dot{E}(f) = -\dot{E}_b(f) \Longrightarrow \boxed{\red{\dot{f}} = \f{96}{5}\pi^{8/3} \f{(G M_c)}{c^5}^{5/3}\, \red{f^{11/3}} }
@@ -323,12 +323,12 @@ Introduce \red{inspiral time}, i.e, time to BNS \bl{coal}escence
 %
 \begin{align}
  \red{\tau_\text{insp}(f)} %&= \f{5}{256\pi}\f{c^5}{(\pi G M_c)^{5/3}} \,{f^{-8/3}}\nn\\
- &\simeq \bl{16.72\,\text{minutes}} \, \left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\,\red{\left(\f{10\,\text{Hz}}{f}\right)^{8/3}\quad(2)}\nn
+ &\simeq \bl{16.72\,\text{minutes}} \, \left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\,{\left(\f{10\,\text{Hz}}{\red{f}}\right)^{\red{8/3}}\quad(2)}\nn
 \end{align}
 Number of GW cycles to coalescence: $\int \tfrac{f}{\dot{f}}df\sim \red{f^{-5/3}}$ %$\int df {f}/\dot{f}$
 \begin{align}
  \red{\mathcal{N}_\text{cyc}(f)} %&=\f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\left[ f^{-5/3}-f_\text{max}^{-5/3}\right]\nn \\
- &\approx 1.605\times \bl{10^4}\,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\red{ \left(\f{10\,\text{Hz}}{f} \right)^{5/3}}\quad \red{(3)}\nn
+ &\approx 1.605\times \bl{10^4}\,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}{ \left(\f{10\,\text{Hz}}{\red{f}} \right)^{\red{5/3}}}\quad \red{(3)}\nn
 \end{align}
 %
 \begin{tikzpicture}[overlay,remember picture]
@@ -344,35 +344,71 @@ Number of GW cycles to coalescence: $\int \tfrac{f}{\dot{f}}df\sim \red{f^{-5/3}
 
 \begin{frame}{Gravitational waves from BNS}
 TT gauge, multipole, slow-velocity expansions give \todo{add suppl. slide}
+\begin{small}
 \[
- h_{ij}^\text{TT} = \tfrac{1}{D}\tfrac{2G}{c^4} \ddot{Q}_{il}^\text{TT}(t-z/c)
+ h_{ij}^\text{TT} = \tfrac{2}{D}\tfrac{G}{c^4} \ddot{Q}_{ij}^\text{TT}%(t-z/c)
 \]
 %
  \begin{align}
  h_+(t) &= h_c(t)\, \left(\f{1+\cos^2\iota}{2}\right)\, \cos[\Phi(t)],\label{eq:hplus_TD}\\
  h_\times(t) & =h_c(t)\,\cos\iota \sin[\Phi(t)]\label{eq:hcross_TD},
 \end{align}
+\end{small}
 %
 %
 where
+\vspace{-3mm}
 %
+\begin{small}
 \begin{align}
-h_c(t) &=\f{4}{D}\left(\f{G M_c}{c^2}\right)^{5/3}\, \left(\f{\pi f(t)}{c}\right)^{2/3} \nn\\
+h_c(t) %&=\f{4}{D}\left(\f{G M_c}{c^2}\right)^{5/3}\, \left(\f{\pi f(t)}{c}\right)^{2/3}\nn\\
+&\approx 1.9\times \bl{10^{-23}} \left(\f{40\,\text{Mpc}}{D}\right)\left(\f{M_c}{1.219 M_\odot}\right)^{5/3}\left(\frac{\red{f}}{10\,\text{Hz}}\right)^{\red{2/3}} \nn\\
 \Phi(t) &=\int_{t_i}^t dt' \omega(t') + \text{PN corrections}
 \end{align}
-
-
-Frequecny increases as $f^{11/3}$\\
-Amplitude increases as $f^{2/3} \Longrightarrow$ \red{Chirp!} 
+\end{small}\\
+%
+Frequency increases as $f^{11/3}$\\
+Amplitude increases as $f^{10/3} \Longrightarrow$ \red{Chirp!} \todo{Insert chirp movie}
 
 \end{frame}
 
 
 
- \begin{frame}{GW Detectors: Interferometers}
-  Geodesic deviation
+ \begin{frame}{GW Detectors: \red{Interferometers}}
+  Two geodesics separated by $\xi^\mu$:
+  %\[
+  % \frac{D^2 \xi^\alpha}{D\tau^2} = -R^\alpha_{\beta \gamma\delta}\, \xi^\gamma u^\beta u^\delta 
+  %\]
+$ \tfrac{d^2 \xi^i}{d\tau^2} = -R^i_{0j0} \xi^j\left(\tfrac{dx^0}{d\tau}\right)^2$ \hfill (detector frame)\\
+%\hspace{4cm} $\Longrightarrow \ddot{\xi^i} = -c^2 R^i_{0j0} \xi^j $ \hfill (detector time)\ \\
+\vspace{-3mm}
+\[
+\hspace{4.5cm} \boxed{\ddot{\xi^i} = \frac{1}{2} \ddot{h}_{ij}^\text{TT} \xi^j} \hspace{2.5cm} \text{(detector time)}
+\]
+%
+%
+GW along $\mathbf{z}$: 
+\[
+ h_{ij}^\text{TT} = \left(\begin{array}{cc}
+                           h_+ & h_\times \\
+                           h_\times & - h_+
+                          \end{array}\right) \cos\left(\omega\left( t-\tfrac{z}{c}\right)\right)
+\]
+Consider mirrors at $(0,0)_1, (L,0)_2$ and $(L,L)_3$
+\begin{small}
+\begin{align*}
+  s_{12} &= \int_1^2 \tfrac{ds}{dx}dx = (x_2-x_1) \left[ 1 + h_+ \cos(\omega t)\right]^{1/2}\hspace{4cm} \\
+			      & \approx L \left[ 1+\tfrac{1}{2} h_+ \cos\omega t \right] \\
+s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
+\end{align*}
+\end{small}
+%
+\begin{tikzpicture}[overlay,remember picture]
+%\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.39cm]{12}{LIGO_int-}{0}{102}};
+\end{tikzpicture}
  \end{frame}
-
+ 
+ 
 
 
 
@@ -398,8 +434,26 @@ Maggiore chapters 1, 3 and 4
  \item At that point we get the scaling $h \sim \tfrac{1}{D}\tfrac{G}{c^4}\ddot{Q}_{ij}$.
  \item Eq. (3.275) shows it expanded in tensor harmonics so up to $\partial^2 Y^{\ell m}$
 \end{itemize}
-
 \end{frame}
+
+\begin{frame}{Supp: coord. vs. proper distance in TT gauge}
+  Geodesic deviation 
+  \[
+   \frac{D^2 \xi^\alpha}{D\tau^2} = -R^\alpha_{\beta \gamma\delta}\, \xi^\gamma u^\beta u^\delta 
+  \]
+In TT gauge,\qquad  $\Longrightarrow \quad\left.\tfrac{d^2 \xi^i}{d\tau^2}\right|_{\tau=0} = -\left. \dot{h}_{ij} \tfrac{d\xi^i}{d\tau}\right|_{\tau=0}$\\
+i.e., if mirrors are initially at rest w.r.t to each other ( $\left. \tfrac{d\xi^i}{d\tau}\right|_{\tau=0} =0$ )\\
+then $\tfrac{d^2 \xi^i}{d\tau^2}=0\quad \forall t$ \\
+$\Longrightarrow$ coordinate separation $\xi^i = \text{constant}$ for all time \\
+BUT, proper distance is NOT! \\
+Consider mirrors at $\mathbf{x}=x_1$ and at $\mathbf{x}=x_2=x_1+\mathbf{\xi}$
+\begin{align*}
+  s = \int_1^2 \tfrac{ds}{dx}dx &= (x_2-x_1) \left[ 1 + h_+ \cos(\omega\t)\right]^{1/2} \\
+			      & \approx L \left[ 1+\tfrac{1}{2} h_+ \cos\omega t \right] 
+\end{align*}
+ \end{frame}
+
+
 
 \begin{frame}{Supplement 3: Direction of GW emission}
  Mostly off the orbital plane and slightly forward
@@ -412,6 +466,9 @@ Maggiore chapters 1, 3 and 4
 \end{frame}
 
 
+\begin{frame}{Supplemet 5: Mass-inclination degeneracy}
+ 
+\end{frame}
 
 
 
