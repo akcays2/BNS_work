@@ -149,6 +149,7 @@
 \begin{frame}{Outline}
 \begin{itemize}
  \item Motivation
+ \item Gamma-ray bursts
  \item Gravitational waves
  \item Binary neutron star inspirals
  \item Gravitational-wave detectors
@@ -161,21 +162,34 @@
 
 
 \begin{frame}{Motivation: Multi-messenger Astronomy}
-\begin{itemize}
- \item \emph{Multi}: two fundamentally different waves from common events.
- \item[]\quad Gravitational waves (GWs): ``hearing''  the universe.
- \item[]\quad Electromagnetic waves (EWs): ``seeing'' the universe.
- \item \red{GW170817}-\bl{GRB170817A}-\textcolor{brown}{AT2017gfo}: the ``event'' \\
- \quad inspiral + merger of two neutron stars (GWs) \\
- \ \ = short-hard gamma-ray burst + kilonova (EWs)
- \item[] Broad-band in gravitational waves: 10Hz - 2000Hz
- \item[] Ultra broad-band in electromagnetic waves: gamma rays to radio.
- \item A simple question \\
-{\small ``What can we offer to the astronomy community with future GW detections?''}
- \end{itemize}
+  \begin{itemize}
+    \item \emph{Multi}: two fundamentally different waves from common events.
+    \item[]\quad Gravitational waves (GWs): ``hearing''  the universe.
+    \item[]\quad Electromagnetic waves (EWs): ``seeing'' the universe.
+    \item \red{GW170817}-\bl{GRB170817A}-\textcolor{brown}{AT2017gfo}: the ``event'' \\
+    \quad inspiral + merger of two neutron stars (GWs) \\
+    \ \ = short-hard gamma-ray burst + kilonova (EWs)
+    \item[] Broad-band in gravitational waves: 10Hz - 2000Hz
+    \item[] Ultra broad-band in electromagnetic waves: gamma rays to radio.
+    \item A simple question \\
+    {\small ``What can we offer to the astronomy community with future GW detections?''}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Gamma-ray bursts}{Most energetic explosions in the universe}
+ \todo{Use Pawan's slides}\\
+ Brief history: spy satellites ...\\
+ Two main types, short long,  etc.
+ 
+\end{frame}
 
 
- \end{frame}
+\begin{frame}{Neutron Stars}{Most extreme stars in the universe}
+  Stellar evolution -> white dwarf, NS -> BH \\
+  Density, mass, radius, spin, nuclear equation of state\\
+  Tea spoon of neutron star matter trillion tons
+\end{frame}
+
 
  
 \begin{frame}{Gravitational waves: Einstein 1916}
@@ -191,7 +205,7 @@
           \begin{itemize}
  \item  \uncover<3->{Spacetime metric $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$, \quad with $| h_{\mu\nu} | \ll 1$.}
  \item  \uncover<4->{Insert into $G_{\mu\nu} = 0$. Keep only $\mathcal{O}(h)$. Pick a gauge.} %(e.g. Lorenz).}
-  \uncover<5->{\[ \Rightarrow\quad \Box \bar{h}_{\mu\nu}= 0, \quad \text{wave equation!} \]}
+  \uncover<5->{\[ \Rightarrow\quad \boxed{\Box \bar{h}_{\mu\nu}= 0}, \quad \text{wave equation!} \]}
   \item \uncover<6->{\alert{Plane-waves:} $ \bar{h}_{\mu\nu} = \Re\left[A_{\mu\nu}\, \text{e}^{i k_\mu x^\mu}\right] =\Re\left[A_{\mu\nu}\, \text{e}^{-i\omega (t-z/c )}\right]$.}
  \end{itemize}
 \end{frame}
@@ -207,52 +221,32 @@ $A_{\mu\nu} $ is the polarization tensor.
 \uncover<7->{\quad \ Consistent with $\pm 2$ helicities of a \bl{massless} spin 2 boson.\\}
 \uncover<8->{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): \uncover<10->{$\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$}}
 \\
-\todo{Replace with Maggiore's discussion?}
-{\begin{center} \includegraphics[height=2.79875cm]{figs/white_box.png}\end{center}}
-\end{frame}
- 
- 
-
-\begin{frame}{Gravitational waves: d.o.f.'s}
-%\begin{center}
-%\animategraphics[loop,controls,width=3cm]{12}{GWs_frame-}{0}{29} 
-%\end{center}
-$A_{\mu\nu} $ is the polarization tensor.
-\begin{itemize}
-{\item $\{ \bar{h}_{\mu\nu}, A_{\mu\nu} \}$: $4\times4$, symmetric {$\hspace{1.5cm}\Rightarrow \f{4\times 5}{2}\ \ \ = 10$ d.o.f.}}
- {\item Gauge condition: $\nabla_\mu \bar{h}^{\mu\nu} =  A_{\mu\nu} k^\nu= 0${ $\Rightarrow10-4 = \,6$ d.o.f.}}
- {\item Residual gauge freedom \hspace{2.25cm}{ $\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
- %{\vspace{2mm}\begin{center}$ \bar{h}'_{\mu\nu} = \bar{h}_{\mu\nu} - \xi_{\mu,\nu} - \xi_{\nu,\mu} + \eta_{\mu\nu} \nabla_\alpha \xi^\alpha . $ \end{center}\vspace{2mm}}
-\end{itemize}
-{\quad \ Consistent with $\pm 2$ helicities of a \bl{massless} spin 2 boson.\\}
-{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): {$\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$}}
-\\
-\todo{Replace with Maggiore's discussion?}
-{\begin{center} \animategraphics[loop,controls,height=2.4cm]{12}{GWs_plus-}{0}{20} \hspace{1cm} \animategraphics[loop,controls,height=2.4cm]{12}{GWs_cross-}{0}{20}\end{center}}
-\end{frame}
-
-\begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
- \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\% (BICEP 2).\\
- \uncover<2->{Gravitational-wave luminosity: \uncover<3->{\alert{quadrupole} radiation}  (leading-order)}
- \uncover<3->{\begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\\vspace{2mm}}
- \uncover<4->{\begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}}
- \uncover<5->{{\bf Binary systems:} 2 points masses in circular orbit. }
- 
-\end{frame}
-
-\begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
- \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
- Gravitational-wave luminosity: \alert{quadrupole} radiation (leading-order)
- \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\ \vspace{2mm}
- \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
- {\bf Binary systems:} 2 points masses in circular orbit.\todo{$R\to r$ in vid}
- \begin{tikzpicture}[overlay,remember picture]
-\onslide<5->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.4cm]{12}{Circ_Orb-}{0}{20}};
-\onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-1.3cm)}]current page.center) {$\mu=m_1 m_2/M^2,\ x(t) = r \cos\Omega t, \ y(t) = r \sin\Omega t $};
-\onslide<3->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(2.25cm,-2.2cm)}]current page.center) {$ Q^{ij} =  2 M\, x^i x^j, \qquad \boxed{\dot{E} = \f{32}{5}\f{G\mu^2}{c^5}r^4 \Omega^6}$};
-\onslide<4->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to \bl{$e$} (Peters \& Mathews).};
-\onslide<5->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-4cm)}]current page.center) {$ \bl{\f{\left(1 + \f{73}{24}e^2+ \f{37}{96} e^4 \right)}{(1-e^2)^{7/2}}}$};
+\begin{tikzpicture}[overlay,remember picture]
+\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.5cm,-2.5cm)}]current page.center) {\animategraphics[loop,controls,height=2.6cm]{12}{GWs_plus-}{0}{20}};
+\node (img1 )[anchor=center,scale=1.,opacity=1] at ([shift={(3.5cm,-2.5cm)}]current page.center) {\animategraphics[loop,controls,height=2.6cm]{12}{GWs_cross-}{0}{20}};
 \end{tikzpicture}
+\end{frame} 
+
+
+
+
+ 
+
+
+\begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
+  \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
+  Gravitational-wave luminosity: \alert{quadrupole} radiation (leading-order)
+  \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
+  \vspace{2mm}
+  \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
+  \onslide<2->{{\bf Binary systems:} 2 points masses in circular orbit.}
+  \begin{tikzpicture}[overlay,remember picture]
+    \onslide<5->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.7cm)}]current page.center) {\animategraphics[loop,controls,height=2.9cm]{12}{Circ_Orb-}{0}{20}};
+    \onslide<3->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-1.3cm)}]current page.center) {$\mu=m_1 m_2/M^2,\ x(t) = r \cos\Omega t, \ y(t) = r \sin\Omega t $};
+    \onslide<4->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(2.25cm,-2.2cm)}]current page.center) {$ Q^{ij} =  2 M\, x^i x^j, \qquad \boxed{\dot{E} = \f{32}{5}\f{G\mu^2}{c^5}r^4 \Omega^6}$};
+    \onslide<5->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to \bl{$e$} (Peters \& Mathews).};
+    \onslide<6->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-4cm)}]current page.center) {$ \bl{\f{\left(1 + \f{73}{24}e^2+ \f{37}{96} e^4 \right)}{(1-e^2)^{7/2}}}$};
+  \end{tikzpicture}
 \end{frame}
 
 
@@ -262,34 +256,48 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 
 
- \begin{frame}{Compact Binary Inspirals}
- Notation:
- \begin{itemize}
-  \item $\red{f} $: GW frequency, \hspace{1.5cm} $\Longrightarrow\quad \omega\equiv2\pi f = 2\Omega$.
-  %\item $\omega\equiv2\pi f = 2\Omega$: GW angular frequency.
-  \item $t$: observer/detector time \quad$ \Longrightarrow\quad\dot{Y}= dY/dt$.
- \end{itemize}
-
-  Assumptions:
+\begin{frame}{Compact Binary Inspirals}
+  \vspace{-3mm}
+  Notation:
   \begin{itemize}
-   \item Quasi-circular orbits: $e \ll 1$ and $\tfrac{|\dot{r}|}{r\Omega} <10^{-3} $ at $f=100\,$Hz.
-   \item Quadrupolar GWs only: higher modes suppressed by $\tfrac{m_1-m_2}{M}\tfrac{v^2}{c^2}$
-   \item Use Newtonian/post-Newtonian theory ($\le$3.5{\bf PN}).
-   \item Terminate inspiral at Schwarzschild ISCO \todo{add ISCO curve?}
-   \begin{footnotesize}
-   \[f_\text{ISCO} = \f{c^3}{6^{3/2}\pi G M} \simeq 1571\,\text{Hz}\, \left(\f{2.8M_\odot}{M}\right)\] 
-   \end{footnotesize}
-   \end{itemize}
-   %
-   For binary neutron stars ({\bf BNS})
-   \begin{itemize}
-   \item Point masses: tidal effects for $f \gtrsim 100\,$Hz
-   \item Set $m_1 =m_2 = 1.4 M_\odot$, constraints: $1.2 M_\odot \lesssim m_\text{NS}\lesssim 1.6M_\odot$.
-   \item Neglect spins: spin-orbit $\tfrac{\dot{E}_\text{SO}}{\dot{E}} \sim \tfrac{v_s}{c}\tfrac{v}{c}\tfrac{R_\text{NS}}{r}$, spin-spin $\sim \tfrac{v^4}{c^4}$
-   \end{itemize}
-  
-
- \end{frame}
+    \item $\red{f} $: GW frequency, \hspace{1.5cm} $\Longrightarrow\quad \omega\equiv2\pi f = 2\Omega$.
+    %\item $\omega\equiv2\pi f = 2\Omega$: GW angular frequency.
+    \item $\red{t}$: observer/detector time \quad$ \Longrightarrow\quad\dot{Y}= dY/dt$.
+  \end{itemize}
+  \onslide<2->
+  {
+    Assumptions:
+    \begin{itemize}
+      \item \bl{Quasi-circular} orbits: $e \ll 1$ and $\tfrac{|\dot{r}|}{r\Omega} <10^{-3} $ at $f=100\,$Hz.
+      \item \bl{Quadrupolar} GWs only: higher modes suppressed by $\tfrac{m_1-m_2}{M}\tfrac{v^2}{c^2}$
+      \item Use Newtonian/post-Newtonian theory ($\le$3.5{\bf PN}).
+      \item \red{Terminate} inspiral at Schwarzschild \red{ISCO} 
+      \begin{footnotesize}
+      \begin{align*}
+      f_\text{ISCO} &= \f{c^3}{6^{3/2}\pi G M} \simeq \bl{1571}\,\text{Hz}\, \left(\f{2.8M_\odot}{M}\right)\hspace{2cm}\\ 
+      r_\text{ISCO} &\simeq 25\,\text{km}\left(\frac{M}{2.8 M_\odot}\right)
+      \end{align*}
+      \end{footnotesize}
+    \end{itemize}
+   } 
+  %
+  \onslide<3->
+  {
+    \vspace{1mm}
+    For binary neutron stars ({\bf BNS})
+    \begin{itemize}
+      \item Point masses: tidal effects for $f \gtrsim 100\,$Hz
+      \item Set $m_1 =m_2 = 1.4 M_\odot$, constraints: $1.2 M_\odot \lesssim m_\text{NS}\lesssim 1.6M_\odot$.
+      \item Neglect spins: spin-orbit $\tfrac{\dot{E}_\text{SO}}{\dot{E}} \sim \tfrac{v_s}{c}\tfrac{v}{c}\tfrac{R_\text{NS}}{r}$, spin-spin $\sim \tfrac{v^4}{c^4}$
+    \end{itemize}
+  }
+  \onslide<2->
+  {
+    \begin{tikzpicture}[overlay,remember picture]
+    \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(4.4cm,-1.5cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/OrbitPotential.pdf}};    
+    \end{tikzpicture}
+  }  
+\end{frame}
 
 
 \begin{frame}{Compact Binary Inspirals}{Newtonian evolution}
@@ -318,7 +326,8 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 \end{frame}
 
-\begin{frame}{Compact Binary Inspirals}{Inspiral time \todo{Add $r(t)$ plot? }}
+\begin{frame}{Compact Binary Inspirals}
+\vspace{-3mm}
 Integrate $\dot{f} \sim f^{11/3} \quad \Longrightarrow \quad \int dt \sim \int f^{-11/3}df \quad\Rightarrow\quad t \sim \red{f^{-8/3}}$
 \\
 \vspace{1mm}
@@ -326,55 +335,66 @@ Fix integration constant $\tau = t_\text{coal} - t >0$. \\
 \vspace{2mm}
 Introduce \red{inspiral time}, i.e, time to BNS \bl{coal}escence
 %
+\begin{small}
 \begin{align}
  \red{\tau_\text{insp}(f)} %&= \f{5}{256\pi}\f{c^5}{(\pi G M_c)^{5/3}} \,{f^{-8/3}}\nn\\
- &\simeq \bl{16.72\,\text{minutes}} \, \left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\,{\left(\f{10\,\text{Hz}}{\red{f}}\right)^{\red{8/3}}\quad \red{(2)}}\nn
+ &\simeq \bl{16.72\,\text{minutes}} \, \left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\,{\left(\f{10\,\text{Hz}}{\red{f}}\right)^{\red{8/3}}\quad \red{(2)}}\nn\hspace{2cm}
 \end{align}
+\end{small}
 Number of GW cycles to coalescence: $\int \tfrac{f}{\dot{f}}df\sim \red{f^{-5/3}}$ %$\int df {f}/\dot{f}$
+\begin{small}
 \begin{align}
  \red{\mathcal{N}_\text{cyc}(f)} %&=\f{1}{32\pi} \f{c^5}{(\pi G M_c)^{5/3}}\left[ f^{-5/3}-f_\text{max}^{-5/3}\right]\nn \\
- &\approx 1.605\times \bl{10^4}\,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}{ \left(\f{10\,\text{Hz}}{\red{f}} \right)^{\red{5/3}}}\quad \red{(3)}\nn
+ &\approx 1.605\times \bl{10^4}\,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}{ \left(\f{10\,\text{Hz}}{\red{f}} \right)^{\red{5/3}}}\quad \red{(3)}\nn\hspace{3.2cm}
 \end{align}
+\end{small}
 %
 \begin{tikzpicture}[overlay,remember picture]
-\node[draw, red,thick,minimum width=8.2cm,minimum height=1.3cm] (b) at (7.,3.35){};
-\node[draw, red,thick,minimum width=10cm,minimum height=1.3cm] (b) at (6.2,1){};
+  \node[draw, red,thick,minimum width=9.2cm,minimum height=1.3cm] (b) at (5.,3.35){};
+  \node[draw, red,thick,minimum width=9cm,minimum height=1.3cm] (b) at (4.4,1){};
+  \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.9cm,-3.2cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/R_of_Tau.pdf}};
 \end{tikzpicture}
 %
 \[ 
-\tfrac{\dot{r}}{r}\sim \tfrac{\dot{f}}{f} \Longrightarrow \red{r(\tau)}=r_i \left(\f{\red{\tau}}{\tau_i}\right)^{\red{1/4}}
+\tfrac{\dot{r}}{r}\sim \tfrac{\dot{f}}{f} \Longrightarrow \red{r(\tau)}=r_i \left(\f{\red{\tau}}{\tau_i}\right)^{\red{1/4}} \hspace{4cm}
 \]
 
 \end{frame}
 
 \begin{frame}{Gravitational waves from BNS}
-TT gauge, multipole, slow-velocity expansions give \todo{add suppl. slide}
-\begin{small}
-\[
- h_{ij}^\text{TT} = \tfrac{2}{D}\tfrac{G}{c^4} \ddot{Q}_{ij}^\text{TT}%(t-z/c)
-\]
-%
- \begin{align*}
- h_+(t) &= h_c(t)\, \left(\f{1+\cos^2\iota}{2}\right)\, \cos[\Phi(t)],\\
- h_\times(t) & =h_c(t)\,\cos\iota \sin[\Phi(t)],
-\end{align*}
-\end{small}
-%
-%
-$\iota =\,$ orbital \bl{inclination}, and
-\vspace{-3mm}
-%
-\begin{small}
-\begin{align*}
-h_c(t) %&=\f{4}{D}\left(\f{G M_c}{c^2}\right)^{5/3}\, \left(\f{\pi f(t)}{c}\right)^{2/3}\nn\\
-&\approx 1.9\times \bl{10^{-23}} \left(\f{40\,\text{Mpc}}{D}\right)\left(\f{M_c}{1.219 M_\odot}\right)^{5/3}\left(\frac{\red{f}}{10\,\text{Hz}}\right)^{\red{2/3}} \nn\\
-\Phi(t) &=\int_{t_i}^t dt' \omega(t') + \text{PN corrections}
-\end{align*}
-\end{small}\\
-%
-Frequency increases as $f^{11/3}$\\
-Amplitude increases as $f^{10/3} \Longrightarrow$ \red{Chirp!} \todo{Insert chirp movie}
-
+  TT gauge, multipole, slow-velocity expansions give \todo{add suppl. slide}
+  \begin{small}
+    \[
+    h_{ij}^\text{TT} = \tfrac{2}{D}\tfrac{G}{c^4} \ddot{Q}_{ij}^\text{TT}%(t-z/c)
+    \]
+    %
+    \vspace{-5mm}
+    \begin{align*}
+    h_+(t) &= h_c(t)\, \left(\f{1+\cos^2\iota}{2}\right)\, \cos[\Phi(t)],\\
+    h_\times(t) & =h_c(t)\,\cos\iota \sin[\Phi(t)],
+    \end{align*}
+  \end{small}
+  %
+  %
+  $\iota =\,$ orbital \bl{inclination}, and
+  \vspace{-3mm}
+  %
+  \begin{small}
+    \begin{align*}
+    h_c(t) %&=\f{4}{D}\left(\f{G M_c}{c^2}\right)^{5/3}\, \left(\f{\pi f(t)}{c}\right)^{2/3}\nn\\
+    &\approx 1.9\times \bl{10^{-23}} \left(\f{40\,\text{Mpc}}{D}\right)\left(\f{M_c}{1.219 M_\odot}\right)^{5/3}\left(\frac{\red{f}}{10\,\text{Hz}}\right)^{\red{2/3}} \nn\\
+    \Phi(t) &=\int_{t_i}^t dt' \omega(t') + \text{PN}
+    \end{align*}
+  \end{small}\\
+  %
+  Frequency increases as $f^{11/3}$\\
+  Amplitude increases as $f^{10/3} $
+  %
+  %
+  \begin{tikzpicture}[overlay,remember picture]
+    \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(2.7cm,-3.2cm)}]current page.center) {\includegraphics[height=2.5cm]{figs/Chirp.pdf}};
+     \node[anchor=center,scale=1.4,opacity=1] at ([shift={(1cm,-2.4cm)}]current page.center) {\href{https://www.youtube.com/watch?v=CH9JSqUfnSw}{\red{Chirp!}}};
+  \end{tikzpicture}
 \end{frame}
 
 
@@ -409,6 +429,7 @@ s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
 \end{small}
 %
 \begin{tikzpicture}[overlay,remember picture]
+ \node[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-3.4cm)}]current page.center){\todo{Make sure the vid here works}} ;
 %\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.39cm]{12}{LIGO_int-}{0}{102}};
 \end{tikzpicture}
  \end{frame}
@@ -468,7 +489,7 @@ s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
   \begin{tikzpicture}[overlay,remember picture]
   \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(4.4cm,-1.cm)}]current page.center) {\includegraphics[height=3cm]{figs/gr_qc_12013563.png}};
    \node (img1 )[anchor=center,scale=1,opacity=1] at ([shift={(0.4cm,-2.5cm)}]current page.center) {\includegraphics[height=4cm]{../Figures/ET_no_blind_spots.pdf}};
-   \node[anchor=center,scale=0.5,opacity=1] at ([shift={(5cm,0.4cm)}]current page.center) {Phys. Rev. D 86, 122001 };
+    \node[anchor=center,scale=0.5,opacity=1] at ([shift={(5cm,0.4cm)}]current page.center) {Phys. Rev. D 86, 122001 };
   \end{tikzpicture}
 
    
@@ -484,60 +505,73 @@ s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
 \\
 \end{footnotesize}
 $\sqrt{S_n(f)}\equiv$ {\it amplitude spectral density} ({\bf ASD}) or  detector noise
-
-For compact binary inspirals, $\tilde{h}(f) \sqrt{f} \sim f^{-7/6} f^{1/2} = \red{f^{-2/3}}$
+\\
+\vspace{3mm}
+Recall, $\tilde{h}(f) \sqrt{f} \sim f^{-7/6} f^{1/2} = \red{f^{-2/3}}$
 \begin{footnotesize} 
 \[
  \rho^2 =  (2A)^2 h_0^2 |Q(\theta,\phi,\psi,\iota)|^2 \int_0^{\bl{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)} 
 \]
 \end{footnotesize}
 %
-RMS \red{average} over the angles $ \langle \ldots \rangle \equiv \int \sin\theta d\theta d\phi \int d\psi \int\sin\iota d\iota $
+RMS \red{average} over the angles 
+\begin{small}
+$ \langle \ldots \rangle \equiv \int \sin\theta d\theta d\phi \int d\psi \int\sin\iota d\iota $
+\end{small}
 \begin{footnotesize} 
 \[
  \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_\llcorner = \f{4}{25}, \qquad \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_\triangle = \f{9}{25}
 \]
 \end{footnotesize}
-Our Network: \red{three L}-IFOs: 
+%
+Sources will have random $\{\theta,\phi,\psi,\iota\}$ \\
+\begin{footnotesize} 
+\[
+0 \le Q(\theta,\phi,\psi,\iota) \le \underbrace{Q(\theta=\tfrac{\pi}{2},\phi,\psi=0,\iota=0)}_{Q_\text{max}}
+\]
+\end{footnotesize}
+% 
+\end{frame}
+
+\begin{frame}{L-IFO vs. $\bigtriangleup$-IFO Networks}
+\red{Three L}-IFOs, e.g., LIGO L1, H1 + Virgo
+%
 \begin{footnotesize} 
 \begin{align*}
-\rho_\text{tot} &= \left[{\sum_{i=1}^3 \rho^2_i}\right]^{1/2} =\left[ \rho_h^2 + \rho_m^2 + \rho^2_l \right]^{1/2} 
-	= \boxed{\rho_c\left[\tilde{A}_h^2 + \tilde{A}_m^2 + \tilde{A}_l^2 \right]^{1/2}}\\
-\rho_c &\equiv 2 h_0 \left[ \int_0^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2}, \quad \tilde{A}_h = \tfrac{4}{5}A, \quad \tilde{A}_m =\tfrac{2}{5}A, \quad \tilde{A}_l  < \tfrac{\tilde{A}_m}{2}
+\rho_{\text{tot},\llcorner} &= \left[{\sum_{i=1}^3 \rho^2_i}\right]^{1/2} =\left[ \rho_h^2 + \rho_m^2 + \rho^2_l \right]^{1/2} 
+	= {\rho_c\left[\tilde{A}_h^2 + \tilde{A}_m^2 + \tilde{A}_l^2 \right]^{1/2}}\\
+\rho_c &\equiv 2 h_0 \left[ \int_0^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2}, \quad \left\{ \tilde{A}_h = \tfrac{4}{5}A,  \tilde{A}_m =\tfrac{2}{5}A,  \tilde{A}_l  < \tfrac{\tilde{A}_m}{2}\right\}
 \end{align*}
 \end{footnotesize}
 %
 \begin{tikzpicture}[overlay,remember picture]
-\node[draw, red,thick,minimum width=4.5cm,minimum height=1.25cm] (b) at (3.3,0.7){};
+\node[draw, red,thick,minimum width=3.5cm,minimum height=0.8cm] (b) at (8.8,1.9){};
 \end{tikzpicture}
-%
-% 
-\end{frame}
-
-\begin{frame}{Detection criteria}{Triangular topology SNR}
-%\vspace{-5mm}
-\red{Three V-}IFOs
+\\
+%\vspace{2mm}
+$\bigtriangleup$ = \red{Three V-}IFOs: Einstein Telescope
 \begin{footnotesize} 
 \[
- \rho^2_{\text{tot},\bigtriangleup} = \sum_{A=1}^3 \left(\rho^A\right)^2  =  4 A^2 h_0^2\,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 \int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
+ \rho^2_{\text{tot},\bigtriangleup} = \sum_{A=1}^3 \left(\rho^A\right)^2  =  A^2 \rho_c^2 \,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 %\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
 \]
 \end{footnotesize}
 \\
 Use \bl{RMS-averaged} $|Q|^2$
 \begin{footnotesize}
 \begin{align*}
-\rho_{\text{tot},\bigtriangleup} &= \left[ \int_0^\infty d\ln f\, \f{|{2\tilde{H}_\bigtriangleup(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
-=\f{6}{5}A\, h_0 \left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \\
+\rho_{\text{tot},\bigtriangleup} %&= \left[ \int_0^\infty d\ln f\, \f{|{2\tilde{H}_\bigtriangleup(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
+&=\f{6}{5}A\, h_0 \left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \\
 \end{align*}
 \end{footnotesize}
 \\
-where \begin{small}$\tilde{H}_\bigtriangleup(f)\equiv A\,  \langle |Q|^2_\bigtriangleup\rangle\, h_0 f^{-7/6}= \f{3}{5} A h_0 f^{-7/6}$ \end{small}\\
-\vspace{2mm}
+%where \begin{small}$\tilde{H}_\bigtriangleup(f)\equiv A\,  \langle |Q|^2_\bigtriangleup\rangle\, h_0 f^{-7/6}= \f{3}{5} A h_0 f^{-7/6}$ \end{small}\\
+\vspace{-5mm}
 Compare with three-L network's \begin{small}$\rho_\text{tot} \approx \tfrac{4}{5}A\, h_0 \left[ \int df \ldots \right]^{1/2} $ \end{small}
+\vspace{10mm}
 %
 %
 \begin{tikzpicture}[overlay,remember picture]
-\node[draw, red,thick,minimum width=4.5cm,minimum height=1.25cm] (b) at (-0.2,2.5){};
+\node[draw, red,thick,minimum width=5.5cm,minimum height=1.25cm] (b) at (-3.2,1.05){};
 \end{tikzpicture}
 %
 % 
@@ -608,3 +642,10 @@ Consider mirrors at $\mathbf{x}=x_1$ and at $\mathbf{x}=x_2=x_1+\mathbf{\xi}$
 \end{document}
 
 
+\begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
+ \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\% (BICEP 2).\\
+ \uncover<2->{Gravitational-wave luminosity: \uncover<3->{\alert{quadrupole} radiation}  (leading-order)}
+ \uncover<3->{\begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\\vspace{2mm}}
+ \uncover<4->{\begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}}
+ \uncover<5->{{\bf Binary systems:} 2 points masses in circular orbit. }
+ \end{frame}
