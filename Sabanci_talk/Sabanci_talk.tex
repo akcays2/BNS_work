@@ -475,11 +475,73 @@ s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
 \end{frame}
 
 
-\begin{frame}{Optimal Signal-to-Noise Ratio}
- RMS Average over the angles \\
- Then introduce SNR for both LIGO and ET
+\begin{frame}{Detection criteria}{Optimal Signal-to-Noise Ratio {\bf SNR}}
+\vspace{-5mm}
+\begin{footnotesize} 
+\[
+ \rho=\left[ \int_0^\infty d\ln f\, \f{|\red{2\tilde{h}(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
+\]
+\\
+\end{footnotesize}
+$\sqrt{S_n(f)}\equiv$ {\it amplitude spectral density} ({\bf ASD}) or  detector noise
+
+For compact binary inspirals, $\tilde{h}(f) \sqrt{f} \sim f^{-7/6} f^{1/2} = \red{f^{-2/3}}$
+\begin{footnotesize} 
+\[
+ \rho^2 =  (2A)^2 h_0^2 |Q(\theta,\phi,\psi,\iota)|^2 \int_0^{\bl{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)} 
+\]
+\end{footnotesize}
+%
+RMS \red{average} over the angles $ \langle \ldots \rangle \equiv \int \sin\theta d\theta d\phi \int d\psi \int\sin\iota d\iota $
+\begin{footnotesize} 
+\[
+ \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_\llcorner = \f{4}{25}, \qquad \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_\triangle = \f{9}{25}
+\]
+\end{footnotesize}
+Our Network: \red{three L}-IFOs: 
+\begin{footnotesize} 
+\begin{align*}
+\rho_\text{tot} &= \left[{\sum_{i=1}^3 \rho^2_i}\right]^{1/2} =\left[ \rho_h^2 + \rho_m^2 + \rho^2_l \right]^{1/2} 
+	= \boxed{\rho_c\left[\tilde{A}_h^2 + \tilde{A}_m^2 + \tilde{A}_l^2 \right]^{1/2}}\\
+\rho_c &\equiv 2 h_0 \left[ \int_0^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2}, \quad \tilde{A}_h = \tfrac{4}{5}A, \quad \tilde{A}_m =\tfrac{2}{5}A, \quad \tilde{A}_l  < \tfrac{\tilde{A}_m}{2}
+\end{align*}
+\end{footnotesize}
+%
+\begin{tikzpicture}[overlay,remember picture]
+\node[draw, red,thick,minimum width=4.5cm,minimum height=1.25cm] (b) at (3.3,0.7){};
+\end{tikzpicture}
+%
+% 
 \end{frame}
 
+\begin{frame}{Detection criteria}{Triangular topology SNR}
+%\vspace{-5mm}
+\red{Three V-}IFOs
+\begin{footnotesize} 
+\[
+ \rho^2_{\text{tot},\bigtriangleup} = \sum_{A=1}^3 \left(\rho^A\right)^2  =  4 A^2 h_0^2\,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 \int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
+\]
+\end{footnotesize}
+\\
+Use \bl{RMS-averaged} $|Q|^2$
+\begin{footnotesize}
+\begin{align*}
+\rho_{\text{tot},\bigtriangleup} &= \left[ \int_0^\infty d\ln f\, \f{|{2\tilde{H}_\bigtriangleup(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
+=\f{6}{5}A\, h_0 \left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \\
+\end{align*}
+\end{footnotesize}
+\\
+where \begin{small}$\tilde{H}_\bigtriangleup(f)\equiv A\,  \langle |Q|^2_\bigtriangleup\rangle\, h_0 f^{-7/6}= \f{3}{5} A h_0 f^{-7/6}$ \end{small}\\
+\vspace{2mm}
+Compare with three-L network's \begin{small}$\rho_\text{tot} \approx \tfrac{4}{5}A\, h_0 \left[ \int df \ldots \right]^{1/2} $ \end{small}
+%
+%
+\begin{tikzpicture}[overlay,remember picture]
+\node[draw, red,thick,minimum width=4.5cm,minimum height=1.25cm] (b) at (-0.2,2.5){};
+\end{tikzpicture}
+%
+% 
+\end{frame}
 
 
 
