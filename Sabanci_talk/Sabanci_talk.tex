@@ -177,10 +177,28 @@
 \end{frame}
 
 \begin{frame}{Gamma-ray bursts}{Most energetic explosions in the universe}
- \todo{Use Pawan's slides}\\
- Brief history: spy satellites ...\\
- Two main types, short long,  etc.
- 
+\begin{small}
+    \begin{itemize}
+      \item Discovered by Vela satellites in 1967
+      \uncover<2->\item Non-thermal spectrum: $10-10^4\,$keV
+      \uncover<3->{\item Highly energetic $10^{48}-10^{52}\,$ergs 
+      \item 1000s detected, $\sim 1$ per day}
+      \uncover<4->\item Far away: $z\approx 9.4 \sim 13\,$billion light years!
+      \uncover<5->\item Afterglow from X-rays to radio \\
+      over timescales of hours to months
+      \uncover<6->\item Two types: short and long
+      \uncover<7->{\item Short GRBs:\\ 
+      mergers of binary neutron stars\\
+      \red{GW170817}-\bl{GRB170817A}}
+    \end{itemize}
+  \end{small}
+  \begin{tikzpicture}[overlay,remember picture]
+      \onslide<2>\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.9cm,1.4cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/GRB_spectrum.jpg}};    
+      \onslide<3>\node (img1 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.8cm,0.9cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/Fermi_GRB_sky2.png}};  
+      \onslide<4>\node (img2 )[anchor=center,scale=1,opacity=1] at ([shift={(3.6cm,-0.15cm)}]current page.center) {\includegraphics[height=3.8cm]{figs/GRB_vs_redshift.png}};  % from:1401.5069
+      \onslide<5>\node (img3 )[anchor=center,scale=1,opacity=1] at ([shift={(3.4cm,-1.5cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/GRB_afterglow.jpg}}; 
+      \onslide<6>\node (img4 )[anchor=center,scale=1,opacity=1] at ([shift={(3.2cm,-2.5cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/GRB_burst_durations.jpg}};    
+    \end{tikzpicture}
 \end{frame}
 
 
