@@ -680,8 +680,76 @@ Compare with three-L network's \begin{small}$\rho_\text{tot} \approx \tfrac{4}{5
 \end{frame}
 
 \begin{frame}{Case study: GW170817}
- 
+\begin{itemize}
+  \item 17 August 2017, signal swept from $f\approx 30\,$Hz to $2000\,$Hz 
+  \item The event lasted $\approx 57\,$seconds, $\approx 3000$ GW cycles, $\rho_\text{tot} = 32.4$
+  \item Followed by GRB170817A 1.7 seconds later
+  \item Rapid localization using L1-H1-V1 $\sim 30\,\text{deg}^2$
+  \item Optical counterpart in NGC 4993 11 hours later
+\end{itemize}  
+
+  \begin{columns}
+  \begin{column}{0.5\textwidth}  %%<--- here
+      \begin{center}
+      \includegraphics[height=4cm]{figs/GW_GRB170817.jpg}
+      \end{center}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+  %
+    Assuming low spin priors\\
+    $ M=2.73^{+0.04}_{-0.01} M_\odot$ \\
+    $ M_c =1.186^{+0.001}_{-0.001}M_\odot $ \\ 
+    $ D=40.7^{+2.36}_{-2.36}\text{Mpc} $ \\
+    \red{Note:} $M_c$ has the best precision: 
+  \begin{small}${\dot{f}} = \f{96}{5}\pi^{8/3} \left(\tfrac{G M_c}{c^3}\right)^{5/3}\, {f^{11/3}}$ \end{small}
+    
+    \end{column}
+  \end{columns} 
+  
+  
+
 \end{frame}
+
+\begin{frame}{Case study: GW170817}  {Let's put our knowledge to the \red{test}}
+\vspace{-7mm}
+  \begin{footnotesize}
+    \begin{align*}
+      &\tau_\text{insp}^{0\text{PN}} \simeq 55.91\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \simeq 2680 \hspace{2cm} (M=2.74 M_\odot) \\
+      &\tau_\text{insp}^{3.5\text{PN}} \simeq 56.65\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{3.5\text{PN}} \simeq 2711 \hspace{2cm} (f_\text{ISCO}\simeq 1605\,\text{Hz}) 
+    \end{align*}
+  \end{footnotesize}
+  What about the SNR? \quad
+  \begin{small}$\rho_{\text{tot},\llcorner}  = {\bar\rho_c(f_0)\left[\tilde{A}_h^2 + \tilde{A}_m^2 + \tilde{A}_l^2 \right]^{1/2}}$   
+  \end{small}
+  %
+  
+%
+\begin{tikzpicture}[overlay,remember picture]
+    \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-2cm,-2.cm)}]current page.center) {\includegraphics[height=5cm]{../Figures/GW170817_strains.pdf}};
+    \onslide<1->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-0.3cm)}]current page.center) 
+    {\begin{footnotesize} 
+      $   \bar\rho_c(\red{f_0}) \equiv 2 h_0 \left[ \int_{\red{f_0}}^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2} $      
+    \end{footnotesize}}; 
+    \onslide<1->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-1.3cm)}]current page.center) 
+    {\begin{footnotesize} 
+      $ \left\{ \tilde{A}_h = \tfrac{4}{5}A,  \tilde{A}_m =\tfrac{2}{5}A,  \tilde{A}_l  < \tfrac{\tilde{A}_m}{2}\right\}$    
+    \end{footnotesize}};  
+    \onslide<1->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-2.3cm)}]current page.center) 
+    {\begin{footnotesize} 
+      $\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 $    
+    \end{footnotesize}}; 
+    \onslide<1->\node (t4 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-2.6cm)}]current page.center) 
+    {\begin{footnotesize} 
+      $\bar\rho_\text{L1} = 26.4 \quad 18.8 \quad 2.0 $    
+    \end{footnotesize}};
+    \onslide<1->\node (t4 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-2.6cm)}]current page.center) 
+    {\begin{footnotesize} 
+      $\rho_\text{tot} = 32.6 $    
+    \end{footnotesize}};
+  \end{tikzpicture}
+\end{frame}
+
+
 
 \begin{frame}{GW Astronomy in the 2020s}
  
@@ -699,6 +767,12 @@ Compare with three-L network's \begin{small}$\rho_\text{tot} \approx \tfrac{4}{5
  \item For $q=1$ due to symmetry only (2,2), (3,2), (4,2), (4,4) are nonzero 
  \item For $q\ne 1$ all $\ell \ge 2$ modes exist, but are much smaller than $(2,2)$
 \end{itemize}
+\begin{align*}
+      x &=1
+	  %
+	  %\\
+	  %
+      \end{align*}
 \end{frame}
 
 
