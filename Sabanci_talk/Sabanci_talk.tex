@@ -1,5 +1,5 @@
-%\documentclass[xcolor=dvipsnames,t]{beamer}
-\documentclass[xcolor=dvipsnames,handout,t]{beamer}
+\documentclass[xcolor=dvipsnames,t]{beamer}
+%\documentclass[xcolor=dvipsnames,handout,t]{beamer}
 % use handout in document class to stop transitions
 
 \mode<presentation>
@@ -39,6 +39,7 @@
 \newcommand{\todo}[1]{\textcolor{orange}{\texttt{TODO: #1}}} 
 \newcommand{\red}[1]{\textcolor{red}{#1}} 
 \newcommand{\bl}[1]{\textcolor{blue}{#1}} 
+
 
 
 \usetikzlibrary{shapes}
@@ -109,6 +110,8 @@
 \newcommand{\es}{\end{small}}
 \newcommand{\parallelsum}{\mathbin{\!/\mkern-5mu/\!}}
 \newcommand{\Lim}[1]{\raisebox{0.5ex}{\scalebox{0.8}{$\displaystyle \lim_{#1}\;$}}}
+\newcommand\T{\rule{0pt}{2.6ex}}       % Top strut for vertical spacing in tables
+\newcommand\B{\rule[-1.2ex]{0pt}{0pt}} % Bottom strut
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 %------------------ for coloured boxes in math modes --------------------
 % Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
@@ -154,7 +157,7 @@
  \item Gravitational waves
  \item Binary neutron star inspirals
  \item Gravitational-wave detectors
- \item Event rates 
+ \item Future detectors, event rates, \red{early warning} prospects
 \end{itemize}
 \todo{finish this slide remove later if short on time}
 
@@ -174,6 +177,7 @@
     \item[] Ultra broad-band in electromagnetic waves: gamma rays to radio.
     \item A simple question \\
     {\small ``What can we offer to the astronomy community with future GW detections?''}
+    Advance warning!
   \end{itemize}
 \end{frame}
 
@@ -502,73 +506,88 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 
  \begin{frame}{GW Detectors: \red{Interferometers}}
-  Two geodesics separated by $\xi^\mu$:
-  %\[
-  % \frac{D^2 \xi^\alpha}{D\tau^2} = -R^\alpha_{\beta \gamma\delta}\, \xi^\gamma u^\beta u^\delta 
-  %\]
-$ \tfrac{d^2 \xi^i}{d\tau^2} = -R^i_{0j0} \xi^j\left(\tfrac{dx^0}{d\tau}\right)^2$ \hfill (detector frame)\\
-%\hspace{4cm} $\Longrightarrow \ddot{\xi^i} = -c^2 R^i_{0j0} \xi^j $ \hfill (detector time)\ \\
-\vspace{-3mm}
-\[
-\hspace{4.5cm} \boxed{\ddot{\xi^i} = \frac{1}{2} \ddot{h}_{ij}^\text{TT} \xi^j} \hspace{2.5cm} \text{(detector time)}
-\]
-%
-%
-GW along $\mathbf{z}$: 
-\[
- h_{ij}^\text{TT} = \left(\begin{array}{cc}
-                           h_+ & h_\times \\
-                           h_\times & - h_+
-                          \end{array}\right) \cos\left(\omega\left( t-\tfrac{z}{c}\right)\right)
-\]
-Consider mirrors at $(0,0)_1, (L,0)_2$ and $(L,L)_3$
-\begin{small}
-\begin{align*}
-  s_{12} &= \int_1^2 \tfrac{ds}{dx}dx = (x_2-x_1) \left[ 1 + h_+ \cos(\omega t)\right]^{1/2}\hspace{4cm} \\
-			      & \approx L \left[ 1+\tfrac{1}{2} h_+ \cos\omega t \right] \\
-s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
-\end{align*}
-\end{small}
-%
-\begin{tikzpicture}[overlay,remember picture]
- \node[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-3.4cm)}]current page.center){\todo{Make sure the vid here works}} ;
-%\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.39cm]{12}{LIGO_int-}{0}{102}};
-\end{tikzpicture}
+    Two geodesics separated by $\xi^\mu$:
+    %\[
+    % \frac{D^2 \xi^\alpha}{D\tau^2} = -R^\alpha_{\beta \gamma\delta}\, \xi^\gamma u^\beta u^\delta 
+    %\]
+    $ \tfrac{d^2 \xi^i}{d\tau^2} = -R^i_{0j0} \xi^j\left(\tfrac{dx^0}{d\tau}\right)^2$ \hfill (detector frame)\\
+    %\hspace{4cm} $\Longrightarrow \ddot{\xi^i} = -c^2 R^i_{0j0} \xi^j $ \hfill (detector time)\ \\
+    \vspace{-3mm}
+    \[
+    \hspace{4.5cm} \boxed{\ddot{\xi^i} = \frac{1}{2} \ddot{h}_{ij}^\text{TT} \xi^j} \hspace{2.5cm} \text{(detector time)}
+    \]
+    %
+    %
+    \onslide<2->
+    {
+      GW along $\mathbf{z}$: 
+      \[
+      h_{ij}^\text{TT} = \left(\begin{array}{cc}
+				h_+ & h_\times \\
+				h_\times & - h_+
+				\end{array}\right) \cos\left(\omega\left( t-\tfrac{z}{c}\right)\right)
+      \]
+    }
+    \onslide<3->
+    {
+      Consider mirrors at $(0,0)_1, (L,0)_2$ and $(L,L)_3$
+      \begin{small}
+      \begin{align*}
+	s_{12} &= \int_1^2 \tfrac{ds}{dx}dx = (x_2-x_1) \left[ 1 + h_+ \cos(\omega t)\right]^{1/2}\hspace{4cm} \\
+				    & \approx L \left[ 1+\tfrac{1}{2} h_+ \cos\omega t \right] \\
+      s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
+      \end{align*}
+      \end{small}
+    }
+    %
+    \onslide<4->
+    {
+      \begin{tikzpicture}[overlay,remember picture]
+      \node[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-3.4cm)}]current page.center){\todo{Make sure the vid here works}} ;
+      %\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.39cm]{12}{LIGO_int-}{0}{30}};
+      \end{tikzpicture}
+    }
  \end{frame}
  
  
 
 \begin{frame}{Interferometers : \red{L}-topology}{LIGO, Virgo, KAGRA}
-\vspace{-2mm}
+  \vspace{-2mm}
   Interferometers ({\bf IFO}s) measure only the response function (\bl{GW strain})
   \begin{footnotesize}
   \begin{align*}
    h(t) &= F_+(\theta,\phi,\psi) \,h_+(t)+F_\times(\theta,\phi,\psi)\, h_\times(t) , \\
     F_+ &=\f{1}{2}\left(1+\cos^2\theta\right)\cos2\phi\cos 2\psi-\cos\theta \sin2\phi \sin2\psi, \\
     F_\times &=\f{1}{2}\left(1+\cos^2\theta\right)\cos2\phi\sin2\psi+\cos\theta \sin2\phi \cos2\psi
-    \end{align*}
-    \end{footnotesize}
+   \end{align*}
+   \end{footnotesize}
    %
-   Fourier transform to frequency domain 
-  \begin{footnotesize}
-  \begin{align*}
-  &\red{\tilde{h}(f)} =A\, \underbrace{\f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6}}_{\bl{h_0}} \,\red{f^{-7/6}}\, e^{i\Psi}\, Q(\theta,\phi,\psi,\iota),\hspace{5cm} \\
-     &\quad Q(\theta,\phi,\psi,\iota) = F_+\f{1+\cos^2\iota}{2}  + i F_\times \cos\iota \\
-   &\quad A\equiv \pi^{-2/3}\sqrt{\tfrac{5}{24}}\\
-   &\quad \Psi = \Psi_N(f) + \text{PN corrections}
-    \end{align*}
-    \end{footnotesize}
-   \red{Four} angles: $\{\theta,\phi,\iota,\psi \}$
-   %
-  \begin{tikzpicture}[overlay,remember picture]
-  \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-1.8cm)}]current page.center) {\includegraphics[height=5cm]{figs/Schutz_LRR_Fig3_half.jpg}};
-  \end{tikzpicture}
-   
+   \onslide<2->
+   {
+      Fourier transform to frequency domain 
+      \begin{footnotesize}
+      \begin{align*}
+      &\red{\tilde{h}(f)} =A\, \underbrace{\f{c}{D}\left(\f{G M_c}{c^3}\right)^{5/6}}_{\bl{h_0}} \,\red{f^{-7/6}}\, e^{i\Psi}\, Q(\theta,\phi,\psi,\iota),\hspace{5cm} \\
+	&\quad Q(\theta,\phi,\psi,\iota) = F_+\f{1+\cos^2\iota}{2}  + i F_\times \cos\iota \\
+      &\quad A\equiv \pi^{-2/3}\sqrt{\tfrac{5}{24}}\\
+      &\quad \Psi = \Psi_N(f) + \text{PN corrections}
+	\end{align*}
+	\end{footnotesize}
+    }
+    \onslide<3->
+    {
+      \red{Four} angles: $\{\theta,\phi,\iota,\psi \}$
+      %
+      \begin{tikzpicture}[overlay,remember picture]
+      \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-1.8cm)}]current page.center) {\includegraphics[height=5cm]{figs/Schutz_LRR_Fig3_half.jpg}};
+      \node[anchor=center,scale=0.5,opacity=1] at ([shift={(4.1cm,-4.4cm)}]current page.center){Sathyaprakash, Schutz, Living Rev. Relativ. (2009) 12:2} ;
+      \end{tikzpicture}
+    }   
 \end{frame}
 
 
 \begin{frame}{Interferometers : \red{Triangular}-topology}{Einstein Telescope}
-\vspace{-2mm}
+  \vspace{-2mm}
   Three $60^\circ$ V-IFOs, one redundant (null stream), $\sin 60^\circ =\sqrt{3}/2$.
   \begin{footnotesize}
   \begin{align*}
@@ -579,129 +598,152 @@ s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
     \end{align*}
     \end{footnotesize}
    %
-   No blind spots!
-   \begin{footnotesize}
-  \begin{align*}
-   F^2_\bigtriangleup &\equiv \sum_{A=1}^3 \left(F^A_+\right)^2+\left(F^A_\times\right)^2 \hspace{8cm}\\ 
-   &= \f{9}{32}\left(1+6\cos^2\theta + \cos^4\theta\right)
-  \end{align*}
-  \end{footnotesize}
+    \begin{tikzpicture}[overlay,remember picture]
+    \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(4.4cm,-1.cm)}]current page.center) {\includegraphics[height=3cm]{figs/gr_qc_12013563.png}};
+    \node[anchor=center,scale=0.5,opacity=1] at ([shift={(5cm,0.4cm)}]current page.center) {Phys. Rev. D 86, 122001 };
+    \end{tikzpicture}
+    %
+   \onslide<2->
+   {
+      No blind spots!
+      \begin{footnotesize}
+      \begin{align*}
+      F^2_\bigtriangleup &\equiv \sum_{A=1}^3 \left(F^A_+\right)^2+\left(F^A_\times\right)^2 \hspace{8cm}\\ 
+      &= \f{9}{32}\left(1+6\cos^2\theta + \cos^4\theta\right)
+      \end{align*}
+      \end{footnotesize}
   %
   %
   \begin{tikzpicture}[overlay,remember picture]
-  \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(4.4cm,-1.cm)}]current page.center) {\includegraphics[height=3cm]{figs/gr_qc_12013563.png}};
+
    \node (img1 )[anchor=center,scale=1,opacity=1] at ([shift={(0.4cm,-2.5cm)}]current page.center) {\includegraphics[height=4cm]{../Figures/ET_no_blind_spots.pdf}};
-    \node[anchor=center,scale=0.5,opacity=1] at ([shift={(5cm,0.4cm)}]current page.center) {Phys. Rev. D 86, 122001 };
-  \end{tikzpicture}
+    \end{tikzpicture}
+  }
 
    
 \end{frame}
 
 
 \begin{frame}{Detection criteria}{Optimal Signal-to-Noise Ratio ({\bf SNR})}
-\vspace{-5mm}
-\begin{footnotesize} 
-\[
- \rho=\left[ \int_0^\infty d\ln f\, \f{|\red{2\tilde{h}(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
-\]
-\\
-\end{footnotesize}
-$\sqrt{S_n(f)}\equiv$ {\it amplitude spectral density} ({\bf ASD}) or  detector noise
-\\
-\vspace{3mm}
-Recall, $\tilde{h}(f) \sqrt{f} \sim f^{-7/6} f^{1/2} = \red{f^{-2/3}}$
-\begin{footnotesize} 
-\[
- \rho^2 =  (2A)^2 h_0^2 |Q(\theta,\phi,\psi,\iota)|^2 \int_0^{\bl{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)} 
-\]
-\end{footnotesize}
-%
-RMS \red{average} over the angles 
-\begin{small}
-$ \langle \ldots \rangle \equiv \int \sin\theta d\theta d\phi \int d\psi \int\sin\iota d\iota $
-\end{small}
-\begin{footnotesize} 
-\[
- \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_\llcorner = \f{4}{25}, \qquad \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_\triangle = \f{9}{25}
-\]
-\end{footnotesize}
-%
-Sources will have random $\{\theta,\phi,\psi,\iota\}$ \\
-\begin{footnotesize} 
-\[
-0 \le Q(\theta,\phi,\psi,\iota) \le \underbrace{Q_\text{max}(\theta,\phi,\psi,\iota)}_{\theta=\tfrac{\pi}{2},\psi=0,\iota=0}
-\]
-\end{footnotesize}
-% 
+  \vspace{-5mm}
+  \begin{footnotesize} 
+  \[
+  \rho=\left[ \int_0^\infty d\ln f\, \f{|\red{2\tilde{h}(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
+  \]
+  \\
+  \end{footnotesize}
+  $\sqrt{S_n(f)}\equiv$ {\it amplitude spectral density} ({\bf ASD}) or  detector noise
+  \\
+  \onslide<2->
+  {
+    \vspace{3mm}
+    Recall, $\tilde{h}(f) \sqrt{f} \sim f^{-7/6} f^{1/2} = \red{f^{-2/3}}$
+    \begin{footnotesize} 
+    \[
+    \rho^2 =  (2A)^2 h_0^2 |Q(\theta,\phi,\psi,\iota)|^2 \int_0^{\bl{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)} 
+    \]
+    \end{footnotesize}
+  }
+  %
+  \onslide<3->
+  RMS \red{average} over the angles 
+  \begin{small}
+  $ \langle \ldots \rangle \equiv \int \sin\theta d\theta d\phi \int d\psi \int\sin\iota d\iota $
+  \end{small}
+  \begin{footnotesize} 
+  \[
+  \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_\llcorner = \f{4}{25}, \qquad \langle |Q(\theta,\phi,\psi,\iota)|^2 \rangle_\triangle = \f{9}{25}
+  \]
+  \end{footnotesize}
+  %
+  Sources will have random $\{\theta,\phi,\psi,\iota\}$ \\
+  \begin{footnotesize} 
+  \[
+  0 \le Q(\theta,\phi,\psi,\iota) \le \underbrace{Q_\text{max}(\theta,\phi,\psi,\iota)}_{\theta=\tfrac{\pi}{2},\psi=0,\iota=0}
+  \]
+  \end{footnotesize}
+  % 
 \end{frame}
 
 \begin{frame}{L-IFO vs. $\bigtriangleup$-IFO Networks}
 \red{Three L}-IFOs, e.g., LIGO L1, H1 + Virgo
 %
-\begin{footnotesize} 
-\begin{align*}
-\rho_{\text{tot},\llcorner} &= \left[{\sum_{i=1}^3 \rho^2_i}\right]^{1/2} =\left[ \rho_h^2 + \rho_m^2 + \rho^2_l \right]^{1/2} 
-	= {\rho_c\left[\tilde{A}_h^2 + \tilde{A}_m^2 + \tilde{A}_l^2 \right]^{1/2}}\\
-\rho_c &\equiv 2 h_0 \left[ \int_0^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2}, \quad \left\{ \tilde{A}_h = \tfrac{4}{5}A,  \tilde{A}_m =\tfrac{2}{5}A,  \tilde{A}_l  < \tfrac{\tilde{A}_m}{2}\right\}
-\end{align*}
-\end{footnotesize}
-%
-\begin{tikzpicture}[overlay,remember picture]
-\node[draw, red,thick,minimum width=3.5cm,minimum height=0.8cm] (b) at (8.8,1.9){};
-\end{tikzpicture}
-\\
-%\vspace{2mm}
-$\bigtriangleup$ = \red{Three V-}IFOs: Einstein Telescope
-\begin{footnotesize} 
-\[
- \rho^2_{\text{tot},\bigtriangleup} = \sum_{A=1}^3 \left(\rho^A\right)^2  =  A^2 \rho_c^2 \,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 %\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
-\]
-\end{footnotesize}
-\\
-Use \bl{RMS-averaged} $|Q|^2$
-\begin{footnotesize}
-\begin{align*}
-\rho_{\text{tot},\bigtriangleup} %&= \left[ \int_0^\infty d\ln f\, \f{|{2\tilde{H}_\bigtriangleup(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
-&=\f{6}{5}A\, h_0 \left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \\
-\end{align*}
-\end{footnotesize}
-\\
-%where \begin{small}$\tilde{H}_\bigtriangleup(f)\equiv A\,  \langle |Q|^2_\bigtriangleup\rangle\, h_0 f^{-7/6}= \f{3}{5} A h_0 f^{-7/6}$ \end{small}\\
-\vspace{-5mm}
-Compare with three-L network's \begin{small}$\rho_\text{tot} \approx \tfrac{4}{5}A\, h_0 \left[ \int df \ldots \right]^{1/2} $ \end{small}
-\vspace{10mm}
-%
-%
-\begin{tikzpicture}[overlay,remember picture]
-\node[draw, red,thick,minimum width=5.5cm,minimum height=1.25cm] (b) at (-3.2,1.05){};
-\end{tikzpicture}
-%
-% 
+  \begin{footnotesize} 
+  \begin{align*}
+  \rho_{\text{tot},\llcorner} &= \left[{\sum_{i=1}^3 \rho^2_i}\right]^{1/2} =\left[ \rho_h^2 + \rho_m^2 + \rho^2_l \right]^{1/2} 
+	  = {\rho_c\left[\tilde{A}_h^2 + \tilde{A}_m^2 + \tilde{A}_l^2 \right]^{1/2}}\\
+  \rho_c &\equiv 2 h_0 \left[ \int_0^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2}, \quad \left\{ \tilde{A}_h = \tfrac{4}{5}A,  \tilde{A}_m =\tfrac{2}{5}A,  \tilde{A}_l  < \tfrac{\tilde{A}_m}{2}\right\}
+  \end{align*}
+  \end{footnotesize}
+  %
+  \begin{tikzpicture}[overlay,remember picture]
+  \node[draw, red,thick,minimum width=3.5cm,minimum height=0.8cm] (b) at (8.8,1.9){};
+  \end{tikzpicture}
+  \\
+  %\vspace{2mm}
+  \onslide<2->
+  {
+    $\bigtriangleup$ = \red{Three V-}IFOs: Einstein Telescope
+    \begin{footnotesize} 
+    \[
+    \rho^2_{\text{tot},\bigtriangleup} = \sum_{A=1}^3 \left(\rho^A\right)^2  =  A^2 \rho_c^2 \,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 %\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
+    \]
+    \end{footnotesize}
+    \\
+  }
+  \onslide<3->
+  Use \bl{RMS-averaged} $|Q|^2$
+  \begin{footnotesize}
+  \begin{align*}
+  \rho_{\text{tot},\bigtriangleup} %&= \left[ \int_0^\infty d\ln f\, \f{|{2\tilde{H}_\bigtriangleup(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
+  &=\f{6}{5}A\, h_0 \left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \\
+  \end{align*}
+  \end{footnotesize}
+  \\
+  %where \begin{small}$\tilde{H}_\bigtriangleup(f)\equiv A\,  \langle |Q|^2_\bigtriangleup\rangle\, h_0 f^{-7/6}= \f{3}{5} A h_0 f^{-7/6}$ \end{small}\\
+  \vspace{-5mm}
+  Compare with three-L network's \begin{small}$\rho_\text{tot} \approx \tfrac{4}{5}A\, h_0 \left[ \int df \ldots \right]^{1/2} $ \end{small}
+  \vspace{10mm}
+  %
+  %
+  \begin{tikzpicture}[overlay,remember picture]
+  \node[draw, red,thick,minimum width=5.5cm,minimum height=1.25cm] (b) at (-3.2,1.05){};
+  \end{tikzpicture}
+  %
+  % 
 \end{frame}
 
 \begin{frame}{Case study: GW170817}
-\begin{itemize}
-  \item 17 August 2017, signal swept from $f\approx 30\,$Hz to $2000\,$Hz 
-  \item The event lasted $\approx 57\,$seconds, $\approx 3000$ GW cycles, $\rho_\text{tot} = 32.4$
-  \item Followed by GRB170817A 1.7 seconds later
-  \item Rapid localization using L1-H1-V1 $\sim 30\,\text{deg}^2$
-  \item Optical counterpart in NGC 4993 11 hours later
-\end{itemize}  
+  \begin{itemize}
+    \item 17 August 2017, signal swept from $f\approx \red{30}\,$Hz to $\bl{2000}\,$Hz 
+    \onslide<2->\item The event lasted $\approx \red{57}\,$seconds, $\approx \bl{3000}$ GW cycles, $\rho_\text{tot} = \red{32.4}$
+    \onslide<3->\item Followed by \red{GRB}170817A 1.7 seconds later
+    \onslide<4->\item Rapid localization using L1-H1-V1 $\sim \bl{30}\,\text{deg}^2$
+    \onslide<5->\item \red{Optical} counterpart in NGC 4993 11 hours later
+  \end{itemize}  
 
   \begin{columns}
   \begin{column}{0.5\textwidth}  %%<--- here
       \begin{center}
-      \includegraphics[height=4cm]{figs/GW_GRB170817.jpg}
+      \onslide<3->\includegraphics[height=4cm]{figs/GW_GRB170817.jpg}
       \end{center}
   \end{column}
   \begin{column}{0.5\textwidth}
   %
-    Assuming low spin priors\\
-    $ M=2.73^{+0.04}_{-0.01} M_\odot$ \\
-    $ M_c =1.186^{+0.001}_{-0.001}M_\odot $ \\ 
-    $ D=40.7^{+2.36}_{-2.36}\text{Mpc} $ \\
+  \onslide<6->
+  {
+    Assuming low spin priors
+    \begin{align*}
+     M&=2.73^{+0.04}_{-0.01} M_\odot \\
+     M_c &=1.186^{+0.001}_{-0.001}M_\odot  \\ 
+     D&=40.7^{+2.36}_{-2.36}\text{Mpc}
+    \end{align*}
+  }
+  \onslide<7->
+  {
     \red{Note:} $M_c$ has the best precision: 
-  \begin{small}${\dot{f}} = \f{96}{5}\pi^{8/3} \left(\tfrac{G M_c}{c^3}\right)^{5/3}\, {f^{11/3}}$ \end{small}
+   \begin{small}$${\dot{f}} = \f{96}{5}\pi^{8/3} \left(\tfrac{G M_c}{c^3}\right)^{5/3}\, {f^{11/3}}$$ \end{small}
+  } 
     
     \end{column}
   \end{columns} 
@@ -714,46 +756,136 @@ Compare with three-L network's \begin{small}$\rho_\text{tot} \approx \tfrac{4}{5
 \vspace{-7mm}
   \begin{footnotesize}
     \begin{align*}
-      &\tau_\text{insp}^{0\text{PN}} \simeq 55.91\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \simeq 2680 \hspace{2cm} (M=2.74 M_\odot) \\
+      &\tau_\text{insp}^{0\text{PN}} \ \ \simeq 55.91\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \ \ \simeq 2680 \hspace{2cm} (M=2.74 M_\odot) \\
       &\tau_\text{insp}^{3.5\text{PN}} \simeq 56.65\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{3.5\text{PN}} \simeq 2711 \hspace{2cm} (f_\text{ISCO}\simeq 1605\,\text{Hz}) 
     \end{align*}
   \end{footnotesize}
+  \onslide<2->
+  {
   What about the SNR? \quad
   \begin{small}$\rho_{\text{tot},\llcorner}  = {\bar\rho_c(f_0)\left[\tilde{A}_h^2 + \tilde{A}_m^2 + \tilde{A}_l^2 \right]^{1/2}}$   
   \end{small}
+  }
   %
   
 %
 \begin{tikzpicture}[overlay,remember picture]
-    \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-2cm,-2.cm)}]current page.center) {\includegraphics[height=5cm]{../Figures/GW170817_strains.pdf}};
-    \onslide<1->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-0.3cm)}]current page.center) 
+    \onslide<2->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-2cm,-2.cm)}]current page.center) {\includegraphics[height=5cm]{../Figures/GW170817_strains.pdf}};
+    \onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(3.65cm,0.8cm)}]current page.center) 
     {\begin{footnotesize} 
       $   \bar\rho_c(\red{f_0}) \equiv 2 h_0 \left[ \int_{\red{f_0}}^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2} $      
     \end{footnotesize}}; 
-    \onslide<1->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-1.3cm)}]current page.center) 
+    \onslide<2->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(4.1cm,0.1cm)}]current page.center) 
     {\begin{footnotesize} 
-      $ \left\{ \tilde{A}_h = \tfrac{4}{5}A,  \tilde{A}_m =\tfrac{2}{5}A,  \tilde{A}_l  < \tfrac{\tilde{A}_m}{2}\right\}$    
+      $ \tilde{A}_{i=h,m,l}=A\left\{\tfrac{4}{5},  \tfrac{2}{5},   < \tfrac{1}{5}\right\}$    
     \end{footnotesize}};  
-    \onslide<1->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-2.3cm)}]current page.center) 
+    \onslide<3->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(4cm,-1.2cm)}]current page.center) 
     {\begin{footnotesize} 
-      $\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 $    
+      $\bar\rho_{i} = \left\{29.2, \ 14.6, \ 6.11 \right\}$    
     \end{footnotesize}}; 
-    \onslide<1->\node (t4 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-2.6cm)}]current page.center) 
+    \onslide<4->\node (t4 )[anchor=center,scale=1,opacity=1] at ([shift={(4cm,-2.6cm)}]current page.center) 
     {\begin{footnotesize} 
-      $\bar\rho_\text{L1} = 26.4 \quad 18.8 \quad 2.0 $    
+      $\bar\rho_\text{LHV} = \{ 26.4, 18.8 , 2.0\} $    
     \end{footnotesize}};
-    \onslide<1->\node (t4 )[anchor=center,scale=1,opacity=1] at ([shift={(3cm,-2.6cm)}]current page.center) 
+    \onslide<3->\node (t4 )[anchor=center,scale=1,opacity=1] at ([shift={(4cm,-1.7cm)}]current page.center) 
     {\begin{footnotesize} 
       $\rho_\text{tot} = 32.6 $    
     \end{footnotesize}};
+    \onslide<3->\node[draw, red,thick,minimum width=3.8cm,minimum height=1.1cm] (b) at (10.1,-2.15){};
   \end{tikzpicture}
 \end{frame}
 
 
 
-\begin{frame}{GW Astronomy in the 2020s}
+\begin{frame}{GW Astronomy in the 2020s}{Advanced LIGO-Virgo}
+  \red{BIG question:} how long before the GRB can we {\bf detect} BNS inspirals?\\
+  Detection criterion: SNR = \red{15}\\
+  Three identical L-IFOs with $Q_{i=h,m,l}$
+  %\[  \bar\rho_\text{tot}= \sqrt{\left[\rho_h(f_0^h,\bar{f})\right]^2+\left[\rho_m(f_0^m,\bar{f})\right]^2+\left[\rho_l(f_0^l,\bar{f})\right]^2}=15\]
+  % 
+  \begin{tikzpicture}[overlay,remember picture]
+      \onslide<1->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.7cm)}]current page.center) {\includegraphics[height=5.5cm]{../Figures/ALigo_strains.pdf}};
+      %\onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(3.65cm,0.8cm)}]current page.center) 
+      %{\begin{footnotesize} 
+      %  $   \bar\rho_c(\red{f_0}) \equiv 2 h_0 \left[ \int_{\red{f_0}}^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2} $      
+      %\end{footnotesize}}; 
+      %\onslide<3->\node[draw, red,thick,minimum width=3.8cm,minimum height=1.1cm] (b) at (10.1,-2.15){};
+  \end{tikzpicture}
  
 \end{frame}
+
+
+\begin{frame}{GW Astronomy in the 2020s}{Advanced LIGO-Virgo}
+Detection moment: $t(f=\bar{f})$ such that
+%There exists $\bar{f}$ such that
+\begin{small}
+  \[
+    \bar\rho_\text{tot}= \left[\rho_h(f_0^h,\bar{f})\right]^2+\left[\rho_m(f_0^m,\bar{f})\right]^2+\left[\rho_l(f_0^l,\bar{f})\right]^2=\red{15}^2
+  \]
+\end{small}  
+  
+  \begin{tikzpicture}[overlay,remember picture]
+      \onslide<1->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.7cm)}]current page.center) {\includegraphics[height=5.5cm]{../Figures/ALigo_strains.pdf}};
+      %\onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(3.65cm,0.8cm)}]current page.center) 
+      %{\begin{footnotesize} 
+      %  $   \bar\rho_c(\red{f_0}) \equiv 2 h_0 \left[ \int_{\red{f_0}}^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2} $      
+      %\end{footnotesize}}; 
+      %\onslide<3->\node[draw, red,thick,minimum width=3.8cm,minimum height=1.1cm] (b) at (10.1,-2.15){};
+  \end{tikzpicture}
+ 
+\end{frame}
+
+\begin{frame}{GW Astronomy in the 2020s}{Advanced LIGO-Virgo}
+  Detection moment: $t(f=\bar{f})$ such that
+  \begin{small}
+    \[
+	\bar\rho_\text{tot}= \left[\rho_h(f_0^h,\bar{f})\right]^2+\left[\rho_m(f_0^m,\bar{f})\right]^2+\left[\rho_l(f_0^l,\bar{f})\right]^2=\red{15}^2
+    % \textcolor{black}{\bar\rho_\text{tot}=} \onslide<1>\left[\rho_h(f_0^h,\bar{f})\right]^2 \, \textcolor{white}{+}\onslide<2>\left[\rho_m(f_0^m,\bar{f})\right]^2 \, \textcolor{white}{+}\onslide<3->\left[\rho_l(f_0^l,\bar{f})\right]^2\textcolor{white}{=\red{15}^2}
+    \]
+  \end{small}
+
+  \begin{tikzpicture}[overlay,remember picture]
+      \onslide<1->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.7cm)}]current page.center) {\includegraphics[height=5.5cm]{../Figures/ALIGO2020_int_50Mpc.pdf}};
+      \onslide<2->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.7cm)}]current page.center) {\includegraphics[height=5.5cm]{../Figures/ALIGO2020_int_100Mpc.pdf}};
+      \onslide<3->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.7cm)}]current page.center) {\includegraphics[height=5.5cm]{../Figures/ALIGO2020_int_200Mpc.pdf}};
+    \end{tikzpicture}
+ 
+\end{frame}
+
+\begin{frame}{GW Astronomy in the 2020s}{Advanced LIGO-Virgo}
+  Advance \red{warning time}: inspiral time from $\bar{f}$
+  \[
+    T_\text{AW} = \tau_\text{insp}(\bar{f})
+  \]
+  \onslide<2->
+  {
+    Total accumulated SNR over the inspiral
+    \begin{footnotesize}
+      \[
+      \bar{\rho}_\text{F}\equiv\sqrt{\left[{\rho}_h(f_0^h,{f}_\text{ISCO})\right]^2+\left[{\rho}_m(f_0^m,{f}_\text{ISCO})\right]^2+\left[{\rho}_l(f_0^l,{f}_\text{ISCO})\right]^2}
+      \]
+      \begin{table}[h]
+	\centering
+	\begin{tabular}{lcccccc}
+	  \hline\hline
+	  $D\,$(Mpc) & $\bar{f}\,$(Hz) &{}& $T^{0PN}_\text{AW}$(sec) &\hspace{1mm} & $T^{3.5PN}_\text{AW}\text{ (sec)}\hspace{2mm}$& $\bar{\rho}_F$\T \B \\
+	  \hline
+	  50 & $\approx\,$25.3 & & 84.25 & & 85.86 & 70.3 \\
+	  100 & $\approx\,$41.6 & & 22.39 & & 22.86 & 35.2 \\
+	  200 & $\approx\,$121 & & 1.291 &\quad & 1.300 & 17.6 \\
+	  \hline\hline
+	\end{tabular}
+      \end{table}
+    \end{footnotesize}
+  }
+%
+\onslide<3->$\Longrightarrow$ NO likely FORECASTS  in the 2020s
+\begin{tikzpicture}[overlay,remember picture]
+  \onslide<1->\node[draw, red,thick,minimum width=2.8cm,minimum height=1.0cm] (b) at (-0.6,5.3){};
+\end{tikzpicture}
+
+\end{frame}
+
 
 \begin{frame}{GW Astronomy in the 2030s}{The era of Einstein Telescope}
  
