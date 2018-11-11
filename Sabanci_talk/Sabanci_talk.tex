@@ -1,5 +1,5 @@
-%\documentclass[xcolor=dvipsnames,t]{beamer}
-\documentclass[xcolor=dvipsnames,handout,t]{beamer}
+\documentclass[xcolor=dvipsnames,t]{beamer}
+%\documentclass[xcolor=dvipsnames,handout,t]{beamer}
 % use handout in document class to stop transitions
 
 \mode<presentation>
@@ -233,6 +233,7 @@
       \onslide<2>\node (img1 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.8cm,0.9cm)}]current page.center) {\includegraphics[height=6cm]{figs/Millisecond_NS.png}}; 
       \node[anchor=center,scale=0.5,opacity=1] at ([shift={(4.8cm,-1.cm)}]current page.center) {Class.Quant.Grav. 30 (2013) 224003};
       \onslide<3>\node (img2 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.6cm,0.0cm)}]current page.center) {\includegraphics[height=4cm]{figs/NS_cross_section.png}}; 
+      % Use Fig 3 of http://science.sciencemag.org/content/304/5670/536/tab-figures-data ?
       \node[anchor=center,scale=0.6,opacity=1] at ([shift={(4.6cm,-1.5cm)}]current page.center) {Robert Schulze};
        \onslide<4>\node (img3 )[anchor=center,scale=0.8,opacity=1] at ([shift={(2.7cm,-2.5cm)}]current page.center) {\includegraphics[height=5cm]{figs/NS_EOS_Lattimer2012.png}}; 
       \node[anchor=center,scale=0.6,opacity=1] at ([shift={(4.cm,-3.8cm)}]current page.center) {Lattimer arXiv:1305.3510};
@@ -882,29 +883,122 @@ Detection moment: $t(f=\bar{f})$ such that
 \onslide<3->$\Longrightarrow$ NO likely FORECASTS  in the 2020s
 \begin{tikzpicture}[overlay,remember picture]
   \onslide<1->\node[draw, red,thick,minimum width=2.8cm,minimum height=1.0cm] (b) at (-0.7,5.3){};
+  \onslide<3->\node[draw, red,thick,minimum width=1.1cm,minimum height=1.2cm] (b) at (1.6,1.35){};
 \end{tikzpicture}
 
 \end{frame}
 
 
 \begin{frame}{GW Astronomy in the 2030s}{The era of Einstein Telescope}
- One detector, \red{three V}-IFOs, $60^\circ$ 10\,km arms.\\
- Underground,cryogenic, \bl{xylophone} (high, low-frequency modes)\\
- \vspace{1mm}
- Cosmological range $\Rightarrow$ sky-averaged,\red{red}-shifted strain and SNR
- \begin{footnotesize}
- \begin{align*} 
-  \tilde{H}_\text{ET}(f) &= \f{3}{5}A h_0 \red{(1+z)^{-1}} f^{-7/6}\\
-  \bar\rho_{\text{ET}}(f_0,f)&\equiv \f{6}{5}A h_0\, \red{(1+z)^{-1/6}}\left[\int_{f_0}^{f} d f'\, \f{f'^{-7/3}}{S^\text{ET}_n(f')}\right]^{1/2}
- \end{align*} 
- \end{footnotesize}
-Consider BNS at \\
-$$ D=\{100,200, 400, 600\}\,\text{Mpc} \Longrightarrow z=\{0.022, 0.044, 0.085, 0.12\}$$
-$\Omega_\Lambda = 0.6911, \Omega_m = 0.3089, H_0 = 67.74\,$km\,s$^{-1}\,$Mpc$^{-1}$
+  \vspace{-1mm}
+  \begin{itemize}
+    \item[] One detector, \red{three V}-IFOs, $60^\circ$ 10\,km arms.
+    \item[] Underground,cryogenic, \bl{xylophone} (high, low-frequency modes)
+    \uncover<2->{
+    \item[] Recall: \red{RMS}-average over all four angles
+    \item[] Cosmological range $\Rightarrow$ \red{red}-shifted strain and SNR}
+  \end{itemize}
+  \onslide<2->
+    \begin{footnotesize}
+    \begin{align*} 
+      \tilde{H}_\text{ET}(f) &= \f{3}{5}A h_0 \red{(1+z)^{-1}} f^{-7/6}\\
+      \bar\rho_{\text{ET}}(f_0,f)&\equiv \f{6}{5}A h_0\, \red{(1+z)^{-1/6}}\left[\int_{f_0}^{f} d f'\, \f{f'^{-7/3}}{S^\text{ET}_n(f')}\right]^{1/2}
+    \end{align*} 
+    \end{footnotesize}
+    \vspace{-1mm}
+  \onslide<3->
+    Consider BNS at
+    \begin{footnotesize}
+      $$ \bl{D}=\{100,200, 400, 600\}\,\text{Mpc} \Longrightarrow \red{z}=\{0.022, 0.044, 0.085, 0.12\}$$
+      $$ \left(\text{Using } \Omega_\Lambda = 0.6911, \Omega_m = 0.3089, H_0 = 67.74\,\text{km}\,\text{s}^{-1}\,\text{Mpc}^{-1}\right)\qquad  $$
+    \end{footnotesize}
+  \onslide<4->
+  {{\bf Note}: for binary black holes, ET's range $>\,1$Gpc, but inspirals too quick.}
+\end{frame}
 
+\begin{frame}{The era of Einstein Telescope}{BNS detections}
+ Same detection criterion:\qquad $\bar{\rho}_\text{ET}(f_0, \bar{f}_\text{ET}) =15$ \todo{ADD LIGO2017}\\
+ \red{Two} ET configurations: B (high $f$), C (low $f$)\todo{2020 to plot}
+ \begin{tikzpicture}[overlay,remember picture]
+      \onslide<1->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted.pdf}};
+      %\onslide<2->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted.pdf}};
+      %\onslide<3->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted.pdf}};
+      %\onslide<4->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted.pdf}};
+\end{tikzpicture}      
+\end{frame}
+      
+\begin{frame}{The era of Einstein Telescope}{GRB \red{Forecast} Prospects} 
+  \vspace{-8mm}
+  \begin{footnotesize}
+  \begin{table}[h]
+  \centering
+  \begin{tabular}{lccccccc}
+  %toprule
+  \hline\hline
+  $D\,$(Mpc) & \multicolumn{3}{c}{ET-B} & $R_\text{av}{}^\text{max}_\text{min} $ & \multicolumn{3}{c}{ET-C}\T\B\\
+  \hline
+  {}& $\bar{f}_\text{ET}\,$(Hz) & \ \hspace{3mm} $T_\text{AW}$ \ \hspace{3mm} & $\bar{\rho}_{F}$ & {}  & $\bar{f}_\text{ET}\,$(Hz) & \ \hspace{3mm} $T_\text{AW}\hspace{3mm}$& $\bar{\rho}_{F}$\T\B\\
+  %midrule
+  100 & $\approx\,$6.72 &  47.0\,minutes & 306 & $ 1.54^{4.7}_{0.3}$ & $\approx\,$3.27 & 5.34\,hours\ & 365\T\\
+  200 & $\approx\,$11.2 & 11.6\,minutes & 152 &  $ 12.3^{38}_{2.6} $ & $\approx\,$4.10 & 2.87\,hours\ & 182 \\
+  400 & $\approx\,$18.2 & 3.00\,minutes & 75.7 &$ 98.6^{300}_{20} $ & $\approx\,$5.06 & 1.51\,hours\ & 90.5\\
+  600 & $\approx\,$?  &?\,seconds & ?& $ 333^{1020}_{69} $ &    $\approx\,$5.7 & 1.03\,hours & 60.?  \\
+  \hline\hline
+  %bottomrule
+  \end{tabular}
+  \caption*{Event rates using $R=1540^{+3200}_{-1220}\,\text{Gpc}^{-3}\,\text{yr}^{-1}$ inferred from GW170817}
+  \end{table}
+  \end{footnotesize}
+  %
+  \vspace{-3mm}
+  \onslide<2->Very \red{high SNRs} $\Rightarrow \ord(\rho_F^{\red{-1}})$-precision parameter estimation afterward \\
+  \vspace{2mm}
+  \onslide<3->\bl{ET-B} $\Longrightarrow $ forecasts not likely \\
+  \vspace{2mm}
+  \onslide<4->\red{ET-C} $\Longrightarrow T_\text{AW} \ge 1\,$hour within 600\,Mpc\\
+  \vspace{1mm}
+  \textcolor{white}{ET-C} $\Longrightarrow \red{\ord(100)}$ {\bf BNS forecasts} yearly! $\Rightarrow $ 1 per day!\\
+  \vspace{1mm}
+  \onslide<5->\textcolor{white}{ET-C} $\Longrightarrow \red{\ord(10)}$ with \red{3\,hours} of warning \\
+  \vspace{1mm}
+  \onslide<6->\textcolor{white}{ET-C} $\Longrightarrow \red{\ord(2)}$ with \red{5\,hours} of warning
+  \begin{tikzpicture}[overlay,remember picture]
+      \onslide<3>\node[draw, blue,thick,minimum width=1.8cm,minimum height=1.6cm] (b) at (-2.3,5.3){};
+      \onslide<4->\node[draw, red,thick,minimum width=1.8cm,minimum height=1.6cm] (b) at (3.6,5.3){};
+  \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{The era of Einstein Telescope}{Source localization before the merger} 
+  ET is very sensitive, but all 3 IFOs are at one place. \\
+  \vspace{1mm}
+  $\Longrightarrow$ \red{poor} sky localization \\
+  \vspace{1mm}
+  \onslide<2->BUT \ldots \\
+  \begin{itemize}
+  \item With $T_\text{AW} \sim\,$hours, Earth's rotation matters!
+  \item Two hours $\Rightarrow 30^\circ \Rightarrow \approx 2000\,$km of IFO distance $\sim\,$L1-H1 separation
+  \end{itemize}
+  \onslide<3->So, within 1\,Gpc, ET {\bf alone} will localize
+  \begin{itemize}
+  \item 20\% of the sources to within 100\,deg$^2$
+  \item 2\% to within 20\,deg$^2$
+  \item 0.5\% to within 10\,deg$^2$ 
+  \onslide<4->\item[]$\Longrightarrow \red{\ord(5)}$ sources within 400\,Mpc
+  \end{itemize}
+  \onslide<5->10\,deg$^2$: LSST's field of view\\
+  \onslide<6-> Numbers improve with \bl{Cosmic Explorer} ($f\gtrsim \red{5}\,$Hz)
+  %
+  \begin{tikzpicture}[overlay,remember picture]
+	\onslide<2->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(4.2cm,2.25cm)}]current page.center) {\includegraphics[height=3cm]{figs/Earth_rot.png}};
+	\onslide<5->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(4.3cm,-2.25cm)}]current page.center) {\includegraphics[height=3.9cm]{figs/LSST.jpg}};
+  \end{tikzpicture}
 \end{frame}
 
 
+\begin{frame}{The era of Einstein Telescope}{Black hole - neutron star binaries}
+
+
+\end{frame}
 
 
 \begin{frame}{Supplement 1: mode suppression}
@@ -916,10 +1010,9 @@ $\Omega_\Lambda = 0.6911, \Omega_m = 0.3089, H_0 = 67.74\,$km\,s$^{-1}\,$Mpc$^{-
       x &=1
 	  %
 	  %\\
-	  %
+  %
       \end{align*}
 \end{frame}
-
 
 \begin{frame}{Supplement 2: The expression for $h_c(t)$}
 Maggiore chapters 1, 3 and 4
