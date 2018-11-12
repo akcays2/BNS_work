@@ -609,22 +609,25 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 \begin{frame}{Interferometers : \red{Triangular}-topology}{Einstein Telescope}
   \vspace{-2mm}
-  Three $60^\circ$ V-IFOs, one redundant (null stream), $\sin 60^\circ =\sqrt{3}/2$.
-  \begin{footnotesize}
-  \begin{align*}
-    &F^1_+(\theta,\phi,\psi)= \f{\sqrt{3}}{2} F_+(\theta,\phi,\psi), \qquad F^1_\times(\theta,\phi,\psi)= \f{\sqrt{3}}{2} F_\times(\theta,\phi,\psi),\hspace{2cm}\\
-    & F^2_{+,\times}(\theta,\phi,\psi) = F^1_{+,\times}(\theta,\phi+2\pi/3,\psi)\qquad (\text{rotation by 120}^\circ),\\
-    & F^3_{+,\times}(\theta,\phi,\psi) = F^1_{+,\times}(\theta,\phi-2\pi/3,\psi) \qquad(\text{rotation by 240}^\circ),\\
-    &  |Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 = \sum_{A=1}^3 \left(F^A_+\right)^2\f{1+\cos^2\iota}{2}  + \left(F^A_\times\right)^2 \cos\iota
-    \end{align*}
-    \end{footnotesize}
+  \bl{Three} $60^\circ$ \red{V}-IFOs, one redundant (null stream), $L=10\,$km
+  \onslide<2->
+  {
+    \begin{footnotesize}
+    \begin{align*}
+      &F^1_+(\theta,\phi,\psi)= \f{\sqrt{3}}{2} F_+(\theta,\phi,\psi), \quad F^1_\times(\theta,\phi,\psi)= \f{\sqrt{3}}{2} F_\times(\theta,\phi,\psi),\quad (\sin 60^\circ =\sqrt{3}/2)\\
+      & F^2_{+,\times}(\theta,\phi,\psi) = F^1_{+,\times}(\theta,\phi+2\pi/3,\psi)\qquad (\text{rotation by 120}^\circ),\\
+      & F^3_{+,\times}(\theta,\phi,\psi) = F^1_{+,\times}(\theta,\phi-2\pi/3,\psi) \qquad(\text{rotation by 240}^\circ),\\
+      %&  |Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 = \sum_{A=1}^3 \left(F^A_+\right)^2\f{1+\cos^2\iota}{2}  + \left(F^A_\times\right)^2 \cos\iota
+      \end{align*}
+      \end{footnotesize}
+    }
    %
     \begin{tikzpicture}[overlay,remember picture]
     \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(4.4cm,-1.cm)}]current page.center) {\includegraphics[height=3cm]{figs/gr_qc_12013563.png}};
     \node[anchor=center,scale=0.5,opacity=1] at ([shift={(5cm,0.4cm)}]current page.center) {Phys. Rev. D 86, 122001 };
-    \end{tikzpicture}
+    \end{tikzpicture}\\
     %
-   \onslide<2->
+   \onslide<3->
    {
       No blind spots!
       \begin{footnotesize}
@@ -658,7 +661,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   \onslide<2->
   {
     \vspace{3mm}
-    Recall, $\tilde{h}(f) \sqrt{f} \sim f^{-7/6} f^{1/2} = \red{f^{-2/3}}$
+    Recall, $\tilde{h}(f) \propto f^{-7/6}$ so $\tilde{h}(f) \sqrt{f} \propto \red{f^{-2/3}}$
     \begin{footnotesize} 
     \[
     \rho^2 =  (2A)^2 h_0^2 |Q(\theta,\phi,\psi,\iota)|^2 \int_0^{\bl{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)} 
@@ -691,7 +694,7 @@ $A_{\mu\nu} $ is the polarization tensor.
 %
   \begin{footnotesize} 
   \begin{align*}
-  \rho_{\text{tot},\llcorner} &= \left[{\sum_{i=1}^3 \rho^2_i}\right]^{1/2} =\left[ \rho_h^2 + \rho_m^2 + \rho^2_l \right]^{1/2} 
+  \rho_{\text{tot},\red{\llcorner}} &= \left[{\sum_{i=1}^3 \rho^2_i}\right]^{1/2} =\left[ \rho_h^2 + \rho_m^2 + \rho^2_l \right]^{1/2} 
 	  = {\rho_c\left[\tilde{A}_h^2 + \tilde{A}_m^2 + \tilde{A}_l^2 \right]^{1/2}}\\
   \rho_c &\equiv 2 h_0 \left[ \int_0^{{f_\text{ISCO}}} df \f{f^{-7/3}}{S_n(f)}  \right]^{1/2}, \quad \left\{ \tilde{A}_h = \tfrac{4}{5}A,  \tilde{A}_m =\tfrac{2}{5}A,  \tilde{A}_l  < \tfrac{\tilde{A}_m}{2}\right\}
   \end{align*}
@@ -707,7 +710,7 @@ $A_{\mu\nu} $ is the polarization tensor.
     $\bigtriangleup$ = \red{Three V-}IFOs: Einstein Telescope
     \begin{footnotesize} 
     \[
-    \rho^2_{\text{tot},\bigtriangleup} = \sum_{A=1}^3 \left(\rho^A\right)^2  =  A^2 \rho_c^2 \,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup^2 %\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
+    \rho_{\text{tot},\bigtriangleup} = \left[\sum_{A=1}^3 \left(\rho^A\right)^2\right]^{1/2}  =  A \rho_c \,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup %\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
     \]
     \end{footnotesize}
     \\
@@ -777,8 +780,8 @@ $A_{\mu\nu} $ is the polarization tensor.
 \vspace{-7mm}
   \begin{footnotesize}
     \begin{align*}
-      &\tau_\text{insp}^{0\text{PN}} \ \ \simeq 55.91\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \ \ \simeq 2680 \hspace{2cm} (M=2.74 M_\odot) \\
-      &\tau_\text{insp}^{3.5\text{PN}} \simeq 56.65\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{3.5\text{PN}} \simeq 2711 \hspace{2cm} (f_\text{ISCO}\simeq 1605\,\text{Hz}) 
+      &\tau_\text{insp}^{0\text{PN}}  \simeq 56.06\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \simeq 2687 \hspace{2cm} (M=2.73 M_\odot) \\
+      &\tau_\text{insp}^{2\text{PN}} \simeq 57.06\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{2\text{PN}} \simeq 2735 \hspace{2cm} (f_\text{ISCO}\simeq 1611\,\text{Hz}) 
     \end{align*}
   \end{footnotesize}
   \onslide<2->
@@ -802,15 +805,19 @@ $A_{\mu\nu} $ is the polarization tensor.
     \end{footnotesize}};  
     \onslide<3->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(4cm,-1.2cm)}]current page.center) 
     {\begin{footnotesize} 
-      $\bar\rho_{i} = \left\{29.2, \ 14.6, \ 6.11 \right\}$    
+      $\bar\rho_{i} = \left\{28.7, \ 14.3, \ 6.00 \right\}$    
     \end{footnotesize}}; 
     \onslide<4->\node (t4 )[anchor=center,scale=1,opacity=1] at ([shift={(4cm,-2.6cm)}]current page.center) 
     {\begin{footnotesize} 
       $\bar\rho_\text{LHV} = \{ 26.4, 18.8 , 2.0\} $    
     \end{footnotesize}};
-    \onslide<3->\node (t4 )[anchor=center,scale=1,opacity=1] at ([shift={(4cm,-1.7cm)}]current page.center) 
+    \onslide<3->\node (t5 )[anchor=center,scale=1,opacity=1] at ([shift={(4cm,-1.7cm)}]current page.center) 
     {\begin{footnotesize} 
-      $\rho_\text{tot} = 32.6 $    
+      $\rho_\text{tot} = 32.0 $    
+    \end{footnotesize}};
+        \onslide<4->\node (t6 )[anchor=center,scale=1,opacity=1] at ([shift={(4cm,-3.1cm)}]current page.center) 
+    {\begin{footnotesize} 
+      $\rho_\text{tot} = 32.4 $    
     \end{footnotesize}};
     \onslide<3->\node[draw, red,thick,minimum width=3.8cm,minimum height=1.1cm] (b) at (10.1,-2.15){};
   \end{tikzpicture}
@@ -938,6 +945,7 @@ Detection moment: $t(f=\bar{f})$ such that
 
 \begin{frame}{The era of Einstein Telescope}{BNS detections}
  Same detection criterion:\qquad $\bar{\rho}_\text{ET}(f_0, \bar{f}_\text{ET}) =15$\\
+ \vspace{1mm}
  \red{Two} ET configurations:\qquad \textcolor{brown}{B} (high $f$), \red{C} (low $f$)
  \begin{tikzpicture}[overlay,remember picture]
       \onslide<1->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted_pres.pdf}};
@@ -954,14 +962,14 @@ Detection moment: $t(f=\bar{f})$ such that
   \begin{tabular}{lccccccc}
   %toprule
   \hline\hline
-  $D\,$(Mpc) & \multicolumn{3}{c}{ET-B} & $R_\text{av}{}^\text{max}_\text{min} $ & \multicolumn{3}{c}{ET-C}\T\B\\
+  $D\,$(Mpc) & $R_\text{av}{}^\text{max}_\text{min} $ &  \multicolumn{3}{c}{ET-B}  & \multicolumn{3}{c}{ET-C}\T\B\\
   \hline
-  {}& $\bar{f}_\text{ET}\,$(Hz) & \ \hspace{3mm} $T_\text{AW}$ \ \hspace{3mm} & $\bar{\rho}_{F}$ & {}  & $\bar{f}_\text{ET}\,$(Hz) & \ \hspace{3mm} $T_\text{AW}\hspace{3mm}$& $\bar{\rho}_{F}$\T\B\\
+  {}& {} & $\bar{f}_\text{ET}\,$(Hz) & \hspace{2mm} $T_\text{AW}$ \hspace{2mm} & $\bar{\rho}_{F}$  & $\bar{f}_\text{ET}\,$(Hz) & \hspace{2mm} $T_\text{AW}\hspace{2mm}$& $\bar{\rho}_{F}$\T\B\\
   %midrule
-  100 & $\approx\,$6.72 &  47.0\,minutes & 306 & $ 1.54^{4.7}_{0.3}$ & $\approx\,$3.27 & 5.34\,hours\ & 365\T\\
-  200 & $\approx\,$11.2 & 11.6\,minutes & 152 &  $ 12.3^{38}_{2.6} $ & $\approx\,$4.10 & 2.87\,hours\ & 182 \\
-  400 & $\approx\,$18.2 & 3.00\,minutes & 75.7 &$ 98.6^{300}_{20} $ & $\approx\,$5.06 & 1.51\,hours\ & 90.5\\
-  600 & $\approx\,$26.0  &65.8\,seconds & 50.2& $ 333^{1020}_{69} $ &    $\approx\,$5.7 & 1.03\,hours & 60.0  \\
+  100 & $ 1.54^{4.7}_{0.3}$ & $\approx\,$6.72 &  47.0\,minutes & 306  & $\approx\,$3.27 & 5.34\,hours\ & 365\T\\
+  200 &  $ 12.3^{38}_{2.6} $ & $\approx\,$11.2 & 11.6\,minutes & 152  & $\approx\,$4.10 & 2.87\,hours\ & 182 \\
+  400 &$ 98.6^{300}_{20} $ & $\approx\,$18.2 & 3.00\,minutes & 75.7  & $\approx\,$5.06 & 1.51\,hours\ & 90.5\\
+  600 & $ 333^{1020}_{69} $ & $\approx\,$26.0  &65.8\,seconds & 50.2 &    $\approx\,$5.7 & 1.03\,hours & 60.0  \\
   \hline\hline
   %bottomrule
   \end{tabular}
@@ -982,7 +990,7 @@ Detection moment: $t(f=\bar{f})$ such that
   \vspace{1mm}
   \onslide<6->\textcolor{white}{ET-C} $\Longrightarrow \red{\ord(2)}$ with \red{5\,hours} of warning
   \begin{tikzpicture}[overlay,remember picture]
-      \onslide<3>\node[draw, blue,thick,minimum width=1.8cm,minimum height=1.6cm] (b) at (-2.3,5.3){};
+      \onslide<3>\node[draw, blue,thick,minimum width=1.4cm,minimum height=1.6cm] (b) at (-2.6,5.3){};
       \onslide<4->\node[draw, red,thick,minimum width=1.8cm,minimum height=1.6cm] (b) at (3.6,5.3){};
   \end{tikzpicture}
 \end{frame}
@@ -1002,7 +1010,7 @@ Detection moment: $t(f=\bar{f})$ such that
   \item 20\% of the sources to within 100\,deg$^2$
   \item 2\% to within 20\,deg$^2$
   \item 0.5\% to within 10\,deg$^2$ 
-  \onslide<4->\item[]$\Longrightarrow \red{\ord(5)}$ sources within 400\,Mpc
+  \onslide<4->\item[]$\Longrightarrow \red{5}$ to \red{10} sources within 400\,Mpc
   \end{itemize}
   \onslide<5->10\,deg$^2$: LSST's field of view\\
   \onslide<6-> Numbers improve with \bl{Cosmic Explorer} ($f\gtrsim \red{5}\,$Hz)
@@ -1016,17 +1024,17 @@ Detection moment: $t(f=\bar{f})$ such that
 
 \begin{frame}{Black hole - neutron star binaries}{Forecasting \red{tidal disruption} events}
   Necessary, but insufficient \bl{condition}:
-  $   \f{M_\text{BH}}{M_\text{NS}} \gtrsim \left(\f{r}{R_\text{NS}}\right)^3  $
+  $   \f{M_\text{BH}}{m_\text{NS}} \gtrsim \left(\f{r}{R_\text{NS}}\right)^3  $
   %
   \onslide<2->
   \begin{itemize}
   \item Small separation $r\to r_\text{ISCO}$
   \item Low black hole mass, stellar evolution models: $M_\text{BH}\gtrsim 5M_\odot$
   \item High black hole spin: $\tilde{r}_\text{ISCO}\to 1$ from 6.
-  \item Larger neutron star radii, $r_\text{NS}\sim15\,$km
+  \item Larger neutron star radii, $R_\text{NS}\sim15\,$km
   \end{itemize}
   \onslide<3->
-  $\red{5} M_\odot -1.4 M_\odot$ BH-NS inspirals are \red{faster} because $\tau_\text{insp} \propto M^{-5/3}$
+  $\red{5} M_\odot -1.4 M_\odot$ BH-NS inspirals are \red{faster} because $\tau_\text{insp} \propto M^{-2/3}$
   %
   \onslide<4->
   \begin{footnotesize}
@@ -1051,7 +1059,7 @@ Detection moment: $t(f=\bar{f})$ such that
   %
   \onslide<5->
   $T_\text{AW} \gtrsim 1\,$hour $\Longrightarrow D \lesssim 200\,$Mpc \\
-  O1 rate $R < 3600 \text{Gpc}^{-3}\text{yr}^{-1} \Longrightarrow 30\text{yr}^{-1}$ within $(200\,\text{Mpc})^3$ \\
+  O1 rate $ < 3600 \text{Gpc}^{-3}\text{yr}^{-1} \Longrightarrow 30\text{yr}^{-1}$ within $(200\,\text{Mpc})^3$ \\
   BH population studies: $\Longrightarrow \text{ \red{Forecast} } \red{3}\text{yr}^{-1}$ within $(200\,\text{Mpc})^3$
   % 
   %
@@ -1097,12 +1105,8 @@ Detection moment: $t(f=\bar{f})$ such that
  \item For $q=1$ due to symmetry only (2,2), (3,2), (4,2), (4,4) are nonzero 
  \item For $q\ne 1$ all $\ell \ge 2$ modes exist, but are much smaller than $(2,2)$
 \end{itemize}
-\begin{align*}
-      x &=1
-	  %
-	  %\\
-  %
-      \end{align*}
+%\begin{align*}
+%\end{align*}
 \end{frame}
 
 \begin{frame}{Supplement 2: The expression for $h_c(t)$}
@@ -1144,37 +1148,10 @@ Consider mirrors at $\mathbf{x}=x_1$ and at $\mathbf{x}=x_2=x_1+\mathbf{\xi}$
 
 \end{frame}
 
+\end{document}
+
+
 
 \begin{frame}{Supplemet 5: Mass-inclination degeneracy}
  
 \end{frame}
-
-
-
-
-
-
-
-
-\end{document}
-
-
-\begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
- \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\% (BICEP 2).\\
- \uncover<2->{Gravitational-wave luminosity: \uncover<3->{\alert{quadrupole} radiation}  (leading-order)}
- \uncover<3->{\begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\\vspace{2mm}}
- \uncover<4->{\begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}}
- \uncover<5->{{\bf Binary systems:} 2 points masses in circular orbit. }
- \end{frame}
- 
- 
-  One detector, \red{three V}-IFOs, $60^\circ$ 10\,km arms.\\
- Underground,cryogenic, \blue{xylophone} (high, low-frequency modes)\\
-
- Cosmological range $\Rightarrow$ sky-averaged,\red{red}-shifted strain and SNR
- \begin{footnotesize}
- \begin{align*} 
-  \tilde{H}_\text{ET}(f) &= \f{3}{5}A h_0 \red{(1+z)^{-1}} f^{-7/6}\\
-  \bar\rho_{\text{ET}}(f_0,f)&\equiv \f{6}{5}A h_0\, \red{(1+z)^{-1/6}}\left[\int_{f_0}^{f} d f'\, \f{f'^{-7/3}}{S^\text{ET}_n(f')}\right]^{1/2}
- \end{align*} 
- \end{footnotesize}
