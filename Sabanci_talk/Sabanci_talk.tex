@@ -1,5 +1,5 @@
-%\documentclass[xcolor=dvipsnames,t]{beamer}
-\documentclass[xcolor=dvipsnames,handout,t]{beamer}
+\documentclass[xcolor=dvipsnames,t]{beamer}
+%\documentclass[xcolor=dvipsnames,handout,t]{beamer}
 % use handout in document class to stop transitions
 
 \mode<presentation>
@@ -40,7 +40,7 @@
 \newcommand{\red}[1]{\textcolor{red}{#1}} 
 \newcommand{\bl}[1]{\textcolor{blue}{#1}} 
 
-
+%\setlength{\droptitle}{10em} 
 
 \usetikzlibrary{shapes}
 
@@ -50,26 +50,26 @@
 %\subtitle
 %{Presentation Subtitle} % (optional)
 
-\title[Forecasting GRBs w/ GWs] % (optional, use only with long paper titles)
-{Forecasting Gamma-ray Bursts with Gravitational Waves}
+\title[Forecasting GRBs with GWs] % (optional, use only with long paper titles)
+{\vspace{0mm}Forecasting Gamma-ray Bursts with Gravitational Waves}
 
-\subtitle{\todo{Add background image}} % (optional)
-
-\author[Sarp Akcay]{Sarp Akcay\inst{1}\inst{2} }
+\subtitle{} % (optional)
+%\vspace{2cm}
+\author[Sarp Ak\c{c}ay]{\vspace{-2cm}Sarp Ak\c cay\inst{1}\inst{2} }
 \institute[FSU Jena - UCD] % (optional, but mostly needed)
-{
+{\vspace{-2.25cm}
   \inst{1}%
   FSU Jena %and University College Dublin
   \inst{2}%
   University College Dublin
   }
 
-
+\date[Sabanc\i~Universitesi]{\vspace{-2.5cm}14 November 2018}
 %\vspace{-3cm}
 %\titlegraphic{
 %  \vspace{1.75cm}  \includegraphics[width=1.0cm]{figs/ucd.png}%\hspace*{1cm}~\includegraphics[height=1cm]{figs/missing_inch.jpg} \hspace*{1cm}  \includegraphics[width=1.0cm]{figs/ucd.png}
 %}
-\date[Sabanci University]{14 November 2018}
+
 
 \subject{Talks}
 
@@ -80,7 +80,7 @@
 \newcommand{\Mag}{\textcolor{magenta}}
 \newcommand{\Red}{\textcolor{red}}
 \newcommand{\Blue}{\textcolor{blue}}
-\renewcommand{\c}{\cos}
+%\renewcommand{\c}{\cos}  \c{c} gives cecedille
 \renewcommand{\t}{\theta}
 \renewcommand{\b}{\bar}
 \newcommand{\f}{\frac}
@@ -143,23 +143,27 @@
 
 
 \begin{document}
-%{
-%\usebackgroundtemplate{\includegraphics[width=1\paperwidth,height=\paperheight]{../Figures/ET_strains_redshifted_v2.pdf}}
-\begin{frame}
- \titlepage
-\end{frame}
-%}
+{
+  \usebackgroundtemplate{\includegraphics[width=1\paperwidth,height=\paperheight]{figs/kilonova.jpg}}
+  % image credit [University of Warwick/Mark Garlick]
+  \begin{frame}
+  \vspace{-2cm}
+    \titlepage
+  \end{frame}
+} % these brackets are needed to insure that the background image is used ONLY in the title slide
 
 \begin{frame}{Outline}
 \begin{itemize}
- \item Motivation
- \item Gamma-ray bursts
- \item Gravitational waves
- \item Binary neutron star inspirals
+ \item Motivation 
+ \item \bl{Gamma-ray bursts}
+ \item Neutron stars
+ \item \bl{Gravitational waves}
+ \item Compact binary \red{inspirals}
  \item Gravitational-wave detectors
- \item Future detectors, event rates, \red{early warning} prospects
+ \item Gravitational-wave astronomy in the 2020s and the 2030s
+ \item \red{Forecasting} prospects, event rates etc.
 \end{itemize}
-\todo{finish this slide remove later if short on time}
+
 
  
 \end{frame}
@@ -167,33 +171,35 @@
 
 \begin{frame}{Motivation: Multi-messenger Astronomy}
   \begin{itemize}
-    \item \emph{Multi}: two fundamentally different waves from common events.
-    \item[]\quad Gravitational waves (GWs): ``hearing''  the universe.
+    \onslide<1->
+    \item \red{\emph{Multi}}: two fundamentally different waves from common events.
+    \item[]\quad Gravitational waves ({\bf GW}s): ``hearing''  the universe.
     \item[]\quad Electromagnetic waves (EWs): ``seeing'' the universe.
-    \item \red{GW170817}-\bl{GRB170817A}-\textcolor{brown}{AT2017gfo}: the ``event'' \\
+    \onslide<2->\item \red{GW170817}-\bl{GRB170817A}-\textcolor{brown}{AT2017gfo}: the ``event'' \\
     \quad inspiral + merger of two neutron stars (GWs) \\
-    \ \ = short-hard gamma-ray burst + kilonova (EWs)
-    \item[] Broad-band in gravitational waves: 10Hz - 2000Hz
+    \ \ \ = short-hard gamma-ray burst + kilonova (EWs)
+    \item[] Broad-band in gravitational waves: 20Hz - 2000Hz
     \item[] Ultra broad-band in electromagnetic waves: gamma rays to radio.
-    \item A simple question \\
+    \onslide<3->\item A simple question: \\
     {\small ``What can we offer to the astronomy community with future GW detections?''}
-    \item[] \red{GRB Forecasts!}
+    \item[] \red{GRB/kilonova Forecasts!}
+    \item[] Observe NOT 11 hours \underline{after} the merger, but ``live''
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Gamma-ray bursts}{Most energetic explosions in the universe}
 \begin{small}
     \begin{itemize}
-      \item Discovered by Vela satellites in 1967
-      \onslide<2->\item Non-thermal spectrum: $10-10^4\,$keV
-      \item Highly energetic $10^{48}-10^{52}\,$ergs 
-      \onslide<3->{\item 1000s detected, $\sim 1$ per day}
-      \onslide<4->\item Far away: $z\approx 9.4 \sim 13\,$billion light years!
+      \item Discovered by Vela satellites in \red{1967}
+      \onslide<2->\item Non-thermal spectrum: $10-10^4\,$\red{keV}
+      \item Highly energetic $10^{48}-10^{\red{52}}\,$ergs 
+      \onslide<3->{\item \bl{1000s} detected, $\sim 1$ per day}
+      \onslide<4->\item Far away: $z\approx 1 \sim 8\,$billion years! %$9.4\sim 13\,$billion light years!
       \onslide<5->\item Afterglow from X-rays to radio \\
       over timescales of hours to months
-      \onslide<6->\item Two types: short and long
+      \onslide<6->\item \bl{Two types}: \red{short} and long
       \onslide<7->{\item Short GRBs:\\ 
-      mergers of binary neutron stars\\
+      mergers of binary neutron stars (1989)\\
       \red{GW170817}-\bl{GRB170817A}}
     \end{itemize}
   \end{small}
@@ -215,28 +221,38 @@
   \begin{small}
     \begin{itemize}
       \item Core-collapse supernova remnants
-      \item Mass: $\sim M_\odot$ to $3 M_\odot$
+      \item Mass: $\sim $ \red{1} to \red{3} solar masses ($M_\odot$)
       \item Very \red{compact}: radius $\sim 9$ to 15\,km
       \onslide<2->\item High spins: up to 700 times/second
-      \onslide<3->\item Extremely dense: teaspoon $\sim 10^9\,$tons
-      \onslide<3->{\item Large magnetic fields: $10^4$ to $10^{11}\,$T}
-      \item Hot: surface temperature $10^6\,$K
-      \onslide<4->\item Equation of state \\
-      Piecewise polytropes
-      \[ p = K_i \rho^{\Gamma_i},\quad (\rho_{i-1}\le \rho \le \rho_i) \hspace{8cm}\]
+      \onslide<3->\item Extremely \bl{dense}: teaspoon $\sim 10^9\,$tons
+      \onslide<3->{\item Large magnetic fields: $10^4$ to $10^{\red{11}}\,$T}
+      \onslide<4->\item Hot: surface temperature $10^5 - 10^6\,$K
+      \onslide<5->\item They can come in \red{pairs} (binary) \\
+      \onslide<6->Orbit \red{decays} over time due\\
+      $\Longrightarrow$ \underline{Gravitational wave emission}!\\
+      Observations \red{match} theoretical \\predictions very well
+      %Equation of state \\
+      %Piecewise polytropes
+      %\[ p = K_i \rho^{\Gamma_i},\quad (\rho_{i-1}\le \rho \le \rho_i) \hspace{8cm}\]
     \end{itemize}
   \end{small}
   \begin{tikzpicture}[overlay,remember picture]
       \onslide<1>
 	\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(4.2cm,1.5cm)}]current page.center) {\includegraphics[height=3.2cm]{figs/Core_collapseSXS.jpg}};    
 	\node[anchor=center,scale=1,opacity=1] at ([shift={(5.4cm,2.9cm)}]current page.center) {\textcolor{white}{SXS}};
-      \onslide<2>\node (img1 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.8cm,0.9cm)}]current page.center) {\includegraphics[height=6cm]{figs/Millisecond_NS.png}}; 
-      \node[anchor=center,scale=0.5,opacity=1] at ([shift={(4.8cm,-1.cm)}]current page.center) {Class.Quant.Grav. 30 (2013) 224003};
+      \onslide<2>\node (img1 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.8cm,0.9cm)}]current page.center) {\includegraphics[height=6cm]{figs/Millisecond_NS2.png}}; 
+      \node[anchor=center,scale=0.5,opacity=1] at ([shift={(4.8cm,3.2cm)}]current page.center) {Class.Quant.Grav. 30 (2013) 224003};
       \onslide<3>\node (img2 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.6cm,0.0cm)}]current page.center) {\includegraphics[height=4cm]{figs/NS_cross_section.png}}; 
       % Use Fig 3 of http://science.sciencemag.org/content/304/5670/536/tab-figures-data ?
       \node[anchor=center,scale=0.6,opacity=1] at ([shift={(4.6cm,-1.5cm)}]current page.center) {Robert Schulze};
-       \onslide<4>\node (img3 )[anchor=center,scale=0.8,opacity=1] at ([shift={(2.7cm,-2.5cm)}]current page.center) {\includegraphics[height=5cm]{figs/NS_EOS_Lattimer2012.png}}; 
-      \node[anchor=center,scale=0.6,opacity=1] at ([shift={(4.cm,-3.8cm)}]current page.center) {Lattimer arXiv:1305.3510};
+      \onslide<4>\node (img2 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.6cm,0.0cm)}]current page.center) {\includegraphics[height=5cm]{figs/NS_temp.jpg}}; 
+      %
+      \node[anchor=center,scale=0.6,opacity=1] at ([shift={(4.6cm,2.2cm)}]current page.center) {Science 304, 5670, pp. 536-542};
+       \onslide<5->\node (img3 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.cm,-2.8cm)}]current page.center){\includegraphics[height=3.8cm]{figs/HT_pulsar.jpg}};
+       \onslide<6>\node (img3 )[anchor=center,scale=0.8,opacity=1] at ([shift={(3.2cm,0.9cm)}]current page.center){\includegraphics[height=5cm]{figs/HT_decay.jpg}}; 
+       \node[anchor=center,scale=0.5,opacity=0.7] at ([shift={(2.5cm,-0.5cm)}]current page.center) {ApJ 829: 55 (2016)};
+       %{\includegraphics[height=5cm]{figs/NS_EOS_Lattimer2012.png}}; 
+      %\node[anchor=center,scale=0.6,opacity=1] at ([shift={(4.cm,-3.8cm)}]current page.center) {Lattimer arXiv:1305.3510};
     \end{tikzpicture}
 \end{frame}
 
@@ -298,7 +314,7 @@ $A_{\mu\nu} $ is the polarization tensor.
 
  \begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
   \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
-  Gravitational-wave luminosity: \alert{quadrupole} radiation (leading-order)
+  Gravitational-wave emission: \alert{quadrupole} radiation (leading-order)
   \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
   \vspace{2mm}
   \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
@@ -310,7 +326,7 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 \begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
   \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
-  Gravitational-wave luminosity: \alert{quadrupole} radiation (leading-order)
+  Gravitational-wave emission: \alert{quadrupole} radiation (leading-order)
   \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
   \vspace{2mm}
   \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
@@ -319,8 +335,8 @@ $A_{\mu\nu} $ is the polarization tensor.
     \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.7cm)}]current page.center) {\animategraphics[loop,controls,height=2.9cm]{12}{Circ_Orb-}{0}{20}};
     %\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.7cm)}]current page.center) {\includegraphics[height=2.9cm]{figs/white_box.png}};
     \onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-1.3cm)}]current page.center) {$\mu=m_1 m_2/M^2,\ x(t) = r \cos\Omega t, \ y(t) = r \sin\Omega t $};
-    \onslide<3->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(2.25cm,-2.2cm)}]current page.center) {$ Q^{ij} =  2 M\, x^i x^j, \qquad \boxed{\dot{E} = \f{32}{5}\f{G\mu^2}{c^5}r^4 \Omega^6}$};
-    \onslide<4->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to \bl{$e$} (Peters \& Mathews).};
+    \onslide<3->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(2.25cm,-2.2cm)}]current page.center) {$ Q^{ij} =  \mu\, x^i x^j, \qquad \boxed{\dot{E} = \f{32}{5}\f{G\mu^2}{c^5}r^4 \Omega^6}$};
+    \onslide<4->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to eccentricity \bl{$e$}};
     \node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-4cm)}]current page.center) {$ \bl{\f{\left(1 + \f{73}{24}e^2+ \f{37}{96} e^4 \right)}{(1-e^2)^{7/2}}}$};
   \end{tikzpicture}
 \end{frame}
@@ -328,7 +344,7 @@ $A_{\mu\nu} $ is the polarization tensor.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Compact Binary Inspirals}
-  \vspace{-3mm}
+  \vspace{-4mm}
   Notation:
   \begin{itemize}
     \item $\red{f} $: GW frequency, \hspace{1.5cm} $\Longrightarrow\quad \omega\equiv2\pi f = 2\Omega$.
@@ -339,13 +355,14 @@ $A_{\mu\nu} $ is the polarization tensor.
   {
     Assumptions:
     \begin{itemize}
-      \item \bl{Quasi-circular} orbits: $e \ll 1$ and $\tfrac{|\dot{r}|}{r\Omega} <10^{-3} $ at $f=100\,$Hz.
+      \item \bl{Quasi-circular} orbits: $e \ll 1$ and $\tfrac{|\dot{r}|}{r\Omega} <10^{-3} $ %at $f=100\,$Hz.
       \item \bl{Quadrupolar} GWs only: higher modes suppressed by $\tfrac{m_1-m_2}{M}\tfrac{v^2}{c^2}$
       \item Use Newtonian/post-Newtonian theory ($\le$3.5{\bf PN}).
+      \vspace{0.5mm}
       \item \red{Terminate} inspiral at Schwarzschild \red{ISCO} 
       \begin{footnotesize}
       \begin{align*}
-      f_\text{ISCO} &= \f{c^3}{6^{3/2}\pi G M} \simeq \bl{1571}\,\text{Hz}\, \left(\f{2.8M_\odot}{M}\right)\hspace{2cm}\\ 
+      f_\text{ISCO} &= \f{c^3}{\red{6}^{3/2}\pi G M} \simeq \bl{1571}\,\text{Hz}\, \left(\f{2.8M_\odot}{M}\right)\hspace{2cm}\\ 
       r_\text{ISCO} &\simeq 25\,\text{km}\left(\frac{M}{2.8 M_\odot}\right)
       \end{align*}
       \end{footnotesize}
@@ -357,7 +374,7 @@ $A_{\mu\nu} $ is the polarization tensor.
     \vspace{1mm}
     For binary neutron stars ({\bf BNS})
     \begin{itemize}
-      \item Point masses: tidal effects for $f \gtrsim 100\,$Hz
+      \item Point masses: tidal effects beyond $f \gtrsim 100\,$Hz
       \item Set $m_1 =m_2 = 1.4 M_\odot$, constraints: $1.2 M_\odot \lesssim m_\text{NS}\lesssim 1.6M_\odot$.
       \item Neglect spins: spin-orbit $\tfrac{\dot{E}_\text{SO}}{\dot{E}} \sim \tfrac{v_s}{c}\tfrac{v}{c}\tfrac{R_\text{NS}}{r}$, spin-spin $\sim \tfrac{v^4}{c^4}$
     \end{itemize}
@@ -393,7 +410,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   \onslide<4->
   {
     \[ 
-    \dot{E}(f) = -\dot{E}_b(f) \Longrightarrow \boxed{\red{\dot{f}} = \f{96}{5}\pi^{8/3} \f{(G M_c)}{c^5}^{5/3}\, \red{f^{11/3}} }
+    \dot{E}(f) = -\dot{E}_b(f) \Longrightarrow \boxed{\red{\dot{f}} = \f{96}{5}\pi^{8/3} \f{(G M_c)}{c^5}^{5/3}\, \red{f^{11/3}} }\hspace{2cm}
     \]
     \[
     \red{ \dot{f} \propto f^{11/3}\quad(1)}
@@ -412,7 +429,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   \vspace{1mm}
   Fix integration constant $\tau = t_\text{coal} - t >0$. \\
   \vspace{2mm}
-  Introduce \red{inspiral time}, i.e, time to \bl{coal}escence
+  Introduce \red{inspiral time}, i.e, time to \bl{coal}escence (merger)
   %
   \begin{small}
   \begin{align}
@@ -438,8 +455,11 @@ $A_{\mu\nu} $ is the polarization tensor.
       \node[draw, red,thick,minimum width=9.2cm,minimum height=1.3cm] (b) at (4.2,3.35){};
       \node[draw, red,thick,minimum width=9cm,minimum height=1.3cm] (b) at (4.1,1){};
       \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.9cm,-3.2cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/R_of_Tau.pdf}};
-    \end{tikzpicture}
+    \end{tikzpicture}\\
     %
+    %\vspace{2mm}
+    Binary separation \\
+    \vspace{-1mm}
     \[ 
     \tfrac{\dot{r}}{r}\sim \tfrac{\dot{f}}{f} \Longrightarrow \red{r(\tau)}=r_i \left(\f{\red{\tau}}{\tau_i}\right)^{\red{1/4}} \hspace{4cm}
     \]
@@ -472,7 +492,7 @@ $A_{\mu\nu} $ is the polarization tensor.
     \begin{small}
       \begin{align*}
       h_c(t) %&=\f{4}{D}\left(\f{G M_c}{c^2}\right)^{5/3}\, \left(\f{\pi f(t)}{c}\right)^{2/3}\nn\\
-      &\approx 1.9\times \bl{10^{-23}} \left(\f{40\,\text{Mpc}}{D}\right)\left(\f{M_c}{1.219 M_\odot}\right)^{5/3}\left(\frac{\red{f}}{10\,\text{Hz}}\right)^{\red{2/3}} \\
+      &\approx 7.5\times \bl{10^{-24}} \left(\f{100\,\text{Mpc}}{D}\right)\left(\f{M_c}{1.219 M_\odot}\right)^{5/3}\left(\frac{\red{f}}{10\,\text{Hz}}\right)^{\red{2/3}} \\
       \Phi(t) &=\int_{t_i}^t dt' \omega(t') + \text{PN}
       \end{align*}
     \end{small}
@@ -557,7 +577,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   Interferometers ({\bf IFO}s) measure only the response function (\bl{GW strain})
   \begin{footnotesize}
   \begin{align*}
-   h(t) &= F_+(\theta,\phi,\psi) \,h_+(t)+F_\times(\theta,\phi,\psi)\, h_\times(t) , \\
+   \bl{h(t)} &= F_+(\theta,\phi,\psi) \,h_+(t)+F_\times(\theta,\phi,\psi)\, h_\times(t) , \\
     F_+ &=\f{1}{2}\left(1+\cos^2\theta\right)\cos2\phi\cos 2\psi-\cos\theta \sin2\phi \sin2\psi, \\
     F_\times &=\f{1}{2}\left(1+\cos^2\theta\right)\cos2\phi\sin2\psi+\cos\theta \sin2\phi \cos2\psi
    \end{align*}
@@ -917,17 +937,16 @@ Detection moment: $t(f=\bar{f})$ such that
 \end{frame}
 
 \begin{frame}{The era of Einstein Telescope}{BNS detections}
- Same detection criterion:\qquad $\bar{\rho}_\text{ET}(f_0, \bar{f}_\text{ET}) =15$ \todo{ADD LIGO2017}\\
- \red{Two} ET configurations: B (high $f$), C (low $f$)\todo{2020 to plot}
+ Same detection criterion:\qquad $\bar{\rho}_\text{ET}(f_0, \bar{f}_\text{ET}) =15$\\
+ \red{Two} ET configurations:\qquad \textcolor{brown}{B} (high $f$), \red{C} (low $f$)
  \begin{tikzpicture}[overlay,remember picture]
-      \onslide<1->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted.pdf}};
-      %\onslide<2->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted.pdf}};
-      %\onslide<3->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted.pdf}};
-      %\onslide<4->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted.pdf}};
+      \onslide<1->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_strains_redshifted_pres.pdf}};
+      \onslide<2->\node (img1 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_B_SNR_int.pdf}};
+      \onslide<3->\node (img1 )[anchor=center,scale=1,opacity=1] at ([shift={(0cm,-1.5cm)}]current page.center) {\includegraphics[height=6cm]{../Figures/ET_C_SNR_int.pdf}};
 \end{tikzpicture}      
 \end{frame}
       
-\begin{frame}{The era of Einstein Telescope}{GRB \red{Forecast} Prospects} 
+\begin{frame}{The era of Einstein Telescope}{GRB \red{Forecast} Prospects } 
   \vspace{-8mm}
   \begin{footnotesize}
   \begin{table}[h]
@@ -942,7 +961,7 @@ Detection moment: $t(f=\bar{f})$ such that
   100 & $\approx\,$6.72 &  47.0\,minutes & 306 & $ 1.54^{4.7}_{0.3}$ & $\approx\,$3.27 & 5.34\,hours\ & 365\T\\
   200 & $\approx\,$11.2 & 11.6\,minutes & 152 &  $ 12.3^{38}_{2.6} $ & $\approx\,$4.10 & 2.87\,hours\ & 182 \\
   400 & $\approx\,$18.2 & 3.00\,minutes & 75.7 &$ 98.6^{300}_{20} $ & $\approx\,$5.06 & 1.51\,hours\ & 90.5\\
-  600 & $\approx\,$?  &?\,seconds & ?& $ 333^{1020}_{69} $ &    $\approx\,$5.7 & 1.03\,hours & 60.?  \\
+  600 & $\approx\,$26.0  &65.8\,seconds & 50.2& $ 333^{1020}_{69} $ &    $\approx\,$5.7 & 1.03\,hours & 60.0  \\
   \hline\hline
   %bottomrule
   \end{tabular}
