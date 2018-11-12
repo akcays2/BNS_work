@@ -1,5 +1,5 @@
-\documentclass[xcolor=dvipsnames,t]{beamer}
-%\documentclass[xcolor=dvipsnames,handout,t]{beamer}
+%\documentclass[xcolor=dvipsnames,t]{beamer}
+\documentclass[xcolor=dvipsnames,handout,t]{beamer}
 % use handout in document class to stop transitions
 
 \mode<presentation>
@@ -177,7 +177,7 @@
     \item[] Ultra broad-band in electromagnetic waves: gamma rays to radio.
     \item A simple question \\
     {\small ``What can we offer to the astronomy community with future GW detections?''}
-    Advance warning!
+    \item[] \red{GRB Forecasts!}
   \end{itemize}
 \end{frame}
 
@@ -995,9 +995,81 @@ Detection moment: $t(f=\bar{f})$ such that
 \end{frame}
 
 
-\begin{frame}{The era of Einstein Telescope}{Black hole - neutron star binaries}
+\begin{frame}{Black hole - neutron star binaries}{Forecasting \red{tidal disruption} events}
+  Necessary, but insufficient \bl{condition}:
+  $   \f{M_\text{BH}}{M_\text{NS}} \gtrsim \left(\f{r}{R_\text{NS}}\right)^3  $
+  %
+  \onslide<2->
+  \begin{itemize}
+  \item Small separation $r\to r_\text{ISCO}$
+  \item Low black hole mass, stellar evolution models: $M_\text{BH}\gtrsim 5M_\odot$
+  \item High black hole spin: $\tilde{r}_\text{ISCO}\to 1$ from 6.
+  \item Larger neutron star radii, $r_\text{NS}\sim15\,$km
+  \end{itemize}
+  \onslide<3->
+  $\red{5} M_\odot -1.4 M_\odot$ BH-NS inspirals are \red{faster} because $\tau_\text{insp} \propto M^{-5/3}$
+  %
+  \onslide<4->
+  \begin{footnotesize}
+  \begin{table}[h]
+  \centering
+  \begin{tabular}{lccccc}
+  %toprule
+  \hline\hline
+  $D\,$(Mpc) & \multicolumn{2}{c}{ET-B} &  & \multicolumn{2}{c}{ET-C}\T\B\\
+  \hline
+  {}&  \ \hspace{6mm}$T_\text{AW}$ \hspace{8mm} & $\bar{\rho}_{F}$ &{}  & $\hspace{6mm}T_\text{AW} \hspace{10mm}$ & $\bar{\rho}_{F}$\T\B\\
+  %
+  100 &   28.2\,minutes & 503 &{\qquad} &  2.15\,hours & 601\T\\
+  200 & 8.21\,minutes & 251  &{\qquad} & 1.10\,hours & 300 \\
+  %400 &  2.00\,minutes & 124 &{\qquad} & 34.2\,minutes & 148\\
+  %1000 & 14.3\,seconds & 49 &{\qquad} & 13.9\,minutes& 58.5\\
+  \hline\hline
+  %bottomrule
+  \end{tabular}
+  \end{table}
+  \end{footnotesize}
+  %
+  \onslide<5->
+  $T_\text{AW} \gtrsim 1\,$hour $\Longrightarrow D \lesssim 200\,$Mpc \\
+  O1 rate $R < 3600 \text{Gpc}^{-3}\text{yr}^{-1} \Longrightarrow 30\text{yr}^{-1}$ within $(200\,\text{Mpc})^3$ \\
+  BH population studies: $\Longrightarrow \text{ \red{Forecast} } \red{3}\text{yr}^{-1}$ within $(200\,\text{Mpc})^3$
+  % 
+  %
+  \begin{tikzpicture}[overlay,remember picture]
+	  \onslide<1->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(5.6cm,2.25cm)}]current page.center) {\includegraphics[height=2.8cm]{figs/BH_NS_1.png}};
+	  \node[anchor=center,scale=0.5,opacity=1] at ([shift={(5cm,0.7cm)}]current page.center) {Phys.Rev. D92 (2015) 044028};
+  \end{tikzpicture}
+\end{frame}
 
-
+\begin{frame}{}{}%{Summary and Outlook}
+{\bf Summary}
+\begin{itemize}
+ \item \bl{Quadrupole} + \bl{Newtonian} evolution = inspiral time $\tau_\text{insp}\propto \red{f^{-8/3}}$
+ \item Detector sensitivity + GW strain = advance warning time $T_\text{AW}$
+ \onslide<2->
+ \item Advanced LIGO-Virgo will detect \bl{many} BNS, but NOT forecast.
+ \onslide<3->
+ \item Einstein Telescope will \bl{detect} $\bl{\ord(1000)}$ of BNS out to 1\,Gpc .
+ \item Einstein-C will \red{forecast $\ord(100)$ BNS} with $T_\text{AW}>1\,$hour.
+ \item Additionally forecast $< \ord(10)$ tidal disruption events.
+ \item 5 to 10 BNS inspirals will be \red{localized} to $\red{10\,\text{deg}^2}$.
+ \end{itemize}
+ \onslide<4->{
+  {\bf Outlook}
+  \begin{itemize}
+    \item Forecast/localize $\Rightarrow$ Mobilize EM telescopes \\
+  \hspace{-5.6mm}$\Rightarrow$ \red{Observe} the merger/kilonova from  $\gamma$-rays to radio
+  \item Pre-, post-merger image comparisons with LSST
+ }
+ \onslide<5->
+ \item Contaminants? Type Ia supernovae, AGN, CV
+\end{itemize}
+\begin{tikzpicture}[overlay,remember picture]
+	  \onslide<5->\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-2.6cm,-3.8cm)}]current page.center) {\includegraphics[height=1.2cm]{figs/AAletter.png}};
+	  \onslide<5->\node (img1 )[anchor=center,scale=1,opacity=1] at ([shift={(4.6cm,-3.cm)}]current page.center) {\includegraphics[height=2.7cm]{figs/SNIa_lim22mag.pdf}};
+\end{tikzpicture}
+ 
 \end{frame}
 
 
