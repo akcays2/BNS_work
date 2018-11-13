@@ -39,6 +39,7 @@
 \newcommand{\todo}[1]{\textcolor{orange}{\texttt{TODO: #1}}} 
 \newcommand{\red}[1]{\textcolor{red}{#1}} 
 \newcommand{\bl}[1]{\textcolor{blue}{#1}} 
+\newcommand{\w}[1]{\textcolor{white}{#1}} 
 
 %\setlength{\droptitle}{10em} 
 
@@ -259,56 +260,54 @@
 
  
 \begin{frame}{Gravitational waves: Einstein 1916}
-  \begin{center}
-\begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[height=3.5cm]{figs/Einstein1916.png}};
-            %\draw<1>[red,ultra thick,rounded corners] (1.6,1) rectangle (\textheight-1cm,5);
-           \uncover<3->{\draw<3->[red,thick] (1.7,0.04) rectangle (3.1,0.27);}
-        \end{tikzpicture}
-        \\
-         \uncover<2->{Perturbations of spacetime with speed $=c$, sourced by accelerating masses.}
-         \end{center}
-          \begin{itemize}
- \item  \uncover<3->{Spacetime metric $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$, \quad with $| h_{\mu\nu} | \ll 1$.}
- \item  \uncover<4->{Insert into $G_{\mu\nu} = 0$. Keep only $\mathcal{O}(h)$. Pick a gauge.} %(e.g. Lorenz).}
-  \uncover<5->{\[ \Rightarrow\quad \boxed{\Box \bar{h}_{\mu\nu}= 0}, \quad \text{wave equation!} \]}
-  \item \uncover<6->{\alert{Plane-waves:} $ \bar{h}_{\mu\nu} = \Re\left[A_{\mu\nu}\, \text{e}^{i k_\mu x^\mu}\right] =\Re\left[A_{\mu\nu}\, \text{e}^{-i\omega (t-z/c )}\right]$.}
- \end{itemize}
-\end{frame}
+\vspace{-5mm}
+\begin{center}
+  \begin{tikzpicture}%[overlay,remember picture]
+	      \onslide<1-4>\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[height=3.5cm]{figs/Einstein1916.png}};
+	      \onslide<2-4>{\draw[red,thick] (1.7,0.04) rectangle (3.1,0.27);}
+  \end{tikzpicture}
+  \\
+  \vspace{5mm}
+  \onslide<2->{Perturbations of spacetime with speed $=c$, sourced by accelerating masses.}
+\end{center}
+    %      
+  \onslide<3->
+  \[\text{Wave equation: } \boxed{\Box \bar{h}_{\mu\nu}= 0} \ \ \Longrightarrow
+  \alert{\text{Plane-waves: }}  \bar{h}_{\mu\nu} = \Re\left[A_{\mu\nu}\, \text{e}^{-i\omega (t-z/\red{c} )}\right]
+  \]
+  %
+ \onslide<4-> $A_{\mu\nu} $: polarization tensor, \\
+ $\Longrightarrow$ \emph{only} \red{2} polarizations (\bl{transverse}):
+  $\begin{array}{l} \w{A_{xx}=-A_{yy} = h_+}  \\ \w{A_{xy}=\ \ A_{yx} = h_\times} \\ \end{array}$
+ \end{frame}
 
-\begin{frame}{Gravitational waves: d.o.f.'s}
-$A_{\mu\nu} $ is the polarization tensor.
-\begin{itemize}
- \uncover<2->{\item $\{ \bar{h}_{\mu\nu}, A_{\mu\nu} \}$: $4\times4$, symmetric \uncover<3->{$\hspace{1.5cm}\Rightarrow \f{4\times 5}{2}\ \ \ = 10$ d.o.f.}}
- \uncover<4->{\item Gauge condition: $\nabla_\mu \bar{h}^{\mu\nu} =  A_{\mu\nu} k^\nu= 0$ \uncover<5->{$\Rightarrow10-4 = \, 6$ d.o.f.}}
- \uncover<6->{\item Residual gauge freedom \hspace{2.25cm} \uncover<7->{$\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
- \end{itemize}
-\uncover<7->{\quad \ Consistent with $\pm 2$ helicities of a \bl{massless} spin 2 boson.\\}
-\uncover<8->{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): \uncover<9->{$\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$}}
-\\
 
-\begin{tikzpicture}[overlay,remember picture]
-  \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.5cm,-2.5cm)}]current page.center){\includegraphics[height=2.6cm]{figs/white_box.png}};
-  \node (img1 )[anchor=center,scale=1.,opacity=1] at ([shift={(3.5cm,-2.5cm)}]current page.center) {\includegraphics[height=2.6cm]{figs/white_box.png}};
+\begin{frame}{Gravitational waves: Einstein 1916}
+\vspace{-5mm}
+\begin{center}
+  \begin{tikzpicture}%[overlay,remember picture]
+	      \onslide<1>\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[height=3.5cm]{figs/white_box.png}};
+	      %\onslide<2-4>{\draw[red,thick] (1.7,0.04) rectangle (3.1,0.27);}
+  \end{tikzpicture}
+  \\
+  \vspace{5mm}
+  {Perturbations of spacetime with speed $=c$, sourced by accelerating masses.}
+\end{center}
+  %        
+  %
+  \[\text{Wave equation: } \boxed{\Box \bar{h}_{\mu\nu}= 0} \ \ \Longrightarrow
+  \alert{\text{Plane-waves: }}  \bar{h}_{\mu\nu} = \Re\left[A_{\mu\nu}\, \text{e}^{-i\omega (t-z/\red{c} )}\right]
+  \]
+  %
+ $A_{\mu\nu} $: polarization tensor, \\
+ $\Longrightarrow$ \emph{only} \red{2} polarizations (\bl{transverse}):
+  $\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$
+ \begin{tikzpicture}[overlay,remember picture]
+	      \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.5cm,1.5cm)}]current page.center){\animategraphics[loop,controls,height=2.6cm]{12}{GWs_plus-}{0}{20}};
+	      \node (img1 )[anchor=center,scale=1.,opacity=1] at ([shift={(3.5cm,1.5cm)}]current page.center) {\animategraphics[loop,controls,height=2.6cm]{12}{GWs_cross-}{0}{20}};
 \end{tikzpicture}
 \end{frame}
 
-\begin{frame}{Gravitational waves: d.o.f.'s}
-$A_{\mu\nu} $ is the polarization tensor.
-\begin{itemize}
-  {\item $\{ \bar{h}_{\mu\nu}, A_{\mu\nu} \}$: $4\times4$, symmetric {$\hspace{1.5cm}\Rightarrow \f{4\times 5}{2}\ \ \ = 10$ d.o.f.}}
-  {\item Gauge condition: $\nabla_\mu \bar{h}^{\mu\nu} =  A_{\mu\nu} k^\nu= 0$ {$\Rightarrow10-4 = \, 6$ d.o.f.}}
-  {\item Residual gauge freedom \hspace{2.25cm} {$\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
- \end{itemize}
-{\quad \ Consistent with $\pm 2$ helicities of a \bl{massless} spin 2 boson.\\}
-{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): {$\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$}}
-\\
-%
-\begin{tikzpicture}[overlay,remember picture]
-  \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.5cm,-2.5cm)}]current page.center){\animategraphics[loop,controls,height=2.6cm]{12}{GWs_plus-}{0}{20}};
-  \node (img1 )[anchor=center,scale=1.,opacity=1] at ([shift={(3.5cm,-2.5cm)}]current page.center) {\animategraphics[loop,controls,height=2.6cm]{12}{GWs_cross-}{0}{20}};
-\end{tikzpicture}
-\end{frame} 
  
 %  Two of the same slide next for the right transition effects %%%%%%%%%%%%%%%%%%%%%%%
 
@@ -318,7 +317,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
   \vspace{2mm}
   \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
-  \textcolor{white}{{\bf Binary systems:} 2 points masses in circular orbit.}
+  \textcolor{white}{{\bf Binary systems:} 2 points masses in a circular orbit $M=m_1+m_2$}
   \begin{tikzpicture}[overlay,remember picture]
     \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.7cm)}]current page.center) {\includegraphics[height=2.9cm]{figs/white_box.png}};
   \end{tikzpicture}
@@ -330,7 +329,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
   \vspace{2mm}
   \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
-  {\bf Binary systems:} 2 points masses in circular orbit.
+  {\bf Binary systems:} 2 points masses in a circular orbit $M=m_1+m_2$
   \begin{tikzpicture}[overlay,remember picture]
     \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.7cm)}]current page.center) {\animategraphics[loop,controls,height=2.9cm]{12}{Circ_Orb-}{0}{20}};
     %\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.7cm)}]current page.center) {\includegraphics[height=2.9cm]{figs/white_box.png}};
@@ -402,7 +401,7 @@ $A_{\mu\nu} $ is the polarization tensor.
 %
   \onslide<3->
   {
-    {\bf Key idea:} \red{energy balance} between $\dot{E}$ and $\dot{E}_b$\\
+    {\bf Key idea:} \red{energy balance} between $\dot{E}$ and $\dot{E}_b$ (\bl{binding energy})\\
     %of gravitational binding energy
     \quad where $ E_b= -\tfrac{G m_1 m_2}{2r} = -\left(\tfrac{G^2 M_c^5 \omega^2}{32}\right)^{1/3} $
   }
@@ -429,6 +428,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   \vspace{1mm}
   Fix integration constant $\tau = t_\text{coal} - t >0$. \\
   \vspace{2mm}
+  \onslide<2->
   Introduce \red{inspiral time}, i.e, time to \bl{coal}escence (merger)
   %
   \begin{small}
@@ -438,7 +438,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   \end{align}
   \end{small}
   \\
-  \onslide<2->
+  \onslide<3->
   {
     Number of GW cycles to coalescence: $\int \tfrac{f}{\dot{f}}df\sim \red{f^{-5/3}}$ %$\int df {f}/\dot{f}$
     \begin{small}
@@ -449,12 +449,11 @@ $A_{\mu\nu} $ is the polarization tensor.
     \end{small}
   }
   %
-  \onslide<3->
-  {
-    \begin{tikzpicture}[overlay,remember picture]
-      \node[draw, red,thick,minimum width=9.2cm,minimum height=1.3cm] (b) at (4.2,3.35){};
-      \node[draw, red,thick,minimum width=9cm,minimum height=1.3cm] (b) at (4.1,1){};
-      \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.9cm,-3.2cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/R_of_Tau.pdf}};
+  \onslide<4->
+      \begin{tikzpicture}[overlay,remember picture]
+      \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.9cm,-3.25cm)}]current page.center) {\includegraphics[height=3.5cm]{figs/R_of_Tau.pdf}};
+      \onslide<5->\node[draw, red,thick,minimum width=9.5cm,minimum height=1.3cm] (b) at (4.4,3.35){};
+      \onslide<5->\node[draw, red,thick,minimum width=9cm,minimum height=1.3cm] (b) at (4.1,1){};      
     \end{tikzpicture}\\
     %
     %\vspace{2mm}
@@ -463,7 +462,7 @@ $A_{\mu\nu} $ is the polarization tensor.
     \[ 
     \tfrac{\dot{r}}{r}\sim \tfrac{\dot{f}}{f} \Longrightarrow \red{r(\tau)}=r_i \left(\f{\red{\tau}}{\tau_i}\right)^{\red{1/4}} \hspace{4cm}
     \]
-  }
+  %
 \end{frame}
 
 \begin{frame}{Gravitational waves from BNS}
@@ -526,7 +525,7 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 
 
- \begin{frame}{GW Detectors: \red{Interferometers}}
+ \begin{frame}{GW Detectors: \red{Interferometers}}{Geodesic deviation}
     Two geodesics separated by $\xi^\mu$:
     %\[
     % \frac{D^2 \xi^\alpha}{D\tau^2} = -R^\alpha_{\beta \gamma\delta}\, \xi^\gamma u^\beta u^\delta 
@@ -540,18 +539,58 @@ $A_{\mu\nu} $ is the polarization tensor.
     %
     %
     \onslide<2->
-    {
-      GW along $\mathbf{z}$: 
+    GW along $\mathbf{z}$: 
       \[
       h_{ij}^\text{TT} = \left(\begin{array}{cc}
 				h_+ & h_\times \\
 				h_\times & - h_+
 				\end{array}\right) \cos\left(\omega\left( t-\tfrac{z}{c}\right)\right)
       \]
-    }
-    \onslide<3->
-    {
+      \onslide<3->
       Consider mirrors at $(0,0)_1, (L,0)_2$ and $(L,L)_3$
+      \begin{tikzpicture}[overlay,remember picture]
+	%\node[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-3.4cm)}]current page.center){\todo{Make sure the vid here works}} ;
+	\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\includegraphics[height=2.39cm]{figs/white_box.png}};
+      \end{tikzpicture}
+          \begin{small}
+      \begin{align*}
+	\w{s_{12} }& \w{=\int_1^2 \tfrac{ds}{dx}dx = (x_2-x_1) \left[ 1 + h_+ \cos(\omega t)\right]^{1/2}\hspace{4cm} }\\
+	   &\w{ \approx L \left[ 1+\tfrac{1}{2} h_+ \cos\omega t \right] }\\
+      \w{s_{13}} &\w{\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]}
+      \end{align*}
+      \end{small}
+    %
+    %
+ \end{frame}
+ 
+ \begin{frame}{GW Detectors: \red{Interferometers}}{Geodesic deviation}
+    Two geodesics separated by $\xi^\mu$:
+    %\[
+    % \frac{D^2 \xi^\alpha}{D\tau^2} = -R^\alpha_{\beta \gamma\delta}\, \xi^\gamma u^\beta u^\delta 
+    %\]
+    $ \tfrac{d^2 \xi^i}{d\tau^2} = -R^i_{0j0} \xi^j\left(\tfrac{dx^0}{d\tau}\right)^2$ \hfill (detector frame)\\
+    %\hspace{4cm} $\Longrightarrow \ddot{\xi^i} = -c^2 R^i_{0j0} \xi^j $ \hfill (detector time)\ \\
+    \vspace{-3mm}
+    \[
+    \hspace{4.5cm} \boxed{\ddot{\xi^i} = \frac{1}{2} \ddot{h}_{ij}^\text{TT} \xi^j} \hspace{2.5cm} \text{(detector time)}
+    \]
+    %
+    %
+    %
+    GW along $\mathbf{z}$: 
+      \[
+      h_{ij}^\text{TT} = \left(\begin{array}{cc}
+				h_+ & h_\times \\
+				h_\times & - h_+
+				\end{array}\right) \cos\left(\omega\left( t-\tfrac{z}{c}\right)\right)
+      \]
+      %
+      Consider mirrors at $(0,0)_1, (L,0)_2$ and $(L,L)_3$
+      \begin{tikzpicture}[overlay,remember picture]
+	%\node[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-3.4cm)}]current page.center){\todo{Make sure the vid here works}} ;
+	\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.39cm]{12}{LIGO_int-}{0}{102}};
+      \end{tikzpicture}
+    \onslide<2->      
       \begin{small}
       \begin{align*}
 	s_{12} &= \int_1^2 \tfrac{ds}{dx}dx = (x_2-x_1) \left[ 1 + h_+ \cos(\omega t)\right]^{1/2}\hspace{4cm} \\
@@ -559,15 +598,8 @@ $A_{\mu\nu} $ is the polarization tensor.
       s_{13} &\approx L \left[ 1-\tfrac{1}{2} h_+ \cos\omega t \right]
       \end{align*}
       \end{small}
-    }
     %
-    \onslide<4->
-    {
-      \begin{tikzpicture}[overlay,remember picture]
-      \node[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-3.4cm)}]current page.center){\todo{Make sure the vid here works}} ;
-      %\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.39cm]{12}{LIGO_int-}{0}{102}};
-      \end{tikzpicture}
-    }
+    %
  \end{frame}
  
  
@@ -720,7 +752,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   \begin{footnotesize}
   \begin{align*}
   \rho_{\text{tot},\bigtriangleup} %&= \left[ \int_0^\infty d\ln f\, \f{|{2\tilde{H}_\bigtriangleup(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
-  &=\f{6}{5}A\, h_0 \left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \\
+  &=\f{6}{5}A\, h_0 \rho_c \\%\left[\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)}\right]^{1/2} \\
   \end{align*}
   \end{footnotesize}
   \\
@@ -731,7 +763,7 @@ $A_{\mu\nu} $ is the polarization tensor.
   %
   %
   \begin{tikzpicture}[overlay,remember picture]
-  \node[draw, red,thick,minimum width=5.5cm,minimum height=1.25cm] (b) at (-3.2,1.05){};
+  \node[draw, red,thick,minimum width=3.cm,minimum height=0.9cm] (b) at (-3.2,0.9){};
   \end{tikzpicture}
   %
   % 
@@ -827,7 +859,7 @@ $A_{\mu\nu} $ is the polarization tensor.
 
 \begin{frame}{GW Astronomy in the 2020s}{Advanced LIGO-Virgo}
   \red{BIG question:} how long before the GRB can we {\bf detect} BNS inspirals?\\
-  Detection criterion: SNR = \red{15}\\
+  Detection criterion: SNR = \red{15}. Set $m_1=m_2=1.4 M_\odot$\\
   Three identical L-IFOs with $Q_{i=h,m,l}$
   %\[  \bar\rho_\text{tot}= \sqrt{\left[\rho_h(f_0^h,\bar{f})\right]^2+\left[\rho_m(f_0^m,\bar{f})\right]^2+\left[\rho_l(f_0^l,\bar{f})\right]^2}=15\]
   % 
@@ -920,7 +952,7 @@ Detection moment: $t(f=\bar{f})$ such that
   \vspace{-1mm}
   \begin{itemize}
     \item[] One detector, \red{three V}-IFOs, $60^\circ$ 10\,km arms.
-    \item[] Underground,cryogenic, \bl{xylophone} (high, low-frequency modes)
+    \item[] Underground, cryogenic, \bl{xylophone} (high, low-frequency modes)
     \uncover<2->{
     \item[] Recall: \red{RMS}-average over all four angles
     \item[] Cosmological range $\Rightarrow$ \red{red}-shifted strain and SNR}
@@ -1155,3 +1187,39 @@ Consider mirrors at $\mathbf{x}=x_1$ and at $\mathbf{x}=x_2=x_1+\mathbf{\xi}$
 \begin{frame}{Supplemet 5: Mass-inclination degeneracy}
  
 \end{frame}
+
+
+
+\begin{frame}{Gravitational waves: d.o.f.'s}
+$A_{\mu\nu} $ is the polarization tensor.
+\begin{itemize}
+ \uncover<2->{\item $\{ \bar{h}_{\mu\nu}, A_{\mu\nu} \}$: $4\times4$, symmetric \uncover<3->{$\hspace{1.5cm}\Rightarrow \f{4\times 5}{2}\ \ \ = 10$ d.o.f.}}
+ \uncover<4->{\item Gauge condition: $\nabla_\mu \bar{h}^{\mu\nu} =  A_{\mu\nu} k^\nu= 0$ \uncover<5->{$\Rightarrow10-4 = \, 6$ d.o.f.}}
+ \uncover<6->{\item Residual gauge freedom \hspace{2.25cm} \uncover<7->{$\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
+ \end{itemize}
+\uncover<7->{\quad \ Consistent with $\pm 2$ helicities of a \bl{massless} spin 2 boson.\\}
+\uncover<8->{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): \uncover<9->{$\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$}}
+\\
+
+\begin{tikzpicture}[overlay,remember picture]
+  \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.5cm,-2.5cm)}]current page.center){\includegraphics[height=2.6cm]{figs/white_box.png}};
+  \node (img1 )[anchor=center,scale=1.,opacity=1] at ([shift={(3.5cm,-2.5cm)}]current page.center) {\includegraphics[height=2.6cm]{figs/white_box.png}};
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Gravitational waves: d.o.f.'s}
+$A_{\mu\nu} $ is the polarization tensor.
+\begin{itemize}
+  {\item $\{ \bar{h}_{\mu\nu}, A_{\mu\nu} \}$: $4\times4$, symmetric {$\hspace{1.5cm}\Rightarrow \f{4\times 5}{2}\ \ \ = 10$ d.o.f.}}
+  {\item Gauge condition: $\nabla_\mu \bar{h}^{\mu\nu} =  A_{\mu\nu} k^\nu= 0$ {$\Rightarrow10-4 = \, 6$ d.o.f.}}
+  {\item Residual gauge freedom \hspace{2.25cm} {$\Rightarrow 6-4 \ \ = \alert{2}$ \alert{d.o.f.}}}
+ \end{itemize}
+{\quad \ Consistent with $\pm 2$ helicities of a \bl{massless} spin 2 boson.\\}
+{$\Rightarrow$ \alert{2} POLARIZATIONS (\alert{transverse}): {$\begin{array}{l}A_{xx}=-A_{yy} = \red{h_+}  \\ A_{xy}=\ \ A_{yx} = \red{h_\times}  \\ \end{array}$}}
+\\
+%
+\begin{tikzpicture}[overlay,remember picture]
+  \node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.5cm,-2.5cm)}]current page.center){\animategraphics[loop,controls,height=2.6cm]{12}{GWs_plus-}{0}{20}};
+  \node (img1 )[anchor=center,scale=1.,opacity=1] at ([shift={(3.5cm,-2.5cm)}]current page.center) {\animategraphics[loop,controls,height=2.6cm]{12}{GWs_cross-}{0}{20}};
+\end{tikzpicture}
+\end{frame} 
