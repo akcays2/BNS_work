@@ -312,9 +312,9 @@
 %  Two of the same slide next for the right transition effects %%%%%%%%%%%%%%%%%%%%%%%
 
  \begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
-  \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
+  \alert{Inspirals}, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
   Gravitational-wave emission: \alert{quadrupole} radiation (leading-order)
-  \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
+  \begin{center} $ \boxed{\dot{E} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
   \vspace{2mm}
   \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
   \textcolor{white}{{\bf Binary systems:} 2 points masses in a circular orbit $M=m_1+m_2$}
@@ -324,9 +324,9 @@
 \end{frame}
 
 \begin{frame}{Making gravitational waves}{non-spherical, accelerated motion}
-  \alert{Inspirals}, GRBs, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
+  \alert{Inspirals}, bumps on neutron stars, supernovae, the Big Bang. \\%  (BICEP 2).\\
   Gravitational-wave emission: \alert{quadrupole} radiation (leading-order)
-  \begin{center} $ \boxed{\dot{E}=L_\text{GW} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
+  \begin{center} $ \boxed{\dot{E} = \f{G}{c^5} \langle (\partial_t^3 \bar{Q}_{ij})^2 \rangle}$\\
   \vspace{2mm}
   \begin{small}$ \quad \bar{Q}_{ij} = Q_{ij}-\frac{1}{3}\delta_{ij}Q^k_k, \quad Q^{ij} = \int \rho(t,{\mathbf x})x^i x^j d^3 x $ \end{small} \end{center}
   {\bf Binary systems:} 2 points masses in a circular orbit $M=m_1+m_2$
@@ -335,8 +335,8 @@
     %\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(-3.8cm,-2.7cm)}]current page.center) {\includegraphics[height=2.9cm]{figs/white_box.png}};
     \onslide<2->\node (t1 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-1.3cm)}]current page.center) {$\mu=m_1 m_2/M^2,\ x(t) = r \cos\Omega t, \ y(t) = r \sin\Omega t $};
     \onslide<3->\node (t2 )[anchor=center,scale=1,opacity=1] at ([shift={(2.25cm,-2.2cm)}]current page.center) {$ Q^{ij} =  \mu\, x^i x^j, \qquad \boxed{\dot{E} = \f{32}{5}\f{G\mu^2}{c^5}r^4 \Omega^6}$};
-    \onslide<4->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to eccentricity \bl{$e$}};
-    \node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-4cm)}]current page.center) {$ \bl{\f{\left(1 + \f{73}{24}e^2+ \f{37}{96} e^4 \right)}{(1-e^2)^{7/2}}}$};
+    %\onslide<4->\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2.5cm,-3.2cm)}]current page.center) {Enhancement due to eccentricity \bl{$e$}};
+    %\node (t3 )[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-4cm)}]current page.center) {$ \bl{\f{\left(1 + \f{73}{24}e^2+ \f{37}{96} e^4 \right)}{(1-e^2)^{7/2}}}$};
   \end{tikzpicture}
 \end{frame}
 
@@ -466,16 +466,20 @@
 \end{frame}
 
 \begin{frame}{Gravitational waves from BNS}
-  TT gauge, multipole, slow-velocity expansions give 
-  \begin{small}
-    \[
-    h_{ij}^\text{TT} = \tfrac{2}{D}\tfrac{G}{c^4} \ddot{Q}_{ij}^\text{TT}\hspace{6cm}
-    \]
+  %TT gauge, multipole, slow-velocity expansions give 
+  %\begin{small}
+   % \[
+    %h_{ij}^\text{TT} = \tfrac{2}{D}\tfrac{G}{c^4} \ddot{Q}_{ij}^\text{TT}\hspace{6cm}
+    %\]
     %
-    \vspace{-5mm}
+    %\vspace{-5mm}
+    Recall $h_{\mu \nu} \approx A_{\mu\nu}\cos\left[\omega (t-z/c)\right]$ \\
+    %  
+    \begin{small}
     \uncover<2->
     {
       \begin{align*}
+      A_{xx}&=h_+, A_{xy} = h_\times, \\
       h_+(t) &= h_c(t)\, \left(\f{1+\cos^2\iota}{2}\right)\, \cos[\Phi(t)],\hspace{5cm}\\
       h_\times(t) & =h_c(t)\,\cos\iota \sin[\Phi(t)],
       \end{align*}
@@ -547,7 +551,7 @@
 				\end{array}\right) \cos\left(\omega\left( t-\tfrac{z}{c}\right)\right)
       \]
       \onslide<3->
-      Consider mirrors at $(0,0)_1, (L,0)_2$ and $(L,L)_3$
+      Consider mirrors at $(0,0)_1, (L,0)_2$ and $(0,L)_3$
       \begin{tikzpicture}[overlay,remember picture]
 	%\node[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-3.4cm)}]current page.center){\todo{Make sure the vid here works}} ;
 	\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\includegraphics[height=2.39cm]{figs/white_box.png}};
@@ -585,7 +589,7 @@
 				\end{array}\right) \cos\left(\omega\left( t-\tfrac{z}{c}\right)\right)
       \]
       %
-      Consider mirrors at $(0,0)_1, (L,0)_2$ and $(L,L)_3$
+      Consider mirrors at $(0,0)_1, (L,0)_2$ and $(0,L)_3$
       \begin{tikzpicture}[overlay,remember picture]
 	%\node[anchor=center,scale=1,opacity=1] at ([shift={(2cm,-3.4cm)}]current page.center){\todo{Make sure the vid here works}} ;
 	\node (img0 )[anchor=center,scale=1,opacity=1] at ([shift={(3.8cm,-2.8cm)}]current page.center) {\animategraphics[loop,controls,height=2.39cm]{12}{LIGO_int-}{0}{102}};
@@ -680,7 +684,7 @@
 \end{frame}
 
 
-\begin{frame}{Detection criteria}{Optimal Signal-to-Noise Ratio ({\bf SNR})}
+\begin{frame}{Detection criterion}{Optimal Signal-to-Noise Ratio ({\bf SNR})}
   \vspace{-5mm}
   \begin{footnotesize} 
   \[
@@ -712,17 +716,17 @@
   \]
   \end{footnotesize}
   %
-  Sources will have random $\{\theta,\phi,\psi,\iota\}$ \\
-  \begin{footnotesize} 
-  \[
-  0 \le Q(\theta,\phi,\psi,\iota) \le \underbrace{Q_\text{max}(\theta,\phi,\psi,\iota)}_{\theta=\tfrac{\pi}{2},\psi=0,\iota=0}
-  \]
-  \end{footnotesize}
+  %Sources will have random $\{\theta,\phi,\psi,\iota\}$ \\
+  %\begin{footnotesize} 
+  %\[
+  %0 \le Q(\theta,\phi,\psi,\iota) \le \underbrace{Q_\text{max}(\theta,\phi,\psi,\iota)}_{\theta=\tfrac{\pi}{2},\psi=0,\iota=0}
+  %\]
+  %\end{footnotesize}
   % 
 \end{frame}
 
 \begin{frame}{L-IFO vs. $\bigtriangleup$-IFO Networks}
-\red{Three L}-IFOs, e.g., LIGO L1, H1 + Virgo
+\red{Three L}-IFOs, e.g., LIGO L1, H1 + Virgo; or ($h$)igh, ($m$)edium, ($l$)ow
 %
   \begin{footnotesize} 
   \begin{align*}
@@ -742,13 +746,13 @@
     $\bigtriangleup$ = \red{Three V-}IFOs: Einstein Telescope
     \begin{footnotesize} 
     \[
-    \rho_{\text{tot},\bigtriangleup} = \left[\sum_{A=1}^3 \left(\rho^A\right)^2\right]^{1/2}  =  A \rho_c \,|Q(\theta,\phi,\psi,\iota)|_\bigtriangleup %\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
+    \rho_{\text{tot},\bigtriangleup} = \left[\sum_{A=1}^3 \left(\rho^A\right)^2\right]^{1/2}  =  A \rho_c \,\langle|Q(\theta,\phi,\psi,\iota)|^2\rangle^{1/2}_\bigtriangleup %\int_0^{f_\text{ISCO}} d f\, \f{f^{-7/3}}{S_n(f)} \,
     \]
     \end{footnotesize}
     \\
   }
   \onslide<3->
-  Use \bl{RMS-averaged} $|Q|^2$
+  \bl{RMS-averaged} %$|Q|^2$
   \begin{footnotesize}
   \begin{align*}
   \rho_{\text{tot},\bigtriangleup} %&= \left[ \int_0^\infty d\ln f\, \f{|{2\tilde{H}_\bigtriangleup(f)\sqrt{f}}|^2}{S_n(f)}\right]^{1/2} 
@@ -788,7 +792,7 @@
   %
   \onslide<6->
   {
-    Assuming low spin priors
+    System parameters
     \begin{align*}
      M&=2.73^{+0.04}_{-0.01} M_\odot \\
      M_c &=1.186^{+0.001}_{-0.001}M_\odot  \\ 
@@ -859,7 +863,7 @@
 
 \begin{frame}{GW Astronomy in the 2020s}{Advanced LIGO-Virgo}
   \red{BIG question:} how long before the GRB can we {\bf detect} BNS inspirals?\\
-  Detection criterion: SNR = \red{15}. Set $m_1=m_2=1.4 M_\odot$\\
+  Detection criterion: SNR = \red{15} \\ %Set $m_1=m_2=1.4 M_\odot$\\
   Three identical L-IFOs with $Q_{i=h,m,l}$
   %\[  \bar\rho_\text{tot}= \sqrt{\left[\rho_h(f_0^h,\bar{f})\right]^2+\left[\rho_m(f_0^m,\bar{f})\right]^2+\left[\rho_l(f_0^l,\bar{f})\right]^2}=15\]
   % 
@@ -918,13 +922,8 @@ Detection moment: $t(f=\bar{f})$ such that
     T_\text{AW} = \tau_\text{insp}(\bar{f})
   \]
   \onslide<2->
-  {
-    Total accumulated SNR over the inspiral
-    \begin{footnotesize}
-      \[
-      \bar{\rho}_\text{F}\equiv\sqrt{\left[{\rho}_h(f_0^h,{f}_\text{ISCO})\right]^2+\left[{\rho}_m(f_0^m,{f}_\text{ISCO})\right]^2+\left[{\rho}_l(f_0^l,{f}_\text{ISCO})\right]^2}
-      \]
-      \begin{table}[h]
+  \begin{footnotesize}
+         \begin{table}[h]
 	\centering
 	\begin{tabular}{lcccccc}
 	  \hline\hline
@@ -936,15 +935,22 @@ Detection moment: $t(f=\bar{f})$ such that
 	  \hline\hline
 	\end{tabular}
       \end{table}
+  \end{footnotesize}
+  %
+  \onslide<3->$\Longrightarrow$ NO likely FORECASTS  in the 2020s
+  \begin{tikzpicture}[overlay,remember picture]
+    \onslide<1->\node[draw, red,thick,minimum width=2.8cm,minimum height=1.0cm] (b) at (-0.7,4.){};
+    \onslide<3->\node[draw, red,thick,minimum width=1.1cm,minimum height=1.2cm] (b) at (1.6,1.35){};
+  \end{tikzpicture}
+  \\
+  \vspace{2mm}
+  \onslide<4->
+      Total accumulated SNR over the inspiral
+    \begin{footnotesize}
+      \[
+      \bar{\rho}_\text{F}\equiv\sqrt{\left[{\rho}_h(f_0^h,{f}_\text{ISCO})\right]^2+\left[{\rho}_m(f_0^m,{f}_\text{ISCO})\right]^2+\left[{\rho}_l(f_0^l,{f}_\text{ISCO})\right]^2}
+      \]
     \end{footnotesize}
-  }
-%
-\onslide<3->$\Longrightarrow$ NO likely FORECASTS  in the 2020s
-\begin{tikzpicture}[overlay,remember picture]
-  \onslide<1->\node[draw, red,thick,minimum width=2.8cm,minimum height=1.0cm] (b) at (-0.7,5.3){};
-  \onslide<3->\node[draw, red,thick,minimum width=1.1cm,minimum height=1.2cm] (b) at (1.6,1.35){};
-\end{tikzpicture}
-
 \end{frame}
 
 
@@ -1022,7 +1028,7 @@ Detection moment: $t(f=\bar{f})$ such that
   \vspace{1mm}
   \onslide<6->\textcolor{white}{ET-C} $\Longrightarrow \red{\ord(2)}$ with \red{5\,hours} of warning
   \begin{tikzpicture}[overlay,remember picture]
-      \onslide<3>\node[draw, blue,thick,minimum width=1.4cm,minimum height=1.6cm] (b) at (-2.6,5.3){};
+      \onslide<3>\node[draw, blue,thick,minimum width=2.cm,minimum height=1.6cm] (b) at (-0.9,5.3){};
       \onslide<4->\node[draw, red,thick,minimum width=1.8cm,minimum height=1.6cm] (b) at (3.6,5.3){};
   \end{tikzpicture}
 \end{frame}
@@ -1039,12 +1045,13 @@ Detection moment: $t(f=\bar{f})$ such that
   \end{itemize}
   \onslide<3->So, within 1\,Gpc, ET {\bf alone} will localize
   \begin{itemize}
-  \item 20\% of the sources to within 100\,deg$^2$
+  %\item 20\% of the sources to within 100\,deg$^2$
   \item 2\% to within 20\,deg$^2$
   \item 0.5\% to within 10\,deg$^2$ 
   \onslide<4->\item[]$\Longrightarrow \red{5}$ to \red{10} sources within 400\,Mpc
   \end{itemize}
   \onslide<5->10\,deg$^2$: LSST's field of view\\
+  \vspace{2mm}
   \onslide<6-> Numbers improve with \bl{Cosmic Explorer} ($f\gtrsim \red{5}\,$Hz)
   %
   \begin{tikzpicture}[overlay,remember picture]
@@ -1111,8 +1118,8 @@ Detection moment: $t(f=\bar{f})$ such that
  \onslide<3->
  \item Einstein Telescope will \bl{detect} $\bl{\ord(1000)}$ of BNS out to 1\,Gpc .
  \item Einstein-C will \red{forecast $\ord(100)$ BNS} with $T_\text{AW}>1\,$hour.
- \item Additionally forecast $< \ord(10)$ tidal disruption events.
  \item 5 to 10 BNS inspirals will be \red{localized} to $\red{10\,\text{deg}^2}$.
+ \item Additionally forecast $< \ord(10)$ tidal disruption events.
  \end{itemize}
  \onslide<4->{
   {\bf Outlook}
