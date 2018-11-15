@@ -941,16 +941,20 @@ Detection moment: $t(f=\bar{f})$ such that
   \begin{tikzpicture}[overlay,remember picture]
     \onslide<1->\node[draw, red,thick,minimum width=2.8cm,minimum height=1.0cm] (b) at (-0.7,4.){};
     \onslide<3->\node[draw, red,thick,minimum width=1.1cm,minimum height=1.2cm] (b) at (1.6,1.35){};
+     %\onslide<4->\node[draw, blue,thick,minimum width=1.1cm,minimum height=1.2cm] (b) at (3.2,1.35){};
   \end{tikzpicture}
   \\
   \vspace{2mm}
   \onslide<4->
-      Total accumulated SNR over the inspiral
+      \bl{Total} accumulated \bl{SNR} over the inspiral
     \begin{footnotesize}
       \[
       \bar{\rho}_\text{F}\equiv\sqrt{\left[{\rho}_h(f_0^h,{f}_\text{ISCO})\right]^2+\left[{\rho}_m(f_0^m,{f}_\text{ISCO})\right]^2+\left[{\rho}_l(f_0^l,{f}_\text{ISCO})\right]^2}
       \]
     \end{footnotesize}
+      \begin{tikzpicture}[overlay,remember picture]
+         \onslide<4->\node[draw, blue,thick,minimum width=1.1cm,minimum height=1.2cm] (b) at (9.7,3.55){};
+  \end{tikzpicture}
 \end{frame}
 
 
