@@ -45,9 +45,6 @@
 \hypersetup{linkcolor=RefColor}
 \definecolor{darkgreen}{rgb}{0.2,0.7,0.2}
 
-\newcommand{\beq}{\begin{equation}}
-\newcommand{\eeq}{\end{equation}}
-
 \newcommand{\bs}{\mathbf{s}}
 \newcommand{\bS}{\mathbf{S}}
 \newcommand{\bp}{\mathbf{p}}
@@ -86,6 +83,7 @@
 \newcommand{\ba}{\begin{eqnarray}}
 \newcommand{\ea}{\end{eqnarray}}
 \newcommand{\bi}{\begin{itemize}}
+\newcommand{\todo}[1]{{\textcolor{red}{\texttt{todo: #1}} }}
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\bef}{\begin{frame}}
 \newcommand{\ef}{\end{frame}}
@@ -108,8 +106,8 @@
 \title{Forecasting Gamma-Ray Bursts using Gravitational Waves}
 
 \author{Sarp Akcay}
-\affiliation{School of Mathematics \& Statistics, University College Dublin, Belfield, Dublin 4, Ireland}
 \affiliation{Theoretisch-Physikalisches Institut, Friedrich-Schiller-Universit{\"a}t Jena, 07743, Jena, Germany}
+\affiliation{School of Mathematics \& Statistics, University College Dublin, Belfield, Dublin 4, Ireland}
 %\date{\today}
 
 \begin{abstract}
@@ -161,11 +159,21 @@ the first astrophysical evidence for it.
 A week after GW170817, the ALV network was taken offline for upgrades for the third observation run (O3) 
 scheduled to start in early 2019 with roughly twice the sensitivity of O2.
 In addition, the Japanese cryogenic interferometer KAGRA (\cite{KAGRA, KAGRA2}) will start its test runs in 2018-2019 and reach its design sensitivity circa 2021-2022 \cite{Akutsu:2017thy, Aasi:2013wya}. By 2025, LIGO-India detector will join the global interferometer network hence improving both the overall sensitivity and the sky-localization capabilities \cite{Aasi:2013wya}.
-Around this time, the construction of the first third-generation ground-based interferometer, Einstein Telescope, will begin in Europe \cite{ET_doc}. 
-Meanwhile, the US is currently considering a mid-2020s update to LIGO called Voyager \cite{LIGO_Voy} and the construction of a more ambitious 40\,km long interferometer dubbed Cosmic Explorer \cite{CE}.
+Around this time, the construction of the first third-generation (3G) ground-based interferometer, Einstein Telescope, should begin in Europe \cite{ET_doc}\footnote{The decision for the funding of Einstein Telescope
+is expected to be announced in 2019-2020 with the final technical design report to be submitted in 2023-24, and the commissioning to begin in 2030-31 followed by full operations in 2032-33.}.
+Meanwhile, the US is currently considering a mid-2020s update to LIGO called Voyager \cite{LIGO_Voy} and the construction of an ambitious 40-km long 3G interferometer dubbed Cosmic Explorer \cite{CE}.
+
+\todo{ADD main science goals of 3G detectors here}
+The science goals of the 3G detectors is very exciting. For example,
+Einstein Telescope will be able to (i) distinguish between different neutron star equations of state, (ii) conduct high-precision measurements 
+of source parameters to test alternate theories of gravity,
+%(projected SNR of GW150914 at ET is 800, at CE 2400 vs. ALV 25)
+(iii) precision measurements of Hubble parameter by detecting black hole
+binaries out to z $\lesssim 15$, possible to measure the Hubble parameter, dark matter and dark energy densities, as well as the dark
+energy equation-of-state parameter; also study cosmological evolution of the sources since it can access large redshifts (See Sec.~2.2 of Ref.~\cite{ET_doc} for an excellent summary of the science case)
+
 All of these near-future additions to the GW-detector network beg a simple question: can we detect the inspiral of a binary neutron star system
 early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using GW detections?
-
 The short answer is ``yes''. The long answer is still ``yes'', but depends on many factors such as source distance and sky position, detector sensitivity and orientation. One also needs to account for the fact that GRBs are thought to be collimated emissions with narrow outburst angles \cite{Kumar:2014upa}.
 As such, most GRBs that occur in the universe are electromagnetically undetectable. Fortunately, this was not the case with GRB170817A, 
 but even for a reasonable GRB jet opening angle of $\sim 10^\circ$, we expect to observe at best $\sim 10\%$ of neutron star mergers as GRBs \cite{Patricelli:2016bkt}. 
@@ -360,7 +368,7 @@ meaning that $f^{-5/3} \gg f_\text{ISCO}^{-5/3}$. Therefore, at the leading (New
 %
 which can be rewritten as
 \be
-\mathcal{N}_\text{cyc}(f)\approx 1.605\times 10^4 \left(\f{10\,\text{Hz}}{f} \right)^{5/3}\,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\label{eq:Ncyc3}\, .
+\mathcal{N}_\text{cyc}(f)\approx 1.605\times 10^4 \,\left(\f{1.219 M_\odot}{M_c}\right)^{5/3}\, \left(\f{10\,\text{Hz}}{f} \right)^{5/3}\label{eq:Ncyc3}\, .
 \ee
 %
 This expression is quite telling: if a ground-based interferometer picks up an
@@ -392,7 +400,7 @@ In the so-called wave zone, defined by the condition $ \lambda= c/f \ll D$, wher
 these tensor modes satisfy the flat spacetime sourceless wave equation. %$\Box\bar{h}_{\mu\nu} = 0$.
 %meaning that we are considering the solutions far from the GW source, 
 %
-It can further be shown that there exist only two radiative degrees of freedom (cf. Sec.~1.2 of Ref.~\cite{Maggiore}) which physically manifest themselves as two independent polarization amplitudes $h_+$ and $h_\times$ of the GWs 
+It can further be shown that there exist only two radiative degrees of freedom (cf. Sec.~1.2 of Ref.~\cite{Maggiore}) which physically manifest themselves as two independent polarization amplitudes $h_+$ and $h_\times$ of the GWs. 
 This fact is most easily demonstrated in the so-called transverse-traceless gauge (cf. Sec.~2.1 of Ref.~\cite{Flanagan:2005yc}),
  but is a gauge-invariant consequence of linearized vacuum solutions. %when interacting with masses away from the source.
 
@@ -813,7 +821,7 @@ but let us add that a faithful evaluation of BNS systems above $f\gtrsim 100\,$H
 %, next-to-next to leading order). 
 %Though it is now possible to go up to 4pN, we suffice with 2pN here as higher-order contributions make miniscule changes to our estimations for advance warning times. 
 %
-\item {\it Truncating the inspiral at the Schwarzschild ISCO.}
+\item {\it Terminating the inspiral at the Schwarzschild ISCO.}
 We artificially end the inspirals at the Schwarzschild ISCO of the BNS with coordinate radius $r_\text{ISCO} = 6GM/c^2$ and angular frequency $\Omega_\text{ISCO}$ %= (M/r^3_\text{ISCO})^{1/2}$ in natural units, 
 given by Eq.~(\ref{eq:Sch_f_isco}) which translates to the following dominant-mode (quadrupole) GW frequency
 \be
@@ -892,7 +900,7 @@ a(e) = c_0\, \f{e^{12/19}}{1-e^2}\left(1 + \f{121}{304}e^2\right)^{870/2299} \eq
 where $a$ is the semi-major axis of the eccentric orbit and $c_0$ is a constant. For $e\ll 1$ we have $g(e)\approx e^{12/19}$, thus we may write $e\approx [a\, g(e_i)/a_i ]^{19/12}$ 
 for a system with initial parameters $a_i, e_i$.
 Let us apply this to the Hulse-Taylor binary pulsar \cite{Hulse:1974eb,Weisberg:2010zz} to show that the BNS orbits circularize by the time they enter the interferometers' bandwidth (ca. $1-10\,$Hz).
-Therfore, letting $f =2f_K= 1\,\text{Hz}$, i.e., 
+Letting $f =2f_K= 1\,\text{Hz}$, i.e., 
 $a \simeq 3352\,$km and using the currently observed values $a_i \approx 1.95\times 10^6\,$km and $e_i \approx 0.617$,
 we obtain $e\approx 6\times 10^{-5}$ at 1\,Hz. Thus our setting $e=0$ is very reasonable\footnote{
 It is possible to have 
@@ -923,12 +931,12 @@ an expression for the ratio of radial speed to tangential speed
 which translates the quasi-circularity condition above to $|\dot\Omega| \ll \Omega^2$ which, via Eq.~(\ref{eq:fdot}), gives
 %
 \be
-\f{\dot\Omega}{\Omega^2} = \f{96}{5} \f{(G M_c)}{c^5}^{5/3}\Omega^{5/3} \ll 1 \label{eq:omega_dot_over_omegasq}
+\f{|\dot\Omega|}{\Omega^2} = \f{96}{5} \f{(G M_c)}{c^5}^{5/3}\Omega^{5/3} \ll 1 \label{eq:omega_dot_over_omegasq}
 \ee
 %
 %using Eq.~(\ref{eq:fdot}). %Assuming $\ll 1$ means $\le 10^{-3}$ 
 %Setting $\dot{\Omega}/\Omega^2 = 10^{-3}$ yields $f= \Omega/\pi %\simeq 443.4\,$Hz which, as explained above, 
-This expression yields $\dot{\Omega}/\Omega^2\approx 5.5\times 10^{-4}$ at $f=100\,$Hz, which, as shown above, is a few seconds
+This expression yields $|\dot{\Omega}|/\Omega^2\approx 5.5\times 10^{-4}$ at $f=100\,$Hz, which, as shown above, is a few seconds
 before the merger so the quasi-circularity assumption seems to
 hold almost until the plunge at $f=f_\text{ISCO}$.
 %is less than a second before the merger. 
@@ -1038,7 +1046,11 @@ when considering sources for the ALV network.
 On the other hand, for Einstein Telescope, we will go out to $D=1\,\text{Gpc}\implies z\approx 0.2$
 which reduces $\tau_\text{insp}$ by $\sim 25\%$, thus we shall include the redshift effects in our computations of advance warning times and SNRs
 for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can be found in, e.g., Ref.~\cite{Phinney:2001di}). 
-
+%
+\item {\it Changing the detection threshold from $\bar{\rho}_\text{tot}=15$.}\\
+\todo{ADD SNR=12 and 20 computations for ET-C}
+$\bar\rho$ is defined in Sec. V
+%
 %
 %Furthermore, the physical quantities that we actually observe are blind to this redshift correction. Only after high-precision measurements of
 %the chirp mass and the GW polarizations $h_+, h_\times$ can we extract $z$. 
@@ -1048,7 +1060,7 @@ for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can b
 \end{enumerate}
 %
 %
-
+%
 \section{GW170817 as a test of our model for the Advanced LIGO-Virgo network}\label{sec:GW170817}
 On 17 August 2017, at 12:41:04 UTC, GWs from the inspiral and merger of a binary neutron star system %were detected by the Advanced LIGO-Virgo network.
 %The event, first picked up by LIGO Hanford (H1), 
@@ -1112,27 +1124,6 @@ The data, sampled at 4096\,Hz, is given as a discrete time series $h(t_i)$ for a
 We first Fourier-transform the data to frequency space and apply several high and low-frequency filters to isolate a window of $f\in [10, f_\text{ISCO}]$.
 The LIGO Open Science Center has a detailed Python-based tutorial on how to do this using the data from the very first GW detection (GW150914) \cite{LIGO_tutorial}. 
 We use a $\verb|Mathematica|$ based code developed at UCD to do the same for GW170817.
-
-Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs have identical sensitivities,
-but because their orientations and response functions differ, their sensitivity to a localized source is reduced. We represent this reduction by lowering the
-amplitude of the GW strain by appropriate quality factors ($|Q_i|$) explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
-The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the dashed ($i=h$), solid ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
-$2\sqrt{f} \tilde{H}_i(f)$ as is standard. 
-Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulated by our network
-%%
-%
-\be
-\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 \label{eq:GW170817_SNRs}.
-\ee
-%
-%%
-These are comparable to actual SNRs of L1, H1, and V1 for GW170817, which are, 26.4, 18.8, and 2.0, respectively\footnote{At the time of GW170817, Virgo's sensitivity had not reached the level of LIGO's. Hence it accumulated a much smaller SNR for GW170817. By 2020, Virgo should be operating at nearly the same sensitivity of LIGO.}.
-%To accommodate more realistic orientations, we show two shaded regions in Fig.~\ref{fig:figGW170817}. The inspirals in the lighter region yield SNR$\ge 22.34$ as
-%they sweep from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz whereas inspirals in the darker region accumulate $ \bar\rho_l \le \text{SNR} \le 22.34$.
-The shaded region in Fig.~\ref{fig:figGW170817} covers strains between $\tilde{H}_l(f)$ and $\tilde{H}_h(f)$. %which we expect to represent mo
-Given a randomly positioned/oriented BNS inspiral at 40 Mpc, we would in general expect a randomly oriented IFO's response to lie in this shaded region.
-%Given a network of three equally sensitive, randomly oriented IFOs we expect that a single 40-Mpc BNS inspiral would produce three distinct detector response strains that fall within this shaded region.
-%
 %
 \begin{figure}[ht!]
 \includegraphics[height=9cm]{../Figures/GW170817_strains.pdf}
@@ -1166,7 +1157,30 @@ the strain around $f\sim100\,$Hz due to tidal effects is clear.
 %Note that although we extend the $\sqrt{f}f^{-7/6}=f^{-2/3}$ power law behavior of the strains all the way to ISCO, in actuality, this  starts breaking down .
 }
 \label{fig:figGW170817}
-\end{figure}
+\end{figure}\\
+%
+%
+Fig.~\ref{fig:figGW170817} shows our network. The red curve is L1's ASD (sensitivity) during GW170817. We assume our three IFOs have identical sensitivities,
+but because their orientations and response functions differ, their sensitivity to a localized source is reduced. We represent this reduction by lowering the
+amplitude of the GW strain by appropriate quality factors ($|Q_i|$) explained in Sec.~\ref{sec:BNS_inspiral} and shown in Table~\ref{table:network_params}.
+The amplitude-adjusted strains $ \tilde{H}_i(f)$ are represented by the dashed ($i=h$), solid ($i=m$), and dotted ($i=l$) lines in the figure where we actually plot
+$2\sqrt{f} \tilde{H}_i(f)$ as is standard. 
+Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulated by our network
+%%
+%
+\be
+\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 \label{eq:GW170817_SNRs}.
+\ee
+%
+%%
+These are comparable to actual SNRs of L1, H1, and V1 for GW170817, which are, 26.4, 18.8, and 2.0, respectively\footnote{At the time of GW170817, Virgo's sensitivity had not reached the level of LIGO's. Hence it accumulated a much smaller SNR for GW170817. By 2020, Virgo should be operating at nearly the same sensitivity of LIGO.}.
+%To accommodate more realistic orientations, we show two shaded regions in Fig.~\ref{fig:figGW170817}. The inspirals in the lighter region yield SNR$\ge 22.34$ as
+%they sweep from 10\,Hz to $f_\text{ISCO} \simeq1605\,$Hz whereas inspirals in the darker region accumulate $ \bar\rho_l \le \text{SNR} \le 22.34$.
+The shaded region in Fig.~\ref{fig:figGW170817} covers strains between $\tilde{H}_l(f)$ and $\tilde{H}_h(f)$. %which we expect to represent mo
+Given a randomly positioned/oriented BNS inspiral at 40 Mpc, we would in general expect a randomly oriented IFO's response to lie in this shaded region.
+%Given a network of three equally sensitive, randomly oriented IFOs we expect that a single 40-Mpc BNS inspiral would produce three distinct detector response strains that fall within this shaded region.
+%
+
 %
 %
 
@@ -1466,15 +1480,16 @@ Current BNS merger rate, inferred from A-LIGO's O1-O2 periods, implies that $\si
 Given Moore's law and new search approaches (e.g., see Ref.~\cite{Gabbard:2017lja} for one based on deep learning) 
 we speculate that the advances in the detection, localization and early-warning algorithms in the next decade will reduce the required advance
 warning time to less than an hour; thus we set $T_\text{AW} = 1\,\text{hour}$ and obtain corresponding BNS ranges of $D_\text{BNS}=87$ and $613\,$Mpc ($z\approx 0.02,0.127$) for ET-B and ET-C, respectively.
-In other words, all inspiralling BNSs closer than $D_H$ will give us more than an hour's leeway before the GRB (employing the detection criterion $\text{SNR} =15$ as before).
-The volume set by $D=D_H$ translates to a BNS merger rate of $\sim\mathcal{O}(1)\,\text{yr}^{-1}$ for ET-B and
-$\approx 355^{+730}_{-280}\,\text{yr}^{-1}$ for ET-C. Additionally, each source within $D_H$ will accumulate $\bar\rho_F \gtrsim 420, 58$ over its inspiral
+In other words, all inspiralling BNSs closer than $D_\text{BNS}$ will give us more than an hour's leeway before the GRB (employing the detection criterion $\text{SNR} =15$ as before).
+The volume set by $D_\text{BNS}$ translates to a BNS merger rate of $\sim\mathcal{O}(1)\,\text{yr}^{-1}$ for ET-B and
+$\approx 355^{+730}_{-280}\,\text{yr}^{-1}$ for ET-C. Additionally, each source within $D_\text{BNS}$ will accumulate $\bar\rho_F \gtrsim 420, 58$ over its inspiral
 in the ET-B, ET-C bands, respectively. These results are summarized in Table~\ref{table:horizon}.
 
 Both Tables~\ref{table:ET} and \ref{table:horizon} clearly show that ET will yield superb SNRs for sources out to 1\,Gpc. 
-With such high SNRs we expect that a future network consisting of ET and LIGO Voyager will be able to localize half the sources 
-at $D\approx 1000\,$Mpc to within $ 10\,\text{deg}^2$ and more than half the sources at $D\lesssim 400\,$Mpc to $\approx 1\,\text{deg}^2$ \cite{Mills:2017urp}.
-Therefore, we optimistically conclude that 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts
+With such high SNRs we expect that a future network consisting of ET \emph{and} LIGO Voyager will be able to localize half the sources 
+inside a radius of $D\approx 1000\,$Mpc to within $ 10\,\text{deg}^2$ and more than half the sources within $D\lesssim 400\,$Mpc to $\approx 1\,\text{deg}^2$ \cite{Mills:2017urp}.
+Let us reemphasize that such good localization requires at least a second detector with comparable sensitivity to ET as ET alone has rather poor localization.
+Erring on the side of optimism, we conclude that the 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts
 \footnote{As the ET construction/commissioning timeline is currently uncertain, we can only speculate that ET-C will be operational after 2030,
 which is roughly in line with the milli-Hertz space interferometer LISA's timeline \cite{Audley:2017drz}.}.
 %It is also reasonable to speculate that by that time the detection, localization and early-warning algorithms will have become sufficiently sophisticated
@@ -1491,13 +1506,13 @@ We summarize our main findings for both the ALV network and ET-B/C in Fig.~\ref{
 \hline\hline
  & ET-B & & ET-C\T\B\\
 \hline
-  $D_H $& 87\,Mpc& &{613\,Mpc}\T\\
-  $R(D_H) $& $1^{+2}_{-1}\,\text{yr}^{-1}$&\hspace{5mm} &{$355^{+730}_{-280}\,\text{yr}^{-1}$}\T\\
-  $\bar\rho_F(D_H)$ & 420 &&{58}\T\B\\
+  $D_\text{BNS} $& 87\,Mpc& &{613\,Mpc}\T\\
+  $R(D_\text{BNS}) $& $1^{+2}_{-1}\,\text{yr}^{-1}$&\hspace{5mm} &{$355^{+730}_{-280}\,\text{yr}^{-1}$}\T\\
+  $\bar\rho_F(D_\text{BNS})$ & 420 &&{58}\T\B\\
 \hline\hline
 \end{tabular}
-\caption{Horizon distances of ET-B and ET-C assuming $T_\text{AW} =1\,$hour. $R(D_H)$ is the BNS merger rate within a volume of $D_H^3$
-obtained by rescaling the rate inferred from Advanced LIGO's O1, O2 observing periods \cite{GW170817}. $\bar\rho_F(D_H)$ is the total SNR accumulated due to a BNS inspiralling at $D_H$ [see Eq.~(\ref{eq:rhoF_ET})].}\label{table:horizon}
+\caption{Horizon distances of ET-B and ET-C assuming $T_\text{AW} =1\,$hour. $R(D_\text{BNS})$ is the BNS merger rate within a volume of $D_\text{BNS}^3$
+obtained by rescaling the rate inferred from Advanced LIGO's O1, O2 observing periods \cite{GW170817}. $\bar\rho_F(D_\text{BNS})$ is the total SNR accumulated due to a BNS inspiralling at $D_\text{BNS}$ [see Eq.~(\ref{eq:rhoF_ET})].}\label{table:horizon}
 \end{table}
 %
 %
@@ -1645,7 +1660,9 @@ embarassment of the riches in the 2030s. In short, the future of gravitational a
 
 
 \acknowledgements 
-I am grateful to Conor O'Toole for endless feedback and Niels Warburton, Richard A. Matzner and Alberto Sesana for reviewing this manuscript.
+I acknowledge support by the EU H2020 under ERC Starting Grant, no. BinGraSp-714626.
+I am additionally grateful to Conor O'Toole for endless feedback and Niels Warburton, Richard A. Matzner, and Alberto Sesana for reviewing this manuscript.
+
  
  
 \bibliographystyle{apsrev4-1}

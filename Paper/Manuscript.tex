@@ -83,6 +83,7 @@
 \newcommand{\ba}{\begin{eqnarray}}
 \newcommand{\ea}{\end{eqnarray}}
 \newcommand{\bi}{\begin{itemize}}
+\newcommand{\todo}[1]{{\textcolor{red}{\texttt{todo: #1}} }}
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\bef}{\begin{frame}}
 \newcommand{\ef}{\end{frame}}
@@ -158,11 +159,20 @@ the first astrophysical evidence for it.
 A week after GW170817, the ALV network was taken offline for upgrades for the third observation run (O3) 
 scheduled to start in early 2019 with roughly twice the sensitivity of O2.
 In addition, the Japanese cryogenic interferometer KAGRA (\cite{KAGRA, KAGRA2}) will start its test runs in 2018-2019 and reach its design sensitivity circa 2021-2022 \cite{Akutsu:2017thy, Aasi:2013wya}. By 2025, LIGO-India detector will join the global interferometer network hence improving both the overall sensitivity and the sky-localization capabilities \cite{Aasi:2013wya}.
-Around this time, the construction of the first third-generation ground-based interferometer, Einstein Telescope, will begin in Europe \cite{ET_doc}. 
-Meanwhile, the US is currently considering a mid-2020s update to LIGO called Voyager \cite{LIGO_Voy} and the construction of a more ambitious 40\,km long interferometer dubbed Cosmic Explorer \cite{CE}.
-All of these near-future additions to the GW-detector network beg a simple question: can we detect the inspiral of a binary neutron star system
-early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using GW detections?
+Around this time, the construction of the first third-generation (3G) ground-based interferometer, Einstein Telescope, should begin in Europe \cite{ET_doc}\footnote{The decision for the funding of Einstein Telescope
+is expected to be announced in 2019-2020 with the final technical design report to be submitted in 2023-24, and the commissioning to begin in 2030-31 followed by full operations in 2032-33.}.
+Meanwhile, the US is currently considering a mid-2020s update to LIGO called Voyager \cite{LIGO_Voy} and the construction of an ambitious 40-km long 3G interferometer dubbed Cosmic Explorer \cite{CE}.
 
+The science goals of the 3G detectors is very exciting. For example,
+Einstein Telescope will be able to (i) distinguish between different neutron star equations of state, (ii) conduct high-precision measurements 
+of source parameters to test alternate theories of gravity,
+%(projected SNR of GW150914 at ET is 800, at CE 2400 vs. ALV 25)
+(iii) detect binary black hole populations out to redhifts of $\sim 15$
+hence  (a) measure the Hubble parameter, dark matter and dark energy densities, as well as the dark energy equation-of-state parameter;
+(b) study the cosmological evolution of the stellar mass black holes (see Sec.~2 of Ref.~\cite{ET_doc} for an excellent summary and further details).
+
+The prospect of having extremely sensitive 3G GW detectors begs a simple question: can we detect the inspirals of binary neutron star systems
+early enough to witness gamma-ray bursts as they happen? In other words, can we forecast GRBs using GW detections?
 The short answer is ``yes''. The long answer is still ``yes'', but depends on many factors such as source distance and sky position, detector sensitivity and orientation. One also needs to account for the fact that GRBs are thought to be collimated emissions with narrow outburst angles \cite{Kumar:2014upa}.
 As such, most GRBs that occur in the universe are electromagnetically undetectable. Fortunately, this was not the case with GRB170817A, 
 but even for a reasonable GRB jet opening angle of $\sim 10^\circ$, we expect to observe at best $\sim 10\%$ of neutron star mergers as GRBs \cite{Patricelli:2016bkt}. 
@@ -588,6 +598,7 @@ In a network of $N$ interferometers, the total SNR is defined as follows \cite{F
 where Eq.~(\ref{eq:SNR_v2}) is employed to compute $\rho^2_i$ of individual interferometers each with a specific quality factor $Q_i$.
 Here, instead of working with specific quality factors of the LIGO and the Virgo interferometers, we consider
 a \emph{model network} of three IFOs ($N=3$), where one is near-optimally oriented/positioned with $|Q|=2\sigma=4/5$.
+\todo{ADD some discussion here as to why we don't use specific LV Q's}
 The second IFO operates at the RMS average; thus it has $|Q|=2/5$. %compared with the optimal $|Q| =1$ case.
 It remains to assign a quality factor to the third IFO. We wish to make this operate below the RMS average, % in terms of its orientation and the sky location of the sources,
 but it would be pointless to simply set $Q=0$. We therefore pick the values $\iota=0$ (i.e, $|h_+|=|h_\times|$)
@@ -1035,7 +1046,11 @@ when considering sources for the ALV network.
 On the other hand, for Einstein Telescope, we will go out to $D=1\,\text{Gpc}\implies z\approx 0.2$
 which reduces $\tau_\text{insp}$ by $\sim 25\%$, thus we shall include the redshift effects in our computations of advance warning times and SNRs
 for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can be found in, e.g., Ref.~\cite{Phinney:2001di}). 
-
+%
+\item {\it Changing the detection threshold from $\bar{\rho}_\text{tot}=15$.}\\
+\todo{ADD SNR=12 and 20 computations for ET-C}
+$\bar\rho$ is defined in Sec. V
+%
 %
 %Furthermore, the physical quantities that we actually observe are blind to this redshift correction. Only after high-precision measurements of
 %the chirp mass and the GW polarizations $h_+, h_\times$ can we extract $z$. 
