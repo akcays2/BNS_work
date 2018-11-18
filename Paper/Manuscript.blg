@@ -12,22 +12,22 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: ManuscriptNotes.bib
 Database file #2: references.bib
 Warning--entry type for "Chandra" isn't style-file defined
---line 175 of file references.bib
+--line 192 of file references.bib
 Warning--entry type for "Mono" isn't style-file defined
---line 183 of file references.bib
+--line 200 of file references.bib
 Warning--entry type for "LIGO_Voy" isn't style-file defined
---line 557 of file references.bib
+--line 574 of file references.bib
 Warning--entry type for "LIGO_L1_data" isn't style-file defined
---line 999 of file references.bib
+--line 1016 of file references.bib
 Warning--entry type for "LIGO_tutorial" isn't style-file defined
---line 1004 of file references.bib
-Warning--entry type for "LIGO2020" isn't style-file defined
---line 1010 of file references.bib
-Warning--entry type for "GW170817_Facts" isn't style-file defined
---line 1015 of file references.bib
-Warning--entry type for "KAGRA" isn't style-file defined
 --line 1021 of file references.bib
-Repeated entry---line 1240 of file references.bib
+Warning--entry type for "LIGO2020" isn't style-file defined
+--line 1027 of file references.bib
+Warning--entry type for "GW170817_Facts" isn't style-file defined
+--line 1032 of file references.bib
+Warning--entry type for "KAGRA" isn't style-file defined
+--line 1038 of file references.bib
+Repeated entry---line 1257 of file references.bib
  : @article{Sathyaprakash:2012jk
  :                              ,
 I'm skipping whatever remains of this entry
