@@ -163,17 +163,16 @@ Around this time, the construction of the first third-generation (3G) ground-bas
 is expected to be announced in 2019-2020 with the final technical design report to be submitted in 2023-24, and the commissioning to begin in 2030-31 followed by full operations in 2032-33.}.
 Meanwhile, the US is currently considering a mid-2020s update to LIGO called Voyager \cite{LIGO_Voy} and the construction of an ambitious 40-km long 3G interferometer dubbed Cosmic Explorer \cite{CE}.
 
-\todo{ADD main science goals of 3G detectors here}
 The science goals of the 3G detectors is very exciting. For example,
 Einstein Telescope will be able to (i) distinguish between different neutron star equations of state, (ii) conduct high-precision measurements 
 of source parameters to test alternate theories of gravity,
 %(projected SNR of GW150914 at ET is 800, at CE 2400 vs. ALV 25)
-(iii) precision measurements of Hubble parameter by detecting black hole
-binaries out to z $\lesssim 15$, possible to measure the Hubble parameter, dark matter and dark energy densities, as well as the dark
-energy equation-of-state parameter; also study cosmological evolution of the sources since it can access large redshifts (See Sec.~2.2 of Ref.~\cite{ET_doc} for an excellent summary of the science case)
+(iii) detect binary black hole populations out to redhifts of $\sim 15$
+hence  (a) measure the Hubble parameter, dark matter and dark energy densities, as well as the dark energy equation-of-state parameter;
+(b) study the cosmological evolution of the stellar mass black holes (see Sec.~2 of Ref.~\cite{ET_doc} for an excellent summary and further details).
 
-All of these near-future additions to the GW-detector network beg a simple question: can we detect the inspiral of a binary neutron star system
-early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using GW detections?
+The prospect of having extremely sensitive 3G GW detectors begs a simple question: can we detect the inspirals of binary neutron star systems
+early enough to witness gamma-ray bursts as they happen? In other words, can we forecast GRBs using GW detections?
 The short answer is ``yes''. The long answer is still ``yes'', but depends on many factors such as source distance and sky position, detector sensitivity and orientation. One also needs to account for the fact that GRBs are thought to be collimated emissions with narrow outburst angles \cite{Kumar:2014upa}.
 As such, most GRBs that occur in the universe are electromagnetically undetectable. Fortunately, this was not the case with GRB170817A, 
 but even for a reasonable GRB jet opening angle of $\sim 10^\circ$, we expect to observe at best $\sim 10\%$ of neutron star mergers as GRBs \cite{Patricelli:2016bkt}. 
@@ -598,8 +597,9 @@ In a network of $N$ interferometers, the total SNR is defined as follows \cite{F
 %%
 where Eq.~(\ref{eq:SNR_v2}) is employed to compute $\rho^2_i$ of individual interferometers each with a specific quality factor $Q_i$.
 Here, instead of working with specific quality factors of the LIGO and the Virgo interferometers, we consider
-a \emph{model network} of three IFOs ($N=3$), where one is near-optimally oriented/positioned with $|Q|=2\sigma=4/5$.
-The second IFO operates at the RMS average; thus it has $|Q|=2/5$. %compared with the optimal $|Q| =1$ case.
+a \emph{model network} of three IFOs ($N=3$), where one operates at the RMS average; thus it has $|Q|=2/5$. 
+The second IFO is near-optimally oriented/positioned so we assign it a quality
+factor one $\sigma$ above the average: $|Q|=2/5+\sigma=4/5$.
 It remains to assign a quality factor to the third IFO. We wish to make this operate below the RMS average, % in terms of its orientation and the sky location of the sources,
 but it would be pointless to simply set $Q=0$. We therefore pick the values $\iota=0$ (i.e, $|h_+|=|h_\times|$)
 and $\psi=0$ for simplicity %(aligning the $x$-axis of the ``$+$'' with the of the IFO
@@ -619,6 +619,7 @@ $|Q|=4/5-\sqrt{2/5}\simeq 0.1675$.
 This may seem somewhat ad hoc, 
 but it is our way of representing the sub-RMS-average response of the third IFO due to its sub-optimal configuration. 
 One may very well use another scheme to generate this below-average response.
+Given that $\rho_\text{tot}$ is a sum of quadratures the lowest SNR contributes a small percentage to this [cf. Eq.~(\ref{eq:SNR_total})].
 
 To summarize, we introduced a model for a three-IFO network in which each IFO has identical sensitivity,
 but varying response to GWs due to differing IFO orientations and source polarization and sky position. This response is encoded in the quality factor $|Q_i|$.
@@ -680,7 +681,7 @@ Our model for the Advanced-LIGO-Virgo network ca. 2020. %of three L-shaped inter
 Column two shows the quality factor $Q_i$ for each IFO and column three the corresponding amplitude scalar $\tilde{A}_i$ introduced
 in Eq.~(\ref{eq:Hi_s}).
 Column four lists the magnitude of the frequency-domain strain at each IFO via Eq.~(\ref{eq:Hi_s}).
-The last column states each IFO's response, e.g., high means high strain, thus high SNR.
+The last column states each IFO's response, e.g., high means high sensitivity, thus high SNR.
 %shows how loud the GW strain is at a given IFO due source sky position and IFO orientation. 
 %oriented/positioned an IFO is with respect to a compact binary source. 
 %High is $2\sigma$ above the average as explained above.
@@ -711,6 +712,18 @@ with $\rho_h, \rho_m,\rho_l$ given by Eq.~(\ref{eq:SNR_i}) and Table~\ref{table:
 %To do so we will change the lower limit of the integral in Eq.~(\ref{eq:SNR_total_3IFOs}) from $0$ to $30$.
 %For our advance warning times we will further use separate initial frequencies for each inteferometer as we will explain in Sec.~\ref{sec:results}.
 
+Let us conclude this subsection with a brief discussion on 
+%our particular choice to represent the sensitivities of the near-future ALV network.
+an alternate approach to construct a model for the near-future ALV network.
+This involves selecting one IFO as the ``base'' detector, e.g., LIGO Livingstone then running Monte-Carlo simulations over the four random angles $\{\theta,\phi,\psi,\iota\}$. 
+We would subsequently compute the quality factor of the base IFO using the
+simulation results for the four angles.
+We can then obtain the quality factors of the remaining two IFOs 
+--- in this particular case, LIGO Hanford and Virgo --- via their positions and orientations with respect to the base IFO. Given that the four angles
+are completely random, there should be no preferred point in the angle parameter space, thus the result of the Monte-Carlo runs should converge
+to the RMS average. Correspondingly, we would expect one of the other two IFOs to have somewhat higher sensitivity, and the other one to have lower sensitivity.
+This network can be further expanded using exact positions of LIGO India
+and KAGRA detectors.
 
 \subsection{Einstein Telescope configuration: triangular topology}\label{sec:ET_topo}
 Current design of Einstein Telescope (ET) is based on a [equilateral] triangular configuration with 10\,km armlengths \cite{ET_doc}.
@@ -983,7 +996,7 @@ where we introduced the dimensionless Kerr spin parameter $\chi\equiv {S}/({G m^
 %
 where $P$ is the spin period, and $ I = (2/5) m R^2 \kappa$ is the moment of inertia of the NS with $R$ being the radius of the NS and $\kappa \sim \ord(1)$ an intrinsic constant (see, e.g., Sec.~6.2 of Ref.~\cite{Colpi_Sesana}). 
 A rather compact NS with $m=1.4 M_\odot, R=11\,\text{km}, P= 10\,\text{ms}$ has $\chi\lesssim 0.05$ whereas
-the fastest observed NS spin in a BNS system is $\lesssim 0.04$ \cite{0264-9381-26-7-073001}.
+the fastest observed NS spin in a BNS system is $\lesssim 0.04-0.05$ \cite{0264-9381-26-7-073001, Stovall:2018ouw}.
 Therefore, at $f= 100\,$Hz, the first term on the right-hand-side of Eq.~(\ref{eq:spin_orbit}) gives $\approx 4\times 10^{-4}$. 
 On the other hand, the spin-spin coupling contributes at $\ord(v^4/c^4)\times\dot{E}$ hence $\lesssim \dot{E}_\text{SO}$.
 Thus, NS spins can be neglected for our estimation of advance warning times. %$T_\text{AW}$.
@@ -1123,7 +1136,7 @@ The data, sampled at 4096\,Hz, is given as a discrete time series $h(t_i)$ for a
 %with the amplitude peaking at $1842.43\pm0.03\,$seconds.
 We first Fourier-transform the data to frequency space and apply several high and low-frequency filters to isolate a window of $f\in [10, f_\text{ISCO}]$.
 The LIGO Open Science Center has a detailed Python-based tutorial on how to do this using the data from the very first GW detection (GW150914) \cite{LIGO_tutorial}. 
-We use a $\verb|Mathematica|$ based code developed at UCD to do the same for GW170817.
+We use a $\verb|Mathematica|$ based code developed at University College Dublin (UCD) to do the same for GW170817.
 %
 \begin{figure}[ht!]
 \includegraphics[height=9cm]{../Figures/GW170817_strains.pdf}
@@ -1169,7 +1182,7 @@ Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulat
 %%
 %
 \be
-\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 \label{eq:GW170817_SNRs}.
+\bar\rho_h = 28.7,\quad \bar\rho_m = 14.3,\quad \bar\rho_l = 6.00 \label{eq:GW170817_SNRs}.
 \ee
 %
 %%
@@ -1188,7 +1201,7 @@ We can now compute the total SNR of GW170817 as inferred by our network
 %%
 %
 \be
-\bar\rho_\text{tot}= \sqrt{\bar\rho^2_h+\bar\rho^2_m+\bar\rho^2_l}= 32.6 \, \label{eq:SNR_total_GW170817} .
+\bar\rho_\text{tot}= \sqrt{\bar\rho^2_h+\bar\rho^2_m+\bar\rho^2_l}= 32.0 \, \label{eq:SNR_total_GW170817} .
 \ee
 %
 %%
