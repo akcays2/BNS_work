@@ -128,7 +128,7 @@ This article is intended as a pedagogical introduction to gravitational-wave ast
 Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the underlying physics.
 Though many of our results may be known to the experts, they might nonetheless find this article motivating and exciting.
 
-\todo{1) See end of Sec. IV on page 13, 2) Finish new Sec VIII on BH-BH inspirals}
+\todo{1) See end of Sec. IV on page 13, 2) Finish new Sec VIII on BH-BH inspirals, 3) page 19. footnote}
 \end{abstract}
 \maketitle
 
@@ -197,8 +197,12 @@ between the merger and the instant of detection defined in terms of a certain de
 To this end, we consider the ALV network of 2020s composed of three L-shaped interferometers operating at their design sensitivities
 and Einstein Telescope of 2030s made up of V-shaped interferometers.
 Ref.~\cite{Nissanke:2012dj} investigated the capabilities of three to five-interferometer detector networks of 2020s in terms of their ranges
-to inspiralling BNSs and their sky-localization of these sources. Our work here is somewhat complementary in the sense that we are mostly concerned with
-how early the GW networks can detect the inspiral before the merger.
+to inspiralling BNSs and their sky-localization of these sources. 
+More recently, Ref.~\cite{Chan:2018csa} added to this results pertaining to the future networks of 2030s both in terms of source localization and advance
+warning prospects.
+Our work here is complementary to these articles in the sense that we focus on
+the details of how to quantify the advance warning.
+%we are mostly concerned with how early the GW networks can detect the inspiral before the merger.
 
 We compute the advance warning times via the following procedure: 
 (${i}$) We start with a GW source presumed to be an inspiralling BNS at a certain luminosity distance. %$D$.
@@ -242,6 +246,7 @@ Sec.~\ref{sec:results} contains our main results presented as advance warning ti
 and as ranges and event rates in Table~\ref{table:horizon}.
 In Sec.~\ref{sec:BH_NS}, we recompute the advance warning times in the case of binary black hole - neutron star inspirals to see whether or not 
 future detectors can forecast tidal disruption events, for which we summarize our findings in Table~\ref{table:ET_BH_NS}.
+We then reapply our framework to binary black hole inspirals in Sec.~\ref{sec:BH_BH}.
 
 Throughout the text, $t$ denotes observer/detector time and $f$ denotes the \emph{GW frequency} of the dominant quadrupole mode in observer/detector frame. 
 %$f$ is twice the orbital (Keplerian) frequency $f_K$. 
@@ -722,8 +727,7 @@ We would subsequently compute the quality factor of the base IFO using the
 simulation results for the four angles.
 We can then obtain the quality factors of the remaining two IFOs 
 --- in this particular case, LIGO Hanford and Virgo --- via their positions and orientations with respect to the base IFO. Given that the four angles
-are completely random, there should be no preferred point in the angle parameter space, thus the result of the Monte-Carlo runs should converge
-to the RMS average. Correspondingly, we would expect one of the other two IFOs to have somewhat higher sensitivity, and the other one to have lower sensitivity.
+are completely random, there should be no preferred point in the angle parameter space, thus the result of the Monte-Carlo runs should more or less agree with the RMS average. Correspondingly, we would expect one of the other two IFOs to have somewhat higher sensitivity, and the other one to have lower sensitivity.
 This network can be further expanded using exact positions of LIGO India
 and KAGRA detectors. The expansion of the detector network from three to five IFOs will offer significant improvements in source localization.
 However, given that the total network SNR is a sum of quadratures, the 
@@ -1086,19 +1090,20 @@ swept the ALV network's frequency band from $\approx 30\,$Hz to $\approx 2000\,$
 %18.8, 26.4 and 2.0 at H1, LIGO Livingstone (L1) and Virgo (V1), respectively, yielding 
 $\rho_\text{tot} = 32.4$ \cite{GW170817}.
 The inferred duration of the event in the network bandwidth was $\approx 57\,$ seconds during which $\approx 3000$ cycles of GWs were emitted \cite{GW170817_Facts}.
-Assuming low-spin priors  ($\chi \le 0.05$, see point 7 of Sec.~\ref{sec:idealizations}), the following values were inferred for the total mass, the chirp mass,
-and the luminosity distance of the source with 90\% confidence:
+Assuming low-spin priors  ($\chi \le 0.05$, see point 7 of Sec.~\ref{sec:idealizations}), the following updated values were inferred for the total mass, the chirp mass,
+and the luminosity distance of the source with 90\% confidence \cite{GW170817_2018}:
 %
 \be
-M = 2.74^{+0.04}_{-0.01} M_\odot,\quad M_c = 1.188^{+0.004}_{-0.002} M_\odot,\quad D= 40^{+8}_{-14}\,\text{Mpc}. \label{eq:GW170817_params}
+M = 2.73^{+0.04}_{-0.01} M_\odot,\quad M_c = 1.186^{+0.001}_{-0.001} M_\odot,\quad D= 40.7^{+2.36}_{-2.36}\,\text{Mpc}. \label{eq:GW170817_params}
 \ee
 %
 Note that the error bar for the chirp mass is very small
-due to the fact that it can be extracted to high precision over thousands of GW cycles via Eq.~(\ref{eq:fdot}). In fact, detailed follow-up analyses (\cite{GW170817_2018}) have recently restricted the above-values to
+due to the fact that it can be extracted to high precision over thousands of GW cycles via Eq.~(\ref{eq:fdot}). 
+%In fact, detailed follow-up analyses () have recently restricted the above-values to
 %
-$ \left\{2.73^{+0.04}_{-0.01} M_\odot, 1.186^{+0.001}_{-0.001}M_\odot , 40.7^{+2.36}_{-2.36}\text{Mpc}\right\}$, respectively,
+%$ \left\{2.73^{+0.04}_{-0.01} M_\odot, 1.186^{+0.001}_{-0.001}M_\odot , 40.7^{+2.36}_{-2.36}\text{Mpc}\right\}$, respectively,
 %
-where the errors in $D$ are at $1\sigma$ level.
+%where the errors in $D$ are at $1\sigma$ level.
 
 How well does the ``naive'' Newtonian evolution based on the quadrupole formula perform? 
 To test this, let us first compute the inspiral time, $\tau_\text{insp}$, and the number of GW cycles, $\mathcal{N}_\text{cyc}$, for this BNS system with initial frequency $f_0=30\,$Hz and final frequency $f_\text{ISCO} \simeq 1605\,$Hz. 
@@ -1106,21 +1111,24 @@ Eqs.~(\ref{eq:tau_insp}) and (\ref{eq:Ncyc1}) provide us with the leading-order 
 %%
 %
 \be
-\tau_\text{insp}^{0\text{PN}} \simeq 55.91\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \simeq 2680\,\label{eq:GW170817_values_0PN}. 
+\tau_\text{insp}^{0\text{PN}} \simeq 56.06\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \simeq 2687\,\label{eq:GW170817_values_0PN}. 
 \ee
 %
 %%
-If we wish to do better, we can add all of the known post-Newtonian contributions 
-up to 3.5PN\footnote{Although the equations of motion for circular orbits is now known up to 4PN \cite{4PN_EoM_paper}, we are not aware of any publications
-explicitly showing the 4PN contributions to $\tau_\text{insp}$ and $\mathcal{N}_\text{cyc}$. Be that as it may, we suspect that a few PN experts have already obtained these.} resulting in
+If we wish to do better, we can add all the post-Newtonian contributions up to 2PN resulting in
 %%
 %
 \be
-\tau_\text{insp}^{3.5\text{PN}} \simeq 56.65\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{3.5\text{PN}} \simeq 2711 \label{eq:GW170817_values_3p5PN}\, ,
+\tau_\text{insp}^{2\text{PN}} \simeq 57.06\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{2\text{PN}} \simeq 2735 \label{eq:GW170817_values_3p5PN}\, ,
 \ee
 %
 %%
-which more or less match the values above. %of $\tau_\text{insp}\approx 60$\,seconds and $\mathcal{N}_\text{cyc} \approx 3000$ which we can obtain if we use $f_i \approx 28-29\,$Hz.
+which more or less match the detected inspiral time and number of cycles. We stop at 2PN because the currently available 3.5PN expressions require the value of $\nu$
+which is not well known for GW170817.
+%
+%\footnote{Although the equations of motion for circular orbits is now known up to 4PN \cite{4PN_EoM_paper}, we are not aware of any publications
+%explicitly showing the 4PN contributions to $\tau_\text{insp}$ and $\mathcal{N}_\text{cyc}$. Be that as it may, we suspect that a few PN experts have already obtained these.} 
+%of $\tau_\text{insp}\approx 60$\,seconds and $\mathcal{N}_\text{cyc} \approx 3000$ which we can obtain if we use $f_i \approx 28-29\,$Hz.
 %Our PN-only computation underestimates $\mathcal{N}_\text{cyc}$ because we artificially end the inspiral at the Schwarzschild ISCO whereas
 %numerical simulations indicate that the inspiral carries on past the Schwarzschild ISCO separation of $6 G M/c^2$. 
 %Reusing Eq.~(\ref{eq:Ncyc1}) from 1600 Hz to 2000 Hz only adds {\bf one} cycle.
@@ -1493,7 +1501,9 @@ As can be seen from Fig.~\ref{fig:ETB2030}, ET-C's increased sensitivity in the 
 This is best highlighted by the sixth colum of Table~\ref{table:ET}, 
 where we show that ET-C will provide up to \emph{five hours} of early warning time for nearby ($D\lesssim 100\,$Mpc) neutron star mergers.
 Moreover, BNS inspirals as far as 200\,Mpc (the ALV network's range) will persist in the ET-C sensitivity band for a few hours after their initial detection ($T_\text{AW} > 2\,$ hours).
-Current BNS merger rate, inferred from A-LIGO's O1-O2 periods, implies that $\sim 40$ to $\sim600$ sources within a volume of $(200\,\text{Mpc})^3$ will be detected yearly by ET-C.
+Current BNS merger rate, inferred from A-LIGO's O1-O2 periods, implies that $\sim 40$ to $\sim600$ sources within a volume of $(200\,\text{Mpc})^3$ will be detected yearly by ET-C. 
+Our values for $T_\text{AW}$ for 200 and 400\,Mpc are roughly consistent
+with the findings of Ref.~\cite{Chan:2018csa}.
 
 Given Moore's law and new search approaches (e.g., see Ref.~\cite{Gabbard:2017lja} for one based on deep learning) 
 we speculate that the advances in the detection, localization and early-warning algorithms in the next decade will reduce the required advance
@@ -1505,11 +1515,21 @@ in the ET-B, ET-C bands, respectively. These results are summarized in Table~\re
 
 Both Tables~\ref{table:ET} and \ref{table:horizon} clearly show that ET will yield superb SNRs for sources out to 1\,Gpc. 
 With such high SNRs we expect that a future network consisting of ET \emph{and} LIGO Voyager will be able to localize half the sources 
-inside a radius of $D\approx 1000\,$Mpc to within $ 10\,\text{deg}^2$ and more than half the sources within $D\lesssim 400\,$Mpc to $\approx 1\,\text{deg}^2$ \cite{Mills:2017urp}.
-Let us reemphasize that such good localization requires at least a second detector with comparable sensitivity to ET as ET alone has rather poor localization.
-Erring on the side of optimism, we conclude that the 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts
-\footnote{As the ET construction/commissioning timeline is currently uncertain, we can only speculate that ET-C will be operational after 2030,
-which is roughly in line with the milli-Hertz space interferometer LISA's timeline \cite{Audley:2017drz}.}.
+inside a radius of $D\approx 1000\,$Mpc to within $ 10\,\text{deg}^2$ \cite{Mills:2017urp}, but mostly after the merger.
+%and more than half the sources within $D\lesssim 400\,$Mpc to $\approx 1\,\text{deg}^2$ . 
+On the other hand, ET with CE together will localize 
+$\sim 80, 20\%$ of the BNSs
+within 200, 400\,Mpc to $1\,$deg$^2$, respectively \cite{Chan:2018csa},
+%Let us reemphasize that such good localization requires at least a second detector %with comparable sensitivity to ET as ET alone has rather poor localization.
+since CE will be sensitive enough to start accumulating SNR at $f\approx 5\,$Hz from BNSs within 400\,Mpc corresponding to $T_\text{AW}\gtrsim 1.5\,$hours.
+Even without the help of a second detector, it will be possible
+to localize $\sim 5\%$ of these transients to within $10\,$deg$^2$ using
+the Earth's rotation because these nearby sources will spend hours in the ET-C band \cite{Zhao:2017cbb}.
+This percentage amounts to $\sim 5$ events per year.
+%Additionally, these localizations are mostly post-merger as neither Voyager,
+Erring on the side of optimism, we conclude that the 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts and the subsequent kilonovae
+\footnote{As the ET construction/commissioning timeline is currently uncertain, we can only speculate that ET-C will be operational in mid 2030s,
+which is roughly in line with the timeline of the milli-Hertz space interferometer LISA \cite{Audley:2017drz} and may be five to ten years ahead of CE \todo{citation}}.
 %It is also reasonable to speculate that by that time the detection, localization and early-warning algorithms will have become sufficiently sophisticated
 %to alert the electromagnetic observatories within an hour of the initial detection (SNR = 15). 
 %
