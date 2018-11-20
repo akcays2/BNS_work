@@ -1388,6 +1388,12 @@ parameters of neutron stars \cite{Read:2009yp, Andersson:2009yt, PhysRevD.89.103
 We should caution the reader that such high-SNR systems will make up $\lesssim 1\%$ of the population of BNSs detected by 
 the ALV network \cite{Sathyaprakash:2012jk}.
 
+In mid 2020s LIGO will first be upgraded to A+ then to Voyager. 
+However, both versions will have comparable sensitivities to Advanced LIGO
+at low frequencies (see Fig.~1 of Ref.~\cite{Mills:2017urp}).
+Therefore, they will not start accumulating significant SNR until $f\approx 10\,$Hz, thus offering us gains of mere minutes compared to $T_\text{AW}$ in Table~\ref{table:LIGO2020}. For this reason, we move on to 2030s: the 
+era of Einstein Telescope.
+
 \subsubsection{Forecasting GRBs in the 2030s using the Einstein Telescope}\label{Sec:ETB}
 We now wish to quantify the forecasting capabilities of Einstein Telescope. To this end, we consider the inspiral of BNS systems
 at luminosity distances of $100,200,400,1000\,$Mpc entering the ET band. 
@@ -1654,7 +1660,7 @@ $D\,$(Mpc) & \multicolumn{2}{c}{ET-B} &  & \multicolumn{2}{c}{ET-C}\T\B\\
 \hline\hline
 %bottomrule
 \end{tabular}
-\caption{Same as Table~\ref{table:ET}, but now for a $5 M_\odot- 1.4 M_\odot$ black hole-neutron star binary.
+\caption{\todo{FIX these numbers}Same as Table~\ref{table:ET}, but now for a $5 M_\odot- 1.4 M_\odot$ black hole-neutron star binary.
 The SNRs are even higher than before, however the advance warning times have decreased significantly.}\label{table:ET_BH_NS}
 \end{table}
 %
@@ -1684,9 +1690,9 @@ Therefore, we realistically expect ET-C to forecast $\lesssim 3$ tidal disruptio
 %
 \section{Bnary black hole inspirals}\label{sec:BH_BH}
 We briefly repeat our computations for binary black hole (BBH) inspirals.
-As it is clear that heavier systems inspiral too fast, we limit ourselves
+As heavier systems inspiral too fast, we limit ourselves
 to $5M_\odot-5M_\odot$ BBHs and only consider ET-C.
-\todo{Finish this}
+For these systems, we find that $T_\text{AW} \lesssim 1\,$hour for $D\gtrsim 190\,$Mpc, but $\bar{\rho}_F$ will exceed 500.
 
 \section{Outlook}
 By constructing representative models of the near-future ground-based gravitational-wave interferometers, we investigated the possibility of
