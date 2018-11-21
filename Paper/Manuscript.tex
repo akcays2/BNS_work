@@ -83,6 +83,7 @@
 \newcommand{\ba}{\begin{eqnarray}}
 \newcommand{\ea}{\end{eqnarray}}
 \newcommand{\bi}{\begin{itemize}}
+\newcommand{\todo}[1]{{\textcolor{red}{\texttt{todo: #1}} }}
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\bef}{\begin{frame}}
 \newcommand{\ef}{\end{frame}}
@@ -126,6 +127,8 @@ to be forecast by the same detector.
 This article is intended as a pedagogical introduction to gravitational-wave astronomy written at a level accessible to
 Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the underlying physics.
 Though many of our results may be known to the experts, they might nonetheless find this article motivating and exciting.
+
+\todo{1) See end of Sec. IV on page 13, 2) Finish new Sec VIII on BH-BH inspirals, 3) page 19. footnote, 4) fix TAble VI}
 \end{abstract}
 \maketitle
 
@@ -158,11 +161,20 @@ the first astrophysical evidence for it.
 A week after GW170817, the ALV network was taken offline for upgrades for the third observation run (O3) 
 scheduled to start in early 2019 with roughly twice the sensitivity of O2.
 In addition, the Japanese cryogenic interferometer KAGRA (\cite{KAGRA, KAGRA2}) will start its test runs in 2018-2019 and reach its design sensitivity circa 2021-2022 \cite{Akutsu:2017thy, Aasi:2013wya}. By 2025, LIGO-India detector will join the global interferometer network hence improving both the overall sensitivity and the sky-localization capabilities \cite{Aasi:2013wya}.
-Around this time, the construction of the first third-generation ground-based interferometer, Einstein Telescope, will begin in Europe \cite{ET_doc}. 
-Meanwhile, the US is currently considering a mid-2020s update to LIGO called Voyager \cite{LIGO_Voy} and the construction of a more ambitious 40\,km long interferometer dubbed Cosmic Explorer \cite{CE}.
-All of these near-future additions to the GW-detector network beg a simple question: can we detect the inspiral of a binary neutron star system
-early enough to witness a gamma-ray burst as it happens? In other words, can we forecast GRBs using GW detections?
+Around this time, the construction of the first third-generation (3G) ground-based interferometer, Einstein Telescope, should begin in Europe \cite{ET_doc}\footnote{The decision for the funding of Einstein Telescope
+is expected to be announced in 2019-2020 with the final technical design report to be submitted in 2023-24, and the commissioning to begin in 2030-31 followed by full operations in 2032-33.}.
+Meanwhile, the US is currently considering a mid-2020s update to LIGO called Voyager \cite{LIGO_Voy} and the construction of an ambitious 40-km long 3G interferometer dubbed Cosmic Explorer \cite{CE}.
 
+The science goals of the 3G detectors is very exciting. For example,
+Einstein Telescope will be able to (i) distinguish between different neutron star equations of state, (ii) conduct high-precision measurements 
+of source parameters to test alternate theories of gravity,
+%(projected SNR of GW150914 at ET is 800, at CE 2400 vs. ALV 25)
+(iii) detect binary black hole populations out to redhifts of $\sim 15$
+hence  (a) measure the Hubble parameter, dark matter and dark energy densities, as well as the dark energy equation-of-state parameter;
+(b) study the cosmological evolution of the stellar mass black holes (see Sec.~2 of Ref.~\cite{ET_doc} for an excellent summary and further details).
+
+The prospect of having extremely sensitive 3G GW detectors begs a simple question: can we detect the inspirals of binary neutron star systems
+early enough to witness gamma-ray bursts as they happen? In other words, can we forecast GRBs using GW detections?
 The short answer is ``yes''. The long answer is still ``yes'', but depends on many factors such as source distance and sky position, detector sensitivity and orientation. One also needs to account for the fact that GRBs are thought to be collimated emissions with narrow outburst angles \cite{Kumar:2014upa}.
 As such, most GRBs that occur in the universe are electromagnetically undetectable. Fortunately, this was not the case with GRB170817A, 
 but even for a reasonable GRB jet opening angle of $\sim 10^\circ$, we expect to observe at best $\sim 10\%$ of neutron star mergers as GRBs \cite{Patricelli:2016bkt}. 
@@ -185,8 +197,12 @@ between the merger and the instant of detection defined in terms of a certain de
 To this end, we consider the ALV network of 2020s composed of three L-shaped interferometers operating at their design sensitivities
 and Einstein Telescope of 2030s made up of V-shaped interferometers.
 Ref.~\cite{Nissanke:2012dj} investigated the capabilities of three to five-interferometer detector networks of 2020s in terms of their ranges
-to inspiralling BNSs and their sky-localization of these sources. Our work here is somewhat complementary in the sense that we are mostly concerned with
-how early the GW networks can detect the inspiral before the merger.
+to inspiralling BNSs and their sky-localization of these sources. 
+More recently, Ref.~\cite{Chan:2018csa} added to this results pertaining to the future networks of 2030s both in terms of source localization and advance
+warning prospects.
+Our work here is complementary to these articles in the sense that we focus on
+the details of how to quantify the advance warning.
+%we are mostly concerned with how early the GW networks can detect the inspiral before the merger.
 
 We compute the advance warning times via the following procedure: 
 (${i}$) We start with a GW source presumed to be an inspiralling BNS at a certain luminosity distance. %$D$.
@@ -230,6 +246,7 @@ Sec.~\ref{sec:results} contains our main results presented as advance warning ti
 and as ranges and event rates in Table~\ref{table:horizon}.
 In Sec.~\ref{sec:BH_NS}, we recompute the advance warning times in the case of binary black hole - neutron star inspirals to see whether or not 
 future detectors can forecast tidal disruption events, for which we summarize our findings in Table~\ref{table:ET_BH_NS}.
+We then reapply our framework to binary black hole inspirals in Sec.~\ref{sec:BH_BH}.
 
 Throughout the text, $t$ denotes observer/detector time and $f$ denotes the \emph{GW frequency} of the dominant quadrupole mode in observer/detector frame. 
 %$f$ is twice the orbital (Keplerian) frequency $f_K$. 
@@ -587,8 +604,9 @@ In a network of $N$ interferometers, the total SNR is defined as follows \cite{F
 %%
 where Eq.~(\ref{eq:SNR_v2}) is employed to compute $\rho^2_i$ of individual interferometers each with a specific quality factor $Q_i$.
 Here, instead of working with specific quality factors of the LIGO and the Virgo interferometers, we consider
-a \emph{model network} of three IFOs ($N=3$), where one is near-optimally oriented/positioned with $|Q|=2\sigma=4/5$.
-The second IFO operates at the RMS average; thus it has $|Q|=2/5$. %compared with the optimal $|Q| =1$ case.
+a \emph{model network} of three IFOs ($N=3$), where one operates at the RMS average; thus it has $|Q|=2/5$. 
+The second IFO is near-optimally oriented/positioned so we assign it a quality
+factor one $\sigma$ above the average: $|Q|=2/5+\sigma=4/5$.
 It remains to assign a quality factor to the third IFO. We wish to make this operate below the RMS average, % in terms of its orientation and the sky location of the sources,
 but it would be pointless to simply set $Q=0$. We therefore pick the values $\iota=0$ (i.e, $|h_+|=|h_\times|$)
 and $\psi=0$ for simplicity %(aligning the $x$-axis of the ``$+$'' with the of the IFO
@@ -608,6 +626,7 @@ $|Q|=4/5-\sqrt{2/5}\simeq 0.1675$.
 This may seem somewhat ad hoc, 
 but it is our way of representing the sub-RMS-average response of the third IFO due to its sub-optimal configuration. 
 One may very well use another scheme to generate this below-average response.
+Given that $\rho_\text{tot}$ is a sum of quadratures the lowest SNR contributes a small percentage to this [cf. Eq.~(\ref{eq:SNR_total})].
 
 To summarize, we introduced a model for a three-IFO network in which each IFO has identical sensitivity,
 but varying response to GWs due to differing IFO orientations and source polarization and sky position. This response is encoded in the quality factor $|Q_i|$.
@@ -669,7 +688,7 @@ Our model for the Advanced-LIGO-Virgo network ca. 2020. %of three L-shaped inter
 Column two shows the quality factor $Q_i$ for each IFO and column three the corresponding amplitude scalar $\tilde{A}_i$ introduced
 in Eq.~(\ref{eq:Hi_s}).
 Column four lists the magnitude of the frequency-domain strain at each IFO via Eq.~(\ref{eq:Hi_s}).
-The last column states each IFO's response, e.g., high means high strain, thus high SNR.
+The last column states each IFO's response, e.g., high means high sensitivity, thus high SNR.
 %shows how loud the GW strain is at a given IFO due source sky position and IFO orientation. 
 %oriented/positioned an IFO is with respect to a compact binary source. 
 %High is $2\sigma$ above the average as explained above.
@@ -700,6 +719,20 @@ with $\rho_h, \rho_m,\rho_l$ given by Eq.~(\ref{eq:SNR_i}) and Table~\ref{table:
 %To do so we will change the lower limit of the integral in Eq.~(\ref{eq:SNR_total_3IFOs}) from $0$ to $30$.
 %For our advance warning times we will further use separate initial frequencies for each inteferometer as we will explain in Sec.~\ref{sec:results}.
 
+Let us conclude this subsection with a brief discussion on 
+%our particular choice to represent the sensitivities of the near-future ALV network.
+an alternate approach to construct a model for the near-future ALV network.
+This involves selecting one IFO as the ``base'' detector, e.g., LIGO Livingstone then running Monte-Carlo simulations over the four random angles $\{\theta,\phi,\psi,\iota\}$. 
+We would subsequently compute the quality factor of the base IFO using the
+simulation results for the four angles.
+We can then obtain the quality factors of the remaining two IFOs 
+--- in this particular case, LIGO Hanford and Virgo --- via their positions and orientations with respect to the base IFO. Given that the four angles
+are completely random, there should be no preferred point in the angle parameter space, thus the result of the Monte-Carlo runs should more or less agree with the RMS average. Correspondingly, we would expect one of the other two IFOs to have somewhat higher sensitivity, and the other one to have lower sensitivity.
+This network can be further expanded using exact positions of LIGO India
+and KAGRA detectors. The expansion of the detector network from three to five IFOs will offer significant improvements in source localization.
+However, given that the total network SNR is a sum of quadratures, the 
+expanded network will not accumulate significantly higher SNR than
+our model ALV network. As such our model network should serve as a good proxy for the advance warning time computations.
 
 \subsection{Einstein Telescope configuration: triangular topology}\label{sec:ET_topo}
 Current design of Einstein Telescope (ET) is based on a [equilateral] triangular configuration with 10\,km armlengths \cite{ET_doc}.
@@ -972,7 +1005,7 @@ where we introduced the dimensionless Kerr spin parameter $\chi\equiv {S}/({G m^
 %
 where $P$ is the spin period, and $ I = (2/5) m R^2 \kappa$ is the moment of inertia of the NS with $R$ being the radius of the NS and $\kappa \sim \ord(1)$ an intrinsic constant (see, e.g., Sec.~6.2 of Ref.~\cite{Colpi_Sesana}). 
 A rather compact NS with $m=1.4 M_\odot, R=11\,\text{km}, P= 10\,\text{ms}$ has $\chi\lesssim 0.05$ whereas
-the fastest observed NS spin in a BNS system is $\lesssim 0.04$ \cite{0264-9381-26-7-073001}.
+the fastest observed NS spin in a BNS system is $\lesssim 0.04-0.05$ \cite{0264-9381-26-7-073001, Stovall:2018ouw}.
 Therefore, at $f= 100\,$Hz, the first term on the right-hand-side of Eq.~(\ref{eq:spin_orbit}) gives $\approx 4\times 10^{-4}$. 
 On the other hand, the spin-spin coupling contributes at $\ord(v^4/c^4)\times\dot{E}$ hence $\lesssim \dot{E}_\text{SO}$.
 Thus, NS spins can be neglected for our estimation of advance warning times. %$T_\text{AW}$.
@@ -1035,7 +1068,11 @@ when considering sources for the ALV network.
 On the other hand, for Einstein Telescope, we will go out to $D=1\,\text{Gpc}\implies z\approx 0.2$
 which reduces $\tau_\text{insp}$ by $\sim 25\%$, thus we shall include the redshift effects in our computations of advance warning times and SNRs
 for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can be found in, e.g., Ref.~\cite{Phinney:2001di}). 
-
+%
+\item {\it Changing the detection threshold from $\bar{\rho}_\text{tot}=15$.}\\
+\todo{ADD SNR=12 and 20 computations for ET-C}
+$\bar\rho$ is defined in Sec. V
+%
 %
 %Furthermore, the physical quantities that we actually observe are blind to this redshift correction. Only after high-precision measurements of
 %the chirp mass and the GW polarizations $h_+, h_\times$ can we extract $z$. 
@@ -1053,19 +1090,20 @@ swept the ALV network's frequency band from $\approx 30\,$Hz to $\approx 2000\,$
 %18.8, 26.4 and 2.0 at H1, LIGO Livingstone (L1) and Virgo (V1), respectively, yielding 
 $\rho_\text{tot} = 32.4$ \cite{GW170817}.
 The inferred duration of the event in the network bandwidth was $\approx 57\,$ seconds during which $\approx 3000$ cycles of GWs were emitted \cite{GW170817_Facts}.
-Assuming low-spin priors  ($\chi \le 0.05$, see point 7 of Sec.~\ref{sec:idealizations}), the following values were inferred for the total mass, the chirp mass,
-and the luminosity distance of the source with 90\% confidence:
+Assuming low-spin priors  ($\chi \le 0.05$, see point 7 of Sec.~\ref{sec:idealizations}), the following updated values were inferred for the total mass, the chirp mass,
+and the luminosity distance of the source with 90\% confidence \cite{GW170817_2018}:
 %
 \be
-M = 2.74^{+0.04}_{-0.01} M_\odot,\quad M_c = 1.188^{+0.004}_{-0.002} M_\odot,\quad D= 40^{+8}_{-14}\,\text{Mpc}. \label{eq:GW170817_params}
+M = 2.73^{+0.04}_{-0.01} M_\odot,\quad M_c = 1.186^{+0.001}_{-0.001} M_\odot,\quad D= 40.7^{+2.36}_{-2.36}\,\text{Mpc}. \label{eq:GW170817_params}
 \ee
 %
 Note that the error bar for the chirp mass is very small
-due to the fact that it can be extracted to high precision over thousands of GW cycles via Eq.~(\ref{eq:fdot}). In fact, detailed follow-up analyses (\cite{GW170817_2018}) have recently restricted the above-values to
+due to the fact that it can be extracted to high precision over thousands of GW cycles via Eq.~(\ref{eq:fdot}). 
+%In fact, detailed follow-up analyses () have recently restricted the above-values to
 %
-$ \left\{2.73^{+0.04}_{-0.01} M_\odot, 1.186^{+0.001}_{-0.001}M_\odot , 40.7^{+2.36}_{-2.36}\text{Mpc}\right\}$, respectively,
+%$ \left\{2.73^{+0.04}_{-0.01} M_\odot, 1.186^{+0.001}_{-0.001}M_\odot , 40.7^{+2.36}_{-2.36}\text{Mpc}\right\}$, respectively,
 %
-where the errors in $D$ are at $1\sigma$ level.
+%where the errors in $D$ are at $1\sigma$ level.
 
 How well does the ``naive'' Newtonian evolution based on the quadrupole formula perform? 
 To test this, let us first compute the inspiral time, $\tau_\text{insp}$, and the number of GW cycles, $\mathcal{N}_\text{cyc}$, for this BNS system with initial frequency $f_0=30\,$Hz and final frequency $f_\text{ISCO} \simeq 1605\,$Hz. 
@@ -1073,21 +1111,24 @@ Eqs.~(\ref{eq:tau_insp}) and (\ref{eq:Ncyc1}) provide us with the leading-order 
 %%
 %
 \be
-\tau_\text{insp}^{0\text{PN}} \simeq 55.91\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \simeq 2680\,\label{eq:GW170817_values_0PN}. 
+\tau_\text{insp}^{0\text{PN}} \simeq 56.06\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{0\text{PN}} \simeq 2687\,\label{eq:GW170817_values_0PN}. 
 \ee
 %
 %%
-If we wish to do better, we can add all of the known post-Newtonian contributions 
-up to 3.5PN\footnote{Although the equations of motion for circular orbits is now known up to 4PN \cite{4PN_EoM_paper}, we are not aware of any publications
-explicitly showing the 4PN contributions to $\tau_\text{insp}$ and $\mathcal{N}_\text{cyc}$. Be that as it may, we suspect that a few PN experts have already obtained these.} resulting in
+If we wish to do better, we can add all the post-Newtonian contributions up to 2PN resulting in
 %%
 %
 \be
-\tau_\text{insp}^{3.5\text{PN}} \simeq 56.65\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{3.5\text{PN}} \simeq 2711 \label{eq:GW170817_values_3p5PN}\, ,
+\tau_\text{insp}^{2\text{PN}} \simeq 57.06\,\text{seconds}, \quad \mathcal{N}_\text{cyc}^{2\text{PN}} \simeq 2735 \label{eq:GW170817_values_3p5PN}\, ,
 \ee
 %
 %%
-which more or less match the values above. %of $\tau_\text{insp}\approx 60$\,seconds and $\mathcal{N}_\text{cyc} \approx 3000$ which we can obtain if we use $f_i \approx 28-29\,$Hz.
+which more or less match the detected inspiral time and number of cycles. We stop at 2PN because the currently available 3.5PN expressions require the value of $\nu$
+which is not well known for GW170817.
+%
+%\footnote{Although the equations of motion for circular orbits is now known up to 4PN \cite{4PN_EoM_paper}, we are not aware of any publications
+%explicitly showing the 4PN contributions to $\tau_\text{insp}$ and $\mathcal{N}_\text{cyc}$. Be that as it may, we suspect that a few PN experts have already obtained these.} 
+%of $\tau_\text{insp}\approx 60$\,seconds and $\mathcal{N}_\text{cyc} \approx 3000$ which we can obtain if we use $f_i \approx 28-29\,$Hz.
 %Our PN-only computation underestimates $\mathcal{N}_\text{cyc}$ because we artificially end the inspiral at the Schwarzschild ISCO whereas
 %numerical simulations indicate that the inspiral carries on past the Schwarzschild ISCO separation of $6 G M/c^2$. 
 %Reusing Eq.~(\ref{eq:Ncyc1}) from 1600 Hz to 2000 Hz only adds {\bf one} cycle.
@@ -1108,7 +1149,7 @@ The data, sampled at 4096\,Hz, is given as a discrete time series $h(t_i)$ for a
 %with the amplitude peaking at $1842.43\pm0.03\,$seconds.
 We first Fourier-transform the data to frequency space and apply several high and low-frequency filters to isolate a window of $f\in [10, f_\text{ISCO}]$.
 The LIGO Open Science Center has a detailed Python-based tutorial on how to do this using the data from the very first GW detection (GW150914) \cite{LIGO_tutorial}. 
-We use a $\verb|Mathematica|$ based code developed at UCD to do the same for GW170817.
+We use a $\verb|Mathematica|$ based code developed at University College Dublin (UCD) to do the same for GW170817.
 %
 \begin{figure}[ht!]
 \includegraphics[height=9cm]{../Figures/GW170817_strains.pdf}
@@ -1154,7 +1195,7 @@ Using Eq.~(\ref{eq:SNR_i_with_fi}) we can immediately compute the SNRs accumulat
 %%
 %
 \be
-\bar\rho_h = 29.2,\quad \bar\rho_m = 14.6,\quad \bar\rho_l = 6.11 \label{eq:GW170817_SNRs}.
+\bar\rho_h = 28.7,\quad \bar\rho_m = 14.3,\quad \bar\rho_l = 6.00 \label{eq:GW170817_SNRs}.
 \ee
 %
 %%
@@ -1173,7 +1214,7 @@ We can now compute the total SNR of GW170817 as inferred by our network
 %%
 %
 \be
-\bar\rho_\text{tot}= \sqrt{\bar\rho^2_h+\bar\rho^2_m+\bar\rho^2_l}= 32.6 \, \label{eq:SNR_total_GW170817} .
+\bar\rho_\text{tot}= \sqrt{\bar\rho^2_h+\bar\rho^2_m+\bar\rho^2_l}= 32.0 \, \label{eq:SNR_total_GW170817} .
 \ee
 %
 %%
@@ -1347,6 +1388,12 @@ parameters of neutron stars \cite{Read:2009yp, Andersson:2009yt, PhysRevD.89.103
 We should caution the reader that such high-SNR systems will make up $\lesssim 1\%$ of the population of BNSs detected by 
 the ALV network \cite{Sathyaprakash:2012jk}.
 
+In mid 2020s LIGO will first be upgraded to A+ then to Voyager. 
+However, both versions will have comparable sensitivities to Advanced LIGO
+at low frequencies (see Fig.~1 of Ref.~\cite{Mills:2017urp}).
+Therefore, they will not start accumulating significant SNR until $f\approx 10\,$Hz, thus offering us gains of mere minutes compared to $T_\text{AW}$ in Table~\ref{table:LIGO2020}. For this reason, we move on to 2030s: the 
+era of Einstein Telescope.
+
 \subsubsection{Forecasting GRBs in the 2030s using the Einstein Telescope}\label{Sec:ETB}
 We now wish to quantify the forecasting capabilities of Einstein Telescope. To this end, we consider the inspiral of BNS systems
 at luminosity distances of $100,200,400,1000\,$Mpc entering the ET band. 
@@ -1460,7 +1507,9 @@ As can be seen from Fig.~\ref{fig:ETB2030}, ET-C's increased sensitivity in the 
 This is best highlighted by the sixth colum of Table~\ref{table:ET}, 
 where we show that ET-C will provide up to \emph{five hours} of early warning time for nearby ($D\lesssim 100\,$Mpc) neutron star mergers.
 Moreover, BNS inspirals as far as 200\,Mpc (the ALV network's range) will persist in the ET-C sensitivity band for a few hours after their initial detection ($T_\text{AW} > 2\,$ hours).
-Current BNS merger rate, inferred from A-LIGO's O1-O2 periods, implies that $\sim 40$ to $\sim600$ sources within a volume of $(200\,\text{Mpc})^3$ will be detected yearly by ET-C.
+Current BNS merger rate, inferred from A-LIGO's O1-O2 periods, implies that $\sim 40$ to $\sim600$ sources within a volume of $(200\,\text{Mpc})^3$ will be detected yearly by ET-C. 
+Our values for $T_\text{AW}$ for 200 and 400\,Mpc are roughly consistent
+with the findings of Ref.~\cite{Chan:2018csa}.
 
 Given Moore's law and new search approaches (e.g., see Ref.~\cite{Gabbard:2017lja} for one based on deep learning) 
 we speculate that the advances in the detection, localization and early-warning algorithms in the next decade will reduce the required advance
@@ -1472,11 +1521,21 @@ in the ET-B, ET-C bands, respectively. These results are summarized in Table~\re
 
 Both Tables~\ref{table:ET} and \ref{table:horizon} clearly show that ET will yield superb SNRs for sources out to 1\,Gpc. 
 With such high SNRs we expect that a future network consisting of ET \emph{and} LIGO Voyager will be able to localize half the sources 
-inside a radius of $D\approx 1000\,$Mpc to within $ 10\,\text{deg}^2$ and more than half the sources within $D\lesssim 400\,$Mpc to $\approx 1\,\text{deg}^2$ \cite{Mills:2017urp}.
-Let us reemphasize that such good localization requires at least a second detector with comparable sensitivity to ET as ET alone has rather poor localization.
-Erring on the side of optimism, we conclude that the 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts
-\footnote{As the ET construction/commissioning timeline is currently uncertain, we can only speculate that ET-C will be operational after 2030,
-which is roughly in line with the milli-Hertz space interferometer LISA's timeline \cite{Audley:2017drz}.}.
+inside a radius of $D\approx 1000\,$Mpc to within $ 10\,\text{deg}^2$ \cite{Mills:2017urp}, but mostly after the merger.
+%and more than half the sources within $D\lesssim 400\,$Mpc to $\approx 1\,\text{deg}^2$ . 
+On the other hand, ET with CE together will localize 
+$\sim 80, 20\%$ of the BNSs
+within 200, 400\,Mpc to $1\,$deg$^2$, respectively \cite{Chan:2018csa},
+%Let us reemphasize that such good localization requires at least a second detector %with comparable sensitivity to ET as ET alone has rather poor localization.
+since CE will be sensitive enough to start accumulating SNR at $f\approx 5\,$Hz from BNSs within 400\,Mpc corresponding to $T_\text{AW}\gtrsim 1.5\,$hours.
+Even without the help of a second detector, it will be possible
+to localize $\sim 5\%$ of these transients to within $10\,$deg$^2$ using
+the Earth's rotation because these nearby sources will spend hours in the ET-C band \cite{Zhao:2017cbb}.
+This percentage amounts to $\sim 5$ events per year.
+%Additionally, these localizations are mostly post-merger as neither Voyager,
+Erring on the side of optimism, we conclude that the 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts and the subsequent kilonovae
+\footnote{As the ET construction/commissioning timeline is currently uncertain, we can only speculate that ET-C will be operational in mid 2030s,
+which is roughly in line with the timeline of the milli-Hertz space interferometer LISA \cite{Audley:2017drz} and may be five to ten years ahead of CE \todo{citation}}.
 %It is also reasonable to speculate that by that time the detection, localization and early-warning algorithms will have become sufficiently sophisticated
 %to alert the electromagnetic observatories within an hour of the initial detection (SNR = 15). 
 %
@@ -1515,7 +1574,7 @@ We used $D=50,100,200\,$Mpc to obtain the ALV results (Sec.~\ref{Sec:ALIGO2020})
 % LISA does not see these sources, not sensitive enough!
 %
 %
-\section{Binary black hole neutron star systems}\label{sec:BH_NS}
+\section{Black hole neutron star inspirals}\label{sec:BH_NS}
 In this section, we investigate the possibility of witnessing the tidal distruption of a neutron star by a black hole before the merger.
 The treatment of the inspiral is the same as before, however the fate of the neutron star depends strongly on the system's intrinsic parameters
 such as the black hole mass and spin, and the neutron star's equation of state (EOS) and compactness $\mathcal{C}_\text{NS}\equiv G M_\text{NS}/(R_\text{NS}c^2)$. 
@@ -1601,7 +1660,7 @@ $D\,$(Mpc) & \multicolumn{2}{c}{ET-B} &  & \multicolumn{2}{c}{ET-C}\T\B\\
 \hline\hline
 %bottomrule
 \end{tabular}
-\caption{Same as Table~\ref{table:ET}, but now for a $5 M_\odot- 1.4 M_\odot$ black hole-neutron star binary.
+\caption{\todo{FIX these numbers}Same as Table~\ref{table:ET}, but now for a $5 M_\odot- 1.4 M_\odot$ black hole-neutron star binary.
 The SNRs are even higher than before, however the advance warning times have decreased significantly.}\label{table:ET_BH_NS}
 \end{table}
 %
@@ -1628,6 +1687,15 @@ Therefore, we realistically expect ET-C to forecast $\lesssim 3$ tidal disruptio
 %\be
 %\Omega_\text{ISCO} M = 0.068 \left[ 1- \f{0.444}{Q^{1/4}}(1-3.54 C^{1/3})\right] 
 %\ee
+%
+\section{Bnary black hole inspirals}\label{sec:BH_BH}
+We briefly repeat our computations for binary black hole (BBH) inspirals.
+As heavier systems inspiral too fast, we limit ourselves
+to $5M_\odot-5M_\odot$ BBHs and only consider ET-C.
+For these systems, we find that $T_\text{AW} \lesssim 1\,$hour for $D\gtrsim 190\,$Mpc, but $\bar{\rho}_F$ will exceed 500. As such lightweight black holes
+are expected to be rare and given the BBH merger rate inferred from the previous LIGO detections \todo{FInd the event rate}, we expect no forecasts
+for these events. Nonetheless, ET will detect hundreds to thousands of BBH mergers.
+
 \section{Outlook}
 By constructing representative models of the near-future ground-based gravitational-wave interferometers, we investigated the possibility of
 forecasting gamma-ray burts resulting from the merger of two neutron stars.
