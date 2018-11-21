@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{98}%
+\begin{thebibliography}{99}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -322,6 +322,16 @@
   {2012})},\ \Eprint {http://arxiv.org/abs/1106.4668} {arXiv:1106.4668
   [astro-ph.HE]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1106.4668;%%
+\bibitem [{\citenamefont {Troja}\ \emph {et~al.}(2017)\citenamefont {Troja}
+  \emph {et~al.}}]{Troja:2017nqp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Troja}} \emph {et~al.},\ }\href {\doibase 10.1038/nature24290} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {551}},\
+  \bibinfo {pages} {71} (\bibinfo {year} {2017})},\ \bibinfo {note}
+  {[Nature551,71(2017)]},\ \Eprint {http://arxiv.org/abs/1710.05433}
+  {arXiv:1710.05433 [astro-ph.HE]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1710.05433;%%
 \bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2012)\citenamefont {Abbott}
   \emph {et~al.}}]{Abbott:2011ys}%
   \BibitemOpen
