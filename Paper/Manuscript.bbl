@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{97}%
+\begin{thebibliography}{98}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -219,11 +219,11 @@
   }\textbf {\bibinfo {volume} {340}},\ \bibinfo {pages} {126} (\bibinfo {year}
   {1989})}\BibitemShut {NoStop}%
 %%CITATION = NATUA,340,126;%%
-\bibitem [{KAG()}]{KAGRA}%
+\bibitem [{KAG(2018)}]{KAGRA}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{KAGRA website}},}\ }\bibinfo
-  {howpublished} {\url{http://gwcenter.icrr.u-tokyo.ac.jp/en/}}\BibitemShut
-  {NoStop}%
+  {howpublished} {\url{http://gwcenter.icrr.u-tokyo.ac.jp/en/}} (\bibinfo
+  {year} {2018})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Akutsu}\ \emph {et~al.}(2018)\citenamefont {Akutsu}
   \emph {et~al.}}]{KAGRA2}%
   \BibitemOpen
@@ -263,12 +263,12 @@
   wave Telescope Conceptual Design Study}}}},\ \bibinfo {type} {Tech. Rep.}\
   (\bibinfo  {institution} {European Commission},\ \bibinfo {year}
   {2011})\BibitemShut {NoStop}%
-\bibitem [{LIG({\natexlab{a}})}]{LIGO_Voy}%
+\bibitem [{LIG()}]{LIGO_Voy}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{What Comes Next for LIGO? 2016
   LIGO-DAWN Workshop II}},}\ }\bibinfo {howpublished}
-  {\url{https://wiki.ligo.org/pub/LSC/LIGOworkshop2016/WebHome/Dawn-II-Report-SecondDraft-v2.pdf}}
-  ({\natexlab{a}})\BibitemShut {NoStop}%
+  {\url{https://wiki.ligo.org/pub/LSC/LIGOworkshop2016/WebHome/Dawn-II-Report-SecondDraft-v2.pdf}}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Abbott}\ \emph
   {et~al.}(2017{\natexlab{f}})\citenamefont {Abbott} \emph {et~al.}}]{CE}%
   \BibitemOpen
@@ -742,12 +742,12 @@
   {http://arxiv.org/abs/astro-ph/0108028} {arXiv:astro-ph/0108028 [astro-ph]}
   \BibitemShut {NoStop}%
 %%CITATION = ASTRO-PH/0108028;%%
-\bibitem [{GW1()}]{GW170817_Facts}%
+\bibitem [{GW1(2018)}]{GW170817_Facts}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{GW170817 Factsheet}},}\ }\bibinfo
   {howpublished}
-  {\url{https://www.ligo.org/detections/GW170817/images-GW170817/GW170817_Factsheet.pdf}}\BibitemShut
-  {NoStop}%
+  {\url{https://www.ligo.org/detections/GW170817/images-GW170817/GW170817_Factsheet.pdf}}
+  (\bibinfo {year} {2018})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Abbott}\ \emph
   {et~al.}(2018{\natexlab{a}})\citenamefont {Abbott} \emph
   {et~al.}}]{GW170817_2018}%
@@ -758,17 +758,17 @@
   \Eprint {http://arxiv.org/abs/1805.11579} {arXiv:1805.11579 [gr-qc]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1805.11579;%%
-\bibitem [{LIG({\natexlab{b}})}]{LIGO_L1_data}%
+\bibitem [{LIG(2017)}]{LIGO_L1_data}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{Data release for GW170817}},}\
   }\bibinfo {howpublished} {\url{https://losc.ligo.org/events/GW170817/}}
-  ({\natexlab{b}})\BibitemShut {NoStop}%
-\bibitem [{LIG({\natexlab{c}})}]{LIGO_tutorial}%
+  (\bibinfo {year} {2017})\BibitemShut {NoStop}%
+\bibitem [{LIG(2016)}]{LIGO_tutorial}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{LIGO Open Science Center signal
   processing tutorial}},}\ }\bibinfo {howpublished}
   {\url{https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html}}
-  ({\natexlab{c}})\BibitemShut {NoStop}%
+  (\bibinfo {year} {2016})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Read}\ \emph {et~al.}(2009)\citenamefont {Read},
   \citenamefont {Markakis}, \citenamefont {Shibata}, \citenamefont {Uryu},
   \citenamefont {Creighton},\ and\ \citenamefont {Friedman}}]{Read:2009yp}%
@@ -784,12 +784,12 @@
   (\bibinfo {year} {2009})},\ \Eprint {http://arxiv.org/abs/0901.3258}
   {arXiv:0901.3258 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:0901.3258;%%
-\bibitem [{LIG({\natexlab{d}})}]{LIGO2020}%
+\bibitem [{LIG(2009)}]{LIGO2020}%
   \BibitemOpen
   \href@noop {} {\enquote {\bibinfo {title} {{Advanced LIGO anticipated
   sensitivity curves}},}\ }\bibinfo {howpublished}
-  {\url{https://dcc.ligo.org/LIGO-T0900288/public}}
-  ({\natexlab{d}})\BibitemShut {NoStop}%
+  {\url{https://dcc.ligo.org/LIGO-T0900288/public}} (\bibinfo {year}
+  {2009})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Cutler}\ and\ \citenamefont
   {Flanagan}(1994)}]{Cutler:1994ys}%
   \BibitemOpen
@@ -955,6 +955,12 @@
   {2017})},\ \Eprint {http://arxiv.org/abs/1702.00786} {arXiv:1702.00786
   [astro-ph.IM]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1702.00786;%%
+\bibitem [{LIG(2018)}]{LIGO_inst}%
+  \BibitemOpen
+  \href@noop {} {\enquote {\bibinfo {title} {{Instrument Science White Paper
+  2017-2018}},}\ }\bibinfo {howpublished}
+  {\url{https://dcc.ligo.org/public/0142/T1700231/003/T1700231-v3.pdf}}
+  (\bibinfo {year} {2018})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Shibata}\ and\ \citenamefont
   {Taniguchi}(2011)}]{Shibata:2011jka}%
   \BibitemOpen

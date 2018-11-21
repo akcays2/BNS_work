@@ -128,7 +128,7 @@ This article is intended as a pedagogical introduction to gravitational-wave ast
 Ph.D. students, advanced undergraduates, and colleagues in astronomy and/or astrophysics who wish to learn more about the underlying physics.
 Though many of our results may be known to the experts, they might nonetheless find this article motivating and exciting.
 
-\todo{1) See end of Sec. IV on page 13, 2) Finish new Sec VIII on BH-BH inspirals, 3) page 19. footnote}
+\todo{2) Finish new Sec VIII on BH-BH inspirals, 4) fix TAble VI}
 \end{abstract}
 \maketitle
 
@@ -246,7 +246,7 @@ Sec.~\ref{sec:results} contains our main results presented as advance warning ti
 and as ranges and event rates in Table~\ref{table:horizon}.
 In Sec.~\ref{sec:BH_NS}, we recompute the advance warning times in the case of binary black hole - neutron star inspirals to see whether or not 
 future detectors can forecast tidal disruption events, for which we summarize our findings in Table~\ref{table:ET_BH_NS}.
-We then reapply our framework to binary black hole inspirals in Sec.~\ref{sec:BH_BH}.
+%We then reapply our framework to binary black hole inspirals in Sec.~\ref{sec:BH_BH}.
 
 Throughout the text, $t$ denotes observer/detector time and $f$ denotes the \emph{GW frequency} of the dominant quadrupole mode in observer/detector frame. 
 %$f$ is twice the orbital (Keplerian) frequency $f_K$. 
@@ -605,7 +605,7 @@ In a network of $N$ interferometers, the total SNR is defined as follows \cite{F
 where Eq.~(\ref{eq:SNR_v2}) is employed to compute $\rho^2_i$ of individual interferometers each with a specific quality factor $Q_i$.
 Here, instead of working with specific quality factors of the LIGO and the Virgo interferometers, we consider
 a \emph{model network} of three IFOs ($N=3$), where one operates at the RMS average; thus it has $|Q|=2/5$. 
-The second IFO is near-optimally oriented/positioned so we assign it a quality
+The second IFO is better oriented/positioned so we assign it a quality
 factor one $\sigma$ above the average: $|Q|=2/5+\sigma=4/5$.
 It remains to assign a quality factor to the third IFO. We wish to make this operate below the RMS average, % in terms of its orientation and the sky location of the sources,
 but it would be pointless to simply set $Q=0$. We therefore pick the values $\iota=0$ (i.e, $|h_+|=|h_\times|$)
@@ -1069,9 +1069,44 @@ On the other hand, for Einstein Telescope, we will go out to $D=1\,\text{Gpc}\im
 which reduces $\tau_\text{insp}$ by $\sim 25\%$, thus we shall include the redshift effects in our computations of advance warning times and SNRs
 for which we provide the details in Sec.~\ref{Sec:ETB} (additional details can be found in, e.g., Ref.~\cite{Phinney:2001di}). 
 %
-\item {\it Changing the detection threshold from $\bar{\rho}_\text{tot}=15$.}\\
-\todo{ADD SNR=12 and 20 computations for ET-C}
-$\bar\rho$ is defined in Sec. V
+\item {\it Changing the detection criterion from} $\bar{\rho}_\text{tot}=15$. 
+In sections \ref{sec:results} - \ref{sec:BH_NS}, we present our results for advance warning times based on a detection criterion
+given by total network SNR equalling 15 [cf. Eq.~(\ref{eq:SNR_bar})].
+It is quite common in the literature to select 8 or 12 for $ \bar\rho_\text{tot} $.
+So, here, we briefly explore the consequences of (i) relaxing our detection criterion to $\bar{\rho}_\text{tot}=12$, and (ii) making it more strict by setting $\bar{\rho}_\text{tot}=20$.
+The former choice provides longer warning times and the latter less.
+We recommend first the reading of Secs.~\ref{sec:GW170817}, \ref{sec:results} before continuing here.
+
+For the ALV network of 2020s, it is clear from the results in Table~\ref{table:LIGO2020} that
+there is no point in discussing the $\bar{\rho}_\text{tot}=20$ case as that would result in advance
+warning times of mere seconds. So we only consider $\bar{\rho}_\text{tot}=12$ and BNS inspirals at $D=50,100\,$Mpc for which we find that the advance warning times increase to 120 and 36 seconds from 86 and 23, respectively. Though this is an improvement, it does not change our conclusion to Sec.~\ref{Sec:ALIGO2020}, that we expect no forecasts in the 2020s.
+
+For Einstein Telescope, we consider both $\bar{\rho}_\text{tot}=12$ and 20 given its low-frequency sensitivity. We present the resulting advance warning times ($T_\text{AW}$) in Table~\ref{table:SNR_12_20_results}
+on the next page. Comparing these with the corresponding ones in Table~\ref{table:ET}, we see that setting
+$\bar{\rho}_\text{tot}=12$ increases ET-B, C warning times by $\gtrsim 50\%, \sim 20\%$, respectively.
+On the other hand, $\bar{\rho}_\text{tot}=20$ decreases them by $\sim 40\%, 20\%$.
+Be that as it may, we see that ET-C sensitivity still yields advance warning times $> 1\,$hour for sources within $\approx 450$\,Mpc. Therefore, our conclusions that we expect ET-C to forecast $\gtrsim 5$ yearly
+BNS mergers holds.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccccc}
+%toprule
+\hline\hline
+$D\,$(Mpc)\hspace{2mm} & \multicolumn{2}{c}{$T_\text{AW}(\bar{\rho}_\text{tot}=12)$} & & \multicolumn{2}{c}{$T_\text{AW}(\bar{\rho}_\text{tot}=20)$}\T\B\\
+\hline
+{}& ET-B & ET-C &\hspace{5mm} & ET-B & ET-C  \T\B\\
+%midrule
+100 & 70\,minutes & 6.6\,hours & & 28\,minutes & 4.2\,hours \\
+200 & 18\,minutes & 3.4\,hours & & 7.0\,minutes & 2.2\,hours \\
+400 & 4.6\,minutes & 1.8\,hours & & 1.5\,minutes & 1.2\,hours \\
+1000 & 31\,seconds & 44\,minutes & & 6.2\,seconds & 24\,minutes \\
+\hline\hline
+\end{tabular}
+\caption{Alternative advance warning times obtained using detection criteria of $\bar{\rho}_\text{tot}=12,20$ as opposed to 15 which is our standard choice throughout this article for which the ET-B/C results are displayed in Table~\ref{table:ET}.}\label{table:SNR_12_20_results}
+\end{table}
+%
+%
 %
 %
 %Furthermore, the physical quantities that we actually observe are blind to this redshift correction. Only after high-precision measurements of
@@ -1381,7 +1416,7 @@ the ALV network will accumulate impressive SNRs
 %Monte-Carlo simulations of BNS systems indicate that 
 As the measurement errors for the system parameters are proportional to $\bar\rho^{-1}_F$ \cite{Cutler:1994ys},
 inspirals that yield high SNRs ($\bar\rho_F\gtrsim 40$) will enable (i) high precision measurements of 
-$M_c, M$ \cite{Farr:2015lna}; (ii) source sky localization to $\lesssim 5\,\text{Deg}^2$ \cite{Rodriguez:2013oaa};
+$M_c, M$ \cite{Farr:2015lna}; (ii) source sky localization to $\lesssim 5\,\text{deg}^2$ \cite{Rodriguez:2013oaa};
 (iii) $ \lesssim 10\%$ precision in the inferred NS masses \cite{Rodriguez:2013oaa} and the effective spin parameter $\chi_\text{eff}$ \cite{Zhu:2017znf}; and
 (iv) restrictions on the equation of state and the tidal deformability
 parameters of neutron stars \cite{Read:2009yp, Andersson:2009yt, PhysRevD.89.103012, PhysRevD.91.043002}.
@@ -1533,9 +1568,10 @@ to localize $\sim 5\%$ of these transients to within $10\,$deg$^2$ using
 the Earth's rotation because these nearby sources will spend hours in the ET-C band \cite{Zhao:2017cbb}.
 This percentage amounts to $\sim 5$ events per year.
 %Additionally, these localizations are mostly post-merger as neither Voyager,
-Erring on the side of optimism, we conclude that the 2030s hold in store real-time observations of dozens to hundreds of gamma-ray bursts and the subsequent kilonovae
+Therefore, erring on the side of optimism, we conclude that the 2030s hold in store real-time 
+electromagnetic observations of at least dozens of gamma-ray bursts and the subsequent kilonovae
 \footnote{As the ET construction/commissioning timeline is currently uncertain, we can only speculate that ET-C will be operational in mid 2030s,
-which is roughly in line with the timeline of the milli-Hertz space interferometer LISA \cite{Audley:2017drz} and may be five to ten years ahead of CE \todo{citation}}.
+which is roughly in line with the timeline of the milli-Hertz space interferometer LISA \cite{Audley:2017drz} and CE \cite{LIGO_inst}.}.
 %It is also reasonable to speculate that by that time the detection, localization and early-warning algorithms will have become sufficiently sophisticated
 %to alert the electromagnetic observatories within an hour of the initial detection (SNR = 15). 
 %
@@ -1688,11 +1724,19 @@ Therefore, we realistically expect ET-C to forecast $\lesssim 3$ tidal disruptio
 %\Omega_\text{ISCO} M = 0.068 \left[ 1- \f{0.444}{Q^{1/4}}(1-3.54 C^{1/3})\right] 
 %\ee
 %
-\section{Bnary black hole inspirals}\label{sec:BH_BH}
-We briefly repeat our computations for binary black hole (BBH) inspirals.
+
+%\section{Binary black hole inspirals}\label{sec:BH_BH}
+For the curious reader, we briefly repeat our computations for binary black hole (BBH) inspirals.
 As heavier systems inspiral too fast, we limit ourselves
-to $5M_\odot-5M_\odot$ BBHs and only consider ET-C.
-For these systems, we find that $T_\text{AW} \lesssim 1\,$hour for $D\gtrsim 190\,$Mpc, but $\bar{\rho}_F$ will exceed 500.
+to $5M_\odot-5M_\odot$ BBHs and only consider only ET-C.
+For these systems, we find that $T_\text{AW} \lesssim 1\,$hour for $D\gtrsim 190\,$Mpc, but $\bar{\rho}_F$ exceeds 500 due to the increased total mass. As such lightweight black holes
+are expected to be rare and given the BBH merger rate inferred from the previous LIGO detections 
+of 12-213\,Gpc$^{-3}$yr$^{-1}$ \cite{Abbott:2017vtc} translating at best to $\ord(1)$ BBH mergers yearly
+within 190\,Mpc.
+, we expect no forecasts
+for these events. Nonetheless, ET will detect hundreds to thousands of BBH mergers.
+
+Inferred event rate 
 
 \section{Outlook}
 By constructing representative models of the near-future ground-based gravitational-wave interferometers, we investigated the possibility of
