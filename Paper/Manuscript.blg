@@ -12,24 +12,24 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: ManuscriptNotes.bib
 Database file #2: references.bib
 Warning--entry type for "Chandra" isn't style-file defined
---line 225 of file references.bib
+--line 239 of file references.bib
 Warning--entry type for "Mono" isn't style-file defined
---line 233 of file references.bib
+--line 247 of file references.bib
 Warning--entry type for "LIGO_Voy" isn't style-file defined
---line 607 of file references.bib
+--line 621 of file references.bib
 Warning--entry type for "LIGO_L1_data" isn't style-file defined
---line 1049 of file references.bib
+--line 1063 of file references.bib
 Warning--entry type for "LIGO_tutorial" isn't style-file defined
---line 1055 of file references.bib
+--line 1069 of file references.bib
 Warning--entry type for "LIGO_inst" isn't style-file defined
---line 1061 of file references.bib
+--line 1075 of file references.bib
 Warning--entry type for "LIGO2020" isn't style-file defined
---line 1068 of file references.bib
+--line 1082 of file references.bib
 Warning--entry type for "GW170817_Facts" isn't style-file defined
---line 1074 of file references.bib
+--line 1088 of file references.bib
 Warning--entry type for "KAGRA" isn't style-file defined
---line 1081 of file references.bib
-Repeated entry---line 1301 of file references.bib
+--line 1095 of file references.bib
+Repeated entry---line 1315 of file references.bib
  : @article{Sathyaprakash:2012jk
  :                              ,
 I'm skipping whatever remains of this entry
@@ -42,6 +42,7 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
+Warning--missing journal in LIGOScientific:2018mvr
 Warning--missing journal in Aasi:2013wya
 Warning--empty year in LIGO_Voy
 Warning--missing journal in Dietrich:2018phi
@@ -53,45 +54,45 @@ Warning--missing journal in Hogg:1999ad
 Warning--missing journal in Audley:2017drz
 Warning--missing journal in Wiktorowicz:2013dua
 Warning--missing journal in GW170817_radii
-You've used 99 entries,
+You've used 100 entries,
             5847 wiz_defined-function locations,
-            2402 strings with 37453 characters,
-and the built_in function-call counts, 94525 in all, are:
-= -- 6345
-> -- 2252
-< -- 554
-+ -- 743
-- -- 530
-* -- 15126
-:= -- 9373
-add.period$ -- 108
-call.type$ -- 99
-change.case$ -- 409
-chr.to.int$ -- 88
-cite$ -- 124
-duplicate$ -- 8907
-empty$ -- 7126
-format.name$ -- 1380
-if$ -- 18620
+            2409 strings with 37726 characters,
+and the built_in function-call counts, 95188 in all, are:
+= -- 6389
+> -- 2261
+< -- 557
++ -- 747
+- -- 532
+* -- 15220
+:= -- 9451
+add.period$ -- 109
+call.type$ -- 100
+change.case$ -- 413
+chr.to.int$ -- 89
+cite$ -- 126
+duplicate$ -- 8975
+empty$ -- 7181
+format.name$ -- 1385
+if$ -- 18741
 int.to.chr$ -- 12
-int.to.str$ -- 107
-missing$ -- 1061
-newline$ -- 428
-num.names$ -- 274
-pop$ -- 3475
+int.to.str$ -- 108
+missing$ -- 1069
+newline$ -- 432
+num.names$ -- 277
+pop$ -- 3512
 preamble$ -- 1
-purify$ -- 493
+purify$ -- 498
 quote$ -- 0
-skip$ -- 3336
+skip$ -- 3359
 stack$ -- 0
-substring$ -- 2317
-swap$ -- 8406
+substring$ -- 2330
+swap$ -- 8460
 text.length$ -- 238
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 1353
-warning$ -- 11
-while$ -- 256
+type$ -- 1365
+warning$ -- 12
+while$ -- 258
 width$ -- 0
-write$ -- 965
+write$ -- 973
 (There was 1 error message)
